@@ -1,0 +1,137 @@
+import { useMemo } from "react";
+import { useDraft } from "./hooks/useDraft";
+import { MATCH_INDEX, sortedBoard, boardRank } from "./lib/rankings";
+import { playerKey } from "./lib/normalize";
+import { picksUntilMyTurn, nextPickForSlot, slotForPick } from "./lib/snake";
+import { scarcityLabels } from "./lib/scarcity";
+import { fillSlots } from "./lib/roster";
+import SetupScreen from "./components/SetupScreen";
+import HeaderBar from "./components/HeaderBar";
+import BestAvailable from "./components/BestAvailable";
+import RosterPanel from "./components/RosterPanel";
+import StrategyPanel from "./components/StrategyPanel";
+import SideFeed from "./components/SideFeed";
+
+export default function App() {
+  const {
+    state,
+    matched,
+    connectLive,
+    startReplay,
+    disconnect,
+    setMySlot,
+    setFormat,
+    toggleOverride,
+    replayControls,
+  } = useDraft();
+
+  const { draft, picks, mySlot, format, overrides, source } = state;
+
+  const derived = useMemo(() => {
+    if (!draft) return null;
+    const teams = draft.settings.teams;
+    const rounds = draft.settings.rounds;
+    const reversal = draft.settings.reversal_round ?? 0;
+    const nextPickNo = picks.length + 1;
+    // In replay the fixture's own status is always "complete"; doneness comes
+    // from how far the replay has advanced instead.
+    const draftDone =
+      picks.length >= teams * rounds ||
+      (source?.kind !== "replay" && draft.status === "complete");
+    const { round: currentRound, slot: onClockSlot } = draftDone
+      ? { round: rounds, slot: 0 }
+      : slotForPick(nextPickNo, teams, reversal);
+
+    const othersPicks =
+      mySlot && !draftDone ? picksUntilMyTurn(mySlot, nextPickNo, teams, rounds, reversal) : null;
+    const myNextPickNo =
+      mySlot && !draftDone ? nextPickForSlot(mySlot, nextPickNo, teams, rounds, reversal) : null;
+
+    // Drafted = synced picks that matched, adjusted by manual overrides.
+    const draftedKeys = new Set<string>();
+    for (const m of matched) if (m.playerKey) draftedKeys.add(m.playerKey);
+    for (const [key, action] of Object.entries(overrides)) {
+      if (action === "drafted") draftedKeys.add(key);
+      else draftedKeys.delete(key);
+    }
+
+    const board = sortedBoard(format).filter((p) => boardRank(p, format) !== null);
+    const available = board.filter((p) => !draftedKeys.has(playerKey(p)));
+    const scarcity = scarcityLabels(available, othersPicks, format);
+
+    const myPicks = picks.filter((p) => p.draft_slot === mySlot);
+    const slots = mySlot ? fillSlots(draft.settings, myPicks) : [];
+    const unmatchedPicks = matched.filter((m) => m.unmatched);
+    const myRoundsPicked = new Set(myPicks.map((p) => p.round));
+
+    return {
+      teams,
+      rounds,
+      nextPickNo,
+      currentRound,
+      onClockSlot,
+      draftDone,
+      othersPicks,
+      myNextPickNo,
+      draftedKeys,
+      available,
+      scarcity,
+      myPicks,
+      slots,
+      unmatchedPicks,
+      myRoundsPicked,
+      finalTwoRounds: currentRound >= rounds - 1,
+    };
+  }, [draft, picks, matched, mySlot, format, overrides, source]);
+
+  if (!draft || !derived || !source) {
+    return (
+      <SetupScreen
+        connectLive={connectLive}
+        startReplay={startReplay}
+        connecting={state.connecting}
+        error={state.error}
+      />
+    );
+  }
+
+  return (
+    <div className="flex h-screen flex-col">
+      <HeaderBar
+        draft={draft}
+        source={source}
+        derived={derived}
+        mySlot={mySlot}
+        setMySlot={setMySlot}
+        format={format}
+        setFormat={setFormat}
+        error={state.error}
+        replay={state.replay}
+        replayControls={replayControls}
+        disconnect={disconnect}
+      />
+      <main className="grid min-h-0 flex-1 grid-cols-1 gap-3 p-3 lg:grid-cols-[1fr_360px]">
+        <BestAvailable
+          available={derived.available}
+          scarcity={derived.scarcity}
+          format={format}
+          overrides={overrides}
+          toggleOverride={toggleOverride}
+          matchIndex={MATCH_INDEX}
+          finalTwoRounds={derived.finalTwoRounds}
+          unmatchedPicks={derived.unmatchedPicks}
+        />
+        <div className="flex min-h-0 flex-col gap-3 overflow-y-auto">
+          <RosterPanel slots={derived.slots} mySlot={mySlot} teams={derived.teams} />
+          <StrategyPanel
+            currentRound={derived.currentRound}
+            rounds={derived.rounds}
+            myRoundsPicked={derived.myRoundsPicked}
+            draftDone={derived.draftDone}
+          />
+          <SideFeed picks={picks} matched={matched} mySlot={mySlot} teams={derived.teams} />
+        </div>
+      </main>
+    </div>
+  );
+}
