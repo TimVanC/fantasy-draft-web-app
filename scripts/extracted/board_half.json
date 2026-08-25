@@ -1,0 +1,902 @@
+[
+ {
+  "rank": 1,
+  "pos": "RB",
+  "name": "Jahmyr Gibbs",
+  "tag": "target"
+ },
+ {
+  "rank": 2,
+  "pos": "RB",
+  "name": "Bijan Robinson",
+  "tag": null
+ },
+ {
+  "rank": 3,
+  "pos": "WR",
+  "name": "Ja'Marr Chase",
+  "tag": null
+ },
+ {
+  "rank": 4,
+  "pos": "WR",
+  "name": "Puka Nacua",
+  "tag": null
+ },
+ {
+  "rank": 5,
+  "pos": "RB",
+  "name": "Christian McCaffrey",
+  "tag": null
+ },
+ {
+  "rank": 6,
+  "pos": "RB",
+  "name": "Jonathan Taylor",
+  "tag": null
+ },
+ {
+  "rank": 7,
+  "pos": "WR",
+  "name": "Amon-Ra St. Brown",
+  "tag": null
+ },
+ {
+  "rank": 8,
+  "pos": "RB",
+  "name": "James Cook III",
+  "tag": null
+ },
+ {
+  "rank": 9,
+  "pos": "WR",
+  "name": "Jaxon Smith-Njigba",
+  "tag": null
+ },
+ {
+  "rank": 10,
+  "pos": "RB",
+  "name": "Omarion Hampton",
+  "tag": "target"
+ },
+ {
+  "rank": 11,
+  "pos": "RB",
+  "name": "Ashton Jeanty",
+  "tag": null
+ },
+ {
+  "rank": 12,
+  "pos": "RB",
+  "name": "Kenneth Walker III",
+  "tag": "target"
+ },
+ {
+  "rank": 13,
+  "pos": "RB",
+  "name": "Chase Brown",
+  "tag": "target"
+ },
+ {
+  "rank": 14,
+  "pos": "WR",
+  "name": "CeeDee Lamb",
+  "tag": null
+ },
+ {
+  "rank": 15,
+  "pos": "RB",
+  "name": "Saquon Barkley",
+  "tag": null
+ },
+ {
+  "rank": 16,
+  "pos": "RB",
+  "name": "De'Von Achane",
+  "tag": "avoid"
+ },
+ {
+  "rank": 17,
+  "pos": "WR",
+  "name": "Justin Jefferson",
+  "tag": "pass"
+ },
+ {
+  "rank": 18,
+  "pos": "TE",
+  "name": "Brock Bowers",
+  "tag": "target"
+ },
+ {
+  "rank": 19,
+  "pos": "RB",
+  "name": "Derrick Henry",
+  "tag": null
+ },
+ {
+  "rank": 20,
+  "pos": "WR",
+  "name": "A.J. Brown",
+  "tag": null
+ },
+ {
+  "rank": 21,
+  "pos": "WR",
+  "name": "Nico Collins",
+  "tag": null
+ },
+ {
+  "rank": 22,
+  "pos": "WR",
+  "name": "Drake London",
+  "tag": null
+ },
+ {
+  "rank": 23,
+  "pos": "WR",
+  "name": "George Pickens",
+  "tag": null
+ },
+ {
+  "rank": 24,
+  "pos": "TE",
+  "name": "Trey McBride",
+  "tag": "avoid"
+ },
+ {
+  "rank": 25,
+  "pos": "WR",
+  "name": "Malik Nabers",
+  "tag": null
+ },
+ {
+  "rank": 26,
+  "pos": "WR",
+  "name": "Chris Olave",
+  "tag": null
+ },
+ {
+  "rank": 27,
+  "pos": "WR",
+  "name": "Rashee Rice",
+  "tag": "pass"
+ },
+ {
+  "rank": 28,
+  "pos": "QB",
+  "name": "Josh Allen",
+  "tag": null
+ },
+ {
+  "rank": 29,
+  "pos": "RB",
+  "name": "Javonte Williams",
+  "tag": null
+ },
+ {
+  "rank": 30,
+  "pos": "WR",
+  "name": "DeVonta Smith",
+  "tag": "target"
+ },
+ {
+  "rank": 31,
+  "pos": "RB",
+  "name": "Kyren Williams",
+  "tag": null
+ },
+ {
+  "rank": 32,
+  "pos": "RB",
+  "name": "Jeremiyah Love",
+  "tag": null
+ },
+ {
+  "rank": 33,
+  "pos": "RB",
+  "name": "Josh Jacobs",
+  "tag": null
+ },
+ {
+  "rank": 34,
+  "pos": "RB",
+  "name": "Breece Hall",
+  "tag": null
+ },
+ {
+  "rank": 35,
+  "pos": "WR",
+  "name": "Tee Higgins",
+  "tag": null
+ },
+ {
+  "rank": 36,
+  "pos": "WR",
+  "name": "Jaylen Waddle",
+  "tag": "target"
+ },
+ {
+  "rank": 37,
+  "pos": "WR",
+  "name": "Tetairoa McMillan",
+  "tag": null
+ },
+ {
+  "rank": 38,
+  "pos": "RB",
+  "name": "Travis Etienne Jr.",
+  "tag": null
+ },
+ {
+  "rank": 39,
+  "pos": "WR",
+  "name": "Zay Flowers",
+  "tag": "target"
+ },
+ {
+  "rank": 40,
+  "pos": "WR",
+  "name": "Emeka Egbuka",
+  "tag": null
+ },
+ {
+  "rank": 41,
+  "pos": "RB",
+  "name": "Cam Skattebo",
+  "tag": null
+ },
+ {
+  "rank": 42,
+  "pos": "TE",
+  "name": "Colston Loveland",
+  "tag": "target"
+ },
+ {
+  "rank": 43,
+  "pos": "WR",
+  "name": "Garrett Wilson",
+  "tag": "pass"
+ },
+ {
+  "rank": 44,
+  "pos": "WR",
+  "name": "Luther Burden III",
+  "tag": "target"
+ },
+ {
+  "rank": 45,
+  "pos": "WR",
+  "name": "Ladd McConkey",
+  "tag": null
+ },
+ {
+  "rank": 46,
+  "pos": "WR",
+  "name": "DJ Moore",
+  "tag": null
+ },
+ {
+  "rank": 47,
+  "pos": "TE",
+  "name": "Tyler Warren",
+  "tag": "target"
+ },
+ {
+  "rank": 48,
+  "pos": "RB",
+  "name": "Bucky Irving",
+  "tag": null
+ },
+ {
+  "rank": 49,
+  "pos": "WR",
+  "name": "Rome Odunze",
+  "tag": "target"
+ },
+ {
+  "rank": 50,
+  "pos": "RB",
+  "name": "D'Andre Swift",
+  "tag": null
+ },
+ {
+  "rank": 51,
+  "pos": "RB",
+  "name": "Quinshon Judkins",
+  "tag": "pass"
+ },
+ {
+  "rank": 52,
+  "pos": "QB",
+  "name": "Lamar Jackson",
+  "tag": "avoid"
+ },
+ {
+  "rank": 53,
+  "pos": "WR",
+  "name": "Terry McLaurin",
+  "tag": "target"
+ },
+ {
+  "rank": 54,
+  "pos": "RB",
+  "name": "David Montgomery",
+  "tag": null
+ },
+ {
+  "rank": 55,
+  "pos": "RB",
+  "name": "Bhayshul Tuten",
+  "tag": "target"
+ },
+ {
+  "rank": 56,
+  "pos": "WR",
+  "name": "Davante Adams",
+  "tag": null
+ },
+ {
+  "rank": 57,
+  "pos": "QB",
+  "name": "Drake Maye",
+  "tag": null
+ },
+ {
+  "rank": 58,
+  "pos": "QB",
+  "name": "Jayden Daniels",
+  "tag": null
+ },
+ {
+  "rank": 59,
+  "pos": "WR",
+  "name": "Parker Washington",
+  "tag": "target"
+ },
+ {
+  "rank": 60,
+  "pos": "WR",
+  "name": "Christian Watson",
+  "tag": null
+ },
+ {
+  "rank": 61,
+  "pos": "RB",
+  "name": "Jadarian Price",
+  "tag": null
+ },
+ {
+  "rank": 62,
+  "pos": "RB",
+  "name": "Rhamondre Stevenson",
+  "tag": "target"
+ },
+ {
+  "rank": 63,
+  "pos": "RB",
+  "name": "TreVeyon Henderson",
+  "tag": "pass"
+ },
+ {
+  "rank": 64,
+  "pos": "TE",
+  "name": "Tucker Kraft",
+  "tag": null
+ },
+ {
+  "rank": 65,
+  "pos": "WR",
+  "name": "Jameson Williams",
+  "tag": null
+ },
+ {
+  "rank": 66,
+  "pos": "QB",
+  "name": "Joe Burrow",
+  "tag": null
+ },
+ {
+  "rank": 67,
+  "pos": "QB",
+  "name": "Jalen Hurts",
+  "tag": null
+ },
+ {
+  "rank": 68,
+  "pos": "RB",
+  "name": "Jaylen Warren",
+  "tag": null
+ },
+ {
+  "rank": 69,
+  "pos": "RB",
+  "name": "Rico Dowdle",
+  "tag": null
+ },
+ {
+  "rank": 70,
+  "pos": "TE",
+  "name": "Harold Fannin Jr.",
+  "tag": null
+ },
+ {
+  "rank": 71,
+  "pos": "WR",
+  "name": "Marvin Harrison Jr.",
+  "tag": "pass"
+ },
+ {
+  "rank": 72,
+  "pos": "WR",
+  "name": "Mike Evans",
+  "tag": null
+ },
+ {
+  "rank": 73,
+  "pos": "WR",
+  "name": "Brian Thomas Jr.",
+  "tag": null
+ },
+ {
+  "rank": 74,
+  "pos": "QB",
+  "name": "Caleb Williams",
+  "tag": "target"
+ },
+ {
+  "rank": 75,
+  "pos": "QB",
+  "name": "Trevor Lawrence",
+  "tag": "target"
+ },
+ {
+  "rank": 76,
+  "pos": "WR",
+  "name": "Carnell Tate",
+  "tag": null
+ },
+ {
+  "rank": 77,
+  "pos": "RB",
+  "name": "RJ Harvey",
+  "tag": "pass"
+ },
+ {
+  "rank": 78,
+  "pos": "TE",
+  "name": "Sam LaPorta",
+  "tag": null
+ },
+ {
+  "rank": 79,
+  "pos": "QB",
+  "name": "Justin Herbert",
+  "tag": "target"
+ },
+ {
+  "rank": 80,
+  "pos": "QB",
+  "name": "Jaxson Dart",
+  "tag": null
+ },
+ {
+  "rank": 81,
+  "pos": "TE",
+  "name": "Kyle Pitts Sr",
+  "tag": "pass"
+ },
+ {
+  "rank": 82,
+  "pos": "RB",
+  "name": "Jonathon Brooks",
+  "tag": "target"
+ },
+ {
+  "rank": 83,
+  "pos": "RB",
+  "name": "Chuba Hubbard",
+  "tag": "target"
+ },
+ {
+  "rank": 84,
+  "pos": "WR",
+  "name": "DK Metcalf",
+  "tag": "avoid"
+ },
+ {
+  "rank": 85,
+  "pos": "WR",
+  "name": "Michael Wilson",
+  "tag": null
+ },
+ {
+  "rank": 86,
+  "pos": "RB",
+  "name": "Tony Pollard",
+  "tag": "avoid"
+ },
+ {
+  "rank": 87,
+  "pos": "QB",
+  "name": "Brock Purdy",
+  "tag": "target"
+ },
+ {
+  "rank": 88,
+  "pos": "QB",
+  "name": "Dak Prescott",
+  "tag": null
+ },
+ {
+  "rank": 89,
+  "pos": "RB",
+  "name": "Blake Corum",
+  "tag": null
+ },
+ {
+  "rank": 90,
+  "pos": "TE",
+  "name": "George Kittle",
+  "tag": null
+ },
+ {
+  "rank": 91,
+  "pos": "RB",
+  "name": "Kyle Monangai",
+  "tag": null
+ },
+ {
+  "rank": 92,
+  "pos": "WR",
+  "name": "Alec Pierce",
+  "tag": null
+ },
+ {
+  "rank": 93,
+  "pos": "WR",
+  "name": "Courtland Sutton",
+  "tag": "avoid"
+ },
+ {
+  "rank": 94,
+  "pos": "RB",
+  "name": "Jordan Mason",
+  "tag": null
+ },
+ {
+  "rank": 95,
+  "pos": "QB",
+  "name": "Bo Nix",
+  "tag": null
+ },
+ {
+  "rank": 96,
+  "pos": "RB",
+  "name": "J.K. Dobbins",
+  "tag": "pass"
+ },
+ {
+  "rank": 97,
+  "pos": "RB",
+  "name": "Jacory Croskey-Merritt",
+  "tag": "pass"
+ },
+ {
+  "rank": 98,
+  "pos": "QB",
+  "name": "Patrick Mahomes II",
+  "tag": null
+ },
+ {
+  "rank": 99,
+  "pos": "WR",
+  "name": "De'Zhaun Stribling",
+  "tag": "target"
+ },
+ {
+  "rank": 100,
+  "pos": "WR",
+  "name": "Quentin Johnston",
+  "tag": null
+ },
+ {
+  "rank": 101,
+  "pos": "WR",
+  "name": "Chris Godwin Jr.",
+  "tag": null
+ },
+ {
+  "rank": 102,
+  "pos": "QB",
+  "name": "Matthew Stafford",
+  "tag": null
+ },
+ {
+  "rank": 103,
+  "pos": "TE",
+  "name": "Dalton Kincaid",
+  "tag": "target"
+ },
+ {
+  "rank": 104,
+  "pos": "WR",
+  "name": "Jayden Reed",
+  "tag": null
+ },
+ {
+  "rank": 105,
+  "pos": "WR",
+  "name": "KC Concepcion",
+  "tag": null
+ },
+ {
+  "rank": 106,
+  "pos": "WR",
+  "name": "Josh Downs",
+  "tag": null
+ },
+ {
+  "rank": 107,
+  "pos": "WR",
+  "name": "Michael Pittman Jr.",
+  "tag": "pass"
+ },
+ {
+  "rank": 108,
+  "pos": "WR",
+  "name": "Stefon Diggs",
+  "tag": null
+ },
+ {
+  "rank": 109,
+  "pos": "RB",
+  "name": "Rachaad White",
+  "tag": "avoid"
+ },
+ {
+  "rank": 110,
+  "pos": "QB",
+  "name": "Kyler Murray",
+  "tag": "target"
+ },
+ {
+  "rank": 111,
+  "pos": "QB",
+  "name": "Jared Goff",
+  "tag": null
+ },
+ {
+  "rank": 112,
+  "pos": "WR",
+  "name": "Jordan Addison",
+  "tag": null
+ },
+ {
+  "rank": 113,
+  "pos": "TE",
+  "name": "Mark Andrews",
+  "tag": null
+ },
+ {
+  "rank": 114,
+  "pos": "TE",
+  "name": "Dallas Goedert",
+  "tag": "target"
+ },
+ {
+  "rank": 115,
+  "pos": "WR",
+  "name": "Jakobi Meyers",
+  "tag": "pass"
+ },
+ {
+  "rank": 116,
+  "pos": "RB",
+  "name": "Kenny Gainwell",
+  "tag": "avoid"
+ },
+ {
+  "rank": 117,
+  "pos": "RB",
+  "name": "Chris Rodriguez Jr.",
+  "tag": null
+ },
+ {
+  "rank": 118,
+  "pos": "WR",
+  "name": "Makai Lemon",
+  "tag": null
+ },
+ {
+  "rank": 119,
+  "pos": "WR",
+  "name": "Jordyn Tyson",
+  "tag": null
+ },
+ {
+  "rank": 120,
+  "pos": "QB",
+  "name": "Malik Willis",
+  "tag": "target"
+ },
+ {
+  "rank": 121,
+  "pos": "QB",
+  "name": "Tyler Shough",
+  "tag": null
+ },
+ {
+  "rank": 122,
+  "pos": "WR",
+  "name": "Romeo Doubs",
+  "tag": "target"
+ },
+ {
+  "rank": 123,
+  "pos": "WR",
+  "name": "Matthew Golden",
+  "tag": null
+ },
+ {
+  "rank": 124,
+  "pos": "WR",
+  "name": "Wan'Dale Robinson",
+  "tag": "avoid"
+ },
+ {
+  "rank": 125,
+  "pos": "TE",
+  "name": "Isaiah Likely",
+  "tag": null
+ },
+ {
+  "rank": 126,
+  "pos": "RB",
+  "name": "Woody Marks",
+  "tag": null
+ },
+ {
+  "rank": 127,
+  "pos": "RB",
+  "name": "Aaron Jones Sr.",
+  "tag": "avoid"
+ },
+ {
+  "rank": 128,
+  "pos": "RB",
+  "name": "Zach Charbonnet",
+  "tag": null
+ },
+ {
+  "rank": 129,
+  "pos": "RB",
+  "name": "Tyler Allgeier",
+  "tag": null
+ },
+ {
+  "rank": 130,
+  "pos": "QB",
+  "name": "Baker Mayfield",
+  "tag": null
+ },
+ {
+  "rank": 131,
+  "pos": "RB",
+  "name": "Keaton Mitchell",
+  "tag": "target"
+ },
+ {
+  "rank": 132,
+  "pos": "TE",
+  "name": "Travis Kelce",
+  "tag": "avoid"
+ },
+ {
+  "rank": 133,
+  "pos": "TE",
+  "name": "Jake Ferguson",
+  "tag": "avoid"
+ },
+ {
+  "rank": 134,
+  "pos": "QB",
+  "name": "Jordan Love",
+  "tag": "pass"
+ },
+ {
+  "rank": 135,
+  "pos": "WR",
+  "name": "Jalen Coker",
+  "tag": null
+ },
+ {
+  "rank": 136,
+  "pos": "RB",
+  "name": "Isiah Pacheco",
+  "tag": null
+ },
+ {
+  "rank": 137,
+  "pos": "RB",
+  "name": "Tyjae Spears",
+  "tag": null
+ },
+ {
+  "rank": 138,
+  "pos": "RB",
+  "name": "Tank Bigsby",
+  "tag": null
+ },
+ {
+  "rank": 139,
+  "pos": "RB",
+  "name": "Ray Davis",
+  "tag": "target"
+ },
+ {
+  "rank": 140,
+  "pos": "RB",
+  "name": "Mike Washington",
+  "tag": null
+ },
+ {
+  "rank": 141,
+  "pos": "RB",
+  "name": "Jonah Coleman",
+  "tag": "target"
+ },
+ {
+  "rank": 142,
+  "pos": "WR",
+  "name": "Xavier Worthy",
+  "tag": null
+ },
+ {
+  "rank": 143,
+  "pos": "RB",
+  "name": "Marshawn Lloyd",
+  "tag": null
+ },
+ {
+  "rank": 144,
+  "pos": "QB",
+  "name": "Cam Ward",
+  "tag": null
+ },
+ {
+  "rank": 145,
+  "pos": "QB",
+  "name": "Sam Darnold",
+  "tag": null
+ },
+ {
+  "rank": 146,
+  "pos": "WR",
+  "name": "Rashid Shaheed",
+  "tag": null
+ },
+ {
+  "rank": 147,
+  "pos": "WR",
+  "name": "Deebo Samuel Sr.",
+  "tag": null
+ },
+ {
+  "rank": 148,
+  "pos": "WR",
+  "name": "Khalil Shakir",
+  "tag": "avoid"
+ },
+ {
+  "rank": 149,
+  "pos": "TE",
+  "name": "Dalton Schultz",
+  "tag": null
+ },
+ {
+  "rank": 150,
+  "pos": "RB",
+  "name": "Alvin Kamara",
+  "tag": null
+ }
+]

@@ -1,0 +1,934 @@
+{
+ "QB": [
+  {
+   "name": "Josh Allen",
+   "adjPpg": 23.2,
+   "note": null,
+   "posRank": 1
+  },
+  {
+   "name": "Matthew Stafford",
+   "adjPpg": 20.6,
+   "note": null,
+   "posRank": 2
+  },
+  {
+   "name": "Patrick Mahomes",
+   "adjPpg": 20.4,
+   "note": null,
+   "posRank": 3
+  },
+  {
+   "name": "Jaxson Dart",
+   "adjPpg": 20.1,
+   "note": "as starter",
+   "posRank": 4
+  },
+  {
+   "name": "Trevor Lawrence",
+   "adjPpg": 19.9,
+   "note": null,
+   "posRank": 5
+  },
+  {
+   "name": "Drake Maye",
+   "adjPpg": 19.8,
+   "note": null,
+   "posRank": 6
+  },
+  {
+   "name": "Dak Prescott",
+   "adjPpg": 19.6,
+   "note": null,
+   "posRank": 7
+  },
+  {
+   "name": "Jacoby Brissett",
+   "adjPpg": 18.9,
+   "note": "as starter",
+   "posRank": 8
+  },
+  {
+   "name": "Daniel Jones",
+   "adjPpg": 18.8,
+   "note": "in complete games",
+   "posRank": 9
+  },
+  {
+   "name": "Caleb Williams",
+   "adjPpg": 18.7,
+   "note": null,
+   "posRank": 10
+  },
+  {
+   "name": "Jalen Hurts",
+   "adjPpg": 18.3,
+   "note": null,
+   "posRank": 11
+  },
+  {
+   "name": "Bo Nix",
+   "adjPpg": 18.3,
+   "note": null,
+   "posRank": 11
+  },
+  {
+   "name": "Joe Burrow",
+   "adjPpg": 18.2,
+   "note": "in complete games",
+   "posRank": 13
+  },
+  {
+   "name": "Brock Purdy",
+   "adjPpg": 18.1,
+   "note": null,
+   "posRank": 14
+  },
+  {
+   "name": "Jared Goff",
+   "adjPpg": 17.6,
+   "note": null,
+   "posRank": 15
+  },
+  {
+   "name": "Jayden Daniels",
+   "adjPpg": 17.6,
+   "note": "w/o 2 missing qtrs",
+   "posRank": 15
+  },
+  {
+   "name": "Justin Herbert",
+   "adjPpg": 17.5,
+   "note": null,
+   "posRank": 17
+  },
+  {
+   "name": "Lamar Jackson",
+   "adjPpg": 17.5,
+   "note": "in complete games",
+   "posRank": 17
+  },
+  {
+   "name": "Jordan Love",
+   "adjPpg": 17.4,
+   "note": "in complete games",
+   "posRank": 19
+  },
+  {
+   "name": "Tyler Shough",
+   "adjPpg": 17.1,
+   "note": "as starter",
+   "posRank": 20
+  },
+  {
+   "name": "Baker Mayfield",
+   "adjPpg": 16.8,
+   "note": "in complete games",
+   "posRank": 21
+  },
+  {
+   "name": "Kyler Murray",
+   "adjPpg": 15.5,
+   "note": null,
+   "posRank": 22
+  },
+  {
+   "name": "C.J. Stroud",
+   "adjPpg": 14.5,
+   "note": "in complete games",
+   "posRank": 23
+  },
+  {
+   "name": "Sam Darnold",
+   "adjPpg": 14.2,
+   "note": null,
+   "posRank": 24
+  },
+  {
+   "name": "Bryce Young",
+   "adjPpg": 14.1,
+   "note": null,
+   "posRank": 25
+  },
+  {
+   "name": "Aaron Rodgers",
+   "adjPpg": 13.7,
+   "note": "in complete games",
+   "posRank": 26
+  },
+  {
+   "name": "Michael Penix",
+   "adjPpg": 13.3,
+   "note": null,
+   "posRank": 27
+  },
+  {
+   "name": "Kirk Cousins",
+   "adjPpg": 12.5,
+   "note": "in complete games",
+   "posRank": 28
+  },
+  {
+   "name": "Shedeur Sanders",
+   "adjPpg": 12.0,
+   "note": null,
+   "posRank": 29
+  },
+  {
+   "name": "Geno Smith",
+   "adjPpg": 11.6,
+   "note": null,
+   "posRank": 30
+  },
+  {
+   "name": "Tua Tagovailoa",
+   "adjPpg": 11.5,
+   "note": null,
+   "posRank": 31
+  },
+  {
+   "name": "Cam Ward",
+   "adjPpg": 11.1,
+   "note": null,
+   "posRank": 32
+  }
+ ],
+ "TE": [
+  {
+   "name": "Trey McBride",
+   "adjPpg": 18.6,
+   "note": null,
+   "posRank": 1
+  },
+  {
+   "name": "Brock Bowers",
+   "adjPpg": 16.4,
+   "note": "when fully healthy",
+   "posRank": 2
+  },
+  {
+   "name": "Tucker Kraft",
+   "adjPpg": 16.2,
+   "note": "in complete games",
+   "posRank": 3
+  },
+  {
+   "name": "George Kittle",
+   "adjPpg": 15.4,
+   "note": null,
+   "posRank": 4
+  },
+  {
+   "name": "Tyler Warren",
+   "adjPpg": 13.1,
+   "note": "w/ Daniel Jones",
+   "posRank": 5
+  },
+  {
+   "name": "Dalton Kincaid",
+   "adjPpg": 12.9,
+   "note": "in complete games",
+   "posRank": 6
+  },
+  {
+   "name": "Colston Loveland",
+   "adjPpg": 12.9,
+   "note": "w/ full snaps since Wk7",
+   "posRank": 6
+  },
+  {
+   "name": "Travis Kelce",
+   "adjPpg": 12.8,
+   "note": "w/ Patrick Mahomes",
+   "posRank": 8
+  },
+  {
+   "name": "Dallas Goedert",
+   "adjPpg": 12.3,
+   "note": null,
+   "posRank": 9
+  },
+  {
+   "name": "Juwan Johnson",
+   "adjPpg": 12.0,
+   "note": "w/ Tyler Shough",
+   "posRank": 10
+  },
+  {
+   "name": "Sam LaPorta",
+   "adjPpg": 11.9,
+   "note": "in complete games",
+   "posRank": 11
+  },
+  {
+   "name": "Harold Fannin",
+   "adjPpg": 11.7,
+   "note": null,
+   "posRank": 12
+  },
+  {
+   "name": "Dalton Schultz",
+   "adjPpg": 10.5,
+   "note": "w/ C.J. Stroud",
+   "posRank": 13
+  },
+  {
+   "name": "Kyle Pitts",
+   "adjPpg": 10.0,
+   "note": "w/ Drake London",
+   "posRank": 14
+  },
+  {
+   "name": "Zach Ertz",
+   "adjPpg": 10.0,
+   "note": "w/ Jayden Daniels",
+   "posRank": 14
+  },
+  {
+   "name": "Theo Johnson",
+   "adjPpg": 10.0,
+   "note": "w/ Jaxson Dart",
+   "posRank": 14
+  },
+  {
+   "name": "Darren Waller",
+   "adjPpg": 9.9,
+   "note": null,
+   "posRank": 17
+  },
+  {
+   "name": "Hunter Henry",
+   "adjPpg": 9.8,
+   "note": null,
+   "posRank": 18
+  },
+  {
+   "name": "Brenton Strange",
+   "adjPpg": 9.8,
+   "note": "in complete games",
+   "posRank": 18
+  },
+  {
+   "name": "Jake Ferguson",
+   "adjPpg": 9.5,
+   "note": "w/ CeeDee Lamb",
+   "posRank": 20
+  },
+  {
+   "name": "Oronde Gadsden",
+   "adjPpg": 9.4,
+   "note": "once playing full time",
+   "posRank": 21
+  },
+  {
+   "name": "Colby Parkinson",
+   "adjPpg": 8.8,
+   "note": null,
+   "posRank": 22
+  },
+  {
+   "name": "AJ Barner",
+   "adjPpg": 8.7,
+   "note": "in complete games",
+   "posRank": 23
+  },
+  {
+   "name": "Mark Andrews",
+   "adjPpg": 8.2,
+   "note": "w/ Jackson",
+   "posRank": 24
+  },
+  {
+   "name": "T.J. Hockenson",
+   "adjPpg": 7.5,
+   "note": null,
+   "posRank": 25
+  },
+  {
+   "name": "Chig Okonkwo",
+   "adjPpg": 7.3,
+   "note": null,
+   "posRank": 26
+  },
+  {
+   "name": "David Njoku",
+   "adjPpg": 7.2,
+   "note": null,
+   "posRank": 27
+  },
+  {
+   "name": "Isaiah Likely",
+   "adjPpg": 4.4,
+   "note": null,
+   "posRank": 28
+  }
+ ],
+ "RB": [
+  {
+   "name": "Christian McCaffrey",
+   "adjPpg": 24.8,
+   "note": null,
+   "posRank": 1
+  },
+  {
+   "name": "Jahmyr Gibbs",
+   "adjPpg": 24.6,
+   "note": "w/o Morton at OC",
+   "posRank": 2
+  },
+  {
+   "name": "Jonathan Taylor",
+   "adjPpg": 23.8,
+   "note": "w/ Daniel Jones",
+   "posRank": 3
+  },
+  {
+   "name": "Bijan Robinson",
+   "adjPpg": 22.0,
+   "note": null,
+   "posRank": 4
+  },
+  {
+   "name": "Chase Brown",
+   "adjPpg": 21.0,
+   "note": "w/ Joe Burrow",
+   "posRank": 5
+  },
+  {
+   "name": "De'Von Achane",
+   "adjPpg": 20.4,
+   "note": "in complete games",
+   "posRank": 6
+  },
+  {
+   "name": "Cam Skattebo",
+   "adjPpg": 19.1,
+   "note": "in complete games",
+   "posRank": 7
+  },
+  {
+   "name": "Josh Jacobs",
+   "adjPpg": 18.0,
+   "note": "in healthy games",
+   "posRank": 8
+  },
+  {
+   "name": "James Cook",
+   "adjPpg": 17.9,
+   "note": null,
+   "posRank": 9
+  },
+  {
+   "name": "Derrick Henry",
+   "adjPpg": 16.9,
+   "note": null,
+   "posRank": 10
+  },
+  {
+   "name": "Javonte Williams",
+   "adjPpg": 16.2,
+   "note": "before wk15 injury",
+   "posRank": 11
+  },
+  {
+   "name": "Omarion Hampton",
+   "adjPpg": 16.2,
+   "note": "w/ full snaps",
+   "posRank": 11
+  },
+  {
+   "name": "Travis Etienne",
+   "adjPpg": 15.4,
+   "note": null,
+   "posRank": 13
+  },
+  {
+   "name": "Kyren Williams",
+   "adjPpg": 14.7,
+   "note": "Wk7 on w/ Corum",
+   "posRank": 14
+  },
+  {
+   "name": "Saquon Barkley",
+   "adjPpg": 14.6,
+   "note": null,
+   "posRank": 15
+  },
+  {
+   "name": "Ashton Jeanty",
+   "adjPpg": 14.5,
+   "note": null,
+   "posRank": 16
+  },
+  {
+   "name": "Bucky Irving",
+   "adjPpg": 14.0,
+   "note": null,
+   "posRank": 17
+  },
+  {
+   "name": "R. Stevenson",
+   "adjPpg": 13.5,
+   "note": "in full games",
+   "posRank": 18
+  },
+  {
+   "name": "Jaylen Warren",
+   "adjPpg": 13.4,
+   "note": "in complete games",
+   "posRank": 19
+  },
+  {
+   "name": "Kenneth Walker",
+   "adjPpg": 13.3,
+   "note": null,
+   "posRank": 20
+  },
+  {
+   "name": "Breece Hall",
+   "adjPpg": 13.1,
+   "note": null,
+   "posRank": 21
+  },
+  {
+   "name": "D'Andre Swift",
+   "adjPpg": 12.9,
+   "note": "w/ Monangai in 2H",
+   "posRank": 22
+  },
+  {
+   "name": "Quinshon Judkins",
+   "adjPpg": 12.5,
+   "note": "in complete games",
+   "posRank": 23
+  },
+  {
+   "name": "Rico Dowdle",
+   "adjPpg": 11.7,
+   "note": "w/ Hubbard returned",
+   "posRank": 24
+  },
+  {
+   "name": "J.K. Dobbins",
+   "adjPpg": 11.6,
+   "note": null,
+   "posRank": 25
+  },
+  {
+   "name": "Rachaad White",
+   "adjPpg": 11.6,
+   "note": "as starter",
+   "posRank": 26
+  },
+  {
+   "name": "Zach Charbonnet",
+   "adjPpg": 11.3,
+   "note": null,
+   "posRank": 27
+  },
+  {
+   "name": "Tony Pollard",
+   "adjPpg": 10.8,
+   "note": "in Spears  full games",
+   "posRank": 28
+  },
+  {
+   "name": "Chuba Hubbard",
+   "adjPpg": 10.8,
+   "note": "w/ full snaps",
+   "posRank": 28
+  },
+  {
+   "name": "Woody Marks",
+   "adjPpg": 10.7,
+   "note": "healthy post Wk4",
+   "posRank": 30
+  },
+  {
+   "name": "Kenneth Gainwell",
+   "adjPpg": 10.6,
+   "note": "w/ Warren healthy",
+   "posRank": 31
+  },
+  {
+   "name": "RJ Harvey",
+   "adjPpg": 10.0,
+   "note": "w/ JK Dobbins",
+   "posRank": 32
+  },
+  {
+   "name": "Aaron Jones",
+   "adjPpg": 10.0,
+   "note": "w/ Mason healthy",
+   "posRank": 32
+  },
+  {
+   "name": "David Montgomery",
+   "adjPpg": 9.9,
+   "note": null,
+   "posRank": 34
+  },
+  {
+   "name": "Kimani Vidal",
+   "adjPpg": 9.7,
+   "note": null,
+   "posRank": 35
+  },
+  {
+   "name": "Alvin Kamara",
+   "adjPpg": 9.7,
+   "note": "in complete games",
+   "posRank": 35
+  },
+  {
+   "name": "T. Henderson",
+   "adjPpg": 9.5,
+   "note": "2H w/ 2 healthy RBs",
+   "posRank": 37
+  },
+  {
+   "name": "Kyle Monangai",
+   "adjPpg": 9.5,
+   "note": "2H w/ healthy Swift",
+   "posRank": 37
+  },
+  {
+   "name": "Tyjae Spears",
+   "adjPpg": 9.2,
+   "note": "in complete games",
+   "posRank": 39
+  },
+  {
+   "name": "Blake Corum",
+   "adjPpg": 8.8,
+   "note": "Since Wk7  full snaps",
+   "posRank": 40
+  },
+  {
+   "name": "Bill Croskey-Merritt",
+   "adjPpg": 8.4,
+   "note": null,
+   "posRank": 41
+  },
+  {
+   "name": "Tyler Allgeier",
+   "adjPpg": 7.2,
+   "note": null,
+   "posRank": 42
+  },
+  {
+   "name": "Kareem Hunt",
+   "adjPpg": 7.1,
+   "note": "in games w/ Pacheco",
+   "posRank": 43
+  },
+  {
+   "name": "Isiah Pacheco",
+   "adjPpg": 6.7,
+   "note": null,
+   "posRank": 44
+  },
+  {
+   "name": "Tyrone Tracy",
+   "adjPpg": 6.5,
+   "note": "4  full games w/ Skatt",
+   "posRank": 45
+  },
+  {
+   "name": "Jordan Mason",
+   "adjPpg": 6.3,
+   "note": "full games w/ Jones",
+   "posRank": 46
+  }
+ ],
+ "WR": [
+  {
+   "name": "Puka Nacua",
+   "adjPpg": 23.7,
+   "note": "full games w/ Adams",
+   "posRank": 1
+  },
+  {
+   "name": "Jaxon Smith-Njigba",
+   "adjPpg": 20.4,
+   "note": null,
+   "posRank": 2
+  },
+  {
+   "name": "Amon-Ra St. Brown",
+   "adjPpg": 20.3,
+   "note": "in complete games",
+   "posRank": 3
+  },
+  {
+   "name": "Ja'Marr Chase",
+   "adjPpg": 20.1,
+   "note": "w/ Joe Burrow",
+   "posRank": 4
+  },
+  {
+   "name": "Drake London",
+   "adjPpg": 19.7,
+   "note": "w/ Penix & pre injury",
+   "posRank": 5
+  },
+  {
+   "name": "Rashee Rice",
+   "adjPpg": 18.8,
+   "note": null,
+   "posRank": 6
+  },
+  {
+   "name": "Chris Olave",
+   "adjPpg": 18.8,
+   "note": "w/ Shough",
+   "posRank": 6
+  },
+  {
+   "name": "CeeDee Lamb",
+   "adjPpg": 16.6,
+   "note": "in complete games",
+   "posRank": 8
+  },
+  {
+   "name": "George Pickens",
+   "adjPpg": 16.1,
+   "note": "in games w/ Lamb",
+   "posRank": 9
+  },
+  {
+   "name": "Rome Odunze",
+   "adjPpg": 15.5,
+   "note": "until Wk9 foot injury",
+   "posRank": 10
+  },
+  {
+   "name": "Davante Adams",
+   "adjPpg": 15.3,
+   "note": "healthy gms w/ Puka",
+   "posRank": 11
+  },
+  {
+   "name": "Tee Higgins",
+   "adjPpg": 15.2,
+   "note": "w/ Joe Burrow",
+   "posRank": 12
+  },
+  {
+   "name": "Nico Collins",
+   "adjPpg": 15.0,
+   "note": "full games w/ Stroud",
+   "posRank": 13
+  },
+  {
+   "name": "Zay Flowers",
+   "adjPpg": 15.0,
+   "note": "w/ Lamar Jackson",
+   "posRank": 13
+  },
+  {
+   "name": "A.J. Brown",
+   "adjPpg": 14.1,
+   "note": null,
+   "posRank": 15
+  },
+  {
+   "name": "Michael Pittman",
+   "adjPpg": 14.1,
+   "note": "w/ Daniel Jones",
+   "posRank": 15
+  },
+  {
+   "name": "Wan'Dale Robinson",
+   "adjPpg": 13.6,
+   "note": null,
+   "posRank": 17
+  },
+  {
+   "name": "Emeka Egbuka",
+   "adjPpg": 13.1,
+   "note": "Pre Wk16 snap count",
+   "posRank": 18
+  },
+  {
+   "name": "Michael Wilson",
+   "adjPpg": 13.0,
+   "note": "*5 PPG w/ Marv healthy",
+   "posRank": 19
+  },
+  {
+   "name": "Jaylen Waddle",
+   "adjPpg": 12.9,
+   "note": "in complete games",
+   "posRank": 20
+  },
+  {
+   "name": "Courtland Sutton",
+   "adjPpg": 12.7,
+   "note": "w/ Bo Nix",
+   "posRank": 21
+  },
+  {
+   "name": "Tetairoa McMillan",
+   "adjPpg": 12.5,
+   "note": null,
+   "posRank": 22
+  },
+  {
+   "name": "Deebo Samuel",
+   "adjPpg": 12.3,
+   "note": null,
+   "posRank": 23
+  },
+  {
+   "name": "Christian Watson",
+   "adjPpg": 12.3,
+   "note": "w/ Jordan Love",
+   "posRank": 23
+  },
+  {
+   "name": "Marvin Harrison",
+   "adjPpg": 12.3,
+   "note": "in complete games",
+   "posRank": 23
+  },
+  {
+   "name": "Parker Washington",
+   "adjPpg": 12.3,
+   "note": null,
+   "posRank": 23
+  },
+  {
+   "name": "Jameson Williams",
+   "adjPpg": 12.1,
+   "note": "w/ ARSB Healthy",
+   "posRank": 27
+  },
+  {
+   "name": "DK Metcalf",
+   "adjPpg": 12.1,
+   "note": null,
+   "posRank": 27
+  },
+  {
+   "name": "DeVonta Smith",
+   "adjPpg": 12.1,
+   "note": null,
+   "posRank": 27
+  },
+  {
+   "name": "Mike Evans",
+   "adjPpg": 12.1,
+   "note": "in complete games",
+   "posRank": 27
+  },
+  {
+   "name": "Justin Jefferson",
+   "adjPpg": 11.9,
+   "note": null,
+   "posRank": 31
+  },
+  {
+   "name": "Jauan Jennings",
+   "adjPpg": 11.9,
+   "note": null,
+   "posRank": 31
+  },
+  {
+   "name": "Quentin Johnston",
+   "adjPpg": 11.8,
+   "note": null,
+   "posRank": 33
+  },
+  {
+   "name": "Stefon Diggs",
+   "adjPpg": 11.5,
+   "note": null,
+   "posRank": 34
+  },
+  {
+   "name": "Alec Pierce",
+   "adjPpg": 11.5,
+   "note": "w/ Daniel Jones",
+   "posRank": 34
+  },
+  {
+   "name": "Terry McLaurin",
+   "adjPpg": 11.4,
+   "note": "too small sample w/ QB",
+   "posRank": 36
+  },
+  {
+   "name": "Jakobi Meyers",
+   "adjPpg": 11.4,
+   "note": "full games w/ JAX",
+   "posRank": 36
+  },
+  {
+   "name": "Romeo Doubs",
+   "adjPpg": 11.4,
+   "note": "w/ Jordan Love",
+   "posRank": 36
+  },
+  {
+   "name": "Khalil Shakir",
+   "adjPpg": 11.2,
+   "note": null,
+   "posRank": 39
+  },
+  {
+   "name": "Ladd McConkey",
+   "adjPpg": 11.0,
+   "note": null,
+   "posRank": 40
+  },
+  {
+   "name": "DJ Moore",
+   "adjPpg": 10.8,
+   "note": null,
+   "posRank": 41
+  },
+  {
+   "name": "Troy Franklin",
+   "adjPpg": 10.5,
+   "note": null,
+   "posRank": 42
+  },
+  {
+   "name": "Keenan Allen",
+   "adjPpg": 10.5,
+   "note": null,
+   "posRank": 42
+  },
+  {
+   "name": "Luther Burden",
+   "adjPpg": 10.3,
+   "note": "post bye once full snaps",
+   "posRank": 44
+  },
+  {
+   "name": "Chris Godwin",
+   "adjPpg": 10.0,
+   "note": "in complete games",
+   "posRank": 45
+  },
+  {
+   "name": "Brian Thomas",
+   "adjPpg": 9.9,
+   "note": null,
+   "posRank": 46
+  },
+  {
+   "name": "Jordan Addison",
+   "adjPpg": 9.7,
+   "note": null,
+   "posRank": 47
+  },
+  {
+   "name": "Tre Tucker",
+   "adjPpg": 9.5,
+   "note": null,
+   "posRank": 48
+  }
+ ]
+}

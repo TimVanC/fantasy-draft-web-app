@@ -1,0 +1,930 @@
+{
+ "QB": [
+  {
+   "posRank": 1,
+   "name": "Josh Allen",
+   "tag": null
+  },
+  {
+   "posRank": 2,
+   "name": "Lamar Jackson",
+   "tag": "avoid"
+  },
+  {
+   "posRank": 3,
+   "name": "Drake Maye",
+   "tag": null
+  },
+  {
+   "posRank": 4,
+   "name": "Jayden Daniels",
+   "tag": null
+  },
+  {
+   "posRank": 5,
+   "name": "Joe Burrow",
+   "tag": null
+  },
+  {
+   "posRank": 6,
+   "name": "Jalen Hurts",
+   "tag": null
+  },
+  {
+   "posRank": 7,
+   "name": "Caleb Williams",
+   "tag": "target"
+  },
+  {
+   "posRank": 8,
+   "name": "Trevor Lawrence",
+   "tag": "target"
+  },
+  {
+   "posRank": 9,
+   "name": "Justin Herbert",
+   "tag": "target"
+  },
+  {
+   "posRank": 10,
+   "name": "Jaxson Dart",
+   "tag": null
+  },
+  {
+   "posRank": 11,
+   "name": "Brock Purdy",
+   "tag": "target"
+  },
+  {
+   "posRank": 12,
+   "name": "Dak Prescott",
+   "tag": null
+  },
+  {
+   "posRank": 13,
+   "name": "Bo Nix",
+   "tag": null
+  },
+  {
+   "posRank": 14,
+   "name": "Patrick Mahomes II",
+   "tag": null
+  },
+  {
+   "posRank": 15,
+   "name": "Matthew Stafford",
+   "tag": null
+  },
+  {
+   "posRank": 16,
+   "name": "Kyler Murray",
+   "tag": "target"
+  },
+  {
+   "posRank": 17,
+   "name": "Jared Goff",
+   "tag": null
+  },
+  {
+   "posRank": 18,
+   "name": "Malik Willis",
+   "tag": "target"
+  },
+  {
+   "posRank": 19,
+   "name": "Tyler Shough",
+   "tag": null
+  },
+  {
+   "posRank": 20,
+   "name": "Baker Mayfield",
+   "tag": null
+  },
+  {
+   "posRank": 21,
+   "name": "Jordan Love",
+   "tag": "pass"
+  },
+  {
+   "posRank": 22,
+   "name": "Cam Ward",
+   "tag": null
+  },
+  {
+   "posRank": 23,
+   "name": "Sam Darnold",
+   "tag": null
+  },
+  {
+   "posRank": 24,
+   "name": "Bryce Young",
+   "tag": null
+  },
+  {
+   "posRank": 25,
+   "name": "Daniel Jones",
+   "tag": null
+  },
+  {
+   "posRank": 26,
+   "name": "Fernando Mendoza",
+   "tag": null
+  },
+  {
+   "posRank": 27,
+   "name": "C.J. Stroud",
+   "tag": "pass"
+  },
+  {
+   "posRank": 28,
+   "name": "Jacoby Brissett",
+   "tag": null
+  },
+  {
+   "posRank": 29,
+   "name": "Michael Penix Jr.",
+   "tag": null
+  },
+  {
+   "posRank": 30,
+   "name": "Aaron Rodgers",
+   "tag": null
+  },
+  {
+   "posRank": 31,
+   "name": "Geno Smith",
+   "tag": null
+  },
+  {
+   "posRank": 32,
+   "name": "Shedeur Sanders",
+   "tag": null
+  }
+ ],
+ "RB": [
+  {
+   "posRank": 1,
+   "name": "Jahmyr Gibbs",
+   "tag": "target"
+  },
+  {
+   "posRank": 2,
+   "name": "Bijan Robinson",
+   "tag": null
+  },
+  {
+   "posRank": 3,
+   "name": "Christian McCaffrey",
+   "tag": null
+  },
+  {
+   "posRank": 4,
+   "name": "Jonathan Taylor",
+   "tag": null
+  },
+  {
+   "posRank": 5,
+   "name": "James Cook III",
+   "tag": null
+  },
+  {
+   "posRank": 6,
+   "name": "Omarion Hampton",
+   "tag": "target"
+  },
+  {
+   "posRank": 7,
+   "name": "Ashton Jeanty",
+   "tag": null
+  },
+  {
+   "posRank": 8,
+   "name": "Chase Brown",
+   "tag": "target"
+  },
+  {
+   "posRank": 9,
+   "name": "Kenneth Walker III",
+   "tag": "target"
+  },
+  {
+   "posRank": 10,
+   "name": "De'Von Achane",
+   "tag": "pass"
+  },
+  {
+   "posRank": 11,
+   "name": "Saquon Barkley",
+   "tag": null
+  },
+  {
+   "posRank": 12,
+   "name": "Derrick Henry",
+   "tag": null
+  },
+  {
+   "posRank": 13,
+   "name": "Jeremiyah Love",
+   "tag": null
+  },
+  {
+   "posRank": 14,
+   "name": "Breece Hall",
+   "tag": null
+  },
+  {
+   "posRank": 15,
+   "name": "Javonte Williams",
+   "tag": null
+  },
+  {
+   "posRank": 16,
+   "name": "Kyren Williams",
+   "tag": null
+  },
+  {
+   "posRank": 17,
+   "name": "Josh Jacobs",
+   "tag": null
+  },
+  {
+   "posRank": 18,
+   "name": "Travis Etienne Jr.",
+   "tag": null
+  },
+  {
+   "posRank": 19,
+   "name": "Cam Skattebo",
+   "tag": null
+  },
+  {
+   "posRank": 20,
+   "name": "Bucky Irving",
+   "tag": null
+  },
+  {
+   "posRank": 21,
+   "name": "D'Andre Swift",
+   "tag": null
+  },
+  {
+   "posRank": 22,
+   "name": "Quinshon Judkins",
+   "tag": "avoid"
+  },
+  {
+   "posRank": 23,
+   "name": "David Montgomery",
+   "tag": "pass"
+  },
+  {
+   "posRank": 24,
+   "name": "Bhayshul Tuten",
+   "tag": "target"
+  },
+  {
+   "posRank": 25,
+   "name": "Jadarian Price",
+   "tag": null
+  },
+  {
+   "posRank": 26,
+   "name": "Rhamondre Stevenson",
+   "tag": "target"
+  },
+  {
+   "posRank": 27,
+   "name": "TreVeyon Henderson",
+   "tag": "pass"
+  },
+  {
+   "posRank": 28,
+   "name": "Jaylen Warren",
+   "tag": "target"
+  },
+  {
+   "posRank": 29,
+   "name": "Rico Dowdle",
+   "tag": null
+  },
+  {
+   "posRank": 30,
+   "name": "RJ Harvey",
+   "tag": null
+  },
+  {
+   "posRank": 31,
+   "name": "Jonathon Brooks",
+   "tag": "target"
+  },
+  {
+   "posRank": 32,
+   "name": "Chuba Hubbard",
+   "tag": "target"
+  },
+  {
+   "posRank": 33,
+   "name": "Tony Pollard",
+   "tag": "avoid"
+  },
+  {
+   "posRank": 34,
+   "name": "Blake Corum",
+   "tag": null
+  },
+  {
+   "posRank": 35,
+   "name": "Kyle Monangai",
+   "tag": null
+  },
+  {
+   "posRank": 36,
+   "name": "Rachaad White",
+   "tag": null
+  },
+  {
+   "posRank": 37,
+   "name": "Jordan Mason",
+   "tag": null
+  },
+  {
+   "posRank": 38,
+   "name": "J.K. Dobbins",
+   "tag": "avoid"
+  },
+  {
+   "posRank": 39,
+   "name": "Kenny Gainwell",
+   "tag": null
+  },
+  {
+   "posRank": 40,
+   "name": "Jacory Croskey-Merritt",
+   "tag": "pass"
+  },
+  {
+   "posRank": 41,
+   "name": "Chris Rodriguez Jr.",
+   "tag": null
+  },
+  {
+   "posRank": 42,
+   "name": "Aaron Jones Sr.",
+   "tag": "avoid"
+  },
+  {
+   "posRank": 43,
+   "name": "Woody Marks",
+   "tag": null
+  },
+  {
+   "posRank": 44,
+   "name": "Zach Charbonnet",
+   "tag": null
+  },
+  {
+   "posRank": 45,
+   "name": "Tyler Allgeier",
+   "tag": null
+  },
+  {
+   "posRank": 46,
+   "name": "Keaton Mitchell",
+   "tag": "target"
+  },
+  {
+   "posRank": 47,
+   "name": "Isiah Pacheco",
+   "tag": null
+  },
+  {
+   "posRank": 48,
+   "name": "Tyjae Spears",
+   "tag": null
+  },
+  {
+   "posRank": 49,
+   "name": "Ray Davis",
+   "tag": "target"
+  },
+  {
+   "posRank": 50,
+   "name": "Mike Washington Jr.",
+   "tag": null
+  },
+  {
+   "posRank": 51,
+   "name": "Tank Bigsby",
+   "tag": null
+  },
+  {
+   "posRank": 52,
+   "name": "Jonah Coleman",
+   "tag": "target"
+  },
+  {
+   "posRank": 53,
+   "name": "Marshawn Lloyd",
+   "tag": null
+  },
+  {
+   "posRank": 54,
+   "name": "Alvin Kamara",
+   "tag": null
+  },
+  {
+   "posRank": 55,
+   "name": "Brian Robinson Jr.",
+   "tag": null
+  },
+  {
+   "posRank": 56,
+   "name": "Emmett Johnson",
+   "tag": null
+  },
+  {
+   "posRank": 57,
+   "name": "Dylan Sampson",
+   "tag": null
+  },
+  {
+   "posRank": 58,
+   "name": "Malik Davis",
+   "tag": null
+  },
+  {
+   "posRank": 59,
+   "name": "Braelon Allen",
+   "tag": null
+  },
+  {
+   "posRank": 60,
+   "name": "Kaelon Black",
+   "tag": null
+  }
+ ],
+ "WR": [
+  {
+   "posRank": 1,
+   "name": "Ja'Marr Chase",
+   "tag": null
+  },
+  {
+   "posRank": 2,
+   "name": "Puka Nacua",
+   "tag": null
+  },
+  {
+   "posRank": 3,
+   "name": "Amon-Ra St. Brown",
+   "tag": null
+  },
+  {
+   "posRank": 4,
+   "name": "Jaxon Smith-Njigba",
+   "tag": null
+  },
+  {
+   "posRank": 5,
+   "name": "CeeDee Lamb",
+   "tag": null
+  },
+  {
+   "posRank": 6,
+   "name": "Justin Jefferson",
+   "tag": "pass"
+  },
+  {
+   "posRank": 7,
+   "name": "A.J. Brown",
+   "tag": null
+  },
+  {
+   "posRank": 8,
+   "name": "Nico Collins",
+   "tag": null
+  },
+  {
+   "posRank": 9,
+   "name": "Drake London",
+   "tag": null
+  },
+  {
+   "posRank": 10,
+   "name": "George Pickens",
+   "tag": null
+  },
+  {
+   "posRank": 11,
+   "name": "Malik Nabers",
+   "tag": null
+  },
+  {
+   "posRank": 12,
+   "name": "Rashee Rice",
+   "tag": null
+  },
+  {
+   "posRank": 13,
+   "name": "Chris Olave",
+   "tag": null
+  },
+  {
+   "posRank": 14,
+   "name": "DeVonta Smith",
+   "tag": "target"
+  },
+  {
+   "posRank": 15,
+   "name": "Tee Higgins",
+   "tag": null
+  },
+  {
+   "posRank": 16,
+   "name": "Jaylen Waddle",
+   "tag": "target"
+  },
+  {
+   "posRank": 17,
+   "name": "Zay Flowers",
+   "tag": "target"
+  },
+  {
+   "posRank": 18,
+   "name": "Tetairoa McMillan",
+   "tag": null
+  },
+  {
+   "posRank": 19,
+   "name": "Garrett Wilson",
+   "tag": "pass"
+  },
+  {
+   "posRank": 20,
+   "name": "Emeka Egbuka",
+   "tag": null
+  },
+  {
+   "posRank": 21,
+   "name": "Luther Burden III",
+   "tag": "target"
+  },
+  {
+   "posRank": 22,
+   "name": "Ladd McConkey",
+   "tag": null
+  },
+  {
+   "posRank": 23,
+   "name": "DJ Moore",
+   "tag": null
+  },
+  {
+   "posRank": 24,
+   "name": "Rome Odunze",
+   "tag": "target"
+  },
+  {
+   "posRank": 25,
+   "name": "Terry McLaurin",
+   "tag": "target"
+  },
+  {
+   "posRank": 26,
+   "name": "Davante Adams",
+   "tag": null
+  },
+  {
+   "posRank": 27,
+   "name": "Parker Washington",
+   "tag": "target"
+  },
+  {
+   "posRank": 28,
+   "name": "Christian Watson",
+   "tag": null
+  },
+  {
+   "posRank": 29,
+   "name": "Jameson Williams",
+   "tag": null
+  },
+  {
+   "posRank": 30,
+   "name": "Marvin Harrison Jr.",
+   "tag": "pass"
+  },
+  {
+   "posRank": 31,
+   "name": "Mike Evans",
+   "tag": null
+  },
+  {
+   "posRank": 32,
+   "name": "Brian Thomas Jr.",
+   "tag": null
+  },
+  {
+   "posRank": 33,
+   "name": "Carnell Tate",
+   "tag": null
+  },
+  {
+   "posRank": 34,
+   "name": "Michael Wilson",
+   "tag": null
+  },
+  {
+   "posRank": 35,
+   "name": "DK Metcalf",
+   "tag": "avoid"
+  },
+  {
+   "posRank": 36,
+   "name": "Alec Pierce",
+   "tag": "pass"
+  },
+  {
+   "posRank": 37,
+   "name": "Chris Godwin Jr.",
+   "tag": null
+  },
+  {
+   "posRank": 38,
+   "name": "Josh Downs",
+   "tag": "target"
+  },
+  {
+   "posRank": 39,
+   "name": "De'Zhaun Stribling",
+   "tag": "target"
+  },
+  {
+   "posRank": 40,
+   "name": "Quentin Johnston",
+   "tag": null
+  },
+  {
+   "posRank": 41,
+   "name": "Courtland Sutton",
+   "tag": "avoid"
+  },
+  {
+   "posRank": 42,
+   "name": "Jayden Reed",
+   "tag": null
+  },
+  {
+   "posRank": 43,
+   "name": "KC Concepcion",
+   "tag": null
+  },
+  {
+   "posRank": 44,
+   "name": "Wan'Dale Robinson",
+   "tag": null
+  },
+  {
+   "posRank": 45,
+   "name": "Michael Pittman Jr.",
+   "tag": "pass"
+  },
+  {
+   "posRank": 46,
+   "name": "Stefon Diggs",
+   "tag": null
+  },
+  {
+   "posRank": 47,
+   "name": "Jordan Addison",
+   "tag": null
+  },
+  {
+   "posRank": 48,
+   "name": "Jakobi Meyers",
+   "tag": "pass"
+  },
+  {
+   "posRank": 49,
+   "name": "Makai Lemon",
+   "tag": null
+  },
+  {
+   "posRank": 50,
+   "name": "Romeo Doubs",
+   "tag": "target"
+  },
+  {
+   "posRank": 51,
+   "name": "Matthew Golden",
+   "tag": null
+  },
+  {
+   "posRank": 52,
+   "name": "Jordyn Tyson",
+   "tag": null
+  },
+  {
+   "posRank": 53,
+   "name": "Jalen Coker",
+   "tag": null
+  },
+  {
+   "posRank": 54,
+   "name": "Xavier Worthy",
+   "tag": null
+  },
+  {
+   "posRank": 55,
+   "name": "Deebo Samuel Sr.",
+   "tag": null
+  },
+  {
+   "posRank": 56,
+   "name": "Khalil Shakir",
+   "tag": "avoid"
+  },
+  {
+   "posRank": 57,
+   "name": "Rashid Shaheed",
+   "tag": null
+  },
+  {
+   "posRank": 58,
+   "name": "Tre Tucker",
+   "tag": null
+  },
+  {
+   "posRank": 59,
+   "name": "Denzel Boston",
+   "tag": null
+  },
+  {
+   "posRank": 60,
+   "name": "Cyrus Allen",
+   "tag": null
+  }
+ ],
+ "TE": [
+  {
+   "posRank": 1,
+   "name": "Brock Bowers",
+   "tag": "target"
+  },
+  {
+   "posRank": 2,
+   "name": "Trey McBride",
+   "tag": "avoid"
+  },
+  {
+   "posRank": 3,
+   "name": "Colston Loveland",
+   "tag": "target"
+  },
+  {
+   "posRank": 4,
+   "name": "Tyler Warren",
+   "tag": "target"
+  },
+  {
+   "posRank": 5,
+   "name": "Tucker Kraft",
+   "tag": null
+  },
+  {
+   "posRank": 6,
+   "name": "Harold Fannin Jr.",
+   "tag": null
+  },
+  {
+   "posRank": 7,
+   "name": "Sam LaPorta",
+   "tag": null
+  },
+  {
+   "posRank": 8,
+   "name": "Kyle Pitts Sr.",
+   "tag": "pass"
+  },
+  {
+   "posRank": 9,
+   "name": "George Kittle",
+   "tag": null
+  },
+  {
+   "posRank": 10,
+   "name": "Dalton Kincaid",
+   "tag": "target"
+  },
+  {
+   "posRank": 11,
+   "name": "Dallas Goedert",
+   "tag": "target"
+  },
+  {
+   "posRank": 12,
+   "name": "Mark Andrews",
+   "tag": null
+  },
+  {
+   "posRank": 13,
+   "name": "Isaiah Likely",
+   "tag": null
+  },
+  {
+   "posRank": 14,
+   "name": "Jake Ferguson",
+   "tag": null
+  },
+  {
+   "posRank": 15,
+   "name": "Travis Kelce",
+   "tag": "avoid"
+  },
+  {
+   "posRank": 16,
+   "name": "Dalton Schultz",
+   "tag": null
+  },
+  {
+   "posRank": 17,
+   "name": "Juwan Johnson",
+   "tag": null
+  },
+  {
+   "posRank": 18,
+   "name": "Chig Okonkwo",
+   "tag": null
+  },
+  {
+   "posRank": 19,
+   "name": "T.J. Hockenson",
+   "tag": null
+  },
+  {
+   "posRank": 20,
+   "name": "Brenton Strange",
+   "tag": null
+  },
+  {
+   "posRank": 21,
+   "name": "Hunter Henry",
+   "tag": "avoid"
+  },
+  {
+   "posRank": 22,
+   "name": "Kenyon Sadiq",
+   "tag": null
+  },
+  {
+   "posRank": 23,
+   "name": "Greg Dulcich",
+   "tag": null
+  },
+  {
+   "posRank": 24,
+   "name": "Terrance Ferguson",
+   "tag": "target"
+  },
+  {
+   "posRank": 25,
+   "name": "Oronde Gadsden II",
+   "tag": "pass"
+  },
+  {
+   "posRank": 26,
+   "name": "AJ Barner",
+   "tag": null
+  },
+  {
+   "posRank": 27,
+   "name": "Colby Parkinson",
+   "tag": null
+  },
+  {
+   "posRank": 28,
+   "name": "Cade Otton",
+   "tag": null
+  },
+  {
+   "posRank": 29,
+   "name": "Eli Stowers",
+   "tag": null
+  },
+  {
+   "posRank": 30,
+   "name": "Gunnar Helm",
+   "tag": null
+  },
+  {
+   "posRank": 31,
+   "name": "Pat Freiermuth",
+   "tag": null
+  },
+  {
+   "posRank": 32,
+   "name": "Darnell Washington",
+   "tag": null
+  }
+ ]
+}

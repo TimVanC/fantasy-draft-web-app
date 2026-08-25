@@ -1,0 +1,48 @@
+{
+  "source": "My Draft Strategy (p11, Joel Smyth's Draft Guide 2026)",
+  "note": "His median desired draft by position for 12-team PPR; Best Player Available still most important.",
+  "roundPlan": [
+    { "round": 1, "plan": "RB" },
+    { "round": 2, "plan": "RB" },
+    { "round": 3, "plan": "WR" },
+    { "round": 4, "plan": "BPA" },
+    { "round": 5, "plan": "WR" },
+    { "round": 6, "plan": "BPA" },
+    { "round": 7, "plan": "BPA" },
+    { "round": 8, "plan": "QB" },
+    { "round": 9, "plan": "Upside WR" },
+    { "round": 10, "plan": "Punt TE" },
+    { "round": 11, "plan": "Top Handcuff" },
+    { "round": 12, "plan": "Upside QB" },
+    { "round": 13, "plan": "Favorite Deep Sleeper" },
+    { "round": 14, "plan": "D/ST" },
+    { "round": 15, "plan": "Kicker/IR player" }
+  ],
+  "rules": [
+    "Don't draft off rankings without understanding ADP - use rankings to find value, don't take a player 62nd who goes 85th on average.",
+    "\"Don't Beat ADP\" - the goal isn't drafting RB30 to have them finish RB29; take the riskier, upside player if true value potential is higher.",
+    "No K or D/ST until the last two rounds unless you wanna intimidate everyone.",
+    "Good \"Process Players\" late - rookie WRs, rushing QBs, talent on top offenses, cemented RB2s/handcuffs at end of drafts.",
+    "Balance risk - don't draft Nabers, Love, & Kittle on the same team.",
+    "Early waivers & even post-draft waivers matter the most they will all season."
+  ],
+  "positional": {
+    "QB": {
+      "main": "Main Target - ADP QB7-11: sniping one of your favorites that falls, mostly 2-3 still available in Round 8.",
+      "secondary": "Late rushing QB - 70% of the time, it works every time. I'd include Purdy/Nix as volume QBs.",
+      "note": "QB 3-6 are going WAY later this year; still would rather wait, but if one falls far it's likely worth it (QB3 2026 - 55th overall, QB6 2025 - 59th overall)."
+    },
+    "RB": {
+      "main": "Main Target - Getting 3 RB of top ~25-30. RB/RB is great; the elite league winners are in Rounds 1-2 90% of the time.",
+      "note": "RB30-40 is mostly a waste of time compared to that range's QB/WR/TE."
+    },
+    "WR": {
+      "main": "Main Target - Round 3 & 5 WR range; as a whole, prefer over most RBs.",
+      "note": "The WR5-12 range usually is not my favorite compared to both the RBs in their round & WRs a round later. WRs are the most ideal position when hunting upside late in drafts."
+    },
+    "TE": {
+      "main": "Main Target - Waiting for Best Value. Can get behind all ranges this year; want TE when it's best player available.",
+      "note": "Like TE2-4 if no favorite RB/WR available; Rd 7/8 grab one of the last mid-round TEs once RB/WR is dried up; punting completely strategically works. Rather go backup RB hunting than grabbing a TE2."
+    }
+  }
+}
