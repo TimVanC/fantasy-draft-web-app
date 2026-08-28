@@ -3,6 +3,8 @@ import type { MatchedPick, RankedPlayer, ScoringFormat } from "../types";
 import type { Scarcity } from "../lib/scarcity";
 import type { Overrides } from "../hooks/useDraft";
 import type { MatchIndex } from "../lib/normalize";
+import type { AdpMap } from "../lib/adp";
+import { survivalProb } from "../lib/advisor";
 import { playerKey } from "../lib/normalize";
 import { boardRank } from "../lib/rankings";
 
@@ -30,6 +32,8 @@ export default function BestAvailable(props: {
   matchIndex: MatchIndex;
   finalTwoRounds: boolean;
   unmatchedPicks: MatchedPick[];
+  adpMap: AdpMap;
+  myNextPickNo: number | null;
 }) {
   const [filter, setFilter] = useState<(typeof FILTERS)[number]>("ALL");
   const [search, setSearch] = useState("");
@@ -118,7 +122,18 @@ export default function BestAvailable(props: {
               <th className="w-16 px-1 py-1.5 text-right" title="2025 adjusted fantasy PPG from the guide">
                 adjPPG
               </th>
-              <th className="w-24 px-2 py-1.5">Outlook</th>
+              <th
+                className="w-16 px-1 py-1.5 text-right"
+                title="Live market ADP (Fantasy Football Calculator mocks) — comparison only, never affects ordering"
+              >
+                Mkt ADP
+              </th>
+              <th
+                className="w-24 px-2 py-1.5"
+                title="Odds he's still available at your next pick, from market ADP"
+              >
+                Outlook
+              </th>
               <th className="w-8 px-1 py-1.5"></th>
             </tr>
           </thead>
@@ -130,12 +145,21 @@ export default function BestAvailable(props: {
               const isExpanded = expanded === key;
               const hasDetail =
                 p.notes.length > 0 || p.adjPpgNote !== null || p.ceiling !== null || p.adp !== null;
+              const adp = props.adpMap.get(key) ?? null;
+              const survival =
+                adp && props.myNextPickNo !== null
+                  ? survivalProb(adp.adp, props.myNextPickNo)
+                  : null;
               return (
                 <FragmentRow
                   key={key}
                   p={p}
                   rank={rank}
                   sc={sc}
+                  adpFormatted={adp?.formatted ?? null}
+                  adpDelta={adp && rank !== null ? Math.round(adp.adp - rank) : null}
+                  survival={survival}
+                  myNextPickNo={props.myNextPickNo}
                   isExpanded={isExpanded}
                   hasDetail={hasDetail}
                   onExpand={() => setExpanded(isExpanded ? null : key)}
@@ -180,6 +204,10 @@ function FragmentRow(props: {
   p: RankedPlayer;
   rank: number | null;
   sc: Scarcity;
+  adpFormatted: string | null;
+  adpDelta: number | null;
+  survival: number | null;
+  myNextPickNo: number | null;
   isExpanded: boolean;
   hasDetail: boolean;
   onExpand: () => void;
@@ -216,16 +244,55 @@ function FragmentRow(props: {
         <td className="px-1 py-1.5 text-right font-mono text-zinc-300">
           {p.adjPpg2025 ?? <span className="text-zinc-700">—</span>}
         </td>
-        <td className="px-2 py-1.5">
-          {props.sc === "likely-gone" && (
-            <span className="rounded bg-red-950 px-1.5 py-0.5 text-[10px] font-bold text-red-300">
-              LIKELY GONE
+        <td className="px-1 py-1.5 text-right font-mono text-xs">
+          {props.adpFormatted ? (
+            <span
+              title={
+                props.adpDelta !== null
+                  ? `Market ADP minus his rank: ${props.adpDelta > 0 ? "+" : ""}${props.adpDelta} (positive = market sleeps on him)`
+                  : undefined
+              }
+            >
+              <span className="text-zinc-400">{props.adpFormatted}</span>
+              {props.adpDelta !== null && Math.abs(props.adpDelta) >= 8 && (
+                <span
+                  className={`ml-1 ${props.adpDelta > 0 ? "text-emerald-400" : "text-amber-400"}`}
+                >
+                  {props.adpDelta > 0 ? `+${props.adpDelta}` : props.adpDelta}
+                </span>
+              )}
             </span>
+          ) : (
+            <span className="text-zinc-700">—</span>
           )}
-          {props.sc === "can-wait" && (
-            <span className="rounded bg-zinc-800 px-1.5 py-0.5 text-[10px] font-semibold text-zinc-400">
-              can wait
+        </td>
+        <td className="px-2 py-1.5">
+          {props.survival !== null && props.myNextPickNo !== null ? (
+            <span
+              className={`rounded px-1.5 py-0.5 text-[10px] font-bold ${
+                props.survival < 0.35
+                  ? "bg-red-950 text-red-300"
+                  : props.survival < 0.7
+                    ? "bg-amber-950 text-amber-300"
+                    : "bg-zinc-800 text-zinc-400"
+              }`}
+              title={`Odds he's still there at your pick #${props.myNextPickNo}, from market ADP`}
+            >
+              {Math.round(props.survival * 100)}% at #{props.myNextPickNo}
             </span>
+          ) : (
+            <>
+              {props.sc === "likely-gone" && (
+                <span className="rounded bg-red-950 px-1.5 py-0.5 text-[10px] font-bold text-red-300">
+                  LIKELY GONE
+                </span>
+              )}
+              {props.sc === "can-wait" && (
+                <span className="rounded bg-zinc-800 px-1.5 py-0.5 text-[10px] font-semibold text-zinc-400">
+                  can wait
+                </span>
+              )}
+            </>
           )}
         </td>
         <td className="px-1 py-1.5 text-center">

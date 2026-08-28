@@ -3,10 +3,14 @@ import type { ScoringFormat, SleeperDraft, SleeperPick } from "../types";
 import { fetchDraft, fetchLeagueDrafts, fetchPicks, parseDraftId } from "../lib/sleeper";
 import { matchPicks } from "../lib/normalize";
 import { MATCH_INDEX } from "../lib/rankings";
+import { fetchAdpMap, type AdpMap } from "../lib/adp";
 import fixtureDraft from "../../fixtures/draft.json";
 import fixturePicks from "../../fixtures/picks.json";
 
-const POLL_MS = 4000; // spec: poll picks every 3-5s while active
+// Adaptive polling: fast while picks are flying, relaxed while waiting.
+// 2s ≈ 30 req/min/client — comfortably under Sleeper's 1000/min IP limit.
+const POLL_ACTIVE_MS = 2000;
+const POLL_IDLE_MS = 5000; // pre_draft / paused
 const DRAFT_REFRESH_EVERY = 5; // refresh draft object every Nth poll for status
 
 export type Source = { kind: "live"; draftId: string } | { kind: "replay" };
@@ -58,8 +62,27 @@ export function useDraft() {
   const [replayIndex, setReplayIndex] = useState(0);
   const [replayPlaying, setReplayPlaying] = useState(false);
   const [replaySpeedMs, setReplaySpeedMs] = useState(1500);
+  const [adpMap, setAdpMap] = useState<AdpMap>(new Map());
   const pollBusy = useRef(false);
   const pollCount = useRef(0);
+
+  // ---- market ADP (display + survival odds only; never affects ordering) --
+  const teamsCount = draft?.settings.teams ?? null;
+  useEffect(() => {
+    if (teamsCount === null) return;
+    let cancelled = false;
+    fetchAdpMap(MATCH_INDEX, format, teamsCount)
+      .then((map) => {
+        if (!cancelled) setAdpMap(map);
+      })
+      .catch((e) => {
+        if (!cancelled) setAdpMap(new Map());
+        console.warn("[draft-war-room] ADP unavailable:", e);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [teamsCount, format]);
 
   // ---- persistence -------------------------------------------------------
   useEffect(() => {
@@ -134,7 +157,7 @@ export function useDraft() {
     if (source?.kind !== "live" || !draft) return;
     if (draft.status === "complete") return; // spec: stop polling when complete
     const id = source.draftId;
-    const timer = setInterval(async () => {
+    const poll = async () => {
       if (pollBusy.current) return;
       pollBusy.current = true;
       try {
@@ -149,8 +172,19 @@ export function useDraft() {
       } finally {
         pollBusy.current = false;
       }
-    }, POLL_MS);
-    return () => clearInterval(timer);
+    };
+    const intervalMs = draft.status === "drafting" ? POLL_ACTIVE_MS : POLL_IDLE_MS;
+    const timer = setInterval(poll, intervalMs);
+    void poll(); // sync immediately on (re)start instead of waiting a tick
+    // Coming back to the tab mid-draft: refresh instantly.
+    const onFocus = () => void poll();
+    window.addEventListener("focus", onFocus);
+    document.addEventListener("visibilitychange", onFocus);
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener("focus", onFocus);
+      document.removeEventListener("visibilitychange", onFocus);
+    };
   }, [source, draft]);
 
   // ---- replay ticker -----------------------------------------------------
@@ -206,6 +240,7 @@ export function useDraft() {
         total: allReplayPicks.length,
       },
     } satisfies DraftState,
+    adpMap,
     matched,
     connectLive,
     startReplay,

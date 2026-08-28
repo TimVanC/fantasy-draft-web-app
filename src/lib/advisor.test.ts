@@ -1,0 +1,161 @@
+import { describe, expect, it } from "vitest";
+import { advise, survivalProb, type AdviceInput } from "./advisor";
+import { buildAdpMap, nearestFfcTeams } from "./adp";
+import { buildMatchIndex, playerKey } from "./normalize";
+import type { RankedPlayer } from "../types";
+
+function player(name: string, pos: string, pprRank: number, tag: RankedPlayer["tag"] = null): RankedPlayer {
+  return {
+    name, pos, team: null, pprRank, halfRank: pprRank, posRank: null, tag,
+    adp: null, adjPpg2025: null, adjPpgNote: null, projPpg2026: null,
+    ceiling: null, risk: null, notes: [],
+  };
+}
+
+describe("survivalProb", () => {
+  it("is low when ADP is well before the pick, high when well after", () => {
+    expect(survivalProb(20, 40)).toBeLessThan(0.05);
+    expect(survivalProb(60, 40)).toBeGreaterThan(0.9);
+    expect(survivalProb(40, 40)).toBeCloseTo(0.5, 1);
+  });
+
+  it("spreads out later in the draft", () => {
+    // Same 10-pick gap is more certain early than late.
+    expect(survivalProb(10, 20)).toBeLessThan(survivalProb(100, 110));
+  });
+});
+
+describe("nearestFfcTeams", () => {
+  it("snaps league sizes to FFC-supported boards", () => {
+    expect(nearestFfcTeams(10)).toBe(10);
+    expect(nearestFfcTeams(11)).toBe(10);
+    expect(nearestFfcTeams(9)).toBe(8);
+    expect(nearestFfcTeams(16)).toBe(14);
+  });
+});
+
+describe("buildAdpMap", () => {
+  const players = [player("Jahmyr Gibbs", "RB", 1), player("Tee Higgins", "WR", 40)];
+  const index = buildMatchIndex(players);
+
+  it("matches FFC rows with the same strict matcher as picks", () => {
+    const map = buildAdpMap(index, [
+      { name: "Jahmyr Gibbs", position: "RB", team: "DET", adp: 1.5, adp_formatted: "1.01" },
+      { name: "Jayden Higgins", position: "WR", adp: 90 }, // must NOT hit Tee
+      { name: "Justin Tucker", position: "PK", adp: 160 }, // ignored position
+    ]);
+    expect(map.get(playerKey(players[0]))?.formatted).toBe("1.01");
+    expect(map.has(playerKey(players[1]))).toBe(false);
+    expect(map.size).toBe(1);
+  });
+});
+
+describe("advise", () => {
+  const a = player("Alpha RB", "RB", 1);
+  const b = player("Bravo WR", "WR", 2);
+  const c = player("Charlie RB", "RB", 3, "target");
+  const d = player("Delta TE", "TE", 4, "avoid");
+  const available = [a, b, c, d];
+  const index = buildMatchIndex(available);
+
+  function baseInput(overrides: Partial<AdviceInput> = {}): AdviceInput {
+    return {
+      available,
+      adpMap: new Map(),
+      format: "ppr",
+      myPick: 20,
+      myNextPick: 21,
+      onClock: true,
+      openStarterPositions: new Set(["QB", "RB", "WR", "TE"]),
+      myPosCounts: new Map(),
+      planPosition: null,
+      ...overrides,
+    };
+  }
+
+  it("never suggests a player he's avoiding", () => {
+    const { suggestions } = advise(baseInput());
+    expect(suggestions.map((s) => s.player.name)).not.toContain("Delta TE");
+    expect(suggestions).toHaveLength(3);
+  });
+
+  it("prioritizes a player who won't survive over a safe one", () => {
+    // Bravo's market ADP is way before my next pick; Alpha's and Charlie's
+    // are way after.
+    const adpMap = buildAdpMap(index, [
+      { name: "Alpha RB", position: "RB", adp: 80 },
+      { name: "Bravo WR", position: "WR", adp: 5 },
+      { name: "Charlie RB", position: "RB", adp: 85 },
+    ]);
+    const { suggestions } = advise(baseInput({ adpMap, myPick: 20, myNextPick: 40 }));
+    expect(suggestions[0].player.name).toBe("Bravo WR");
+    const alpha = suggestions.find((s) => s.player.name === "Alpha RB");
+    expect(alpha?.pSurviveNext).toBeGreaterThan(0.7);
+  });
+
+  it("treats a player the market ignores as safe to wait on", () => {
+    // Feed has data but no row for Alpha: the market is sleeping on him, so
+    // he should look survivable, not urgent.
+    const adpMap = buildAdpMap(index, [{ name: "Bravo WR", position: "WR", adp: 5 }]);
+    const { suggestions } = advise(baseInput({ adpMap, myPick: 20, myNextPick: 40 }));
+    expect(suggestions[0].player.name).toBe("Bravo WR");
+    const alpha = suggestions.find((s) => s.player.name === "Alpha RB");
+    expect(alpha?.pSurviveNext).toBeGreaterThan(0.9);
+  });
+
+  it("lists safe top players under canWait", () => {
+    const wide = [
+      ...available,
+      player("Echo WR", "WR", 5),
+      player("Foxtrot RB", "RB", 6),
+      player("Golf WR", "WR", 7),
+    ];
+    const wideIndex = buildMatchIndex(wide);
+    const adpMap = buildAdpMap(wideIndex, [
+      { name: "Alpha RB", position: "RB", adp: 90 },
+      { name: "Bravo WR", position: "WR", adp: 5 },
+      { name: "Charlie RB", position: "RB", adp: 6 },
+      { name: "Echo WR", position: "WR", adp: 7 },
+      { name: "Foxtrot RB", position: "RB", adp: 8 },
+      { name: "Golf WR", position: "WR", adp: 9 },
+    ]);
+    const { suggestions, canWait } = advise(
+      baseInput({ available: wide, adpMap, myPick: 20, myNextPick: 40 }),
+    );
+    // Alpha survives easily -> a wait candidate, not one of the 3 picks now.
+    expect(suggestions.map((s) => s.player.name)).not.toContain("Alpha RB");
+    expect(canWait.map((s) => s.player.name)).toContain("Alpha RB");
+  });
+
+  it("penalizes players unlikely to reach my pick when not on the clock", () => {
+    const adpMap = buildAdpMap(index, [
+      { name: "Alpha RB", position: "RB", adp: 5 },
+      { name: "Bravo WR", position: "WR", adp: 60 },
+      { name: "Charlie RB", position: "RB", adp: 60 },
+    ]);
+    const { suggestions } = advise(
+      baseInput({ adpMap, onClock: false, myPick: 30, myNextPick: 50 }),
+    );
+    expect(suggestions[0].player.name).not.toBe("Alpha RB");
+  });
+
+  it("does not spend suggestions on players who won't reach my pick", () => {
+    // Alpha and Bravo go top-5 by market; my pick is #30 — both are dreams.
+    // Charlie reaches me. The advice must not lead with dreams.
+    const adpMap = buildAdpMap(index, [
+      { name: "Alpha RB", position: "RB", adp: 4 },
+      { name: "Bravo WR", position: "WR", adp: 5 },
+      { name: "Charlie RB", position: "RB", adp: 33 },
+    ]);
+    const { suggestions } = advise(
+      baseInput({ adpMap, onClock: false, myPick: 30, myNextPick: 50 }),
+    );
+    expect(suggestions[0].player.name).toBe("Charlie RB");
+  });
+
+  it("returns nothing when I have no picks left", () => {
+    const { suggestions, canWait } = advise(baseInput({ myPick: null }));
+    expect(suggestions).toHaveLength(0);
+    expect(canWait).toHaveLength(0);
+  });
+});

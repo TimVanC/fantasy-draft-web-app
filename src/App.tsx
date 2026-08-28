@@ -1,13 +1,16 @@
 import { useMemo } from "react";
 import { useDraft } from "./hooks/useDraft";
-import { MATCH_INDEX, sortedBoard, boardRank } from "./lib/rankings";
+import { MATCH_INDEX, sortedBoard, boardRank, RANKINGS, STRATEGY } from "./lib/rankings";
 import { playerKey } from "./lib/normalize";
-import { picksUntilMyTurn, nextPickForSlot, slotForPick } from "./lib/snake";
+import { picksUntilMyTurn, nextPickForSlot, myFollowingPick, slotForPick } from "./lib/snake";
 import { scarcityLabels } from "./lib/scarcity";
 import { fillSlots } from "./lib/roster";
+import { advise } from "./lib/advisor";
 import SetupScreen from "./components/SetupScreen";
 import HeaderBar from "./components/HeaderBar";
 import BestAvailable from "./components/BestAvailable";
+import PickAdvisor from "./components/PickAdvisor";
+import PositionalBoard from "./components/PositionalBoard";
 import RosterPanel from "./components/RosterPanel";
 import StrategyPanel from "./components/StrategyPanel";
 import SideFeed from "./components/SideFeed";
@@ -15,6 +18,7 @@ import SideFeed from "./components/SideFeed";
 export default function App() {
   const {
     state,
+    adpMap,
     matched,
     connectLive,
     startReplay,
@@ -64,6 +68,28 @@ export default function App() {
     const unmatchedPicks = matched.filter((m) => m.unmatched);
     const myRoundsPicked = new Set(myPicks.map((p) => p.round));
 
+    // ---- Pick Advisor inputs ----
+    const onClock = mySlot !== null && othersPicks === 0;
+    const followingPick =
+      mySlot && !draftDone ? myFollowingPick(mySlot, nextPickNo, teams, rounds, reversal) : null;
+    const openStarterPositions = new Set<string>();
+    for (const s of slots) {
+      if (s.label === "BN" || s.pick !== null) continue;
+      for (const pos of ["QB", "RB", "WR", "TE"]) {
+        if (s.eligible(pos)) openStarterPositions.add(pos);
+      }
+    }
+    const myPosCounts = new Map<string, number>();
+    for (const p of myPicks) {
+      const pos = p.metadata.position;
+      myPosCounts.set(pos, (myPosCounts.get(pos) ?? 0) + 1);
+    }
+    const myRound = myNextPickNo ? slotForPick(myNextPickNo, teams, reversal).round : null;
+    const planLabel = myRound
+      ? STRATEGY.roundPlan.find((r) => r.round === myRound)?.plan ?? null
+      : null;
+    const planPosition = planLabel?.match(/\b(QB|RB|WR|TE)\b/)?.[1] ?? null;
+
     return {
       teams,
       rounds,
@@ -81,6 +107,11 @@ export default function App() {
       unmatchedPicks,
       myRoundsPicked,
       finalTwoRounds: currentRound >= rounds - 1,
+      onClock,
+      followingPick,
+      openStarterPositions,
+      myPosCounts,
+      planPosition,
     };
   }, [draft, picks, matched, mySlot, format, overrides, source]);
 
@@ -111,18 +142,42 @@ export default function App() {
         disconnect={disconnect}
       />
       <main className="grid min-h-0 flex-1 grid-cols-1 gap-3 p-3 lg:grid-cols-[1fr_360px]">
-        <BestAvailable
-          available={derived.available}
-          scarcity={derived.scarcity}
-          format={format}
-          overrides={overrides}
-          toggleOverride={toggleOverride}
-          matchIndex={MATCH_INDEX}
-          finalTwoRounds={derived.finalTwoRounds}
-          unmatchedPicks={derived.unmatchedPicks}
-        />
+        <div className="flex min-h-0 flex-col gap-3">
+          {mySlot !== null && !derived.draftDone && (
+            <PickAdvisor
+              advice={advise({
+                available: derived.available,
+                adpMap,
+                format,
+                myPick: derived.myNextPickNo,
+                myNextPick: derived.followingPick,
+                onClock: derived.onClock,
+                openStarterPositions: derived.openStarterPositions,
+                myPosCounts: derived.myPosCounts,
+                planPosition: derived.planPosition,
+              })}
+              myPick={derived.myNextPickNo}
+              onClock={derived.onClock}
+              format={format}
+              adpLoaded={adpMap.size > 0}
+            />
+          )}
+          <BestAvailable
+            available={derived.available}
+            scarcity={derived.scarcity}
+            format={format}
+            overrides={overrides}
+            toggleOverride={toggleOverride}
+            matchIndex={MATCH_INDEX}
+            finalTwoRounds={derived.finalTwoRounds}
+            unmatchedPicks={derived.unmatchedPicks}
+            adpMap={adpMap}
+            myNextPickNo={derived.myNextPickNo}
+          />
+        </div>
         <div className="flex min-h-0 flex-col gap-3 overflow-y-auto">
           <RosterPanel slots={derived.slots} mySlot={mySlot} teams={derived.teams} />
+          <PositionalBoard players={RANKINGS} draftedKeys={derived.draftedKeys} />
           <StrategyPanel
             currentRound={derived.currentRound}
             rounds={derived.rounds}

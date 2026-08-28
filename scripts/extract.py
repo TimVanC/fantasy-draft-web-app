@@ -2,7 +2,7 @@
 import pymupdf, json, re, os, sys
 
 PDF = r"Joel_Smyth_s_Draft_Guide_2026.pdf"
-OUT = "extracted"
+OUT = "scripts/extracted"
 os.makedirs(OUT, exist_ok=True)
 doc = pymupdf.open(PDF)
 

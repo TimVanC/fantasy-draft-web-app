@@ -20,15 +20,29 @@ npm run build      # typecheck + production build
 2. Pick your draft slot in the header — everything about the league (teams,
    rounds, roster slots, third-round reversal) is read from the Sleeper draft
    settings object; nothing is hardcoded.
-3. The board polls picks every 4 seconds and stops when the draft completes.
+3. The board polls picks every 2 seconds while the draft is live (5s while
+   waiting/paused), refreshes instantly when you focus the tab, and stops
+   when the draft completes.
 
+- **Pick Advisor** suggests three players for your pick. Value comes only
+  from the guide (board rank, tags, roster need, his round plan); live market
+  ADP is used for exactly one thing — the odds a player survives to your next
+  pick — because the market, not the guide, decides what everyone else does.
+  A "Can wait" line lists top players who'll very likely come back to you.
 - **Best available** is sorted by the guide's PPR or half-PPR board (toggle in
   the header). Tags are his conviction colors from the positional rankings.
   Rows expand for his notes, adjusted-PPG context, and profile numbers. ADP
   shown in expanded rows is the guide's printed (Yahoo) ADP only.
-- **Outlook** compares a player's spot on the *available* board against the
-  number of picks before your next turn: inside the window = `LIKELY GONE`,
-  outside = `can wait`. Stop reaching for players who will last.
+- **Mkt ADP** column shows live market ADP (Fantasy Football Calculator
+  mocks, cached hourly via `api/adp.ts`) with a green `+N` when the market
+  takes a player well after his guide rank — the value gap is the signal. It
+  never affects ordering.
+- **Outlook** shows the ADP-based odds a player is still there at your next
+  pick (`44% at #24`); with no ADP feed it falls back to comparing his spot on
+  the available board against the picks before your turn (`LIKELY GONE` /
+  `can wait`).
+- **His top players by position** in the sidebar: drafted players grey out
+  and sink to the bottom keeping their original position rank.
 - **✕ on a row** manually removes a player (survives every poll; restore from
   the "Manually removed" bar). Use it if sync breaks or a name fails to match.
 - Any skill-position pick that doesn't match a guide player is logged to the

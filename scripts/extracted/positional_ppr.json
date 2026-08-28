@@ -107,12 +107,12 @@
   },
   {
    "posRank": 22,
-   "name": "Cam Ward",
+   "name": "Sam Darnold",
    "tag": null
   },
   {
    "posRank": 23,
-   "name": "Sam Darnold",
+   "name": "Cam Ward",
    "tag": null
   },
   {
@@ -194,13 +194,13 @@
   },
   {
    "posRank": 7,
-   "name": "Ashton Jeanty",
-   "tag": null
+   "name": "Chase Brown",
+   "tag": "target"
   },
   {
    "posRank": 8,
-   "name": "Chase Brown",
-   "tag": "target"
+   "name": "Ashton Jeanty",
+   "tag": null
   },
   {
    "posRank": 9,
@@ -245,7 +245,7 @@
   {
    "posRank": 17,
    "name": "Josh Jacobs",
-   "tag": null
+   "tag": "pass"
   },
   {
    "posRank": 18,
@@ -254,12 +254,12 @@
   },
   {
    "posRank": 19,
-   "name": "Cam Skattebo",
+   "name": "Bucky Irving",
    "tag": null
   },
   {
    "posRank": 20,
-   "name": "Bucky Irving",
+   "name": "Cam Skattebo",
    "tag": null
   },
   {
@@ -314,12 +314,12 @@
   },
   {
    "posRank": 31,
-   "name": "Jonathon Brooks",
+   "name": "Chuba Hubbard",
    "tag": "target"
   },
   {
    "posRank": 32,
-   "name": "Chuba Hubbard",
+   "name": "Jonathon Brooks",
    "tag": "target"
   },
   {
@@ -339,28 +339,28 @@
   },
   {
    "posRank": 36,
-   "name": "Rachaad White",
-   "tag": null
-  },
-  {
-   "posRank": 37,
    "name": "Jordan Mason",
    "tag": null
   },
   {
+   "posRank": 37,
+   "name": "Jacory Croskey-Merritt",
+   "tag": "pass"
+  },
+  {
    "posRank": 38,
+   "name": "Rachaad White",
+   "tag": "pass"
+  },
+  {
+   "posRank": 39,
    "name": "J.K. Dobbins",
    "tag": "avoid"
   },
   {
-   "posRank": 39,
+   "posRank": 40,
    "name": "Kenny Gainwell",
    "tag": null
-  },
-  {
-   "posRank": 40,
-   "name": "Jacory Croskey-Merritt",
-   "tag": "pass"
   },
   {
    "posRank": 41,
@@ -374,12 +374,12 @@
   },
   {
    "posRank": 43,
-   "name": "Woody Marks",
+   "name": "Marshawn Lloyd",
    "tag": null
   },
   {
    "posRank": 44,
-   "name": "Zach Charbonnet",
+   "name": "Woody Marks",
    "tag": null
   },
   {
@@ -389,23 +389,23 @@
   },
   {
    "posRank": 46,
+   "name": "Zach Charbonnet",
+   "tag": null
+  },
+  {
+   "posRank": 47,
    "name": "Keaton Mitchell",
    "tag": "target"
   },
   {
-   "posRank": 47,
+   "posRank": 48,
    "name": "Isiah Pacheco",
    "tag": null
   },
   {
-   "posRank": 48,
+   "posRank": 49,
    "name": "Tyjae Spears",
    "tag": null
-  },
-  {
-   "posRank": 49,
-   "name": "Ray Davis",
-   "tag": "target"
   },
   {
    "posRank": 50,
@@ -414,18 +414,18 @@
   },
   {
    "posRank": 51,
+   "name": "Ray Davis",
+   "tag": "target"
+  },
+  {
+   "posRank": 52,
    "name": "Tank Bigsby",
    "tag": null
   },
   {
-   "posRank": 52,
+   "posRank": 53,
    "name": "Jonah Coleman",
    "tag": "target"
-  },
-  {
-   "posRank": 53,
-   "name": "Marshawn Lloyd",
-   "tag": null
   },
   {
    "posRank": 54,
@@ -434,12 +434,12 @@
   },
   {
    "posRank": 55,
-   "name": "Brian Robinson Jr.",
+   "name": "Emmett Johnson",
    "tag": null
   },
   {
    "posRank": 56,
-   "name": "Emmett Johnson",
+   "name": "Brian Robinson Jr.",
    "tag": null
   },
   {
@@ -521,12 +521,12 @@
   },
   {
    "posRank": 12,
-   "name": "Rashee Rice",
+   "name": "Chris Olave",
    "tag": null
   },
   {
    "posRank": 13,
-   "name": "Chris Olave",
+   "name": "Rashee Rice",
    "tag": null
   },
   {
@@ -551,13 +551,13 @@
   },
   {
    "posRank": 18,
-   "name": "Tetairoa McMillan",
-   "tag": null
+   "name": "Garrett Wilson",
+   "tag": "pass"
   },
   {
    "posRank": 19,
-   "name": "Garrett Wilson",
-   "tag": "pass"
+   "name": "Tetairoa McMillan",
+   "tag": null
   },
   {
    "posRank": 20,
@@ -571,12 +571,12 @@
   },
   {
    "posRank": 22,
-   "name": "Ladd McConkey",
+   "name": "DJ Moore",
    "tag": null
   },
   {
    "posRank": 23,
-   "name": "DJ Moore",
+   "name": "Ladd McConkey",
    "tag": null
   },
   {
@@ -591,13 +591,13 @@
   },
   {
    "posRank": 26,
-   "name": "Davante Adams",
-   "tag": null
+   "name": "Parker Washington",
+   "tag": "target"
   },
   {
    "posRank": 27,
-   "name": "Parker Washington",
-   "tag": "target"
+   "name": "Davante Adams",
+   "tag": null
   },
   {
    "posRank": 28,
@@ -641,18 +641,18 @@
   },
   {
    "posRank": 36,
+   "name": "Chris Godwin Jr.",
+   "tag": "target"
+  },
+  {
+   "posRank": 37,
    "name": "Alec Pierce",
    "tag": "pass"
   },
   {
-   "posRank": 37,
-   "name": "Chris Godwin Jr.",
-   "tag": null
-  },
-  {
    "posRank": 38,
-   "name": "Josh Downs",
-   "tag": "target"
+   "name": "Quentin Johnston",
+   "tag": null
   },
   {
    "posRank": 39,
@@ -661,8 +661,8 @@
   },
   {
    "posRank": 40,
-   "name": "Quentin Johnston",
-   "tag": null
+   "name": "Josh Downs",
+   "tag": "target"
   },
   {
    "posRank": 41,
@@ -686,38 +686,38 @@
   },
   {
    "posRank": 45,
-   "name": "Michael Pittman Jr.",
-   "tag": "pass"
-  },
-  {
-   "posRank": 46,
-   "name": "Stefon Diggs",
-   "tag": null
-  },
-  {
-   "posRank": 47,
-   "name": "Jordan Addison",
-   "tag": null
-  },
-  {
-   "posRank": 48,
-   "name": "Jakobi Meyers",
-   "tag": "pass"
-  },
-  {
-   "posRank": 49,
    "name": "Makai Lemon",
    "tag": null
   },
   {
-   "posRank": 50,
+   "posRank": 46,
+   "name": "Michael Pittman Jr.",
+   "tag": "pass"
+  },
+  {
+   "posRank": 47,
+   "name": "Stefon Diggs",
+   "tag": null
+  },
+  {
+   "posRank": 48,
    "name": "Romeo Doubs",
    "tag": "target"
   },
   {
-   "posRank": 51,
+   "posRank": 49,
    "name": "Matthew Golden",
    "tag": null
+  },
+  {
+   "posRank": 50,
+   "name": "Jordan Addison",
+   "tag": "pass"
+  },
+  {
+   "posRank": 51,
+   "name": "Jakobi Meyers",
+   "tag": "pass"
   },
   {
    "posRank": 52,
@@ -756,12 +756,12 @@
   },
   {
    "posRank": 59,
-   "name": "Denzel Boston",
+   "name": "Cyrus Allen",
    "tag": null
   },
   {
    "posRank": 60,
-   "name": "Cyrus Allen",
+   "name": "Adonai Mitchell",
    "tag": null
   }
  ],
@@ -863,38 +863,38 @@
   },
   {
    "posRank": 20,
-   "name": "Brenton Strange",
-   "tag": null
-  },
-  {
-   "posRank": 21,
-   "name": "Hunter Henry",
-   "tag": "avoid"
-  },
-  {
-   "posRank": 22,
-   "name": "Kenyon Sadiq",
-   "tag": null
-  },
-  {
-   "posRank": 23,
-   "name": "Greg Dulcich",
-   "tag": null
-  },
-  {
-   "posRank": 24,
    "name": "Terrance Ferguson",
    "tag": "target"
   },
   {
+   "posRank": 21,
+   "name": "Brenton Strange",
+   "tag": null
+  },
+  {
+   "posRank": 22,
+   "name": "Hunter Henry",
+   "tag": "avoid"
+  },
+  {
+   "posRank": 23,
+   "name": "Kenyon Sadiq",
+   "tag": null
+  },
+  {
+   "posRank": 24,
+   "name": "Greg Dulcich",
+   "tag": null
+  },
+  {
    "posRank": 25,
-   "name": "Oronde Gadsden II",
-   "tag": "pass"
+   "name": "AJ Barner",
+   "tag": null
   },
   {
    "posRank": 26,
-   "name": "AJ Barner",
-   "tag": null
+   "name": "Oronde Gadsden II",
+   "tag": "pass"
   },
   {
    "posRank": 27,
@@ -908,22 +908,22 @@
   },
   {
    "posRank": 29,
-   "name": "Eli Stowers",
-   "tag": null
-  },
-  {
-   "posRank": 30,
    "name": "Gunnar Helm",
    "tag": null
   },
   {
-   "posRank": 31,
+   "posRank": 30,
    "name": "Pat Freiermuth",
    "tag": null
   },
   {
-   "posRank": 32,
+   "posRank": 31,
    "name": "Darnell Washington",
+   "tag": null
+  },
+  {
+   "posRank": 32,
+   "name": "Eli Stowers",
    "tag": null
   }
  ]
