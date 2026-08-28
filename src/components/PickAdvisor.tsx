@@ -62,6 +62,11 @@ export default function PickAdvisor(props: {
                     VALUE
                   </span>
                 )}
+                {s.player.trap && (
+                  <span className="rounded border border-orange-700 bg-orange-600/20 px-1 py-0.5 text-[9px] font-bold text-orange-300">
+                    TRAP
+                  </span>
+                )}
               </div>
               <div className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-[11px] text-zinc-400">
                 <span>

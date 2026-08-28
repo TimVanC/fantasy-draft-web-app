@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { bestProdRank, isValue, sheetAdpOverall, valueGap } from "./cheatsheet";
+import { bestProdRank, isTrap, isValue, sheetAdpOverall, valueGap } from "./cheatsheet";
 import { ALL_PLAYERS, DEEP_POOL, RANKINGS } from "./rankings";
 import { playerKey } from "./normalize";
 import type { SheetEntry } from "../types";
@@ -50,6 +50,20 @@ describe("cheat-sheet value logic", () => {
     expect(isValue(entry({ pos: "TE", posAdpRank: 30, ptwRank: { y25: 15, y24: null, y23: null } }))).toBe(true);
   });
 
+  it("tags traps only for startable-cost veterans below their price", () => {
+    // Cost WR20, best production WR35 -> priced above anything he's done.
+    const t = entry({ posAdpRank: 20, ptwRank: { y25: 35, y24: 40, y23: null }, age: 28 });
+    expect(isTrap(t)).toBe(true);
+    // Young players are expected to outgrow their history: no trap.
+    expect(isTrap(entry({ posAdpRank: 20, ptwRank: { y25: 35, y24: null, y23: null }, age: 22 }))).toBe(false);
+    // Bench-cost players can't be traps — nobody is reaching for them.
+    expect(isTrap(entry({ posAdpRank: 60, ptwRank: { y25: 75, y24: null, y23: null }, age: 28 }))).toBe(false);
+    // No production history at all -> no verdict either way.
+    expect(isTrap(entry({ posAdpRank: 20, ptwRank: { y25: null, y24: null, y23: null }, age: 28 }))).toBe(false);
+    // A fair price is neither value nor trap.
+    expect(isTrap(entry({ posAdpRank: 30, ptwRank: { y25: 28, y24: null, y23: null }, age: 28 }))).toBe(false);
+  });
+
   it("parses sheet ADP round.pick into an overall pick", () => {
     expect(sheetAdpOverall(entry({ adp: "1.01" }))).toBe(1);
     expect(sheetAdpOverall(entry({ adp: "8.04" }))).toBe(88);
@@ -82,6 +96,21 @@ describe("cheat-sheet merge onto the guide universe", () => {
     expect(values.length).toBeGreaterThan(5);
     // A value tag never overwrites or requires a guide tag.
     expect(values.some((p) => p.tag === null)).toBe(true);
+  });
+
+  it("surfaces agreements and contradictions between the two sources", () => {
+    // Chris Godwin: Joel target, sheet trap — a genuine split.
+    const godwin = RANKINGS.find((p) => p.name.startsWith("Chris Godwin"));
+    expect(godwin?.tag).toBe("target");
+    expect(godwin?.trap).toBe(true);
+    // DK Metcalf: Joel avoid, sheet value — the opposite split.
+    const dk = RANKINGS.find((p) => p.name === "DK Metcalf");
+    expect(dk?.tag).toBe("avoid");
+    expect(dk?.value).toBe(true);
+    // And dual-positive players exist (target + value).
+    expect(RANKINGS.some((p) => p.tag === "target" && p.value)).toBe(true);
+    // A player is never both value and trap.
+    expect(ALL_PLAYERS.some((p) => p.value && p.trap)).toBe(false);
   });
 
   it("deep pool players are ordered by sheet rank", () => {

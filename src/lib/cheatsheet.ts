@@ -45,6 +45,22 @@ export function isValue(e: SheetEntry): boolean {
 }
 
 /**
+ * TRAP — the inverse of VALUE: a startable-cost player whose recent
+ * production has never supported the price. Only applied to age-24+ players;
+ * younger ones are expected to outgrow their history, so a thin résumé is
+ * not evidence against them.
+ */
+export function isTrap(e: SheetEntry): boolean {
+  const gap = valueGap(e);
+  if (gap === null || e.posAdpRank === null) return false;
+  return (
+    gap <= -VALUE_GAP &&
+    e.posAdpRank <= (RELEVANT_PROD_RANK[e.pos] ?? 48) &&
+    (e.age ?? 0) >= 24
+  );
+}
+
+/**
  * The sheet's own ADP as an overall pick number (assumes a 12-team board),
  * used only as a survival-odds fallback for players the FFC feed lacks.
  */

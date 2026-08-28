@@ -37,6 +37,8 @@ export interface RankedPlayer {
   sheet?: SheetEntry;
   /** Cheat-sheet VALUE tag: recent production rank beats current draft cost. */
   value?: boolean;
+  /** Cheat-sheet TRAP tag: startable price his production has never backed. */
+  trap?: boolean;
   valueGap?: number | null;
 }
 

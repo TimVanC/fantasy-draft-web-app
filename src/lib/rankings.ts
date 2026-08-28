@@ -3,7 +3,7 @@ import rawStrategy from "../../data/strategy.json";
 import rawSheet from "../../data/cheatsheet.json";
 import type { RankedPlayer, ScoringFormat, SheetEntry } from "../types";
 import { buildMatchIndex, matchPick, playerKey } from "./normalize";
-import { isValue, valueGap } from "./cheatsheet";
+import { isTrap, isValue, valueGap } from "./cheatsheet";
 
 export const RANKINGS = rawRankings as RankedPlayer[];
 export const STRATEGY = rawStrategy as {
@@ -34,6 +34,7 @@ for (const entry of SHEET) {
   if (matched) {
     matched.sheet = entry;
     matched.value = isValue(entry);
+    matched.trap = isTrap(entry);
     matched.valueGap = valueGap(entry);
     if (matched.team === null && entry.team) matched.team = entry.team;
   } else {
@@ -54,6 +55,7 @@ for (const entry of SHEET) {
       notes: [],
       sheet: entry,
       value: isValue(entry),
+      trap: isTrap(entry),
       valueGap: valueGap(entry),
     });
   }

@@ -127,10 +127,13 @@ export function advise(input: AdviceInput): Advice {
       reasons.push("he's avoiding");
     }
 
-    // Cheat-sheet VALUE: production rank beats draft cost.
+    // Cheat-sheet VALUE / TRAP: production rank vs draft cost.
     if (player.value) {
       score += 1.5;
       reasons.push(`sheet value${player.valueGap != null ? ` +${player.valueGap}` : ""}`);
+    } else if (player.trap) {
+      score -= 1.5;
+      reasons.push(`sheet trap ${player.valueGap ?? ""}`.trim());
     }
 
     // Roster need.
@@ -173,11 +176,13 @@ export function advise(input: AdviceInput): Advice {
     .slice(0, SUGGESTIONS);
 
   // "Can wait": guide's top players the market will very likely return to me.
+  // His avoids don't belong here either — "can wait" implies "worth taking".
   const suggested = new Set(suggestions.map((s) => playerKey(s.player)));
   const canWait = scored
     .filter(
       (s) =>
         !suggested.has(playerKey(s.player)) &&
+        s.player.tag !== "avoid" &&
         s.pSurviveNext !== null &&
         s.pSurviveNext >= 0.7 &&
         s.pReach >= 0.5,

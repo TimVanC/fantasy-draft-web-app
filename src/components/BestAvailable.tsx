@@ -254,6 +254,26 @@ function FragmentRow(props: {
               VALUE
             </span>
           )}
+          {p.trap && (
+            <span
+              className="ml-1.5 rounded border border-orange-700 bg-orange-600/20 px-1.5 py-0.5 text-[10px] font-bold uppercase text-orange-300"
+              title={`Cheat sheet: priced ${Math.abs(p.valueGap ?? 0)} positional spots above anything his recent production supports`}
+            >
+              TRAP
+            </span>
+          )}
+          {((p.tag === "target" && p.trap) || (p.tag === "avoid" && p.value)) && (
+            <span
+              className="ml-1.5 rounded border border-violet-700 bg-violet-600/20 px-1.5 py-0.5 text-[10px] font-bold uppercase text-violet-300"
+              title={
+                p.tag === "target"
+                  ? "Sources disagree: Joel targets him, but the sheet says his price outruns his production"
+                  : "Sources disagree: Joel is avoiding him, but the sheet says the market underprices his production"
+              }
+            >
+              SPLIT
+            </span>
+          )}
           {props.hasDetail && (
             <span className="ml-1.5 text-[10px] text-zinc-600">{props.isExpanded ? "▲" : "▼"}</span>
           )}

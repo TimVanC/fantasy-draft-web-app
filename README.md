@@ -54,6 +54,15 @@ npm run build      # typecheck + production build
   rows show the sheet's ADP history, pt/wk and games for every matched
   player. The Pick Advisor gives VALUE a small bonus and can suggest deep
   pool players once the guide's board thins out.
+- **TRAP + SPLIT.** The sheet's negative signal: an orange `TRAP` marks a
+  startable-cost player age 24+ priced 8+ positional spots above anything his
+  recent production supports (young players are exempt — a thin résumé isn't
+  evidence against them). Badges stack, so agreements read naturally
+  (`TARGET`+`VALUE` = both sources in; `AVOID`+`TRAP` = both out), and when
+  the sources directly contradict (`TARGET`+`TRAP`, or `AVOID`+`VALUE`) a
+  violet `SPLIT` chip flags the disagreement with a tooltip saying who says
+  what. The advisor subtracts for traps and never lists his avoids under
+  "can wait".
 - **✕ on a row** manually removes a player (survives every poll; restore from
   the "Manually removed" bar). Use it if sync breaks or a name fails to match.
 - Any skill-position pick that doesn't match a guide player is logged to the
