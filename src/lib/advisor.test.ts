@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { advise, survivalProb, type AdviceInput } from "./advisor";
+import { advise, conditionalSurvival, survivalProb, type AdviceInput } from "./advisor";
 import { buildAdpMap, nearestFfcTeams } from "./adp";
 import { buildMatchIndex, playerKey } from "./normalize";
 import type { RankedPlayer } from "../types";
@@ -22,6 +22,27 @@ describe("survivalProb", () => {
   it("spreads out later in the draft", () => {
     // Same 10-pick gap is more certain early than late.
     expect(survivalProb(10, 20)).toBeLessThan(survivalProb(100, 110));
+  });
+});
+
+describe("conditionalSurvival", () => {
+  it("conditions on the player still being available now", () => {
+    // ADP 28 but the draft is at pick 131 and he's still on the board:
+    // the market has moved on, so odds to reach #144 are moderate, not ~1%.
+    const p = conditionalSurvival(28, 131, 144);
+    expect(p).toBeGreaterThan(0.3);
+    expect(p).toBeLessThan(0.8);
+    // Raw survivalProb would call it hopeless.
+    expect(survivalProb(28, 144)).toBeLessThan(0.02);
+  });
+
+  it("matches intuition before the ADP is reached", () => {
+    expect(conditionalSurvival(40, 20, 30)).toBeGreaterThan(0.7); // ADP after my pick
+    expect(conditionalSurvival(22, 20, 40)).toBeLessThan(0.35); // ADP right now, long wait
+  });
+
+  it("is certain for picks that already happened", () => {
+    expect(conditionalSurvival(50, 30, 30)).toBe(0.99);
   });
 });
 
@@ -63,6 +84,7 @@ describe("advise", () => {
       available,
       adpMap: new Map(),
       format: "ppr",
+      currentPickNo: 20,
       myPick: 20,
       myNextPick: 21,
       onClock: true,
@@ -134,7 +156,7 @@ describe("advise", () => {
       { name: "Charlie RB", position: "RB", adp: 60 },
     ]);
     const { suggestions } = advise(
-      baseInput({ adpMap, onClock: false, myPick: 30, myNextPick: 50 }),
+      baseInput({ adpMap, onClock: false, currentPickNo: 25, myPick: 30, myNextPick: 50 }),
     );
     expect(suggestions[0].player.name).not.toBe("Alpha RB");
   });
@@ -148,7 +170,7 @@ describe("advise", () => {
       { name: "Charlie RB", position: "RB", adp: 33 },
     ]);
     const { suggestions } = advise(
-      baseInput({ adpMap, onClock: false, myPick: 30, myNextPick: 50 }),
+      baseInput({ adpMap, onClock: false, currentPickNo: 25, myPick: 30, myNextPick: 50 }),
     );
     expect(suggestions[0].player.name).toBe("Charlie RB");
   });

@@ -1,7 +1,24 @@
 export type Pos = "QB" | "RB" | "WR" | "TE" | "K" | "DEF";
 export type Tag = "target" | "pass" | "avoid" | null;
 
-/** One record in data/rankings.json (extracted from the draft guide). */
+/** One entry of data/cheatsheet.json (the half-PPR stats cheat sheet). */
+export interface SheetEntry {
+  name: string;
+  team: string | null;
+  age: number | null;
+  pos: string;
+  posAdpRank: number | null;
+  rank: number;
+  adp: string | null;
+  adpHistory: { y25: string | null; y24: string | null; y23: string | null };
+  ptw: { y25: number | null; y24: number | null; y23: number | null };
+  ptwRank: { y25: number | null; y24: number | null; y23: number | null };
+  gms: { y25: number | null; y24: number | null; y23: number | null };
+}
+
+/** One record in data/rankings.json (extracted from the draft guide).
+ *  `sheet`/`value`/`valueGap` are attached at runtime from the cheat sheet —
+ *  the guide data files stay pure. */
 export interface RankedPlayer {
   name: string;
   pos: string;
@@ -17,6 +34,10 @@ export interface RankedPlayer {
   ceiling: number | null;
   risk: number | null;
   notes: string[];
+  sheet?: SheetEntry;
+  /** Cheat-sheet VALUE tag: recent production rank beats current draft cost. */
+  value?: boolean;
+  valueGap?: number | null;
 }
 
 /** Sleeper GET /draft/{id} — only the fields we consume. */

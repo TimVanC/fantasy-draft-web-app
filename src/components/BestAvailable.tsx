@@ -4,7 +4,8 @@ import type { Scarcity } from "../lib/scarcity";
 import type { Overrides } from "../hooks/useDraft";
 import type { MatchIndex } from "../lib/normalize";
 import type { AdpMap } from "../lib/adp";
-import { survivalProb } from "../lib/advisor";
+import { conditionalSurvival } from "../lib/advisor";
+import { sheetSummary } from "../lib/cheatsheet";
 import { playerKey } from "../lib/normalize";
 import { boardRank } from "../lib/rankings";
 
@@ -34,6 +35,7 @@ export default function BestAvailable(props: {
   unmatchedPicks: MatchedPick[];
   adpMap: AdpMap;
   myNextPickNo: number | null;
+  currentPickNo: number;
 }) {
   const [filter, setFilter] = useState<(typeof FILTERS)[number]>("ALL");
   const [search, setSearch] = useState("");
@@ -144,11 +146,15 @@ export default function BestAvailable(props: {
               const sc = props.scarcity.get(p) ?? null;
               const isExpanded = expanded === key;
               const hasDetail =
-                p.notes.length > 0 || p.adjPpgNote !== null || p.ceiling !== null || p.adp !== null;
+                p.notes.length > 0 ||
+                p.adjPpgNote !== null ||
+                p.ceiling !== null ||
+                p.adp !== null ||
+                p.sheet !== undefined;
               const adp = props.adpMap.get(key) ?? null;
               const survival =
                 adp && props.myNextPickNo !== null
-                  ? survivalProb(adp.adp, props.myNextPickNo)
+                  ? conditionalSurvival(adp.adp, props.currentPickNo, props.myNextPickNo)
                   : null;
               return (
                 <FragmentRow
@@ -220,7 +226,16 @@ function FragmentRow(props: {
         className={`border-t border-zinc-800/60 hover:bg-zinc-800/40 ${props.hasDetail ? "cursor-pointer" : ""}`}
         onClick={props.hasDetail ? props.onExpand : undefined}
       >
-        <td className="px-2 py-1.5 text-right font-mono text-zinc-500">{props.rank}</td>
+        <td className="px-2 py-1.5 text-right font-mono text-zinc-500">
+          {props.rank ?? (
+            <span
+              className="text-zinc-700"
+              title="Not on Joel's board — cheat-sheet rank (deep pool)"
+            >
+              S{p.sheet?.rank ?? "—"}
+            </span>
+          )}
+        </td>
         <td className="px-2 py-1.5">
           <span className="font-semibold">{p.name}</span>
           {p.team && <span className="ml-1.5 text-xs text-zinc-500">{p.team}</span>}
@@ -229,6 +244,14 @@ function FragmentRow(props: {
               className={`ml-2 rounded border px-1.5 py-0.5 text-[10px] font-bold uppercase ${TAG_STYLE[p.tag]}`}
             >
               {p.tag === "pass" ? "PASS" : p.tag === "avoid" ? "AVOID" : "TARGET"}
+            </span>
+          )}
+          {p.value && (
+            <span
+              className="ml-1.5 rounded border border-cyan-700 bg-cyan-600/20 px-1.5 py-0.5 text-[10px] font-bold uppercase text-cyan-300"
+              title={`Cheat sheet: recent pt/wk rank beats his draft cost by ${p.valueGap} positional spots`}
+            >
+              VALUE
             </span>
           )}
           {props.hasDetail && (
@@ -334,6 +357,11 @@ function FragmentRow(props: {
                 </span>
               )}
             </div>
+            {p.sheet && (
+              <p className="mt-1 border-l-2 border-cyan-800 pl-2 text-cyan-200/70">
+                Cheat sheet: {sheetSummary(p.sheet)}
+              </p>
+            )}
             {p.notes.map((n, i) => (
               <p key={i} className="mt-1 border-l-2 border-zinc-700 pl-2">
                 {n}

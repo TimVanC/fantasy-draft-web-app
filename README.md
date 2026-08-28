@@ -43,6 +43,17 @@ npm run build      # typecheck + production build
   `can wait`).
 - **His top players by position** in the sidebar: drafted players grey out
   and sink to the bottom keeping their original position rank.
+- **VALUE tags (cheat sheet).** A second data source — the half-PPR stats
+  cheat sheet (`data/cheatsheet.json`, built by `scripts/build_cheatsheet.py`
+  from the CSV) — adds a cyan `VALUE` badge for players whose recent
+  points-per-week positional rank beats their current draft cost by 8+ spots
+  (and was actually startable: top-48 RB/WR, top-20 QB/TE, min 8 games).
+  Joel's `TARGET` stays Joel's; VALUE is always the sheet's, never mixed.
+  Sheet players Joel doesn't rank extend the board after his 150 as a deep
+  pool (`S###` ranks) so the late rounds aren't a blank page, and expanded
+  rows show the sheet's ADP history, pt/wk and games for every matched
+  player. The Pick Advisor gives VALUE a small bonus and can suggest deep
+  pool players once the guide's board thins out.
 - **✕ on a row** manually removes a player (survives every poll; restore from
   the "Manually removed" bar). Use it if sync breaks or a name fails to match.
 - Any skill-position pick that doesn't match a guide player is logged to the

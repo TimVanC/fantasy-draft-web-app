@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useDraft } from "./hooks/useDraft";
-import { MATCH_INDEX, sortedBoard, boardRank, RANKINGS, STRATEGY } from "./lib/rankings";
+import { MATCH_INDEX, sortedBoard, boardRank, RANKINGS, STRATEGY, DEEP_POOL } from "./lib/rankings";
 import { playerKey } from "./lib/normalize";
 import { picksUntilMyTurn, nextPickForSlot, myFollowingPick, slotForPick } from "./lib/snake";
 import { scarcityLabels } from "./lib/scarcity";
@@ -59,7 +59,12 @@ export default function App() {
       else draftedKeys.delete(key);
     }
 
-    const board = sortedBoard(format).filter((p) => boardRank(p, format) !== null);
+    // Joel's board first; past his last rank the cheat sheet's deep pool
+    // keeps the list going (sheet order) so late rounds aren't a blank page.
+    const board = [
+      ...sortedBoard(format).filter((p) => boardRank(p, format) !== null),
+      ...DEEP_POOL,
+    ];
     const available = board.filter((p) => !draftedKeys.has(playerKey(p)));
     const scarcity = scarcityLabels(available, othersPicks, format);
 
@@ -149,6 +154,7 @@ export default function App() {
                 available: derived.available,
                 adpMap,
                 format,
+                currentPickNo: derived.nextPickNo,
                 myPick: derived.myNextPickNo,
                 myNextPick: derived.followingPick,
                 onClock: derived.onClock,
@@ -173,6 +179,7 @@ export default function App() {
             unmatchedPicks={derived.unmatchedPicks}
             adpMap={adpMap}
             myNextPickNo={derived.myNextPickNo}
+            currentPickNo={derived.nextPickNo}
           />
         </div>
         <div className="flex min-h-0 flex-col gap-3 overflow-y-auto">

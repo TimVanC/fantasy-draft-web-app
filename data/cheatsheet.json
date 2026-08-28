@@ -1,0 +1,9485 @@
+[
+ {
+  "name": "Jahmyr Gibbs",
+  "team": "DET",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 1,
+  "rank": 1,
+  "adp": "1.01",
+  "adpHistory": {
+   "y25": "1.04",
+   "y24": "2.01",
+   "y23": "3.08"
+  },
+  "ptw": {
+   "y25": 19.3,
+   "y24": 19.8,
+   "y23": 14.4
+  },
+  "ptwRank": {
+   "y25": 4,
+   "y24": 2,
+   "y23": 11
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 15
+  }
+ },
+ {
+  "name": "Bijan Robinson",
+  "team": "ATL",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 2,
+  "rank": 2,
+  "adp": "1.02",
+  "adpHistory": {
+   "y25": "1.02",
+   "y24": "1.05",
+   "y23": "1.07"
+  },
+  "ptw": {
+   "y25": 19.5,
+   "y24": 18.3,
+   "y23": 12.8
+  },
+  "ptwRank": {
+   "y25": 3,
+   "y24": 4,
+   "y23": 17
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Ja'Marr Chase",
+  "team": "CIN",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 1,
+  "rank": 3,
+  "adp": "1.03",
+  "adpHistory": {
+   "y25": "1.01",
+   "y24": "1.07",
+   "y23": "1.03"
+  },
+  "ptw": {
+   "y25": 15.7,
+   "y24": 20.0,
+   "y23": 13.3
+  },
+  "ptwRank": {
+   "y25": 3,
+   "y24": 1,
+   "y23": 13
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 17,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Puka Nacua",
+  "team": "LAR",
+  "age": 25,
+  "pos": "WR",
+  "posAdpRank": 2,
+  "rank": 4,
+  "adp": "1.04",
+  "adpHistory": {
+   "y25": "2.02",
+   "y24": "2.02",
+   "y23": "24.04"
+  },
+  "ptw": {
+   "y25": 19.4,
+   "y24": 15.2,
+   "y23": 14.5
+  },
+  "ptwRank": {
+   "y25": 1,
+   "y24": 5,
+   "y23": 7
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 11,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Christian McCaffrey",
+  "team": "SF",
+  "age": 30,
+  "pos": "RB",
+  "posAdpRank": 3,
+  "rank": 5,
+  "adp": "1.05",
+  "adpHistory": {
+   "y25": "1.07",
+   "y24": "1.01",
+   "y23": "1.02"
+  },
+  "ptw": {
+   "y25": 21.5,
+   "y24": 10.1,
+   "y23": 22.4
+  },
+  "ptwRank": {
+   "y25": 1,
+   "y24": 30,
+   "y23": 1
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 4,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Jaxon Smith-Njigba",
+  "team": "SEA",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 3,
+  "rank": 6,
+  "adp": "1.06",
+  "adpHistory": {
+   "y25": "3.09",
+   "y24": "9.03",
+   "y23": "8.10"
+  },
+  "ptw": {
+   "y25": 17.7,
+   "y24": 11.9,
+   "y23": 7.0
+  },
+  "ptwRank": {
+   "y25": 2,
+   "y24": 22,
+   "y23": 60
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Jonathan Taylor",
+  "team": "IND",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 4,
+  "rank": 7,
+  "adp": "1.07",
+  "adpHistory": {
+   "y25": "2.06",
+   "y24": "1.10",
+   "y23": "4.11"
+  },
+  "ptw": {
+   "y25": 20.0,
+   "y24": 16.8,
+   "y23": 14.7
+  },
+  "ptwRank": {
+   "y25": 2,
+   "y24": 5,
+   "y23": 8
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 14,
+   "y23": 10
+  }
+ },
+ {
+  "name": "Amon-Ra St. Brown",
+  "team": "DET",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 4,
+  "rank": 8,
+  "adp": "1.08",
+  "adpHistory": {
+   "y25": "1.09",
+   "y24": "1.08",
+   "y23": "2.08"
+  },
+  "ptw": {
+   "y25": 15.6,
+   "y24": 15.2,
+   "y23": 17.0
+  },
+  "ptwRank": {
+   "y25": 4,
+   "y24": 5,
+   "y23": 4
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 16
+  }
+ },
+ {
+  "name": "James Cook III",
+  "team": "BUF",
+  "age": 26,
+  "pos": "RB",
+  "posAdpRank": 5,
+  "rank": 9,
+  "adp": "1.09",
+  "adpHistory": {
+   "y25": "3.04",
+   "y24": "3.12",
+   "y23": "6.02"
+  },
+  "ptw": {
+   "y25": 16.8,
+   "y24": 15.7,
+   "y23": 12.4
+  },
+  "ptwRank": {
+   "y25": 6,
+   "y24": 10,
+   "y23": 19
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 17
+  }
+ },
+ {
+  "name": "CeeDee Lamb",
+  "team": "DAL",
+  "age": 27,
+  "pos": "WR",
+  "posAdpRank": 5,
+  "rank": 10,
+  "adp": "1.10",
+  "adpHistory": {
+   "y25": "1.06",
+   "y24": "1.03",
+   "y23": "1.11"
+  },
+  "ptw": {
+   "y25": 11.7,
+   "y24": 14.2,
+   "y23": 19.7
+  },
+  "ptwRank": {
+   "y25": 15,
+   "y24": 10,
+   "y23": 2
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 15,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Ashton Jeanty",
+  "team": "LV",
+  "age": 22,
+  "pos": "RB",
+  "posAdpRank": 6,
+  "rank": 11,
+  "adp": "1.11",
+  "adpHistory": {
+   "y25": "1.10",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 12.8,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Saquon Barkley",
+  "team": "PHI",
+  "age": 29,
+  "pos": "RB",
+  "posAdpRank": 7,
+  "rank": 12,
+  "adp": "1.12",
+  "adpHistory": {
+   "y25": "1.03",
+   "y24": "1.11",
+   "y23": "1.09"
+  },
+  "ptw": {
+   "y25": 13.4,
+   "y24": 21.2,
+   "y23": 14.5
+  },
+  "ptwRank": {
+   "y25": 14,
+   "y24": 1,
+   "y23": 9
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 16,
+   "y23": 13
+  }
+ },
+ {
+  "name": "Justin Jefferson",
+  "team": "MIN",
+  "age": 27,
+  "pos": "WR",
+  "posAdpRank": 6,
+  "rank": 13,
+  "adp": "2.01",
+  "adpHistory": {
+   "y25": "1.05",
+   "y24": "1.06",
+   "y23": "1.01"
+  },
+  "ptw": {
+   "y25": 9.4,
+   "y24": 15.6,
+   "y23": 16.8
+  },
+  "ptwRank": {
+   "y25": 37,
+   "y24": 3,
+   "y23": 5
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 10
+  }
+ },
+ {
+  "name": "De'Von Achane",
+  "team": "MIA",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 8,
+  "rank": 14,
+  "adp": "2.02",
+  "adpHistory": {
+   "y25": "2.04",
+   "y24": "2.08",
+   "y23": "11.07"
+  },
+  "ptw": {
+   "y25": 18.1,
+   "y24": 15.3,
+   "y23": 16.1
+  },
+  "ptwRank": {
+   "y25": 5,
+   "y24": 11,
+   "y23": 4
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 17,
+   "y23": 11
+  }
+ },
+ {
+  "name": "Chase Brown",
+  "team": "CIN",
+  "age": 26,
+  "pos": "RB",
+  "posAdpRank": 9,
+  "rank": 15,
+  "adp": "2.03",
+  "adpHistory": {
+   "y25": "2.09",
+   "y24": "9.08",
+   "y23": "20.07"
+  },
+  "ptw": {
+   "y25": 14.6,
+   "y24": 14.3,
+   "y23": 3.9
+  },
+  "ptwRank": {
+   "y25": 8,
+   "y24": 16,
+   "y23": 73
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Omarion Hampton",
+  "team": "LAC",
+  "age": 23,
+  "pos": "RB",
+  "posAdpRank": 10,
+  "rank": 16,
+  "adp": "2.04",
+  "adpHistory": {
+   "y25": "3.05",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 13.3,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 15,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 9,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Kenneth Walker III",
+  "team": "KC",
+  "age": 25,
+  "pos": "RB",
+  "posAdpRank": 11,
+  "rank": 17,
+  "adp": "2.05",
+  "adpHistory": {
+   "y25": "4.05",
+   "y24": "4.07",
+   "y23": "4.05"
+  },
+  "ptw": {
+   "y25": 10.4,
+   "y24": 14.4,
+   "y23": 12.3
+  },
+  "ptwRank": {
+   "y25": 29,
+   "y24": 14,
+   "y23": 20
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 11,
+   "y23": 15
+  }
+ },
+ {
+  "name": "Derrick Henry",
+  "team": "BAL",
+  "age": 32,
+  "pos": "RB",
+  "posAdpRank": 12,
+  "rank": 18,
+  "adp": "2.06",
+  "adpHistory": {
+   "y25": "1.08",
+   "y24": "2.05",
+   "y23": "2.04"
+  },
+  "ptw": {
+   "y25": 16.0,
+   "y24": 19.2,
+   "y23": 13.7
+  },
+  "ptwRank": {
+   "y25": 7,
+   "y24": 3,
+   "y23": 15
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Josh Allen",
+  "team": "BUF",
+  "age": 30,
+  "pos": "QB",
+  "posAdpRank": 1,
+  "rank": 19,
+  "adp": "2.07",
+  "adpHistory": {
+   "y25": "2.12",
+   "y24": "2.11",
+   "y23": "2.09"
+  },
+  "ptw": {
+   "y25": 22.0,
+   "y24": 22.6,
+   "y23": 24.2
+  },
+  "ptwRank": {
+   "y25": 1,
+   "y24": 2,
+   "y23": 1
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Drake London",
+  "team": "ATL",
+  "age": 25,
+  "pos": "WR",
+  "posAdpRank": 7,
+  "rank": 20,
+  "adp": "2.08",
+  "adpHistory": {
+   "y25": "2.05",
+   "y24": "2.10",
+   "y23": "5.10"
+  },
+  "ptw": {
+   "y25": 14.0,
+   "y24": 13.6,
+   "y23": 8.7
+  },
+  "ptwRank": {
+   "y25": 7,
+   "y24": 14,
+   "y23": 45
+  },
+  "gms": {
+   "y25": 12,
+   "y24": 17,
+   "y23": 16
+  }
+ },
+ {
+  "name": "A.J. Brown",
+  "team": "NE",
+  "age": 29,
+  "pos": "WR",
+  "posAdpRank": 8,
+  "rank": 21,
+  "adp": "2.09",
+  "adpHistory": {
+   "y25": "2.08",
+   "y24": "1.09",
+   "y23": "1.12"
+  },
+  "ptw": {
+   "y25": 12.1,
+   "y24": 14.1,
+   "y23": 13.9
+  },
+  "ptwRank": {
+   "y25": 11,
+   "y24": 12,
+   "y23": 11
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 13,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Brock Bowers",
+  "team": "LV",
+  "age": 23,
+  "pos": "TE",
+  "posAdpRank": 1,
+  "rank": 22,
+  "adp": "2.10",
+  "adpHistory": {
+   "y25": "2.10",
+   "y24": "8.09",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 12.0,
+   "y24": 12.2,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 4,
+   "y24": 2,
+   "y23": null
+  },
+  "gms": {
+   "y25": 12,
+   "y24": 17,
+   "y23": null
+  }
+ },
+ {
+  "name": "Trey McBride",
+  "team": "ARI",
+  "age": 26,
+  "pos": "TE",
+  "posAdpRank": 2,
+  "rank": 23,
+  "adp": "2.11",
+  "adpHistory": {
+   "y25": "3.03",
+   "y24": "4.12",
+   "y23": "23.08"
+  },
+  "ptw": {
+   "y25": 14.9,
+   "y24": 12.1,
+   "y23": 8.3
+  },
+  "ptwRank": {
+   "y25": 1,
+   "y24": 3,
+   "y23": 9
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Nico Collins",
+  "team": "HOU",
+  "age": 27,
+  "pos": "WR",
+  "posAdpRank": 9,
+  "rank": 24,
+  "adp": "2.12",
+  "adpHistory": {
+   "y25": "1.12",
+   "y24": "3.04",
+   "y23": "13.12"
+  },
+  "ptw": {
+   "y25": 12.7,
+   "y24": 14.7,
+   "y23": 14.7
+  },
+  "ptwRank": {
+   "y25": 10,
+   "y24": 7,
+   "y23": 6
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 12,
+   "y23": 15
+  }
+ },
+ {
+  "name": "George Pickens",
+  "team": "DAL",
+  "age": 25,
+  "pos": "WR",
+  "posAdpRank": 10,
+  "rank": 25,
+  "adp": "3.01",
+  "adpHistory": {
+   "y25": "5.12",
+   "y24": "5.11",
+   "y23": "7.05"
+  },
+  "ptw": {
+   "y25": 14.4,
+   "y24": 9.6,
+   "y23": 10.4
+  },
+  "ptwRank": {
+   "y25": 6,
+   "y24": 43,
+   "y23": 33
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 14,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Jeremiyah Love",
+  "team": "ARI",
+  "age": 21,
+  "pos": "RB",
+  "posAdpRank": 13,
+  "rank": 26,
+  "adp": "3.02",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Kyren Williams",
+  "team": "LAR",
+  "age": 26,
+  "pos": "RB",
+  "posAdpRank": 14,
+  "rank": 27,
+  "adp": "3.03",
+  "adpHistory": {
+   "y25": "3.01",
+   "y24": "2.06",
+   "y23": "22.05"
+  },
+  "ptw": {
+   "y25": 14.4,
+   "y24": 15.9,
+   "y23": 19.9
+  },
+  "ptwRank": {
+   "y25": 11,
+   "y24": 8,
+   "y23": 2
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Chris Olave",
+  "team": "NO",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 11,
+  "rank": 28,
+  "adp": "3.04",
+  "adpHistory": {
+   "y25": "7.04",
+   "y24": "3.01",
+   "y23": "2.12"
+  },
+  "ptw": {
+   "y25": 13.7,
+   "y24": 7.6,
+   "y23": 11.7
+  },
+  "ptwRank": {
+   "y25": 9,
+   "y24": 55,
+   "y23": 21
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 7,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Malik Nabers",
+  "team": "NYG",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 12,
+  "rank": 29,
+  "adp": "3.05",
+  "adpHistory": {
+   "y25": "1.11",
+   "y24": "5.01",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 12.0,
+   "y24": 14.6,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 13,
+   "y24": 8,
+   "y23": null
+  },
+  "gms": {
+   "y25": 4,
+   "y24": 15,
+   "y23": null
+  }
+ },
+ {
+  "name": "Josh Jacobs",
+  "team": "GB",
+  "age": 28,
+  "pos": "RB",
+  "posAdpRank": 15,
+  "rank": 30,
+  "adp": "3.06",
+  "adpHistory": {
+   "y25": "2.01",
+   "y24": "2.12",
+   "y23": "2.05"
+  },
+  "ptw": {
+   "y25": 14.6,
+   "y24": 16.2,
+   "y23": 12.5
+  },
+  "ptwRank": {
+   "y25": 8,
+   "y24": 7,
+   "y23": 18
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 17,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Javonte Williams",
+  "team": "DAL",
+  "age": 26,
+  "pos": "RB",
+  "posAdpRank": 16,
+  "rank": 31,
+  "adp": "3.07",
+  "adpHistory": {
+   "y25": "10.02",
+   "y24": "7.07",
+   "y23": "6.04"
+  },
+  "ptw": {
+   "y25": 14.1,
+   "y24": 7.8,
+   "y23": 9.7
+  },
+  "ptwRank": {
+   "y25": 12,
+   "y24": 38,
+   "y23": 34
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 17,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Rashee Rice",
+  "team": "KC",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 13,
+  "rank": 32,
+  "adp": "3.08",
+  "adpHistory": {
+   "y25": "6.12",
+   "y24": "6.10",
+   "y23": "14.10"
+  },
+  "ptw": {
+   "y25": 15.5,
+   "y24": 13.2,
+   "y23": 10.8
+  },
+  "ptwRank": {
+   "y25": 5,
+   "y24": 16,
+   "y23": 30
+  },
+  "gms": {
+   "y25": 8,
+   "y24": 3,
+   "y23": 16
+  }
+ },
+ {
+  "name": "DeVonta Smith",
+  "team": "PHI",
+  "age": 27,
+  "pos": "WR",
+  "posAdpRank": 14,
+  "rank": 33,
+  "adp": "3.09",
+  "adpHistory": {
+   "y25": "5.07",
+   "y24": "4.10",
+   "y23": "3.02"
+  },
+  "ptw": {
+   "y25": 9.6,
+   "y24": 12.7,
+   "y23": 11.7
+  },
+  "ptwRank": {
+   "y25": 33,
+   "y24": 17,
+   "y23": 21
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 13,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Breece Hall",
+  "team": "NYJ",
+  "age": 25,
+  "pos": "RB",
+  "posAdpRank": 17,
+  "rank": 34,
+  "adp": "3.10",
+  "adpHistory": {
+   "y25": "4.02",
+   "y24": "1.04",
+   "y23": "4.06"
+  },
+  "ptw": {
+   "y25": 11.9,
+   "y24": 13.3,
+   "y23": 14.9
+  },
+  "ptwRank": {
+   "y25": 20,
+   "y24": 18,
+   "y23": 6
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 16,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Zay Flowers",
+  "team": "BAL",
+  "age": 25,
+  "pos": "WR",
+  "posAdpRank": 15,
+  "rank": 35,
+  "adp": "3.11",
+  "adpHistory": {
+   "y25": "6.04",
+   "y24": "6.03",
+   "y23": "9.10"
+  },
+  "ptw": {
+   "y25": 11.8,
+   "y24": 10.1,
+   "y23": 10.5
+  },
+  "ptwRank": {
+   "y25": 14,
+   "y24": 36,
+   "y23": 32
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Cam Skattebo",
+  "team": "NYG",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 18,
+  "rank": 36,
+  "adp": "3.12",
+  "adpHistory": {
+   "y25": "9.09",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 14.5,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 10,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 8,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Lamar Jackson",
+  "team": "BAL",
+  "age": 29,
+  "pos": "QB",
+  "posAdpRank": 2,
+  "rank": 37,
+  "adp": "4.01",
+  "adpHistory": {
+   "y25": "2.11",
+   "y24": "4.01",
+   "y23": "3.10"
+  },
+  "ptw": {
+   "y25": 17.1,
+   "y24": 25.6,
+   "y23": 21.1
+  },
+  "ptwRank": {
+   "y25": 16,
+   "y24": 1,
+   "y23": 4
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 17,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Tee Higgins",
+  "team": "CIN",
+  "age": 27,
+  "pos": "WR",
+  "posAdpRank": 16,
+  "rank": 38,
+  "adp": "4.02",
+  "adpHistory": {
+   "y25": "3.08",
+   "y24": "5.12",
+   "y23": "3.06"
+  },
+  "ptw": {
+   "y25": 12.1,
+   "y24": 15.5,
+   "y23": 9.7
+  },
+  "ptwRank": {
+   "y25": 11,
+   "y24": 4,
+   "y23": 39
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 12,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Tetairoa McMillan",
+  "team": "CAR",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 17,
+  "rank": 39,
+  "adp": "4.03",
+  "adpHistory": {
+   "y25": "5.10",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 10.4,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 25,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Travis Etienne Jr.",
+  "team": "NO",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 19,
+  "rank": 40,
+  "adp": "4.04",
+  "adpHistory": {
+   "y25": "8.05",
+   "y24": "2.04",
+   "y23": "3.03"
+  },
+  "ptw": {
+   "y25": 13.9,
+   "y24": 7.4,
+   "y23": 14.9
+  },
+  "ptwRank": {
+   "y25": 13,
+   "y24": 43,
+   "y23": 6
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 14,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Emeka Egbuka",
+  "team": "TB",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 18,
+  "rank": 41,
+  "adp": "4.05",
+  "adpHistory": {
+   "y25": "7.08",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 9.7,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 30,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Colston Loveland",
+  "team": "CHI",
+  "age": 22,
+  "pos": "TE",
+  "posAdpRank": 3,
+  "rank": 42,
+  "adp": "4.06",
+  "adpHistory": {
+   "y25": "10.05",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 8.5,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 14,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 16,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Ladd McConkey",
+  "team": "LAC",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 19,
+  "rank": 43,
+  "adp": "4.07",
+  "adpHistory": {
+   "y25": "3.02",
+   "y24": "9.12",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 9.2,
+   "y24": 12.5,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 38,
+   "y24": 18,
+   "y23": null
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 16,
+   "y23": null
+  }
+ },
+ {
+  "name": "Garrett Wilson",
+  "team": "NYJ",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 20,
+  "rank": 44,
+  "adp": "4.08",
+  "adpHistory": {
+   "y25": "4.07",
+   "y24": "1.12",
+   "y23": "2.07"
+  },
+  "ptw": {
+   "y25": 11.6,
+   "y24": 11.8,
+   "y23": 9.7
+  },
+  "ptwRank": {
+   "y25": 16,
+   "y24": 23,
+   "y23": 39
+  },
+  "gms": {
+   "y25": 7,
+   "y24": 17,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Quinshon Judkins",
+  "team": "CLE",
+  "age": 22,
+  "pos": "RB",
+  "posAdpRank": 20,
+  "rank": 45,
+  "adp": "4.09",
+  "adpHistory": {
+   "y25": "9.08",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 11.2,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 23,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 14,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jaylen Waddle",
+  "team": "DEN",
+  "age": 27,
+  "pos": "WR",
+  "posAdpRank": 21,
+  "rank": 46,
+  "adp": "4.10",
+  "adpHistory": {
+   "y25": "6.09",
+   "y24": "4.05",
+   "y23": "2.11"
+  },
+  "ptw": {
+   "y25": 10.1,
+   "y24": 7.5,
+   "y23": 11.6
+  },
+  "ptwRank": {
+   "y25": 28,
+   "y24": 56,
+   "y23": 23
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 14,
+   "y23": 14
+  }
+ },
+ {
+  "name": "Bucky Irving",
+  "team": "TB",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 21,
+  "rank": 47,
+  "adp": "4.11",
+  "adpHistory": {
+   "y25": "2.07",
+   "y24": "15.04",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 12.3,
+   "y24": 13.0,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 18,
+   "y24": 19,
+   "y23": null
+  },
+  "gms": {
+   "y25": 10,
+   "y24": 17,
+   "y23": null
+  }
+ },
+ {
+  "name": "David Montgomery",
+  "team": "HOU",
+  "age": 29,
+  "pos": "RB",
+  "posAdpRank": 22,
+  "rank": 48,
+  "adp": "4.12",
+  "adpHistory": {
+   "y25": "5.06",
+   "y24": "5.09",
+   "y23": "7.04"
+  },
+  "ptw": {
+   "y25": 9.1,
+   "y24": 14.6,
+   "y23": 14.2
+  },
+  "ptwRank": {
+   "y25": 33,
+   "y24": 13,
+   "y23": 12
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 14,
+   "y23": 14
+  }
+ },
+ {
+  "name": "D'Andre Swift",
+  "team": "CHI",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 23,
+  "rank": 49,
+  "adp": "5.01",
+  "adpHistory": {
+   "y25": "6.01",
+   "y24": "6.02",
+   "y23": "7.01"
+  },
+  "ptw": {
+   "y25": 13.2,
+   "y24": 11.4,
+   "y23": 11.2
+  },
+  "ptwRank": {
+   "y25": 16,
+   "y24": 22,
+   "y23": 24
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 17,
+   "y23": 15
+  }
+ },
+ {
+  "name": "DJ Moore",
+  "team": "BUF",
+  "age": 29,
+  "pos": "WR",
+  "posAdpRank": 22,
+  "rank": 50,
+  "adp": "5.02",
+  "adpHistory": {
+   "y25": "5.05",
+   "y24": "4.02",
+   "y23": "5.03"
+  },
+  "ptw": {
+   "y25": 8.5,
+   "y24": 11.1,
+   "y23": 14.0
+  },
+  "ptwRank": {
+   "y25": 43,
+   "y24": 32,
+   "y23": 10
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Tyler Warren",
+  "team": "IND",
+  "age": 24,
+  "pos": "TE",
+  "posAdpRank": 4,
+  "rank": 51,
+  "adp": "5.03",
+  "adpHistory": {
+   "y25": "8.08",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 8.9,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 10,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Drake Maye",
+  "team": "NE",
+  "age": 24,
+  "pos": "QB",
+  "posAdpRank": 3,
+  "rank": 52,
+  "adp": "5.04",
+  "adpHistory": {
+   "y25": "10.10",
+   "y24": "19.04",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 21.1,
+   "y24": 13.4,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 3,
+   "y24": 33,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 12,
+   "y23": null
+  }
+ },
+ {
+  "name": "Joe Burrow",
+  "team": "CIN",
+  "age": 29,
+  "pos": "QB",
+  "posAdpRank": 4,
+  "rank": 53,
+  "adp": "5.05",
+  "adpHistory": {
+   "y25": "3.12",
+   "y24": "6.06",
+   "y23": "3.12"
+  },
+  "ptw": {
+   "y25": 17.4,
+   "y24": 22.5,
+   "y23": 15.3
+  },
+  "ptwRank": {
+   "y25": 15,
+   "y24": 3,
+   "y23": 26
+  },
+  "gms": {
+   "y25": 8,
+   "y24": 17,
+   "y23": 10
+  }
+ },
+ {
+  "name": "Luther Burden III",
+  "team": "CHI",
+  "age": 22,
+  "pos": "WR",
+  "posAdpRank": 23,
+  "rank": 54,
+  "adp": "5.06",
+  "adpHistory": {
+   "y25": "13.07",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.0,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 58,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 15,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "TreVeyon Henderson",
+  "team": "NE",
+  "age": 23,
+  "pos": "RB",
+  "posAdpRank": 24,
+  "rank": 55,
+  "adp": "5.07",
+  "adpHistory": {
+   "y25": "4.10",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 11.1,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 24,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Terry McLaurin",
+  "team": "WAS",
+  "age": 30,
+  "pos": "WR",
+  "posAdpRank": 24,
+  "rank": 56,
+  "adp": "5.08",
+  "adpHistory": {
+   "y25": "4.06",
+   "y24": "6.07",
+   "y23": "5.08"
+  },
+  "ptw": {
+   "y25": 9.5,
+   "y24": 13.3,
+   "y23": 9.6
+  },
+  "ptwRank": {
+   "y25": 35,
+   "y24": 15,
+   "y23": 42
+  },
+  "gms": {
+   "y25": 10,
+   "y24": 17,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Davante Adams",
+  "team": "LAR",
+  "age": 33,
+  "pos": "WR",
+  "posAdpRank": 25,
+  "rank": 57,
+  "adp": "5.09",
+  "adpHistory": {
+   "y25": "4.09",
+   "y24": "2.07",
+   "y23": "2.06"
+  },
+  "ptw": {
+   "y25": 13.8,
+   "y24": 14.2,
+   "y23": 12.6
+  },
+  "ptwRank": {
+   "y25": 8,
+   "y24": 10,
+   "y23": 18
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 14,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Bhayshul Tuten",
+  "team": "JAC",
+  "age": 23,
+  "pos": "RB",
+  "posAdpRank": 25,
+  "rank": 58,
+  "adp": "5.10",
+  "adpHistory": {
+   "y25": "12.11",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 5.6,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 58,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 15,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jadarian Price",
+  "team": "SEA",
+  "age": 22,
+  "pos": "RB",
+  "posAdpRank": 26,
+  "rank": 59,
+  "adp": "5.11",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jameson Williams",
+  "team": "DET",
+  "age": 25,
+  "pos": "WR",
+  "posAdpRank": 26,
+  "rank": 60,
+  "adp": "5.12",
+  "adpHistory": {
+   "y25": "6.03",
+   "y24": "10.10",
+   "y23": "13.07"
+  },
+  "ptw": {
+   "y25": 11.0,
+   "y24": 12.2,
+   "y23": 5.7
+  },
+  "ptwRank": {
+   "y25": 18,
+   "y24": 20,
+   "y23": 75
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 15,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Jayden Daniels",
+  "team": "WAS",
+  "age": 25,
+  "pos": "QB",
+  "posAdpRank": 5,
+  "rank": 61,
+  "adp": "6.01",
+  "adpHistory": {
+   "y25": "3.06",
+   "y24": "8.11",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 16.8,
+   "y24": 21.5,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 17,
+   "y24": 5,
+   "y23": null
+  },
+  "gms": {
+   "y25": 7,
+   "y24": 17,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jalen Hurts",
+  "team": "PHI",
+  "age": 28,
+  "pos": "QB",
+  "posAdpRank": 6,
+  "rank": 62,
+  "adp": "6.02",
+  "adpHistory": {
+   "y25": "3.11",
+   "y24": "3.07",
+   "y23": "2.10"
+  },
+  "ptw": {
+   "y25": 19.1,
+   "y24": 21.3,
+   "y23": 21.9
+  },
+  "ptwRank": {
+   "y25": 7,
+   "y24": 6,
+   "y23": 2
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 15,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Mike Evans",
+  "team": "SF",
+  "age": 33,
+  "pos": "WR",
+  "posAdpRank": 27,
+  "rank": 63,
+  "adp": "6.03",
+  "adpHistory": {
+   "y25": "4.04",
+   "y24": "3.08",
+   "y23": "7.07"
+  },
+  "ptw": {
+   "y25": 8.7,
+   "y24": 14.5,
+   "y23": 14.3
+  },
+  "ptwRank": {
+   "y25": 40,
+   "y24": 9,
+   "y23": 8
+  },
+  "gms": {
+   "y25": 8,
+   "y24": 14,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Rome Odunze",
+  "team": "CHI",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 28,
+  "rank": 64,
+  "adp": "6.04",
+  "adpHistory": {
+   "y25": "7.06",
+   "y24": "8.05",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 10.3,
+   "y24": 6.9,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 27,
+   "y24": 66,
+   "y23": null
+  },
+  "gms": {
+   "y25": 12,
+   "y24": 17,
+   "y23": null
+  }
+ },
+ {
+  "name": "Tucker Kraft",
+  "team": "GB",
+  "age": 25,
+  "pos": "TE",
+  "posAdpRank": 5,
+  "rank": 65,
+  "adp": "6.05",
+  "adpHistory": {
+   "y25": "8.11",
+   "y24": "26.08",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 12.6,
+   "y24": 8.1,
+   "y23": 4.5
+  },
+  "ptwRank": {
+   "y25": 2,
+   "y24": 12,
+   "y23": 32
+  },
+  "gms": {
+   "y25": 8,
+   "y24": 16,
+   "y23": 14
+  }
+ },
+ {
+  "name": "Christian Watson",
+  "team": "GB",
+  "age": 27,
+  "pos": "WR",
+  "posAdpRank": 29,
+  "rank": 66,
+  "adp": "6.06",
+  "adpHistory": {
+   "y25": "32.03",
+   "y24": "9.04",
+   "y23": "5.12"
+  },
+  "ptw": {
+   "y25": 11.5,
+   "y24": 6.1,
+   "y23": 9.7
+  },
+  "ptwRank": {
+   "y25": 17,
+   "y24": 78,
+   "y23": 39
+  },
+  "gms": {
+   "y25": 10,
+   "y24": 12,
+   "y23": 9
+  }
+ },
+ {
+  "name": "Harold Fannin Jr.",
+  "team": "CLE",
+  "age": 22,
+  "pos": "TE",
+  "posAdpRank": 6,
+  "rank": 67,
+  "adp": "6.07",
+  "adpHistory": {
+   "y25": "23.12",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 9.4,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 8,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 16,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jaylen Warren",
+  "team": "PIT",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 27,
+  "rank": 68,
+  "adp": "6.08",
+  "adpHistory": {
+   "y25": "7.09",
+   "y24": "8.04",
+   "y23": "11.10"
+  },
+  "ptw": {
+   "y25": 12.3,
+   "y24": 7.0,
+   "y23": 9.8
+  },
+  "ptwRank": {
+   "y25": 18,
+   "y24": 46,
+   "y23": 33
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 15,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Parker Washington",
+  "team": "JAC",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 30,
+  "rank": 69,
+  "adp": "6.09",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 9.7,
+   "y24": 4.8,
+   "y23": 3.5
+  },
+  "ptwRank": {
+   "y25": 30,
+   "y24": 94,
+   "y23": 97
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 12,
+   "y23": 9
+  }
+ },
+ {
+  "name": "Sam LaPorta",
+  "team": "DET",
+  "age": 25,
+  "pos": "TE",
+  "posAdpRank": 7,
+  "rank": 70,
+  "adp": "6.10",
+  "adpHistory": {
+   "y25": "5.03",
+   "y24": "3.05",
+   "y23": "14.03"
+  },
+  "ptw": {
+   "y25": 9.7,
+   "y24": 9.0,
+   "y23": 11.5
+  },
+  "ptwRank": {
+   "y25": 7,
+   "y24": 9,
+   "y23": 1
+  },
+  "gms": {
+   "y25": 9,
+   "y24": 16,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Caleb Williams",
+  "team": "CHI",
+  "age": 24,
+  "pos": "QB",
+  "posAdpRank": 7,
+  "rank": 71,
+  "adp": "6.11",
+  "adpHistory": {
+   "y25": "10.04",
+   "y24": "8.12",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 19.1,
+   "y24": 15.3,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 7,
+   "y24": 24,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": null
+  }
+ },
+ {
+  "name": "Rhamondre Stevenson",
+  "team": "NE",
+  "age": 28,
+  "pos": "RB",
+  "posAdpRank": 28,
+  "rank": 72,
+  "adp": "6.12",
+  "adpHistory": {
+   "y25": "10.07",
+   "y24": "5.10",
+   "y23": "3.05"
+  },
+  "ptw": {
+   "y25": 11.6,
+   "y24": 10.6,
+   "y23": 10.6
+  },
+  "ptwRank": {
+   "y25": 21,
+   "y24": 29,
+   "y23": 29
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 15,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Carnell Tate",
+  "team": "TEN",
+  "age": 21,
+  "pos": "WR",
+  "posAdpRank": 31,
+  "rank": 73,
+  "adp": "7.01",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Kyle Pitts Sr.",
+  "team": "ATL",
+  "age": 25,
+  "pos": "TE",
+  "posAdpRank": 8,
+  "rank": 74,
+  "adp": "7.02",
+  "adpHistory": {
+   "y25": "11.10",
+   "y24": "6.05",
+   "y23": "6.06"
+  },
+  "ptw": {
+   "y25": 9.8,
+   "y24": 6.3,
+   "y23": 6.5
+  },
+  "ptwRank": {
+   "y25": 6,
+   "y24": 21,
+   "y23": 17
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 15,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Brian Thomas Jr.",
+  "team": "JAC",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 32,
+  "rank": 75,
+  "adp": "7.03",
+  "adpHistory": {
+   "y25": "2.03",
+   "y24": "10.01",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 8.2,
+   "y24": 14.1,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 46,
+   "y24": 12,
+   "y23": null
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 17,
+   "y23": null
+  }
+ },
+ {
+  "name": "Marvin Harrison Jr.",
+  "team": "ARI",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 33,
+  "rank": 76,
+  "adp": "7.04",
+  "adpHistory": {
+   "y25": "4.03",
+   "y24": "2.03",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 8.9,
+   "y24": 9.7,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 39,
+   "y24": 42,
+   "y23": null
+  },
+  "gms": {
+   "y25": 12,
+   "y24": 16,
+   "y23": null
+  }
+ },
+ {
+  "name": "Justin Herbert",
+  "team": "LAC",
+  "age": 28,
+  "pos": "QB",
+  "posAdpRank": 8,
+  "rank": 77,
+  "adp": "7.05",
+  "adpHistory": {
+   "y25": "10.01",
+   "y24": "11.05",
+   "y23": "4.08"
+  },
+  "ptw": {
+   "y25": 18.7,
+   "y24": 17.0,
+   "y23": 18.5
+  },
+  "ptwRank": {
+   "y25": 10,
+   "y24": 16,
+   "y23": 11
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 17,
+   "y23": 13
+  }
+ },
+ {
+  "name": "Dak Prescott",
+  "team": "DAL",
+  "age": 33,
+  "pos": "QB",
+  "posAdpRank": 9,
+  "rank": 78,
+  "adp": "7.06",
+  "adpHistory": {
+   "y25": "8.04",
+   "y24": "7.03",
+   "y23": "7.11"
+  },
+  "ptw": {
+   "y25": 19.0,
+   "y24": 15.6,
+   "y23": 20.7
+  },
+  "ptwRank": {
+   "y25": 9,
+   "y24": 22,
+   "y23": 5
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 8,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Rico Dowdle",
+  "team": "PIT",
+  "age": 28,
+  "pos": "RB",
+  "posAdpRank": 29,
+  "rank": 79,
+  "adp": "7.07",
+  "adpHistory": {
+   "y25": "14.10",
+   "y24": "11.11",
+   "y23": "27.07"
+  },
+  "ptw": {
+   "y25": 11.6,
+   "y24": 11.1,
+   "y23": 5.2
+  },
+  "ptwRank": {
+   "y25": 21,
+   "y24": 24,
+   "y23": 57
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Tony Pollard",
+  "team": "TEN",
+  "age": 29,
+  "pos": "RB",
+  "posAdpRank": 30,
+  "rank": 80,
+  "adp": "7.08",
+  "adpHistory": {
+   "y25": "5.09",
+   "y24": "7.08",
+   "y23": "2.01"
+  },
+  "ptw": {
+   "y25": 10.0,
+   "y24": 11.3,
+   "y23": 11.5
+  },
+  "ptwRank": {
+   "y25": 30,
+   "y24": 23,
+   "y23": 22
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Chuba Hubbard",
+  "team": "CAR",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 31,
+  "rank": 81,
+  "adp": "7.09",
+  "adpHistory": {
+   "y25": "4.08",
+   "y24": "11.08",
+   "y23": "15.03"
+  },
+  "ptw": {
+   "y25": 7.4,
+   "y24": 14.7,
+   "y23": 9.6
+  },
+  "ptwRank": {
+   "y25": 42,
+   "y24": 12,
+   "y23": 35
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 15,
+   "y23": 17
+  }
+ },
+ {
+  "name": "DK Metcalf",
+  "team": "PIT",
+  "age": 28,
+  "pos": "WR",
+  "posAdpRank": 34,
+  "rank": 82,
+  "adp": "7.10",
+  "adpHistory": {
+   "y25": "4.12",
+   "y24": "4.04",
+   "y23": "3.11"
+  },
+  "ptw": {
+   "y25": 10.5,
+   "y24": 10.5,
+   "y23": 12.0
+  },
+  "ptwRank": {
+   "y25": 24,
+   "y24": 33,
+   "y23": 20
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 15,
+   "y23": 16
+  }
+ },
+ {
+  "name": "RJ Harvey",
+  "team": "DEN",
+  "age": 25,
+  "pos": "RB",
+  "posAdpRank": 32,
+  "rank": 83,
+  "adp": "7.11",
+  "adpHistory": {
+   "y25": "5.02",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 10.8,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 27,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jonathon Brooks",
+  "team": "CAR",
+  "age": 23,
+  "pos": "RB",
+  "posAdpRank": 33,
+  "rank": 84,
+  "adp": "7.12",
+  "adpHistory": {
+   "y25": null,
+   "y24": "9.01",
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": 2.0,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": 96,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": 2,
+   "y23": null
+  }
+ },
+ {
+  "name": "Trevor Lawrence",
+  "team": "JAC",
+  "age": 26,
+  "pos": "QB",
+  "posAdpRank": 10,
+  "rank": 85,
+  "adp": "8.01",
+  "adpHistory": {
+   "y25": "13.11",
+   "y24": "11.01",
+   "y23": "5.06"
+  },
+  "ptw": {
+   "y25": 20.6,
+   "y24": 15.2,
+   "y23": 17.3
+  },
+  "ptwRank": {
+   "y25": 6,
+   "y24": 26,
+   "y23": 17
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 10,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Michael Wilson",
+  "team": "ARI",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 35,
+  "rank": 86,
+  "adp": "8.02",
+  "adpHistory": {
+   "y25": "23.02",
+   "y24": "17.10",
+   "y23": "23.11"
+  },
+  "ptw": {
+   "y25": 10.7,
+   "y24": 6.3,
+   "y23": 7.3
+  },
+  "ptwRank": {
+   "y25": 20,
+   "y24": 74,
+   "y23": 57
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 15,
+   "y23": 13
+  }
+ },
+ {
+  "name": "Courtland Sutton",
+  "team": "DEN",
+  "age": 30,
+  "pos": "WR",
+  "posAdpRank": 36,
+  "rank": 87,
+  "adp": "8.03",
+  "adpHistory": {
+   "y25": "5.04",
+   "y24": "10.02",
+   "y23": "9.07"
+  },
+  "ptw": {
+   "y25": 10.7,
+   "y24": 11.8,
+   "y23": 10.0
+  },
+  "ptwRank": {
+   "y25": 20,
+   "y24": 23,
+   "y23": 36
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 16
+  }
+ },
+ {
+  "name": "J.K. Dobbins",
+  "team": "DEN",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 34,
+  "rank": 88,
+  "adp": "8.04",
+  "adpHistory": {
+   "y25": "9.02",
+   "y24": "11.09",
+   "y23": "4.12"
+  },
+  "ptw": {
+   "y25": 11.0,
+   "y24": 13.5,
+   "y23": 10.7
+  },
+  "ptwRank": {
+   "y25": 25,
+   "y24": 17,
+   "y23": 28
+  },
+  "gms": {
+   "y25": 10,
+   "y24": 13,
+   "y23": 1
+  }
+ },
+ {
+  "name": "Chris Godwin Jr.",
+  "team": "TB",
+  "age": 30,
+  "pos": "WR",
+  "posAdpRank": 37,
+  "rank": 89,
+  "adp": "8.05",
+  "adpHistory": {
+   "y25": "9.11",
+   "y24": "7.05",
+   "y23": "6.07"
+  },
+  "ptw": {
+   "y25": 7.4,
+   "y24": 16.1,
+   "y23": 9.9
+  },
+  "ptwRank": {
+   "y25": 52,
+   "y24": 2,
+   "y23": 37
+  },
+  "gms": {
+   "y25": 9,
+   "y24": 7,
+   "y23": 17
+  }
+ },
+ {
+  "name": "George Kittle",
+  "team": "SF",
+  "age": 32,
+  "pos": "TE",
+  "posAdpRank": 9,
+  "rank": 90,
+  "adp": "8.06",
+  "adpHistory": {
+   "y25": "3.10",
+   "y24": "5.08",
+   "y23": "5.02"
+  },
+  "ptw": {
+   "y25": 12.1,
+   "y24": 13.2,
+   "y23": 10.7
+  },
+  "ptwRank": {
+   "y25": 3,
+   "y24": 1,
+   "y23": 5
+  },
+  "gms": {
+   "y25": 11,
+   "y24": 15,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Blake Corum",
+  "team": "LAR",
+  "age": 25,
+  "pos": "RB",
+  "posAdpRank": 35,
+  "rank": 91,
+  "adp": "8.07",
+  "adpHistory": {
+   "y25": "20.02",
+   "y24": "10.11",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.0,
+   "y24": 2.0,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 45,
+   "y24": 96,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 12,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jaxson Dart",
+  "team": "NYG",
+  "age": 23,
+  "pos": "QB",
+  "posAdpRank": 11,
+  "rank": 92,
+  "adp": "8.08",
+  "adpHistory": {
+   "y25": "20.04",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 17.6,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 14,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 14,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Travis Kelce",
+  "team": "KC",
+  "age": 36,
+  "pos": "TE",
+  "posAdpRank": 10,
+  "rank": 93,
+  "adp": "8.09",
+  "adpHistory": {
+   "y25": "6.02",
+   "y24": "3.02",
+   "y23": "1.06"
+  },
+  "ptw": {
+   "y25": 9.1,
+   "y24": 9.2,
+   "y23": 11.5
+  },
+  "ptwRank": {
+   "y25": 9,
+   "y24": 8,
+   "y23": 1
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 15
+  }
+ },
+ {
+  "name": "Kyle Monangai",
+  "team": "CHI",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 36,
+  "rank": 94,
+  "adp": "8.10",
+  "adpHistory": {
+   "y25": "18.09",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 8.1,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 37,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Alec Pierce",
+  "team": "IND",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 38,
+  "rank": 95,
+  "adp": "8.11",
+  "adpHistory": {
+   "y25": "21.03",
+   "y24": "28.08",
+   "y23": "19.11"
+  },
+  "ptw": {
+   "y25": 10.7,
+   "y24": 8.9,
+   "y23": 4.7
+  },
+  "ptwRank": {
+   "y25": 20,
+   "y24": 48,
+   "y23": 81
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 14,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Jordyn Tyson",
+  "team": "NO",
+  "age": 22,
+  "pos": "WR",
+  "posAdpRank": 39,
+  "rank": 96,
+  "adp": "8.12",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jordan Mason",
+  "team": "MIN",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 37,
+  "rank": 97,
+  "adp": "9.01",
+  "adpHistory": {
+   "y25": "7.12",
+   "y24": "15.12",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.6,
+   "y24": 9.1,
+   "y23": 2.7
+  },
+  "ptwRank": {
+   "y25": 41,
+   "y24": 34,
+   "y23": 80
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 12,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Jacory Croskey-Merritt",
+  "team": "WAS",
+  "age": 25,
+  "pos": "RB",
+  "posAdpRank": 38,
+  "rank": 98,
+  "adp": "9.02",
+  "adpHistory": {
+   "y25": "9.03",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 8.0,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 38,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Dalton Kincaid",
+  "team": "BUF",
+  "age": 26,
+  "pos": "TE",
+  "posAdpRank": 11,
+  "rank": 99,
+  "adp": "9.03",
+  "adpHistory": {
+   "y25": "11.04",
+   "y24": "5.04",
+   "y23": "10.11"
+  },
+  "ptw": {
+   "y25": 8.9,
+   "y24": 6.1,
+   "y23": 7.1
+  },
+  "ptwRank": {
+   "y25": 10,
+   "y24": 22,
+   "y23": 15
+  },
+  "gms": {
+   "y25": 12,
+   "y24": 13,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Matthew Stafford",
+  "team": "LAR",
+  "age": 38,
+  "pos": "QB",
+  "posAdpRank": 12,
+  "rank": 100,
+  "adp": "9.04",
+  "adpHistory": {
+   "y25": "15.02",
+   "y24": "13.02",
+   "y23": "16.09"
+  },
+  "ptw": {
+   "y25": 21.1,
+   "y24": 13.9,
+   "y23": 16.9
+  },
+  "ptwRank": {
+   "y25": 3,
+   "y24": 30,
+   "y23": 18
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 15
+  }
+ },
+ {
+  "name": "Bo Nix",
+  "team": "DEN",
+  "age": 26,
+  "pos": "QB",
+  "posAdpRank": 13,
+  "rank": 101,
+  "adp": "9.05",
+  "adpHistory": {
+   "y25": "6.10",
+   "y24": "15.07",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 18.6,
+   "y24": 19.3,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 11,
+   "y24": 9,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": null
+  }
+ },
+ {
+  "name": "Isaiah Likely",
+  "team": "NYG",
+  "age": 26,
+  "pos": "TE",
+  "posAdpRank": 12,
+  "rank": 102,
+  "adp": "9.06",
+  "adpHistory": {
+   "y25": "16.05",
+   "y24": "15.05",
+   "y23": "22.07"
+  },
+  "ptw": {
+   "y25": 3.4,
+   "y24": 6.4,
+   "y23": 5.1
+  },
+  "ptwRank": {
+   "y25": 45,
+   "y24": 19,
+   "y23": 27
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 14,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Makai Lemon",
+  "team": "PHI",
+  "age": 22,
+  "pos": "WR",
+  "posAdpRank": 40,
+  "rank": 103,
+  "adp": "9.07",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Patrick Mahomes II",
+  "team": "KC",
+  "age": 30,
+  "pos": "QB",
+  "posAdpRank": 14,
+  "rank": 104,
+  "adp": "9.08",
+  "adpHistory": {
+   "y25": "5.01",
+   "y24": "3.06",
+   "y23": "2.02"
+  },
+  "ptw": {
+   "y25": 21.2,
+   "y24": 18.3,
+   "y23": 18.4
+  },
+  "ptwRank": {
+   "y25": 2,
+   "y24": 13,
+   "y23": 12
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 16,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Josh Downs",
+  "team": "IND",
+  "age": 25,
+  "pos": "WR",
+  "posAdpRank": 41,
+  "rank": 105,
+  "adp": "9.09",
+  "adpHistory": {
+   "y25": "11.03",
+   "y24": "16.02",
+   "y23": "22.11"
+  },
+  "ptw": {
+   "y25": 6.7,
+   "y24": 10.5,
+   "y23": 7.2
+  },
+  "ptwRank": {
+   "y25": 59,
+   "y24": 33,
+   "y23": 58
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 14,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Quentin Johnston",
+  "team": "LAC",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 42,
+  "rank": 106,
+  "adp": "9.10",
+  "adpHistory": {
+   "y25": "22.07",
+   "y24": "18.06",
+   "y23": "12.01"
+  },
+  "ptw": {
+   "y25": 10.4,
+   "y24": 9.8,
+   "y23": 4.4
+  },
+  "ptwRank": {
+   "y25": 25,
+   "y24": 40,
+   "y23": 89
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 14,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Brock Purdy",
+  "team": "SF",
+  "age": 26,
+  "pos": "QB",
+  "posAdpRank": 15,
+  "rank": 107,
+  "adp": "9.11",
+  "adpHistory": {
+   "y25": "9.01",
+   "y24": "8.07",
+   "y23": "13.10"
+  },
+  "ptw": {
+   "y25": 20.8,
+   "y24": 18.6,
+   "y23": 19.2
+  },
+  "ptwRank": {
+   "y25": 5,
+   "y24": 12,
+   "y23": 8
+  },
+  "gms": {
+   "y25": 9,
+   "y24": 15,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Jordan Addison",
+  "team": "MIN",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 43,
+  "rank": 108,
+  "adp": "9.12",
+  "adpHistory": {
+   "y25": "8.12",
+   "y24": "9.07",
+   "y23": "8.05"
+  },
+  "ptw": {
+   "y25": 8.1,
+   "y24": 12.1,
+   "y23": 11.0
+  },
+  "ptwRank": {
+   "y25": 47,
+   "y24": 21,
+   "y23": 28
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 15,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Kenny Gainwell",
+  "team": "TB",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 39,
+  "rank": 109,
+  "adp": "10.01",
+  "adpHistory": {
+   "y25": "24.09",
+   "y24": "21.12",
+   "y23": "12.12"
+  },
+  "ptw": {
+   "y25": 10.9,
+   "y24": 3.2,
+   "y23": 5.1
+  },
+  "ptwRank": {
+   "y25": 26,
+   "y24": 76,
+   "y23": 58
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Michael Pittman Jr.",
+  "team": "PIT",
+  "age": 28,
+  "pos": "WR",
+  "posAdpRank": 44,
+  "rank": 110,
+  "adp": "10.02",
+  "adpHistory": {
+   "y25": "10.11",
+   "y24": "4.03",
+   "y23": "7.08"
+  },
+  "ptw": {
+   "y25": 9.6,
+   "y24": 8.2,
+   "y23": 12.2
+  },
+  "ptwRank": {
+   "y25": 33,
+   "y24": 52,
+   "y23": 19
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Stefon Diggs",
+  "team": "WAS",
+  "age": 32,
+  "pos": "WR",
+  "posAdpRank": 45,
+  "rank": 111,
+  "adp": "10.03",
+  "adpHistory": {
+   "y25": "8.01",
+   "y24": "4.08",
+   "y23": "1.10"
+  },
+  "ptw": {
+   "y25": 9.9,
+   "y24": 12.3,
+   "y23": 13.0
+  },
+  "ptwRank": {
+   "y25": 29,
+   "y24": 19,
+   "y23": 15
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 8,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Jayden Reed",
+  "team": "GB",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 46,
+  "rank": 112,
+  "adp": "10.04",
+  "adpHistory": {
+   "y25": "10.08",
+   "y24": "7.10",
+   "y23": "20.01"
+  },
+  "ptw": {
+   "y25": 5.6,
+   "y24": 10.0,
+   "y23": 11.6
+  },
+  "ptwRank": {
+   "y25": 71,
+   "y24": 38,
+   "y23": 23
+  },
+  "gms": {
+   "y25": 7,
+   "y24": 16,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Jake Ferguson",
+  "team": "DAL",
+  "age": 27,
+  "pos": "TE",
+  "posAdpRank": 13,
+  "rank": 113,
+  "adp": "10.05",
+  "adpHistory": {
+   "y25": "11.02",
+   "y24": "7.09",
+   "y23": "18.04"
+  },
+  "ptw": {
+   "y25": 8.7,
+   "y24": 5.4,
+   "y23": 8.3
+  },
+  "ptwRank": {
+   "y25": 13,
+   "y24": 29,
+   "y23": 9
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 14,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Rachaad White",
+  "team": "WAS",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 40,
+  "rank": 114,
+  "adp": "10.06",
+  "adpHistory": {
+   "y25": "13.04",
+   "y24": "3.11",
+   "y23": "6.10"
+  },
+  "ptw": {
+   "y25": 7.2,
+   "y24": 10.9,
+   "y23": 13.9
+  },
+  "ptwRank": {
+   "y25": 44,
+   "y24": 27,
+   "y23": 14
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 15,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Mark Andrews",
+  "team": "BAL",
+  "age": 30,
+  "pos": "TE",
+  "posAdpRank": 14,
+  "rank": 115,
+  "adp": "10.09",
+  "adpHistory": {
+   "y25": "7.01",
+   "y24": "5.02",
+   "y23": "3.04"
+  },
+  "ptw": {
+   "y25": 6.3,
+   "y24": 9.5,
+   "y23": 11.3
+  },
+  "ptwRank": {
+   "y25": 24,
+   "y24": 7,
+   "y23": 4
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 15,
+   "y23": 10
+  }
+ },
+ {
+  "name": "Jared Goff",
+  "team": "DET",
+  "age": 31,
+  "pos": "QB",
+  "posAdpRank": 16,
+  "rank": 116,
+  "adp": "10.10",
+  "adpHistory": {
+   "y25": "9.06",
+   "y24": "9.09",
+   "y23": "12.07"
+  },
+  "ptw": {
+   "y25": 17.9,
+   "y24": 19.8,
+   "y23": 17.8
+  },
+  "ptwRank": {
+   "y25": 13,
+   "y24": 8,
+   "y23": 15
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Aaron Jones Sr.",
+  "team": "MIN",
+  "age": 31,
+  "pos": "RB",
+  "posAdpRank": 41,
+  "rank": 117,
+  "adp": "10.11",
+  "adpHistory": {
+   "y25": "6.07",
+   "y24": "5.05",
+   "y23": "4.01"
+  },
+  "ptw": {
+   "y25": 8.7,
+   "y24": 12.7,
+   "y23": 10.9
+  },
+  "ptwRank": {
+   "y25": 34,
+   "y24": 20,
+   "y23": 27
+  },
+  "gms": {
+   "y25": 12,
+   "y24": 17,
+   "y23": 11
+  }
+ },
+ {
+  "name": "De'Zhaun Stribling",
+  "team": "SF",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 47,
+  "rank": 118,
+  "adp": "10.12",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Dallas Goedert",
+  "team": "PHI",
+  "age": 31,
+  "pos": "TE",
+  "posAdpRank": 15,
+  "rank": 119,
+  "adp": "11.02",
+  "adpHistory": {
+   "y25": "12.02",
+   "y24": "10.03",
+   "y23": "6.03"
+  },
+  "ptw": {
+   "y25": 10.3,
+   "y24": 8.3,
+   "y23": 7.6
+  },
+  "ptwRank": {
+   "y25": 5,
+   "y24": 11,
+   "y23": 13
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 9,
+   "y23": 14
+  }
+ },
+ {
+  "name": "Wan'Dale Robinson",
+  "team": "TEN",
+  "age": 25,
+  "pos": "WR",
+  "posAdpRank": 48,
+  "rank": 120,
+  "adp": "11.03",
+  "adpHistory": {
+   "y25": "19.06",
+   "y24": "20.05",
+   "y23": "22.10"
+  },
+  "ptw": {
+   "y25": 10.7,
+   "y24": 8.0,
+   "y23": 6.9
+  },
+  "ptwRank": {
+   "y25": 20,
+   "y24": 54,
+   "y23": 62
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 17,
+   "y23": 15
+  }
+ },
+ {
+  "name": "Kyler Murray",
+  "team": "MIN",
+  "age": 29,
+  "pos": "QB",
+  "posAdpRank": 17,
+  "rank": 121,
+  "adp": "11.04",
+  "adpHistory": {
+   "y25": "8.07",
+   "y24": "6.01",
+   "y23": "17.11"
+  },
+  "ptw": {
+   "y25": 16.2,
+   "y24": 18.1,
+   "y23": 18.9
+  },
+  "ptwRank": {
+   "y25": 20,
+   "y24": 14,
+   "y23": 9
+  },
+  "gms": {
+   "y25": 5,
+   "y24": 17,
+   "y23": 8
+  }
+ },
+ {
+  "name": "KC Concepcion",
+  "team": "CLE",
+  "age": 21,
+  "pos": "WR",
+  "posAdpRank": 49,
+  "rank": 122,
+  "adp": "11.07",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jakobi Meyers",
+  "team": "JAC",
+  "age": 29,
+  "pos": "WR",
+  "posAdpRank": 50,
+  "rank": 123,
+  "adp": "11.08",
+  "adpHistory": {
+   "y25": "8.06",
+   "y24": "13.01",
+   "y23": "14.08"
+  },
+  "ptw": {
+   "y25": 8.6,
+   "y24": 11.6,
+   "y23": 11.4
+  },
+  "ptwRank": {
+   "y25": 41,
+   "y24": 26,
+   "y23": 25
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 15,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Deebo Samuel Sr.",
+  "team": "SF",
+  "age": 30,
+  "pos": "WR",
+  "posAdpRank": 51,
+  "rank": 124,
+  "adp": "11.09",
+  "adpHistory": {
+   "y25": "7.11",
+   "y24": "3.03",
+   "y23": "4.02"
+  },
+  "ptw": {
+   "y25": 9.5,
+   "y24": 8.5,
+   "y23": 14.2
+  },
+  "ptwRank": {
+   "y25": 35,
+   "y24": 50,
+   "y23": 9
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 14,
+   "y23": 15
+  }
+ },
+ {
+  "name": "Matthew Golden",
+  "team": "GB",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 52,
+  "rank": 125,
+  "adp": "11.10",
+  "adpHistory": {
+   "y25": "8.02",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.0,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 97,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 14,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Baker Mayfield",
+  "team": "TB",
+  "age": 31,
+  "pos": "QB",
+  "posAdpRank": 18,
+  "rank": 126,
+  "adp": "11.11",
+  "adpHistory": {
+   "y25": "6.08",
+   "y24": "13.08",
+   "y23": "20.10"
+  },
+  "ptw": {
+   "y25": 16.6,
+   "y24": 22.5,
+   "y23": 16.7
+  },
+  "ptwRank": {
+   "y25": 19,
+   "y24": 3,
+   "y23": 20
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Zach Charbonnet",
+  "team": "SEA",
+  "age": 25,
+  "pos": "RB",
+  "posAdpRank": 42,
+  "rank": 127,
+  "adp": "11.12",
+  "adpHistory": {
+   "y25": "8.09",
+   "y24": "12.09",
+   "y23": "9.05"
+  },
+  "ptw": {
+   "y25": 10.7,
+   "y24": 9.8,
+   "y23": 5.6
+  },
+  "ptwRank": {
+   "y25": 28,
+   "y24": 31,
+   "y23": 54
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 17,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Xavier Worthy",
+  "team": "KC",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 53,
+  "rank": 128,
+  "adp": "12.01",
+  "adpHistory": {
+   "y25": "5.08",
+   "y24": "8.03",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 6.3,
+   "y24": 9.3,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 63,
+   "y24": 45,
+   "y23": null
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 15,
+   "y23": null
+  }
+ },
+ {
+  "name": "Mike Washington Jr.",
+  "team": "LV",
+  "age": 23,
+  "pos": "RB",
+  "posAdpRank": 43,
+  "rank": 129,
+  "adp": "12.03",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Alvin Kamara",
+  "team": "NO",
+  "age": 31,
+  "pos": "RB",
+  "posAdpRank": 44,
+  "rank": 130,
+  "adp": "12.04",
+  "adpHistory": {
+   "y25": "4.01",
+   "y24": "4.09",
+   "y23": "6.11"
+  },
+  "ptw": {
+   "y25": 7.7,
+   "y24": 16.5,
+   "y23": 15.0
+  },
+  "ptwRank": {
+   "y25": 40,
+   "y24": 6,
+   "y23": 5
+  },
+  "gms": {
+   "y25": 11,
+   "y24": 14,
+   "y23": 13
+  }
+ },
+ {
+  "name": "Jordan Love",
+  "team": "GB",
+  "age": 27,
+  "pos": "QB",
+  "posAdpRank": 19,
+  "rank": 131,
+  "adp": "12.05",
+  "adpHistory": {
+   "y25": "11.09",
+   "y24": "7.01",
+   "y23": "14.07"
+  },
+  "ptw": {
+   "y25": 16.1,
+   "y24": 16.3,
+   "y23": 19.4
+  },
+  "ptwRank": {
+   "y25": 21,
+   "y24": 18,
+   "y23": 6
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 15,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Tyler Allgeier",
+  "team": "ARI",
+  "age": 26,
+  "pos": "RB",
+  "posAdpRank": 45,
+  "rank": 132,
+  "adp": "12.07",
+  "adpHistory": {
+   "y25": "14.07",
+   "y24": "14.02",
+   "y23": "13.01"
+  },
+  "ptw": {
+   "y25": 6.8,
+   "y24": 5.9,
+   "y23": 7.6
+  },
+  "ptwRank": {
+   "y25": 48,
+   "y24": 50,
+   "y23": 42
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Rashid Shaheed",
+  "team": "SEA",
+  "age": 28,
+  "pos": "WR",
+  "posAdpRank": 54,
+  "rank": 133,
+  "adp": "12.08",
+  "adpHistory": {
+   "y25": "12.04",
+   "y24": "14.06",
+   "y23": "22.03"
+  },
+  "ptw": {
+   "y25": 7.1,
+   "y24": 11.6,
+   "y23": 8.3
+  },
+  "ptwRank": {
+   "y25": 54,
+   "y24": 26,
+   "y23": 48
+  },
+  "gms": {
+   "y25": 18,
+   "y24": 5,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Brian Robinson Jr.",
+  "team": "ATL",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 46,
+  "rank": 134,
+  "adp": "12.10",
+  "adpHistory": {
+   "y25": "9.05",
+   "y24": "8.06",
+   "y23": "8.11"
+  },
+  "ptw": {
+   "y25": 3.4,
+   "y24": 10.7,
+   "y23": 12.0
+  },
+  "ptwRank": {
+   "y25": 82,
+   "y24": 28,
+   "y23": 21
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 14,
+   "y23": 15
+  }
+ },
+ {
+  "name": "Tyrone Tracy Jr.",
+  "team": "NYG",
+  "age": 26,
+  "pos": "RB",
+  "posAdpRank": 47,
+  "rank": 135,
+  "adp": "12.11",
+  "adpHistory": {
+   "y25": "7.02",
+   "y24": "17.12",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 9.5,
+   "y24": 9.6,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 32,
+   "y24": 32,
+   "y23": null
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 17,
+   "y23": null
+  }
+ },
+ {
+  "name": "Woody Marks",
+  "team": "HOU",
+  "age": 25,
+  "pos": "RB",
+  "posAdpRank": 48,
+  "rank": 136,
+  "adp": "12.12",
+  "adpHistory": {
+   "y25": "18.01",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 8.7,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 34,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 16,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Sam Darnold",
+  "team": "SEA",
+  "age": 29,
+  "pos": "QB",
+  "posAdpRank": 20,
+  "rank": 137,
+  "adp": "13.01",
+  "adpHistory": {
+   "y25": "15.06",
+   "y24": "19.08",
+   "y23": "25.05"
+  },
+  "ptw": {
+   "y25": 14.7,
+   "y24": 18.8,
+   "y23": 2.4
+  },
+  "ptwRank": {
+   "y25": 27,
+   "y24": 11,
+   "y23": 66
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 9
+  }
+ },
+ {
+  "name": "Chris Rodriguez Jr.",
+  "team": "JAC",
+  "age": 26,
+  "pos": "RB",
+  "posAdpRank": 49,
+  "rank": 138,
+  "adp": "13.02",
+  "adpHistory": {
+   "y25": "22.01",
+   "y24": null,
+   "y23": "29.07"
+  },
+  "ptw": {
+   "y25": 7.0,
+   "y24": 3.9,
+   "y23": 3.7
+  },
+  "ptwRank": {
+   "y25": 45,
+   "y24": 66,
+   "y23": 74
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 6,
+   "y23": 10
+  }
+ },
+ {
+  "name": "Romeo Doubs",
+  "team": "NE",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 55,
+  "rank": 139,
+  "adp": "13.03",
+  "adpHistory": {
+   "y25": "19.08",
+   "y24": "12.04",
+   "y23": "13.04"
+  },
+  "ptw": {
+   "y25": 8.6,
+   "y24": 8.4,
+   "y23": 8.5
+  },
+  "ptwRank": {
+   "y25": 41,
+   "y24": 51,
+   "y23": 46
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 13,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Jonah Coleman",
+  "team": "DEN",
+  "age": 23,
+  "pos": "RB",
+  "posAdpRank": 50,
+  "rank": 140,
+  "adp": "13.05",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Hunter Henry",
+  "team": "NE",
+  "age": 31,
+  "pos": "TE",
+  "posAdpRank": 16,
+  "rank": 141,
+  "adp": "13.06",
+  "adpHistory": {
+   "y25": "13.10",
+   "y24": "16.11",
+   "y23": "20.02"
+  },
+  "ptw": {
+   "y25": 8.8,
+   "y24": 7.0,
+   "y23": 7.1
+  },
+  "ptwRank": {
+   "y25": 12,
+   "y24": 17,
+   "y23": 15
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 15,
+   "y23": 14
+  }
+ },
+ {
+  "name": "Isiah Pacheco",
+  "team": "DET",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 51,
+  "rank": 142,
+  "adp": "13.07",
+  "adpHistory": {
+   "y25": "5.11",
+   "y24": "2.09",
+   "y23": "6.12"
+  },
+  "ptw": {
+   "y25": 6.0,
+   "y24": 7.3,
+   "y23": 13.7
+  },
+  "ptwRank": {
+   "y25": 52,
+   "y24": 44,
+   "y23": 15
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 7,
+   "y23": 14
+  }
+ },
+ {
+  "name": "Ja'Kobi Lane",
+  "team": "BAL",
+  "age": 22,
+  "pos": "WR",
+  "posAdpRank": 56,
+  "rank": 143,
+  "adp": "13.08",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Juwan Johnson",
+  "team": "NO",
+  "age": 29,
+  "pos": "TE",
+  "posAdpRank": 17,
+  "rank": 144,
+  "adp": "13.09",
+  "adpHistory": {
+   "y25": "24.04",
+   "y24": "22.03",
+   "y23": "15.12"
+  },
+  "ptw": {
+   "y25": 8.3,
+   "y24": 5.8,
+   "y23": 6.1
+  },
+  "ptwRank": {
+   "y25": 16,
+   "y24": 24,
+   "y23": 19
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 15,
+   "y23": 13
+  }
+ },
+ {
+  "name": "Malik Willis",
+  "team": "MIA",
+  "age": 27,
+  "pos": "QB",
+  "posAdpRank": 21,
+  "rank": 145,
+  "adp": "13.10",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 12.8,
+   "y24": 7.4,
+   "y23": 1.5
+  },
+  "ptwRank": {
+   "y25": 32,
+   "y24": 52,
+   "y23": 68
+  },
+  "gms": {
+   "y25": 4,
+   "y24": 5,
+   "y23": 2
+  }
+ },
+ {
+  "name": "Khalil Shakir",
+  "team": "BUF",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 57,
+  "rank": 146,
+  "adp": "13.11",
+  "adpHistory": {
+   "y25": "9.10",
+   "y24": "11.06",
+   "y23": "26.02"
+  },
+  "ptw": {
+   "y25": 8.1,
+   "y24": 9.6,
+   "y23": 5.9
+  },
+  "ptwRank": {
+   "y25": 47,
+   "y24": 43,
+   "y23": 71
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 15,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Brenton Strange",
+  "team": "JAC",
+  "age": 25,
+  "pos": "TE",
+  "posAdpRank": 18,
+  "rank": 147,
+  "adp": "13.12",
+  "adpHistory": {
+   "y25": "15.11",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.9,
+   "y24": 4.2,
+   "y23": 1.0
+  },
+  "ptwRank": {
+   "y25": 18,
+   "y24": 35,
+   "y23": 80
+  },
+  "gms": {
+   "y25": 12,
+   "y24": 13,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Tyler Shough",
+  "team": "NO",
+  "age": 26,
+  "pos": "QB",
+  "posAdpRank": 22,
+  "rank": 148,
+  "adp": "14.01",
+  "adpHistory": {
+   "y25": "25.07",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 14.9,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 25,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 11,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jalen Coker",
+  "team": "CAR",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 58,
+  "rank": 149,
+  "adp": "14.02",
+  "adpHistory": {
+   "y25": "22.05",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 6.7,
+   "y24": 7.0,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 59,
+   "y24": 64,
+   "y23": null
+  },
+  "gms": {
+   "y25": 11,
+   "y24": 10,
+   "y23": null
+  }
+ },
+ {
+  "name": "Keaton Mitchell",
+  "team": "LAC",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 52,
+  "rank": 150,
+  "adp": "14.03",
+  "adpHistory": {
+   "y25": "19.11",
+   "y24": "22.10",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 3.9,
+   "y24": 1.6,
+   "y23": 9.3
+  },
+  "ptwRank": {
+   "y25": 74,
+   "y24": 107,
+   "y23": 38
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 2,
+   "y23": 7
+  }
+ },
+ {
+  "name": "Jalen Nailor",
+  "team": "LV",
+  "age": 27,
+  "pos": "WR",
+  "posAdpRank": 59,
+  "rank": 151,
+  "adp": "14.04",
+  "adpHistory": {
+   "y25": null,
+   "y24": "28.11",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 5.1,
+   "y24": 5.2,
+   "y23": 0.9
+  },
+  "ptwRank": {
+   "y25": 75,
+   "y24": 91,
+   "y23": 179
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 14,
+   "y23": 5
+  }
+ },
+ {
+  "name": "Tyjae Spears",
+  "team": "TEN",
+  "age": 25,
+  "pos": "RB",
+  "posAdpRank": 53,
+  "rank": 152,
+  "adp": "14.05",
+  "adpHistory": {
+   "y25": "14.06",
+   "y24": "9.02",
+   "y23": "15.10"
+  },
+  "ptw": {
+   "y25": 6.9,
+   "y24": 8.2,
+   "y23": 7.5
+  },
+  "ptwRank": {
+   "y25": 47,
+   "y24": 37,
+   "y23": 43
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 12,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Tank Bigsby",
+  "team": "PHI",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 54,
+  "rank": 153,
+  "adp": "14.06",
+  "adpHistory": {
+   "y25": "9.12",
+   "y24": "18.12",
+   "y23": "12.05"
+  },
+  "ptw": {
+   "y25": 3.3,
+   "y24": 7.8,
+   "y23": 1.5
+  },
+  "ptwRank": {
+   "y25": 84,
+   "y24": 38,
+   "y23": 108
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 15,
+   "y23": 15
+  }
+ },
+ {
+  "name": "Chig Okonkwo",
+  "team": "WAS",
+  "age": 26,
+  "pos": "TE",
+  "posAdpRank": 19,
+  "rank": 154,
+  "adp": "14.08",
+  "adpHistory": {
+   "y25": "14.05",
+   "y24": "17.01",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 5.6,
+   "y24": 5.2,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 30,
+   "y24": 31,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": null
+  }
+ },
+ {
+  "name": "Oronde Gadsden II",
+  "team": "LAC",
+  "age": 23,
+  "pos": "TE",
+  "posAdpRank": 20,
+  "rank": 155,
+  "adp": "14.10",
+  "adpHistory": {
+   "y25": "31.08",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.1,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 21,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 15,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Fernando Mendoza",
+  "team": "LV",
+  "age": 22,
+  "pos": "QB",
+  "posAdpRank": 23,
+  "rank": 156,
+  "adp": "14.11",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Denzel Boston",
+  "team": "CLE",
+  "age": 22,
+  "pos": "WR",
+  "posAdpRank": 60,
+  "rank": 157,
+  "adp": "14.12",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "C.J. Stroud",
+  "team": "HOU",
+  "age": 24,
+  "pos": "QB",
+  "posAdpRank": 24,
+  "rank": 158,
+  "adp": "15.01",
+  "adpHistory": {
+   "y25": "11.06",
+   "y24": "4.11",
+   "y23": "14.12"
+  },
+  "ptw": {
+   "y25": 15.5,
+   "y24": 13.7,
+   "y23": 18.7
+  },
+  "ptwRank": {
+   "y25": 23,
+   "y24": 31,
+   "y23": 10
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 17,
+   "y23": 15
+  }
+ },
+ {
+  "name": "T.J. Hockenson",
+  "team": "MIN",
+  "age": 29,
+  "pos": "TE",
+  "posAdpRank": 21,
+  "rank": 159,
+  "adp": "15.02",
+  "adpHistory": {
+   "y25": "6.05",
+   "y24": "11.07",
+   "y23": "4.09"
+  },
+  "ptw": {
+   "y25": 5.8,
+   "y24": 6.6,
+   "y23": 11.4
+  },
+  "ptwRank": {
+   "y25": 27,
+   "y24": 18,
+   "y23": 3
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 10,
+   "y23": 15
+  }
+ },
+ {
+  "name": "MarShawn Lloyd",
+  "team": "GB",
+  "age": 25,
+  "pos": "RB",
+  "posAdpRank": 55,
+  "rank": 160,
+  "adp": "15.03",
+  "adpHistory": {
+   "y25": null,
+   "y24": "13.10",
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": 2.3,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": 89,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": 1,
+   "y23": null
+  }
+ },
+ {
+  "name": "Cam Ward",
+  "team": "TEN",
+  "age": 24,
+  "pos": "QB",
+  "posAdpRank": 25,
+  "rank": 161,
+  "adp": "15.04",
+  "adpHistory": {
+   "y25": "14.04",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 11.4,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 41,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Kenyon Sadiq",
+  "team": "NYJ",
+  "age": 21,
+  "pos": "TE",
+  "posAdpRank": 22,
+  "rank": 162,
+  "adp": "15.05",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Daniel Jones",
+  "team": "IND",
+  "age": 29,
+  "pos": "QB",
+  "posAdpRank": 26,
+  "rank": 163,
+  "adp": "15.06",
+  "adpHistory": {
+   "y25": "22.03",
+   "y24": "19.01",
+   "y23": "9.08"
+  },
+  "ptw": {
+   "y25": 18.0,
+   "y24": 14.2,
+   "y23": 10.5
+  },
+  "ptwRank": {
+   "y25": 12,
+   "y24": 29,
+   "y23": 42
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 10,
+   "y23": 6
+  }
+ },
+ {
+  "name": "Bryce Young",
+  "team": "CAR",
+  "age": 25,
+  "pos": "QB",
+  "posAdpRank": 27,
+  "rank": 164,
+  "adp": "15.07",
+  "adpHistory": {
+   "y25": "15.04",
+   "y24": "18.09",
+   "y23": "14.01"
+  },
+  "ptw": {
+   "y25": 14.3,
+   "y24": 14.6,
+   "y23": 10.4
+  },
+  "ptwRank": {
+   "y25": 29,
+   "y24": 27,
+   "y23": 43
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 13,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Jauan Jennings",
+  "team": "MIN",
+  "age": 29,
+  "pos": "WR",
+  "posAdpRank": 61,
+  "rank": 165,
+  "adp": "15.08",
+  "adpHistory": {
+   "y25": "9.07",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 9.7,
+   "y24": 11.5,
+   "y23": 3.2
+  },
+  "ptwRank": {
+   "y25": 30,
+   "y24": 29,
+   "y23": 104
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 15,
+   "y23": 13
+  }
+ },
+ {
+  "name": "Aaron Rodgers",
+  "team": "PIT",
+  "age": 42,
+  "pos": "QB",
+  "posAdpRank": 28,
+  "rank": 166,
+  "adp": "15.09",
+  "adpHistory": {
+   "y25": "14.12",
+   "y24": "12.02",
+   "y23": "9.04"
+  },
+  "ptw": {
+   "y25": 14.6,
+   "y24": 15.7,
+   "y23": 0.0
+  },
+  "ptwRank": {
+   "y25": 28,
+   "y24": 21,
+   "y23": 76
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 17,
+   "y23": 1
+  }
+ },
+ {
+  "name": "David Njoku",
+  "team": "LAC",
+  "age": 30,
+  "pos": "TE",
+  "posAdpRank": 23,
+  "rank": 167,
+  "adp": "15.11",
+  "adpHistory": {
+   "y25": "8.03",
+   "y24": "8.01",
+   "y23": "8.08"
+  },
+  "ptw": {
+   "y25": 5.8,
+   "y24": 10.6,
+   "y23": 10.0
+  },
+  "ptwRank": {
+   "y25": 27,
+   "y24": 5,
+   "y23": 7
+  },
+  "gms": {
+   "y25": 12,
+   "y24": 11,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Keenan Allen",
+  "team": "IND",
+  "age": 34,
+  "pos": "WR",
+  "posAdpRank": 62,
+  "rank": 168,
+  "adp": "15.12",
+  "adpHistory": {
+   "y25": "12.05",
+   "y24": "7.04",
+   "y23": "4.07"
+  },
+  "ptw": {
+   "y25": 8.4,
+   "y24": 10.0,
+   "y23": 17.3
+  },
+  "ptwRank": {
+   "y25": 45,
+   "y24": 38,
+   "y23": 3
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 15,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Travis Hunter",
+  "team": "JAC",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 63,
+  "rank": 169,
+  "adp": "16.01",
+  "adpHistory": {
+   "y25": "6.11",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.1,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 54,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 7,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jalen McMillan",
+  "team": "TB",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 64,
+  "rank": 170,
+  "adp": "16.02",
+  "adpHistory": {
+   "y25": "23.06",
+   "y24": "22.02",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 6.0,
+   "y24": 9.0,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 65,
+   "y24": 46,
+   "y23": null
+  },
+  "gms": {
+   "y25": 4,
+   "y24": 12,
+   "y23": null
+  }
+ },
+ {
+  "name": "Omar Cooper Jr.",
+  "team": "NYJ",
+  "age": 22,
+  "pos": "WR",
+  "posAdpRank": 65,
+  "rank": 171,
+  "adp": "16.03",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Dalton Schultz",
+  "team": "HOU",
+  "age": 30,
+  "pos": "TE",
+  "posAdpRank": 24,
+  "rank": 172,
+  "adp": "16.04",
+  "adpHistory": {
+   "y25": "17.09",
+   "y24": "11.03",
+   "y23": "12.02"
+  },
+  "ptw": {
+   "y25": 8.0,
+   "y24": 5.4,
+   "y23": 8.1
+  },
+  "ptwRank": {
+   "y25": 17,
+   "y24": 29,
+   "y23": 11
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 15
+  }
+ },
+ {
+  "name": "AJ Barner",
+  "team": "SEA",
+  "age": 24,
+  "pos": "TE",
+  "posAdpRank": 25,
+  "rank": 173,
+  "adp": "16.08",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.1,
+   "y24": 3.7,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 21,
+   "y24": 37,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 14,
+   "y23": null
+  }
+ },
+ {
+  "name": "Terrance Ferguson",
+  "team": "LAR",
+  "age": 23,
+  "pos": "TE",
+  "posAdpRank": 26,
+  "rank": 174,
+  "adp": "16.09",
+  "adpHistory": {
+   "y25": "26.11",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 3.6,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 43,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 13,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "James Conner",
+  "team": "ARI",
+  "age": 31,
+  "pos": "RB",
+  "posAdpRank": 56,
+  "rank": 175,
+  "adp": "17.01",
+  "adpHistory": {
+   "y25": "4.11",
+   "y24": "5.07",
+   "y23": "5.11"
+  },
+  "ptw": {
+   "y25": 7.3,
+   "y24": 14.4,
+   "y23": 14.5
+  },
+  "ptwRank": {
+   "y25": 43,
+   "y24": 14,
+   "y23": 9
+  },
+  "gms": {
+   "y25": 4,
+   "y24": 16,
+   "y23": 13
+  }
+ },
+ {
+  "name": "Pat Freiermuth",
+  "team": "PIT",
+  "age": 27,
+  "pos": "TE",
+  "posAdpRank": 27,
+  "rank": 176,
+  "adp": "17.02",
+  "adpHistory": {
+   "y25": "17.03",
+   "y24": "11.10",
+   "y23": "7.09"
+  },
+  "ptw": {
+   "y25": 5.5,
+   "y24": 8.0,
+   "y23": 5.1
+  },
+  "ptwRank": {
+   "y25": 31,
+   "y24": 13,
+   "y23": 27
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Cooper Kupp",
+  "team": "SEA",
+  "age": 33,
+  "pos": "WR",
+  "posAdpRank": 66,
+  "rank": 177,
+  "adp": "17.03",
+  "adpHistory": {
+   "y25": "9.04",
+   "y24": "3.10",
+   "y23": "2.03"
+  },
+  "ptw": {
+   "y25": 5.9,
+   "y24": 11.8,
+   "y23": 11.2
+  },
+  "ptwRank": {
+   "y25": 69,
+   "y24": 23,
+   "y23": 27
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 11,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Isaac TeSlaa",
+  "team": "DET",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 67,
+  "rank": 178,
+  "adp": "17.04",
+  "adpHistory": {
+   "y25": "18.06",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.0,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 97,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Dylan Sampson",
+  "team": "CLE",
+  "age": 21,
+  "pos": "RB",
+  "posAdpRank": 57,
+  "rank": 179,
+  "adp": "17.11",
+  "adpHistory": {
+   "y25": "13.06",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.7,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 65,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 15,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Greg Dulcich",
+  "team": "MIA",
+  "age": 26,
+  "pos": "TE",
+  "posAdpRank": 28,
+  "rank": 180,
+  "adp": "17.12",
+  "adpHistory": {
+   "y25": null,
+   "y24": "23.09",
+   "y23": "13.08"
+  },
+  "ptw": {
+   "y25": 5.0,
+   "y24": 0.6,
+   "y23": 2.0
+  },
+  "ptwRank": {
+   "y25": 33,
+   "y24": 86,
+   "y23": 62
+  },
+  "gms": {
+   "y25": 10,
+   "y24": 2,
+   "y23": 2
+  }
+ },
+ {
+  "name": "Tyreek Hill",
+  "team": "FA",
+  "age": 32,
+  "pos": "WR",
+  "posAdpRank": 68,
+  "rank": 181,
+  "adp": "18.02",
+  "adpHistory": {
+   "y25": "3.07",
+   "y24": "1.02",
+   "y23": "1.05"
+  },
+  "ptw": {
+   "y25": 10.8,
+   "y24": 10.5,
+   "y23": 19.8
+  },
+  "ptwRank": {
+   "y25": 19,
+   "y24": 33,
+   "y23": 1
+  },
+  "gms": {
+   "y25": 4,
+   "y24": 17,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Braelon Allen",
+  "team": "NYJ",
+  "age": 22,
+  "pos": "RB",
+  "posAdpRank": 58,
+  "rank": 182,
+  "adp": "18.06",
+  "adpHistory": {
+   "y25": "10.03",
+   "y24": "17.07",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 3.6,
+   "y24": 4.5,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 78,
+   "y24": 62,
+   "y23": null
+  },
+  "gms": {
+   "y25": 4,
+   "y24": 17,
+   "y23": null
+  }
+ },
+ {
+  "name": "Malik Washington",
+  "team": "MIA",
+  "age": 25,
+  "pos": "WR",
+  "posAdpRank": 69,
+  "rank": 183,
+  "adp": "18.08",
+  "adpHistory": {
+   "y25": "28.01",
+   "y24": "25.12",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 5.5,
+   "y24": 3.0,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 73,
+   "y24": 118,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 10,
+   "y23": null
+  }
+ },
+ {
+  "name": "Tank Dell",
+  "team": "HOU",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 70,
+  "rank": 184,
+  "adp": "18.09",
+  "adpHistory": {
+   "y25": null,
+   "y24": "6.04",
+   "y23": "19.12"
+  },
+  "ptw": {
+   "y25": null,
+   "y24": 8.2,
+   "y23": 12.9
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": 52,
+   "y23": 16
+  },
+  "gms": {
+   "y25": null,
+   "y24": 13,
+   "y23": 11
+  }
+ },
+ {
+  "name": "Kaelon Black",
+  "team": "SF",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 59,
+  "rank": 185,
+  "adp": "18.11",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Cyrus Allen",
+  "team": "KC",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 71,
+  "rank": 186,
+  "adp": "19.01",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jerry Jeudy",
+  "team": "CLE",
+  "age": 27,
+  "pos": "WR",
+  "posAdpRank": 72,
+  "rank": 187,
+  "adp": "19.02",
+  "adpHistory": {
+   "y25": "7.05",
+   "y24": "13.04",
+   "y23": "7.06"
+  },
+  "ptw": {
+   "y25": 5.6,
+   "y24": 11.5,
+   "y23": 7.2
+  },
+  "ptwRank": {
+   "y25": 71,
+   "y24": 29,
+   "y23": 58
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 15
+  }
+ },
+ {
+  "name": "Tre Tucker",
+  "team": "LV",
+  "age": 25,
+  "pos": "WR",
+  "posAdpRank": 73,
+  "rank": 188,
+  "adp": "19.04",
+  "adpHistory": {
+   "y25": "29.02",
+   "y24": "26.03",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.8,
+   "y24": 6.2,
+   "y23": 4.5
+  },
+  "ptwRank": {
+   "y25": 49,
+   "y24": 77,
+   "y23": 86
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 14
+  }
+ },
+ {
+  "name": "Emmett Johnson",
+  "team": "KC",
+  "age": 22,
+  "pos": "RB",
+  "posAdpRank": 60,
+  "rank": 189,
+  "adp": "19.06",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Dontayvion Wicks",
+  "team": "PHI",
+  "age": 25,
+  "pos": "WR",
+  "posAdpRank": 74,
+  "rank": 190,
+  "adp": "19.07",
+  "adpHistory": {
+   "y25": "26.07",
+   "y24": "13.09",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.3,
+   "y24": 5.4,
+   "y23": 6.7
+  },
+  "ptwRank": {
+   "y25": 92,
+   "y24": 87,
+   "y23": 65
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 13,
+   "y23": 15
+  }
+ },
+ {
+  "name": "Tre' Harris",
+  "team": "LAC",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 75,
+  "rank": 191,
+  "adp": "19.08",
+  "adpHistory": {
+   "y25": "18.04",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 3.2,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 115,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Calvin Ridley",
+  "team": "TEN",
+  "age": 31,
+  "pos": "WR",
+  "posAdpRank": 76,
+  "rank": 192,
+  "adp": "19.09",
+  "adpHistory": {
+   "y25": "6.06",
+   "y24": "7.06",
+   "y23": "3.09"
+  },
+  "ptw": {
+   "y25": 5.5,
+   "y24": 9.8,
+   "y23": 11.3
+  },
+  "ptwRank": {
+   "y25": 73,
+   "y24": 40,
+   "y23": 26
+  },
+  "gms": {
+   "y25": 7,
+   "y24": 17,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Jaydon Blue",
+  "team": "DAL",
+  "age": 22,
+  "pos": "RB",
+  "posAdpRank": 61,
+  "rank": 193,
+  "adp": "19.10",
+  "adpHistory": {
+   "y25": "11.11",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.0,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 70,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 5,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Nicholas Singleton",
+  "team": "TEN",
+  "age": 22,
+  "pos": "RB",
+  "posAdpRank": 62,
+  "rank": 194,
+  "adp": "19.11",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Ray Davis",
+  "team": "BUF",
+  "age": 26,
+  "pos": "RB",
+  "posAdpRank": 63,
+  "rank": 195,
+  "adp": "19.12",
+  "adpHistory": {
+   "y25": "13.05",
+   "y24": "13.11",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 3.5,
+   "y24": 6.3,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 79,
+   "y24": 48,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": null
+  }
+ },
+ {
+  "name": "Caleb Douglas",
+  "team": "MIA",
+  "age": 22,
+  "pos": "WR",
+  "posAdpRank": 77,
+  "rank": 196,
+  "adp": "20.01",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Justice Hill",
+  "team": "BAL",
+  "age": 28,
+  "pos": "RB",
+  "posAdpRank": 64,
+  "rank": 197,
+  "adp": "20.02",
+  "adpHistory": {
+   "y25": "20.01",
+   "y24": "21.05",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 5.5,
+   "y24": 7.1,
+   "y23": 6.0
+  },
+  "ptwRank": {
+   "y25": 59,
+   "y24": 45,
+   "y23": 48
+  },
+  "gms": {
+   "y25": 10,
+   "y24": 15,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Kayshon Boutte",
+  "team": "HOU",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 78,
+  "rank": 198,
+  "adp": "20.03",
+  "adpHistory": {
+   "y25": "26.05",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.7,
+   "y24": 6.7,
+   "y23": 0.6
+  },
+  "ptwRank": {
+   "y25": 50,
+   "y24": 68,
+   "y23": 188
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 15,
+   "y23": 5
+  }
+ },
+ {
+  "name": "Malachi Fields",
+  "team": "NYG",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 79,
+  "rank": 199,
+  "adp": "20.04",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jacoby Brissett",
+  "team": "ARI",
+  "age": 33,
+  "pos": "QB",
+  "posAdpRank": 29,
+  "rank": 200,
+  "adp": "20.06",
+  "adpHistory": {
+   "y25": null,
+   "y24": "22.12",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 16.8,
+   "y24": 5.8,
+   "y23": 7.6
+  },
+  "ptwRank": {
+   "y25": 17,
+   "y24": 53,
+   "y23": 53
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 6,
+   "y23": 3
+  }
+ },
+ {
+  "name": "Adonai Mitchell",
+  "team": "NYJ",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 80,
+  "rank": 201,
+  "adp": "20.07",
+  "adpHistory": {
+   "y25": "24.11",
+   "y24": "14.07",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.5,
+   "y24": 2.5,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 90,
+   "y24": 129,
+   "y23": null
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 13,
+   "y23": null
+  }
+ },
+ {
+  "name": "Zachariah Branch",
+  "team": "ATL",
+  "age": 22,
+  "pos": "WR",
+  "posAdpRank": 81,
+  "rank": 202,
+  "adp": "20.08",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Geno Smith",
+  "team": "NYJ",
+  "age": 35,
+  "pos": "QB",
+  "posAdpRank": 30,
+  "rank": 203,
+  "adp": "20.12",
+  "adpHistory": {
+   "y25": "15.07",
+   "y24": "16.09",
+   "y23": "10.10"
+  },
+  "ptw": {
+   "y25": 12.7,
+   "y24": 16.5,
+   "y23": 15.7
+  },
+  "ptwRank": {
+   "y25": 33,
+   "y24": 17,
+   "y23": 25
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 17,
+   "y23": 15
+  }
+ },
+ {
+  "name": "Kaytron Allen",
+  "team": "WAS",
+  "age": 23,
+  "pos": "RB",
+  "posAdpRank": 65,
+  "rank": 204,
+  "adp": "21.01",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Sean Tucker",
+  "team": "TB",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 66,
+  "rank": 205,
+  "adp": "21.02",
+  "adpHistory": {
+   "y25": "24.07",
+   "y24": null,
+   "y23": "22.09"
+  },
+  "ptw": {
+   "y25": 5.1,
+   "y24": 3.8,
+   "y23": 0.8
+  },
+  "ptwRank": {
+   "y25": 62,
+   "y24": 68,
+   "y23": 121
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 11,
+   "y23": 5
+  }
+ },
+ {
+  "name": "Pat Bryant",
+  "team": "DEN",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 82,
+  "rank": 206,
+  "adp": "21.03",
+  "adpHistory": {
+   "y25": "21.07",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.0,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 97,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 15,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Cade Otton",
+  "team": "TB",
+  "age": 27,
+  "pos": "TE",
+  "posAdpRank": 29,
+  "rank": 207,
+  "adp": "21.04",
+  "adpHistory": {
+   "y25": "16.10",
+   "y24": "17.02",
+   "y23": "24.05"
+  },
+  "ptw": {
+   "y25": 5.8,
+   "y24": 7.9,
+   "y23": 5.5
+  },
+  "ptwRank": {
+   "y25": 27,
+   "y24": 14,
+   "y23": 23
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 13,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Demond Claiborne",
+  "team": "MIN",
+  "age": 22,
+  "pos": "RB",
+  "posAdpRank": 67,
+  "rank": 208,
+  "adp": "21.05",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Gunnar Helm",
+  "team": "TEN",
+  "age": 23,
+  "pos": "TE",
+  "posAdpRank": 30,
+  "rank": 209,
+  "adp": "21.06",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.4,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 37,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 16,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Kimani Vidal",
+  "team": "LAC",
+  "age": 25,
+  "pos": "RB",
+  "posAdpRank": 68,
+  "rank": 210,
+  "adp": "21.07",
+  "adpHistory": {
+   "y25": null,
+   "y24": "15.08",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 8.5,
+   "y24": 3.0,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 36,
+   "y24": 78,
+   "y23": null
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 9,
+   "y23": null
+  }
+ },
+ {
+  "name": "Tua Tagovailoa",
+  "team": "ATL",
+  "age": 28,
+  "pos": "QB",
+  "posAdpRank": 31,
+  "rank": 211,
+  "adp": "21.08",
+  "adpHistory": {
+   "y25": "14.03",
+   "y24": "9.05",
+   "y23": "8.09"
+  },
+  "ptw": {
+   "y25": 12.6,
+   "y24": 17.1,
+   "y23": 16.7
+  },
+  "ptwRank": {
+   "y25": 34,
+   "y24": 15,
+   "y23": 20
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 11,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Jordan James",
+  "team": "SF",
+  "age": 22,
+  "pos": "RB",
+  "posAdpRank": 69,
+  "rank": 212,
+  "adp": "21.09",
+  "adpHistory": {
+   "y25": "27.11",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 0.0,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 141,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 2,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jaylen Wright",
+  "team": "MIA",
+  "age": 23,
+  "pos": "RB",
+  "posAdpRank": 70,
+  "rank": 213,
+  "adp": "21.11",
+  "adpHistory": {
+   "y25": "16.12",
+   "y24": "12.12",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.2,
+   "y24": 1.7,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 69,
+   "y24": 101,
+   "y23": null
+  },
+  "gms": {
+   "y25": 11,
+   "y24": 12,
+   "y23": null
+  }
+ },
+ {
+  "name": "Ryan Flournoy",
+  "team": "DAL",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 83,
+  "rank": 214,
+  "adp": "22.03",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 6.3,
+   "y24": 1.2,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 63,
+   "y24": 156,
+   "y23": null
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 5,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jake Tonges",
+  "team": "SF",
+  "age": 27,
+  "pos": "TE",
+  "posAdpRank": 31,
+  "rank": 215,
+  "adp": "22.05",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.8,
+   "y24": 0.0,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 36,
+   "y24": 114,
+   "y23": null
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 0,
+   "y23": null
+  }
+ },
+ {
+  "name": "Antonio Williams",
+  "team": "WAS",
+  "age": 22,
+  "pos": "WR",
+  "posAdpRank": 84,
+  "rank": 216,
+  "adp": "22.06",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Germie Bernard",
+  "team": "PIT",
+  "age": 22,
+  "pos": "WR",
+  "posAdpRank": 85,
+  "rank": 217,
+  "adp": "22.07",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Kirk Cousins",
+  "team": "LV",
+  "age": 38,
+  "pos": "QB",
+  "posAdpRank": 32,
+  "rank": 218,
+  "adp": "22.08",
+  "adpHistory": {
+   "y25": "23.08",
+   "y24": "12.05",
+   "y23": "10.02"
+  },
+  "ptw": {
+   "y25": 10.9,
+   "y24": 13.7,
+   "y23": 19.3
+  },
+  "ptwRank": {
+   "y25": 44,
+   "y24": 31,
+   "y23": 7
+  },
+  "gms": {
+   "y25": 10,
+   "y24": 14,
+   "y23": 8
+  }
+ },
+ {
+  "name": "Michael Penix Jr.",
+  "team": "ATL",
+  "age": 26,
+  "pos": "QB",
+  "posAdpRank": 33,
+  "rank": 219,
+  "adp": "22.09",
+  "adpHistory": {
+   "y25": "14.08",
+   "y24": "25.05",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 13.7,
+   "y24": 9.4,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 30,
+   "y24": 50,
+   "y23": null
+  },
+  "gms": {
+   "y25": 9,
+   "y24": 5,
+   "y23": null
+  }
+ },
+ {
+  "name": "George Holani",
+  "team": "SEA",
+  "age": 26,
+  "pos": "RB",
+  "posAdpRank": 71,
+  "rank": 220,
+  "adp": "22.10",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 2.0,
+   "y24": 0.5,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 94,
+   "y24": 131,
+   "y23": null
+  },
+  "gms": {
+   "y25": 10,
+   "y24": 2,
+   "y23": null
+  }
+ },
+ {
+  "name": "Keon Coleman",
+  "team": "BUF",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 86,
+  "rank": 221,
+  "adp": "22.11",
+  "adpHistory": {
+   "y25": "11.07",
+   "y24": "10.09",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 6.4,
+   "y24": 7.5,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 61,
+   "y24": 56,
+   "y23": null
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 12,
+   "y23": null
+  }
+ },
+ {
+  "name": "Shedeur Sanders",
+  "team": "CLE",
+  "age": 24,
+  "pos": "QB",
+  "posAdpRank": 34,
+  "rank": 222,
+  "adp": "22.12",
+  "adpHistory": {
+   "y25": "17.11",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 11.9,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 37,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 8,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Eli Stowers",
+  "team": "PHI",
+  "age": 23,
+  "pos": "TE",
+  "posAdpRank": 32,
+  "rank": 223,
+  "adp": "23.01",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Deshaun Watson",
+  "team": "CLE",
+  "age": 30,
+  "pos": "QB",
+  "posAdpRank": 35,
+  "rank": 224,
+  "adp": "23.02",
+  "adpHistory": {
+   "y25": null,
+   "y24": "15.10",
+   "y23": "7.12"
+  },
+  "ptw": {
+   "y25": null,
+   "y24": 11.4,
+   "y23": 15.1
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": 40,
+   "y23": 27
+  },
+  "gms": {
+   "y25": null,
+   "y24": 7,
+   "y23": 6
+  }
+ },
+ {
+  "name": "Austin Ekeler",
+  "team": "FA",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 72,
+  "rank": 225,
+  "adp": "23.03",
+  "adpHistory": {
+   "y25": null,
+   "y24": "8.10",
+   "y23": "1.04"
+  },
+  "ptw": {
+   "y25": 3.5,
+   "y24": 9.6,
+   "y23": 11.4
+  },
+  "ptwRank": {
+   "y25": 79,
+   "y24": 32,
+   "y23": 23
+  },
+  "gms": {
+   "y25": 3,
+   "y24": 12,
+   "y23": 13
+  }
+ },
+ {
+  "name": "Chris Bell",
+  "team": "MIA",
+  "age": 22,
+  "pos": "WR",
+  "posAdpRank": 87,
+  "rank": 226,
+  "adp": "23.04",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Devin Singletary",
+  "team": "NYG",
+  "age": 28,
+  "pos": "RB",
+  "posAdpRank": 73,
+  "rank": 227,
+  "adp": "23.05",
+  "adpHistory": {
+   "y25": "25.03",
+   "y24": "7.12",
+   "y23": "13.09"
+  },
+  "ptw": {
+   "y25": 5.9,
+   "y24": 5.4,
+   "y23": 9.0
+  },
+  "ptwRank": {
+   "y25": 54,
+   "y24": 53,
+   "y23": 39
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 15,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Riley Leonard",
+  "team": "IND",
+  "age": 23,
+  "pos": "QB",
+  "posAdpRank": 36,
+  "rank": 228,
+  "adp": "23.06",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 6.4,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 52,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 5,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Ted Hurst III",
+  "team": "TB",
+  "age": 22,
+  "pos": "WR",
+  "posAdpRank": 88,
+  "rank": 229,
+  "adp": "23.07",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Ty Johnson",
+  "team": "BUF",
+  "age": 28,
+  "pos": "RB",
+  "posAdpRank": 74,
+  "rank": 230,
+  "adp": "23.08",
+  "adpHistory": {
+   "y25": "28.10",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 5.2,
+   "y24": 4.9,
+   "y23": 3.2
+  },
+  "ptwRank": {
+   "y25": 61,
+   "y24": 60,
+   "y23": 77
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 16,
+   "y23": 9
+  }
+ },
+ {
+  "name": "Colby Parkinson",
+  "team": "LAR",
+  "age": 27,
+  "pos": "TE",
+  "posAdpRank": 33,
+  "rank": 231,
+  "adp": "23.09",
+  "adpHistory": {
+   "y25": null,
+   "y24": "24.06",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.2,
+   "y24": 3.0,
+   "y23": 2.9
+  },
+  "ptwRank": {
+   "y25": 20,
+   "y24": 41,
+   "y23": 43
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 13,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Emanuel Wilson",
+  "team": "SEA",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 75,
+  "rank": 232,
+  "adp": "23.10",
+  "adpHistory": {
+   "y25": "25.12",
+   "y24": "28.03",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 5.1,
+   "y24": 5.3,
+   "y23": 1.8
+  },
+  "ptwRank": {
+   "y25": 62,
+   "y24": 57,
+   "y23": 100
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 17,
+   "y23": 7
+  }
+ },
+ {
+  "name": "Najee Harris",
+  "team": "NYG",
+  "age": 28,
+  "pos": "RB",
+  "posAdpRank": 76,
+  "rank": 233,
+  "adp": "23.11",
+  "adpHistory": {
+   "y25": "11.01",
+   "y24": "6.08",
+   "y23": "3.01"
+  },
+  "ptw": {
+   "y25": 3.4,
+   "y24": 11.0,
+   "y23": 10.6
+  },
+  "ptwRank": {
+   "y25": 82,
+   "y24": 26,
+   "y23": 29
+  },
+  "gms": {
+   "y25": 3,
+   "y24": 17,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Devaughn Vele",
+  "team": "NO",
+  "age": 28,
+  "pos": "WR",
+  "posAdpRank": 89,
+  "rank": 234,
+  "adp": "23.12",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.1,
+   "y24": 6.6,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 94,
+   "y24": 70,
+   "y23": null
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 12,
+   "y23": null
+  }
+ },
+ {
+  "name": "Darnell Mooney",
+  "team": "NYG",
+  "age": 28,
+  "pos": "WR",
+  "posAdpRank": 90,
+  "rank": 235,
+  "adp": "24.01",
+  "adpHistory": {
+   "y25": "13.02",
+   "y24": "17.08",
+   "y23": "15.11"
+  },
+  "ptw": {
+   "y25": 4.4,
+   "y24": 10.1,
+   "y23": 4.5
+  },
+  "ptwRank": {
+   "y25": 91,
+   "y24": 36,
+   "y23": 86
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 15,
+   "y23": 13
+  }
+ },
+ {
+  "name": "Carson Beck",
+  "team": "ARI",
+  "age": 23,
+  "pos": "QB",
+  "posAdpRank": 37,
+  "rank": 236,
+  "adp": "24.02",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Samaje Perine",
+  "team": "CIN",
+  "age": 30,
+  "pos": "RB",
+  "posAdpRank": 77,
+  "rank": 237,
+  "adp": "24.03",
+  "adpHistory": {
+   "y25": "27.09",
+   "y24": "22.05",
+   "y23": "10.01"
+  },
+  "ptw": {
+   "y25": 4.6,
+   "y24": 4.0,
+   "y23": 5.7
+  },
+  "ptwRank": {
+   "y25": 66,
+   "y24": 65,
+   "y23": 51
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 17,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Evan Engram",
+  "team": "DEN",
+  "age": 32,
+  "pos": "TE",
+  "posAdpRank": 34,
+  "rank": 238,
+  "adp": "24.04",
+  "adpHistory": {
+   "y25": "7.10",
+   "y24": "6.11",
+   "y23": "7.10"
+  },
+  "ptw": {
+   "y25": 4.9,
+   "y24": 7.3,
+   "y23": 10.2
+  },
+  "ptwRank": {
+   "y25": 35,
+   "y24": 16,
+   "y23": 6
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 9,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Matt Moore",
+  "team": "FA",
+  "age": null,
+  "pos": "QB",
+  "posAdpRank": 38,
+  "rank": 239,
+  "adp": "24.05",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Ty Simpson",
+  "team": "LAR",
+  "age": 23,
+  "pos": "QB",
+  "posAdpRank": 39,
+  "rank": 240,
+  "adp": "24.06",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jalen Tolbert",
+  "team": "MIA",
+  "age": 27,
+  "pos": "WR",
+  "posAdpRank": 91,
+  "rank": 241,
+  "adp": "24.07",
+  "adpHistory": {
+   "y25": "28.08",
+   "y24": "23.05",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 2.9,
+   "y24": 7.5,
+   "y23": 3.0
+  },
+  "ptwRank": {
+   "y25": 122,
+   "y24": 56,
+   "y23": 110
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 16,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Jaivon Heiligh",
+  "team": "FA",
+  "age": null,
+  "pos": "WR",
+  "posAdpRank": 92,
+  "rank": 242,
+  "adp": "24.09",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Mataeo Durant",
+  "team": "FA",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 78,
+  "rank": 243,
+  "adp": "24.10",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Malik Benson",
+  "team": "LV",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 93,
+  "rank": 244,
+  "adp": "24.11",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Kareem Hunt",
+  "team": "FA",
+  "age": 31,
+  "pos": "RB",
+  "posAdpRank": 79,
+  "rank": 245,
+  "adp": "24.12",
+  "adpHistory": {
+   "y25": "14.01",
+   "y24": "24.02",
+   "y23": "15.04"
+  },
+  "ptw": {
+   "y25": 8.0,
+   "y24": 11.1,
+   "y23": 7.4
+  },
+  "ptwRank": {
+   "y25": 38,
+   "y24": 24,
+   "y23": 44
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 13,
+   "y23": 14
+  }
+ },
+ {
+  "name": "Gary Brightwell",
+  "team": "CIN",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 80,
+  "rank": 246,
+  "adp": "25.01",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 0.0,
+   "y24": 0.0,
+   "y23": 2.3
+  },
+  "ptwRank": {
+   "y25": 141,
+   "y24": 141,
+   "y23": 89
+  },
+  "gms": {
+   "y25": 2,
+   "y24": 0,
+   "y23": 3
+  }
+ },
+ {
+  "name": "Jaquarii Roberson",
+  "team": "FA",
+  "age": null,
+  "pos": "WR",
+  "posAdpRank": 94,
+  "rank": 247,
+  "adp": "25.02",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Tory Horton",
+  "team": "SEA",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 95,
+  "rank": 248,
+  "adp": "25.03",
+  "adpHistory": {
+   "y25": "20.09",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.3,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 53,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 8,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Reggie Gilliam",
+  "team": "NE",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 81,
+  "rank": 249,
+  "adp": "25.04",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 0.2,
+   "y24": 0.1,
+   "y23": 0.1
+  },
+  "ptwRank": {
+   "y25": 131,
+   "y24": 138,
+   "y23": 143
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 2,
+   "y23": 14
+  }
+ },
+ {
+  "name": "Jaylin Noel",
+  "team": "HOU",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 96,
+  "rank": 250,
+  "adp": "25.05",
+  "adpHistory": {
+   "y25": "23.03",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 3.3,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 112,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Josh Oliver",
+  "team": "MIN",
+  "age": 29,
+  "pos": "TE",
+  "posAdpRank": 35,
+  "rank": 251,
+  "adp": "25.07",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 3.2,
+   "y24": 3.7,
+   "y23": 2.5
+  },
+  "ptwRank": {
+   "y25": 46,
+   "y24": 37,
+   "y23": 52
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 9,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Brandon Aiyuk",
+  "team": "SF",
+  "age": 28,
+  "pos": "WR",
+  "posAdpRank": 97,
+  "rank": 252,
+  "adp": "25.08",
+  "adpHistory": {
+   "y25": "13.01",
+   "y24": "3.09",
+   "y23": "6.05"
+  },
+  "ptw": {
+   "y25": 0.0,
+   "y24": 7.1,
+   "y23": 13.2
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": 62,
+   "y23": 14
+  },
+  "gms": {
+   "y25": 0,
+   "y24": 7,
+   "y23": 16
+  }
+ },
+ {
+  "name": "J.J. McCarthy",
+  "team": "MIN",
+  "age": 23,
+  "pos": "QB",
+  "posAdpRank": 40,
+  "rank": 253,
+  "adp": "25.09",
+  "adpHistory": {
+   "y25": "12.01",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 13.7,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 30,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 10,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Isaiah Weston",
+  "team": "FA",
+  "age": null,
+  "pos": "WR",
+  "posAdpRank": 98,
+  "rank": 254,
+  "adp": "25.10",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Justin Fields",
+  "team": "KC",
+  "age": 27,
+  "pos": "QB",
+  "posAdpRank": 41,
+  "rank": 255,
+  "adp": "25.11",
+  "adpHistory": {
+   "y25": "10.06",
+   "y24": "16.04",
+   "y23": "4.10"
+  },
+  "ptw": {
+   "y25": 16.0,
+   "y24": 12.0,
+   "y23": 18.4
+  },
+  "ptwRank": {
+   "y25": 22,
+   "y24": 38,
+   "y23": 12
+  },
+  "gms": {
+   "y25": 9,
+   "y24": 10,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Michael Burton",
+  "team": "CLE",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 82,
+  "rank": 256,
+  "adp": "25.12",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 0.0,
+   "y24": 1.4,
+   "y23": 0.3
+  },
+  "ptwRank": {
+   "y25": 141,
+   "y24": 108,
+   "y23": 136
+  },
+  "gms": {
+   "y25": 1,
+   "y24": 10,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Theo Johnson",
+  "team": "NYG",
+  "age": 25,
+  "pos": "TE",
+  "posAdpRank": 36,
+  "rank": 257,
+  "adp": "26.01",
+  "adpHistory": {
+   "y25": "24.05",
+   "y24": "23.07",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.0,
+   "y24": 4.5,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 23,
+   "y24": 34,
+   "y23": null
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 10,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jaren Hall",
+  "team": "FA",
+  "age": null,
+  "pos": "QB",
+  "posAdpRank": 42,
+  "rank": 258,
+  "adp": "26.02",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": 0.0,
+   "y23": 1.0
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": 76,
+   "y23": 70
+  },
+  "gms": {
+   "y25": null,
+   "y24": 0,
+   "y23": 3
+  }
+ },
+ {
+  "name": "Trey Benson",
+  "team": "FA",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 83,
+  "rank": 259,
+  "adp": "26.04",
+  "adpHistory": {
+   "y25": "12.09",
+   "y24": "10.08",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 5.8,
+   "y24": 3.4,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 55,
+   "y24": 73,
+   "y23": null
+  },
+  "gms": {
+   "y25": 5,
+   "y24": 12,
+   "y23": null
+  }
+ },
+ {
+  "name": "Troy Franklin",
+  "team": "DEN",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 99,
+  "rank": 260,
+  "adp": "26.05",
+  "adpHistory": {
+   "y25": "21.12",
+   "y24": "19.05",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 8.5,
+   "y24": 3.3,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 43,
+   "y24": 110,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 15,
+   "y23": null
+  }
+ },
+ {
+  "name": "Teagan Quitoriano",
+  "team": "ARI",
+  "age": null,
+  "pos": "TE",
+  "posAdpRank": 37,
+  "rank": 261,
+  "adp": "26.06",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 0.0,
+   "y24": 0.0,
+   "y23": 0.9
+  },
+  "ptwRank": {
+   "y25": 123,
+   "y24": 114,
+   "y23": 82
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 0,
+   "y23": 5
+  }
+ },
+ {
+  "name": "Tim Patrick",
+  "team": "NYJ",
+  "age": null,
+  "pos": "WR",
+  "posAdpRank": 100,
+  "rank": 262,
+  "adp": "26.07",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 2.8,
+   "y24": 4.7,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 125,
+   "y24": 95,
+   "y23": null
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 13,
+   "y23": null
+  }
+ },
+ {
+  "name": "Joe Flacco",
+  "team": "CIN",
+  "age": 41,
+  "pos": "QB",
+  "posAdpRank": 43,
+  "rank": 263,
+  "adp": "26.09",
+  "adpHistory": {
+   "y25": "22.06",
+   "y24": "25.02",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 12.1,
+   "y24": 13.3,
+   "y23": 21.8
+  },
+  "ptwRank": {
+   "y25": 36,
+   "y24": 34,
+   "y23": 3
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 7,
+   "y23": 5
+  }
+ },
+ {
+  "name": "Jeshaun Jones",
+  "team": "MIN",
+  "age": null,
+  "pos": "WR",
+  "posAdpRank": 101,
+  "rank": 264,
+  "adp": "26.10",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 0.0,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 217,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 1,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jimmy Garoppolo",
+  "team": "LAR",
+  "age": null,
+  "pos": "QB",
+  "posAdpRank": 44,
+  "rank": 265,
+  "adp": "26.11",
+  "adpHistory": {
+   "y25": "28.04",
+   "y24": null,
+   "y23": "15.01"
+  },
+  "ptw": {
+   "y25": -0.2,
+   "y24": 20.9,
+   "y23": 10.4
+  },
+  "ptwRank": {
+   "y25": 0,
+   "y24": 7,
+   "y23": 43
+  },
+  "gms": {
+   "y25": 5,
+   "y24": 1,
+   "y23": 7
+  }
+ },
+ {
+  "name": "Cole Kelley",
+  "team": "FA",
+  "age": null,
+  "pos": "QB",
+  "posAdpRank": 45,
+  "rank": 266,
+  "adp": "26.12",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Christian Kirk",
+  "team": "SF",
+  "age": 29,
+  "pos": "WR",
+  "posAdpRank": 102,
+  "rank": 267,
+  "adp": "27.01",
+  "adpHistory": {
+   "y25": "13.09",
+   "y24": "7.02",
+   "y23": "7.02"
+  },
+  "ptw": {
+   "y25": 3.4,
+   "y24": 7.2,
+   "y23": 10.1
+  },
+  "ptwRank": {
+   "y25": 106,
+   "y24": 60,
+   "y23": 35
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 8,
+   "y23": 12
+  }
+ },
+ {
+  "name": "J.J. Taylor",
+  "team": "FA",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 84,
+  "rank": 268,
+  "adp": "27.03",
+  "adpHistory": {
+   "y25": null,
+   "y24": "27.04",
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": 1.4,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": 108,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": 3,
+   "y23": null
+  }
+ },
+ {
+  "name": "Zay Jones",
+  "team": "HOU",
+  "age": null,
+  "pos": "WR",
+  "posAdpRank": 103,
+  "rank": 269,
+  "adp": "27.04",
+  "adpHistory": {
+   "y25": null,
+   "y24": "26.02",
+   "y23": "15.07"
+  },
+  "ptw": {
+   "y25": 3.0,
+   "y24": 1.1,
+   "y23": 6.8
+  },
+  "ptwRank": {
+   "y25": 118,
+   "y24": 160,
+   "y23": 63
+  },
+  "gms": {
+   "y25": 8,
+   "y24": 5,
+   "y23": 8
+  }
+ },
+ {
+  "name": "Mike Gesicki",
+  "team": "CIN",
+  "age": 30,
+  "pos": "TE",
+  "posAdpRank": 38,
+  "rank": 270,
+  "adp": "27.05",
+  "adpHistory": {
+   "y25": "17.10",
+   "y24": "22.09",
+   "y23": "18.07"
+  },
+  "ptw": {
+   "y25": 4.4,
+   "y24": 6.4,
+   "y23": 3.0
+  },
+  "ptwRank": {
+   "y25": 37,
+   "y24": 19,
+   "y23": 42
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 14,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Josh Johnson",
+  "team": "CIN",
+  "age": null,
+  "pos": "QB",
+  "posAdpRank": 46,
+  "rank": 271,
+  "adp": "27.06",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 5.3,
+   "y24": 0.1,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 53,
+   "y24": 73,
+   "y23": null
+  },
+  "gms": {
+   "y25": 5,
+   "y24": 2,
+   "y23": null
+  }
+ },
+ {
+  "name": "Kaleb Johnson",
+  "team": "PIT",
+  "age": 23,
+  "pos": "RB",
+  "posAdpRank": 85,
+  "rank": 272,
+  "adp": "27.07",
+  "adpHistory": {
+   "y25": "7.03",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 0.8,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 115,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 10,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Riley Nowakowski",
+  "team": "PIT",
+  "age": 24,
+  "pos": "TE",
+  "posAdpRank": 39,
+  "rank": 273,
+  "adp": "27.08",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Chase Daniel",
+  "team": "FA",
+  "age": null,
+  "pos": "QB",
+  "posAdpRank": 47,
+  "rank": 274,
+  "adp": "27.09",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Mason Rudolph",
+  "team": "PIT",
+  "age": 31,
+  "pos": "QB",
+  "posAdpRank": 48,
+  "rank": 275,
+  "adp": "27.10",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 3.4,
+   "y24": 13.1,
+   "y23": 9.9
+  },
+  "ptwRank": {
+   "y25": 59,
+   "y24": 35,
+   "y23": 45
+  },
+  "gms": {
+   "y25": 5,
+   "y24": 8,
+   "y23": 4
+  }
+ },
+ {
+  "name": "Keaontay Ingram",
+  "team": "FA",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 86,
+  "rank": 276,
+  "adp": "27.11",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": "24.01"
+  },
+  "ptw": {
+   "y25": 0.0,
+   "y24": 0.0,
+   "y23": 1.7
+  },
+  "ptwRank": {
+   "y25": 141,
+   "y24": 141,
+   "y23": 105
+  },
+  "gms": {
+   "y25": 2,
+   "y24": 0,
+   "y23": 6
+  }
+ },
+ {
+  "name": "Cordarrelle Patterson",
+  "team": "FA",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 87,
+  "rank": 277,
+  "adp": "27.12",
+  "adpHistory": {
+   "y25": null,
+   "y24": "26.07",
+   "y23": "16.05"
+  },
+  "ptw": {
+   "y25": null,
+   "y24": 2.4,
+   "y23": 2.5
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": 87,
+   "y23": 84
+  },
+  "gms": {
+   "y25": null,
+   "y24": 11,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Devin Neal",
+  "team": "NO",
+  "age": 23,
+  "pos": "RB",
+  "posAdpRank": 88,
+  "rank": 278,
+  "adp": "28.01",
+  "adpHistory": {
+   "y25": "26.01",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 5.7,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 56,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 9,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Antonio Gibson",
+  "team": "FA",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 89,
+  "rank": 279,
+  "adp": "28.02",
+  "adpHistory": {
+   "y25": "25.02",
+   "y24": "14.01",
+   "y23": "8.06"
+  },
+  "ptw": {
+   "y25": 4.4,
+   "y24": 5.4,
+   "y23": 6.5
+  },
+  "ptwRank": {
+   "y25": 67,
+   "y24": 53,
+   "y23": 47
+  },
+  "gms": {
+   "y25": 5,
+   "y24": 17,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Johnny Mundt",
+  "team": "PHI",
+  "age": null,
+  "pos": "TE",
+  "posAdpRank": 40,
+  "rank": 280,
+  "adp": "28.03",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 1.0,
+   "y24": 2.1,
+   "y23": 2.3
+  },
+  "ptwRank": {
+   "y25": 89,
+   "y24": 53,
+   "y23": 54
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 11,
+   "y23": 14
+  }
+ },
+ {
+  "name": "Charlie Kolar",
+  "team": "LAC",
+  "age": 27,
+  "pos": "TE",
+  "posAdpRank": 41,
+  "rank": 281,
+  "adp": "28.04",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 1.8,
+   "y24": 1.8,
+   "y23": 1.4
+  },
+  "ptwRank": {
+   "y25": 63,
+   "y24": 57,
+   "y23": 74
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 7,
+   "y23": 13
+  }
+ },
+ {
+  "name": "Xavier Smith",
+  "team": "LAR",
+  "age": null,
+  "pos": "WR",
+  "posAdpRank": 104,
+  "rank": 282,
+  "adp": "28.06",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 2.5,
+   "y24": 0.3,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 139,
+   "y24": 204,
+   "y23": null
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 3,
+   "y23": null
+  }
+ },
+ {
+  "name": "Tanner Hudson",
+  "team": "CIN",
+  "age": null,
+  "pos": "TE",
+  "posAdpRank": 42,
+  "rank": 283,
+  "adp": "28.07",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 2.9,
+   "y24": 2.6,
+   "y23": 5.1
+  },
+  "ptwRank": {
+   "y25": 52,
+   "y24": 46,
+   "y23": 27
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 8,
+   "y23": 12
+  }
+ },
+ {
+  "name": "Tyquan Thornton",
+  "team": "KC",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 105,
+  "rank": 284,
+  "adp": "28.09",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": "27.12"
+  },
+  "ptw": {
+   "y25": 5.1,
+   "y24": 1.1,
+   "y23": 2.3
+  },
+  "ptwRank": {
+   "y25": 75,
+   "y24": 160,
+   "y23": 129
+  },
+  "gms": {
+   "y25": 14,
+   "y24": 2,
+   "y23": 9
+  }
+ },
+ {
+  "name": "Hollywood Brown",
+  "team": "PHI",
+  "age": 29,
+  "pos": "WR",
+  "posAdpRank": 106,
+  "rank": 285,
+  "adp": "28.10",
+  "adpHistory": {
+   "y25": "14.11",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 7.1,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 54,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 16,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Drew Sample",
+  "team": "CIN",
+  "age": null,
+  "pos": "TE",
+  "posAdpRank": 43,
+  "rank": 286,
+  "adp": "28.11",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 1.4,
+   "y24": 1.6,
+   "y23": 2.3
+  },
+  "ptwRank": {
+   "y25": 73,
+   "y24": 62,
+   "y23": 54
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 10,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Darren Waller",
+  "team": "CAR",
+  "age": 33,
+  "pos": "TE",
+  "posAdpRank": 44,
+  "rank": 287,
+  "adp": "28.12",
+  "adpHistory": {
+   "y25": "17.12",
+   "y24": null,
+   "y23": "5.05"
+  },
+  "ptw": {
+   "y25": 8.5,
+   "y24": null,
+   "y23": 7.3
+  },
+  "ptwRank": {
+   "y25": 14,
+   "y24": null,
+   "y23": 14
+  },
+  "gms": {
+   "y25": 9,
+   "y24": null,
+   "y23": 11
+  }
+ },
+ {
+  "name": "Michael Mayer",
+  "team": "LV",
+  "age": 25,
+  "pos": "TE",
+  "posAdpRank": 45,
+  "rank": 288,
+  "adp": "29.02",
+  "adpHistory": {
+   "y25": null,
+   "y24": "25.07",
+   "y23": "18.06"
+  },
+  "ptw": {
+   "y25": 4.3,
+   "y24": 2.4,
+   "y23": 4.5
+  },
+  "ptwRank": {
+   "y25": 39,
+   "y24": 48,
+   "y23": 32
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 10,
+   "y23": 13
+  }
+ },
+ {
+  "name": "Jelani Woods",
+  "team": "NYJ",
+  "age": null,
+  "pos": "TE",
+  "posAdpRank": 46,
+  "rank": 289,
+  "adp": "29.03",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 0.5,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 103,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 6,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jake Briningstool",
+  "team": "KC",
+  "age": null,
+  "pos": "TE",
+  "posAdpRank": 47,
+  "rank": 290,
+  "adp": "29.04",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jack Bech",
+  "team": "LV",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 107,
+  "rank": 291,
+  "adp": "29.05",
+  "adpHistory": {
+   "y25": "20.05",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 2.0,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 148,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 16,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Ian Thomas",
+  "team": "LV",
+  "age": null,
+  "pos": "TE",
+  "posAdpRank": 48,
+  "rank": 292,
+  "adp": "29.07",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 1.2,
+   "y24": 0.4,
+   "y23": 0.7
+  },
+  "ptwRank": {
+   "y25": 80,
+   "y24": 95,
+   "y23": 86
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 2,
+   "y23": 11
+  }
+ },
+ {
+  "name": "Brashard Smith",
+  "team": "KC",
+  "age": 23,
+  "pos": "RB",
+  "posAdpRank": 90,
+  "rank": 293,
+  "adp": "29.09",
+  "adpHistory": {
+   "y25": "21.05",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 3.0,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 85,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "N'Keal Harry",
+  "team": "FA",
+  "age": null,
+  "pos": "WR",
+  "posAdpRank": 108,
+  "rank": 294,
+  "adp": "29.10",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": 0.0
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": 205
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": 8
+  }
+ },
+ {
+  "name": "Phillip Lindsay",
+  "team": "FA",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 91,
+  "rank": 295,
+  "adp": "29.11",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Mason Taylor",
+  "team": "NYJ",
+  "age": 22,
+  "pos": "TE",
+  "posAdpRank": 49,
+  "rank": 296,
+  "adp": "29.12",
+  "adpHistory": {
+   "y25": "16.11",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 5.1,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 32,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 13,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Adam Randall",
+  "team": "BAL",
+  "age": 22,
+  "pos": "RB",
+  "posAdpRank": 92,
+  "rank": 297,
+  "adp": "30.02",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Charlie Woerner",
+  "team": "ATL",
+  "age": null,
+  "pos": "TE",
+  "posAdpRank": 50,
+  "rank": 298,
+  "adp": "30.03",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 0.5,
+   "y24": 0.5,
+   "y23": 0.3
+  },
+  "ptwRank": {
+   "y25": 103,
+   "y24": 92,
+   "y23": 101
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 6,
+   "y23": 14
+  }
+ },
+ {
+  "name": "Jerome Ford",
+  "team": "WAS",
+  "age": 26,
+  "pos": "RB",
+  "posAdpRank": 93,
+  "rank": 299,
+  "adp": "30.04",
+  "adpHistory": {
+   "y25": "12.06",
+   "y24": "9.10",
+   "y23": "20.08"
+  },
+  "ptw": {
+   "y25": 2.4,
+   "y24": 8.3,
+   "y23": 11.1
+  },
+  "ptwRank": {
+   "y25": 89,
+   "y24": 36,
+   "y23": 26
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 14,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Alexander Mattison",
+  "team": "FA",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 94,
+  "rank": 300,
+  "adp": "30.05",
+  "adpHistory": {
+   "y25": null,
+   "y24": "19.06",
+   "y23": "5.04"
+  },
+  "ptw": {
+   "y25": 0.0,
+   "y24": 8.5,
+   "y23": 7.4
+  },
+  "ptwRank": {
+   "y25": 141,
+   "y24": 35,
+   "y23": 44
+  },
+  "gms": {
+   "y25": 2,
+   "y24": 14,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Max Borghi",
+  "team": "FA",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 95,
+  "rank": 301,
+  "adp": "30.06",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Hunter Luepke",
+  "team": "DAL",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 96,
+  "rank": 302,
+  "adp": "30.07",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 1.8,
+   "y24": 1.3,
+   "y23": 0.7
+  },
+  "ptwRank": {
+   "y25": 98,
+   "y24": 113,
+   "y23": 124
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 10,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Kendall Milton",
+  "team": "CIN",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 97,
+  "rank": 303,
+  "adp": "30.08",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 0.2,
+   "y24": 0.0,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 131,
+   "y24": 141,
+   "y23": null
+  },
+  "gms": {
+   "y25": 1,
+   "y24": 0,
+   "y23": null
+  }
+ },
+ {
+  "name": "Rashod Bateman",
+  "team": "BAL",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 109,
+  "rank": 304,
+  "adp": "30.09",
+  "adpHistory": {
+   "y25": "15.05",
+   "y24": "21.02",
+   "y23": "11.11"
+  },
+  "ptw": {
+   "y25": 3.5,
+   "y24": 8.9,
+   "y23": 3.8
+  },
+  "ptwRank": {
+   "y25": 102,
+   "y24": 48,
+   "y23": 95
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 16,
+   "y23": 16
+  }
+ },
+ {
+  "name": "Sandro Platzgummer",
+  "team": "FA",
+  "age": null,
+  "pos": "RB",
+  "posAdpRank": 98,
+  "rank": 305,
+  "adp": "30.11",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Tutu Atwell",
+  "team": "MIA",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 110,
+  "rank": 306,
+  "adp": "30.12",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 2.8,
+   "y24": 4.6,
+   "y23": 5.8
+  },
+  "ptwRank": {
+   "y25": 125,
+   "y24": 96,
+   "y23": 74
+  },
+  "gms": {
+   "y25": 10,
+   "y24": 15,
+   "y23": 16
+  }
+ },
+ {
+  "name": "John Michael Gyllenborg",
+  "team": "KC",
+  "age": null,
+  "pos": "TE",
+  "posAdpRank": 51,
+  "rank": 307,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Ollie Gordon II",
+  "team": "MIA",
+  "age": 22,
+  "pos": "RB",
+  "posAdpRank": 99,
+  "rank": 308,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": "12.03",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 3.0,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 85,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "DJ Giddens",
+  "team": "IND",
+  "age": 23,
+  "pos": "RB",
+  "posAdpRank": 100,
+  "rank": 309,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": "20.03",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 1.1,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 108,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 9,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Jahan Dotson",
+  "team": "ATL",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 111,
+  "rank": 310,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": "16.01",
+   "y23": "8.01"
+  },
+  "ptw": {
+   "y25": 2.4,
+   "y24": 1.9,
+   "y23": 5.9
+  },
+  "ptwRank": {
+   "y25": 142,
+   "y24": 137,
+   "y23": 71
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 11,
+   "y23": 17
+  }
+ },
+ {
+  "name": "Xavier Hutchinson",
+  "team": "HOU",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 112,
+  "rank": 311,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.7,
+   "y24": 1.1,
+   "y23": 1.2
+  },
+  "ptwRank": {
+   "y25": 84,
+   "y24": 160,
+   "y23": 167
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 9,
+   "y23": 15
+  }
+ },
+ {
+  "name": "Chris Brooks",
+  "team": "GB",
+  "age": 26,
+  "pos": "RB",
+  "posAdpRank": 101,
+  "rank": 312,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": "29.11"
+  },
+  "ptw": {
+   "y25": 1.5,
+   "y24": 2.8,
+   "y23": 2.7
+  },
+  "ptwRank": {
+   "y25": 102,
+   "y24": 81,
+   "y23": 80
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 11,
+   "y23": 4
+  }
+ },
+ {
+  "name": "Bryce Lance",
+  "team": "NO",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 113,
+  "rank": 313,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "LeQuint Allen Jr.",
+  "team": "JAC",
+  "age": 22,
+  "pos": "RB",
+  "posAdpRank": 102,
+  "rank": 314,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 1.2,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 106,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Malik Davis",
+  "team": "DAL",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 103,
+  "rank": 315,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.0,
+   "y24": null,
+   "y23": 0.0
+  },
+  "ptwRank": {
+   "y25": 70,
+   "y24": null,
+   "y23": 145
+  },
+  "gms": {
+   "y25": 10,
+   "y24": null,
+   "y23": 2
+  }
+ },
+ {
+  "name": "Elijah Sarratt",
+  "team": "BAL",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 114,
+  "rank": 316,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Xavier Legette",
+  "team": "CAR",
+  "age": 25,
+  "pos": "WR",
+  "posAdpRank": 115,
+  "rank": 317,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": "18.02",
+   "y24": "15.02",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.8,
+   "y24": 6.3,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 81,
+   "y24": 74,
+   "y23": null
+  },
+  "gms": {
+   "y25": 15,
+   "y24": 15,
+   "y23": null
+  }
+ },
+ {
+  "name": "Robert Henry Jr.",
+  "team": "WAS",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 104,
+  "rank": 318,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Brenen Thompson",
+  "team": "LAC",
+  "age": 23,
+  "pos": "WR",
+  "posAdpRank": 116,
+  "rank": 319,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Seth McGowan",
+  "team": "IND",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 105,
+  "rank": 320,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Emari Demercado",
+  "team": "KC",
+  "age": 27,
+  "pos": "RB",
+  "posAdpRank": 106,
+  "rank": 321,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.0,
+   "y24": 3.6,
+   "y23": 4.8
+  },
+  "ptwRank": {
+   "y25": 70,
+   "y24": 70,
+   "y23": 60
+  },
+  "gms": {
+   "y25": 13,
+   "y24": 12,
+   "y23": 13
+  }
+ },
+ {
+  "name": "Andrei Iosivas",
+  "team": "CIN",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 117,
+  "rank": 322,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": "24.03",
+   "y24": "24.12",
+   "y23": null
+  },
+  "ptw": {
+   "y25": 4.3,
+   "y24": 6.0,
+   "y23": 3.1
+  },
+  "ptwRank": {
+   "y25": 92,
+   "y24": 80,
+   "y23": 106
+  },
+  "gms": {
+   "y25": 17,
+   "y24": 15,
+   "y23": 14
+  }
+ },
+ {
+  "name": "Elijah Arroyo",
+  "team": "SEA",
+  "age": 23,
+  "pos": "TE",
+  "posAdpRank": 52,
+  "rank": 323,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": "17.02",
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 2.3,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 58,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 13,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Isaiah Davis",
+  "team": "NYJ",
+  "age": 24,
+  "pos": "RB",
+  "posAdpRank": 107,
+  "rank": 324,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 3.8,
+   "y24": 3.0,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 75,
+   "y24": 78,
+   "y23": null
+  },
+  "gms": {
+   "y25": 16,
+   "y24": 9,
+   "y23": null
+  }
+ },
+ {
+  "name": "Joshua Palmer",
+  "team": "BUF",
+  "age": 26,
+  "pos": "WR",
+  "posAdpRank": 118,
+  "rank": 325,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": "15.03",
+   "y24": "12.10",
+   "y23": "24.09"
+  },
+  "ptw": {
+   "y25": 3.4,
+   "y24": 5.9,
+   "y23": 8.0
+  },
+  "ptwRank": {
+   "y25": 106,
+   "y24": 82,
+   "y23": 51
+  },
+  "gms": {
+   "y25": 12,
+   "y24": 15,
+   "y23": 11
+  }
+ },
+ {
+  "name": "Skyler Bell",
+  "team": "BUF",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 119,
+  "rank": 326,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  }
+ },
+ {
+  "name": "Chimere Dike",
+  "team": "TEN",
+  "age": 24,
+  "pos": "WR",
+  "posAdpRank": 120,
+  "rank": 327,
+  "adp": "31.00",
+  "adpHistory": {
+   "y25": null,
+   "y24": null,
+   "y23": null
+  },
+  "ptw": {
+   "y25": 6.0,
+   "y24": null,
+   "y23": null
+  },
+  "ptwRank": {
+   "y25": 65,
+   "y24": null,
+   "y23": null
+  },
+  "gms": {
+   "y25": 17,
+   "y24": null,
+   "y23": null
+  }
+ }
+]

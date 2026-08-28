@@ -11,6 +11,7 @@
 import type { RankedPlayer, ScoringFormat } from "../types";
 import { boardRank } from "./rankings";
 import { playerKey } from "./normalize";
+import { sheetAdpOverall } from "./cheatsheet";
 import type { AdpMap } from "./adp";
 
 /**
@@ -21,6 +22,23 @@ import type { AdpMap } from "./adp";
 export function survivalProb(adp: number, pickNo: number): number {
   const sigma = Math.max(3, 0.15 * adp);
   const p = 1 / (1 + Math.exp(-(adp - pickNo) / sigma));
+  return Math.min(0.99, Math.max(0.01, p));
+}
+
+/**
+ * P(still available at `toPick` | still available at `fromPick`). Raw
+ * survivalProb says ~1% for a player already 100 picks past his ADP — but the
+ * fact that he's STILL on the board is information: the market has moved on.
+ * Conditioning on current availability (with the spread widened to wherever
+ * the draft actually is) keeps late-round odds sane.
+ */
+export function conditionalSurvival(adp: number, fromPick: number, toPick: number): number {
+  if (toPick <= fromPick) return 0.99;
+  const sigma = Math.max(3, 0.15 * Math.max(adp, fromPick));
+  const logistic = (x: number) => 1 / (1 + Math.exp(-x / sigma));
+  const pFrom = logistic(adp - fromPick);
+  const pTo = logistic(adp - toPick);
+  const p = pTo / Math.max(pFrom, 0.001);
   return Math.min(0.99, Math.max(0.01, p));
 }
 
@@ -40,6 +58,8 @@ export interface AdviceInput {
   available: RankedPlayer[];
   adpMap: AdpMap;
   format: ScoringFormat;
+  /** The next overall pick to be made in the draft right now. */
+  currentPickNo: number;
   /** My upcoming pick number (null = no picks left). */
   myPick: number | null;
   /** My pick after that (null = last pick). */
@@ -63,20 +83,24 @@ export interface Advice {
 }
 
 export function advise(input: AdviceInput): Advice {
-  const { adpMap, myPick, myNextPick, onClock } = input;
+  const { adpMap, currentPickNo, myPick, myNextPick, onClock } = input;
   if (myPick === null) return { suggestions: [], canWait: [] };
 
   const pool = input.available.slice(0, POOL_SIZE);
   const scored: Suggestion[] = pool.map((player, availIndex) => {
     const rank = boardRank(player, input.format);
     const entry = adpMap.get(playerKey(player)) ?? null;
-    // Missing from a populated ADP feed = the market is sleeping on him, so
-    // he survives (that gap IS the value signal). Only when the whole feed is
-    // unavailable do we fall back to guide rank as the survival proxy.
+    // Survival proxy chain: FFC market ADP, else the cheat sheet's own ADP,
+    // else — missing from a populated feed means the market is sleeping on
+    // him, so he survives (that gap IS the value signal). Only when every
+    // feed is unavailable does guide rank stand in.
     const effAdp =
-      entry?.adp ?? (adpMap.size > 0 ? Math.max(rank ?? 999, 140) : (rank ?? 999));
-    const pReach = onClock ? 1 : survivalProb(effAdp, myPick);
-    const pSurviveNext = myNextPick === null ? null : survivalProb(effAdp, myNextPick);
+      entry?.adp ??
+      (player.sheet ? sheetAdpOverall(player.sheet) : null) ??
+      (adpMap.size > 0 ? Math.max(rank ?? 999, 140) : (rank ?? 999));
+    const pReach = onClock ? 1 : conditionalSurvival(effAdp, currentPickNo, myPick);
+    const pSurviveNext =
+      myNextPick === null ? null : conditionalSurvival(effAdp, currentPickNo, myNextPick);
 
     const reasons: string[] = [];
     let score = -availIndex; // base: the guide's own ordering
@@ -101,6 +125,12 @@ export function advise(input: AdviceInput): Advice {
     } else if (player.tag === "avoid") {
       score -= 6;
       reasons.push("he's avoiding");
+    }
+
+    // Cheat-sheet VALUE: production rank beats draft cost.
+    if (player.value) {
+      score += 1.5;
+      reasons.push(`sheet value${player.valueGap != null ? ` +${player.valueGap}` : ""}`);
     }
 
     // Roster need.

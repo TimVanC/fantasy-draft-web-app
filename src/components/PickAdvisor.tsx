@@ -57,9 +57,18 @@ export default function PickAdvisor(props: {
                     TARGET
                   </span>
                 )}
+                {s.player.value && (
+                  <span className="rounded border border-cyan-700 bg-cyan-600/20 px-1 py-0.5 text-[9px] font-bold text-cyan-300">
+                    VALUE
+                  </span>
+                )}
               </div>
               <div className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-[11px] text-zinc-400">
-                <span>#{rank} his board</span>
+                <span>
+                  {rank !== null
+                    ? `#${rank} his board`
+                    : `sheet #${s.player.sheet?.rank ?? "?"} (not on his board)`}
+                </span>
                 <span>{s.adpFormatted ? `mkt ${s.adpFormatted}` : "no mkt ADP"}</span>
               </div>
               {s.reasons.length > 0 && (
