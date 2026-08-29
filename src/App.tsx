@@ -6,6 +6,13 @@ import { picksUntilMyTurn, nextPickForSlot, myFollowingPick, slotForPick } from 
 import { scarcityLabels } from "./lib/scarcity";
 import { fillSlots } from "./lib/roster";
 import { advise } from "./lib/advisor";
+import {
+  planDriftAlerts,
+  positionOutlooks,
+  scarceNeededPositions,
+  supplyAlerts,
+} from "./lib/rosterAlerts";
+import RosterAlerts from "./components/RosterAlerts";
 import SetupScreen from "./components/SetupScreen";
 import HeaderBar from "./components/HeaderBar";
 import BestAvailable from "./components/BestAvailable";
@@ -73,6 +80,7 @@ export default function App() {
     const slots = mySlot ? fillSlots(draft.settings, myPicks) : [];
     const unmatchedPicks = matched.filter((m) => m.unmatched);
     const myRoundsPicked = new Set(myPicks.map((p) => p.round));
+    const myPosByRound = new Map(myPicks.map((p) => [p.round, p.metadata.position]));
 
     // ---- Pick Advisor inputs ----
     const onClock = mySlot !== null && othersPicks === 0;
@@ -96,6 +104,18 @@ export default function App() {
       : null;
     const planPosition = planLabel?.match(/\b(QB|RB|WR|TE)\b/)?.[1] ?? null;
 
+    // ---- roster awareness: supply projections + plan drift ----
+    const outlooks = mySlot
+      ? positionOutlooks({ available, adpMap, slots, currentPickNo: nextPickNo, myPick: myNextPickNo })
+      : [];
+    const scarcePositions = scarceNeededPositions(outlooks);
+    const rosterAlerts = mySlot && !draftDone
+      ? [
+          ...supplyAlerts(outlooks),
+          ...planDriftAlerts(myPicks, STRATEGY.roundPlan, Math.max(0, currentRound - 1)),
+        ]
+      : [];
+
     return {
       teams,
       rounds,
@@ -112,14 +132,17 @@ export default function App() {
       slots,
       unmatchedPicks,
       myRoundsPicked,
+      myPosByRound,
       finalTwoRounds: currentRound >= rounds - 1,
       onClock,
       followingPick,
       openStarterPositions,
       myPosCounts,
       planPosition,
+      scarcePositions,
+      rosterAlerts,
     };
-  }, [draft, picks, matched, mySlot, format, overrides, source]);
+  }, [draft, picks, matched, mySlot, format, overrides, source, adpMap]);
 
   if (!draft || !derived || !source) {
     return (
@@ -149,6 +172,7 @@ export default function App() {
       />
       <main className="grid min-h-0 flex-1 grid-cols-1 gap-3 p-3 lg:grid-cols-[1fr_360px]">
         <div className="flex min-h-0 flex-col gap-3">
+          {!derived.draftDone && <RosterAlerts alerts={derived.rosterAlerts} />}
           {!derived.draftDone && (
             <PickAdvisor
               mySlot={mySlot}
@@ -161,6 +185,7 @@ export default function App() {
                 myNextPick: derived.followingPick,
                 onClock: derived.onClock,
                 openStarterPositions: derived.openStarterPositions,
+                scarcePositions: derived.scarcePositions,
                 myPosCounts: derived.myPosCounts,
                 planPosition: derived.planPosition,
               })}
@@ -192,6 +217,7 @@ export default function App() {
             currentRound={derived.currentRound}
             rounds={derived.rounds}
             myRoundsPicked={derived.myRoundsPicked}
+            myPosByRound={derived.myPosByRound}
             draftDone={derived.draftDone}
           />
           <SideFeed picks={picks} matched={matched} mySlot={mySlot} teams={derived.teams} />

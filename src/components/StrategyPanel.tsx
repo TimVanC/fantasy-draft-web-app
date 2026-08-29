@@ -1,10 +1,21 @@
 import { useState } from "react";
 import { STRATEGY } from "../lib/rankings";
 
+/** What position a plan label expects, if it names one. */
+function plannedPos(plan: string): string | null {
+  const skill = plan.match(/\b(QB|RB|WR|TE)\b/)?.[1];
+  if (skill) return skill;
+  if (/D\/ST/i.test(plan)) return "DEF";
+  if (/Kicker/i.test(plan)) return "K";
+  return null; // BPA, handcuff, sleeper — anything goes
+}
+
 export default function StrategyPanel(props: {
   currentRound: number;
   rounds: number;
   myRoundsPicked: Set<number>;
+  /** Position I actually drafted in each round. */
+  myPosByRound: Map<number, string>;
   draftDone: boolean;
 }) {
   const [showRules, setShowRules] = useState(false);
@@ -34,6 +45,9 @@ export default function StrategyPanel(props: {
         {plan.map(({ round, plan: label }) => {
           const done = props.myRoundsPicked.has(round) || (!props.draftDone && round < props.currentRound);
           const current = !props.draftDone && round === props.currentRound;
+          const actual = props.myPosByRound.get(round) ?? null;
+          const expected = plannedPos(label);
+          const offScript = actual !== null && expected !== null && actual !== expected;
           return (
             <li
               key={round}
@@ -42,7 +56,23 @@ export default function StrategyPanel(props: {
               } ${done ? "text-zinc-600 line-through" : "text-zinc-300"}`}
             >
               <span className="w-8 shrink-0 font-mono text-xs text-zinc-500">R{round}</span>
-              {label}
+              <span className="truncate">{label}</span>
+              {actual && (
+                <span
+                  className={`ml-auto shrink-0 rounded px-1 py-0.5 font-mono text-[10px] font-bold no-underline ${
+                    offScript
+                      ? "bg-orange-600/25 text-orange-300"
+                      : "bg-emerald-950 text-emerald-400"
+                  }`}
+                  title={
+                    offScript
+                      ? `Plan said ${expected}, you drafted ${actual}`
+                      : `You drafted ${actual}${expected ? " — on script" : ""}`
+                  }
+                >
+                  {actual}
+                </span>
+              )}
             </li>
           );
         })}

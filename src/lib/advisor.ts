@@ -67,6 +67,8 @@ export interface AdviceInput {
   onClock: boolean;
   /** Positions that can still fill an open starting slot (incl. via flex). */
   openStarterPositions: Set<string>;
+  /** Needed positions whose ranked pool is projected to run dry soon. */
+  scarcePositions?: Set<string>;
   /** Count of my picks per position, for saturation penalties. */
   myPosCounts: Map<string, number>;
   /** Position his round plan names for my upcoming round, if any. */
@@ -136,10 +138,15 @@ export function advise(input: AdviceInput): Advice {
       reasons.push(`sheet trap ${player.valueGap ?? ""}`.trim());
     }
 
-    // Roster need.
+    // Roster need — boosted hard when the position I still need is drying up.
     if (input.openStarterPositions.has(player.pos)) {
       score += 1.5;
-      reasons.push(`fills ${player.pos}`);
+      if (input.scarcePositions?.has(player.pos)) {
+        score += 2.5;
+        reasons.push(`${player.pos} pool drying up`);
+      } else {
+        reasons.push(`fills ${player.pos}`);
+      }
     } else if ((input.myPosCounts.get(player.pos) ?? 0) >= 2) {
       score -= 3;
       reasons.push(`already ${input.myPosCounts.get(player.pos)} ${player.pos}s`);
