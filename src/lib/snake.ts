@@ -29,6 +29,13 @@ export function pickNumbersForSlot(slot: number, teams: number, rounds: number, 
   return out;
 }
 
+/** Overall pick number as draft-speak: 111 in a 10-teamer -> "12.01". */
+export function formatPick(pickNo: number, teams: number): string {
+  const round = Math.ceil(pickNo / teams);
+  const posInRound = pickNo - (round - 1) * teams;
+  return `${round}.${String(posInRound).padStart(2, "0")}`;
+}
+
 /** Which round and draft slot an overall pick number belongs to. */
 export function slotForPick(pickNo: number, teams: number, reversalRound = 0): { round: number; slot: number } {
   const round = Math.ceil(pickNo / teams);

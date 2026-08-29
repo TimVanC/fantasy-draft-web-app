@@ -1,5 +1,6 @@
 import type { ScoringFormat, SleeperDraft } from "../types";
 import type { Source } from "../hooks/useDraft";
+import { formatPick } from "../lib/snake";
 
 interface Derived {
   teams: number;
@@ -65,7 +66,7 @@ export default function HeaderBar(props: {
               Rd {d.currentRound}
               <span className="text-zinc-500"> / {d.rounds}</span>
             </span>
-            <span className="font-semibold">Pick #{d.nextPickNo}</span>
+            <span className="font-semibold">Pick {formatPick(d.nextPickNo, d.teams)}</span>
             <span className="text-zinc-400">Slot {d.onClockSlot} on the clock</span>
           </div>
         ) : (
@@ -84,7 +85,7 @@ export default function HeaderBar(props: {
               ? "YOU'RE ON THE CLOCK"
               : d.othersPicks === null
                 ? "No picks left"
-                : `${d.othersPicks} pick${d.othersPicks === 1 ? "" : "s"} until you (#${d.myNextPickNo})`}
+                : `${d.othersPicks} pick${d.othersPicks === 1 ? "" : "s"} until you (${formatPick(d.myNextPickNo!, d.teams)})`}
           </div>
         )}
 

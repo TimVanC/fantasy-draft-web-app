@@ -8,6 +8,7 @@ import { conditionalSurvival } from "../lib/advisor";
 import { sheetSummary } from "../lib/cheatsheet";
 import { playerKey } from "../lib/normalize";
 import { boardRank } from "../lib/rankings";
+import { formatPick } from "../lib/snake";
 
 const TAG_STYLE: Record<string, string> = {
   target: "bg-emerald-600/25 text-emerald-300 border-emerald-700",
@@ -36,6 +37,7 @@ export default function BestAvailable(props: {
   adpMap: AdpMap;
   myNextPickNo: number | null;
   currentPickNo: number;
+  teams: number;
 }) {
   const [filter, setFilter] = useState<(typeof FILTERS)[number]>("ALL");
   const [search, setSearch] = useState("");
@@ -162,6 +164,7 @@ export default function BestAvailable(props: {
                   p={p}
                   rank={rank}
                   sc={sc}
+                  teams={props.teams}
                   adpFormatted={adp?.formatted ?? null}
                   adpDelta={adp && rank !== null ? Math.round(adp.adp - rank) : null}
                   survival={survival}
@@ -210,6 +213,7 @@ function FragmentRow(props: {
   p: RankedPlayer;
   rank: number | null;
   sc: Scarcity;
+  teams: number;
   adpFormatted: string | null;
   adpDelta: number | null;
   survival: number | null;
@@ -319,9 +323,9 @@ function FragmentRow(props: {
                     ? "bg-amber-950 text-amber-300"
                     : "bg-zinc-800 text-zinc-400"
               }`}
-              title={`Odds he's still there at your pick #${props.myNextPickNo}, from market ADP`}
+              title={`Odds he's still there at your pick ${formatPick(props.myNextPickNo, props.teams)}, from market ADP`}
             >
-              {Math.round(props.survival * 100)}% at #{props.myNextPickNo}
+              {Math.round(props.survival * 100)}% at {formatPick(props.myNextPickNo, props.teams)}
             </span>
           ) : (
             <>

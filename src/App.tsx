@@ -187,6 +187,7 @@ export default function App() {
                 available: derived.available.filter((p) => !dismissed.includes(playerKey(p))),
                 adpMap,
                 format,
+                teams: derived.teams,
                 currentPickNo: derived.nextPickNo,
                 myPick: derived.myNextPickNo,
                 myNextPick: derived.followingPick,
@@ -196,6 +197,7 @@ export default function App() {
                 planPosition: derived.planPosition,
               })}
               myPick={derived.myNextPickNo}
+              teams={derived.teams}
               onClock={derived.onClock}
               format={format}
               adpLoaded={adpMap.size > 0}
@@ -218,6 +220,7 @@ export default function App() {
             adpMap={adpMap}
             myNextPickNo={derived.myNextPickNo}
             currentPickNo={derived.nextPickNo}
+            teams={derived.teams}
           />
         </div>
         <div className="flex min-h-0 flex-col gap-3 overflow-y-auto">

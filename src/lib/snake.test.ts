@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  formatPick,
   myFollowingPick,
   nextPickForSlot,
   pickNumbersForSlot,
@@ -54,6 +55,14 @@ describe("snake pick math", () => {
     // No picks left.
     expect(nextPickForSlot(1, 142, 10, 15)).toBeNull();
     expect(picksUntilMyTurn(1, 142, 10, 15)).toBeNull();
+  });
+
+  it("formats overall picks as round.pick draft-speak", () => {
+    expect(formatPick(1, 10)).toBe("1.01");
+    expect(formatPick(10, 10)).toBe("1.10");
+    expect(formatPick(11, 10)).toBe("2.01");
+    expect(formatPick(120, 10)).toBe("12.10");
+    expect(formatPick(25, 12)).toBe("3.01");
   });
 
   it("myFollowingPick gives the pick after my next", () => {

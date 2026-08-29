@@ -1,4 +1,5 @@
 import type { MatchedPick, SleeperPick } from "../types";
+import { formatPick } from "../lib/snake";
 
 export default function SideFeed(props: {
   picks: SleeperPick[];
@@ -23,7 +24,7 @@ export default function SideFeed(props: {
             return (
               <li key={m.pick.pick_no} className="flex items-center gap-2">
                 <span className="w-10 shrink-0 font-mono text-xs text-zinc-500">
-                  #{m.pick.pick_no}
+                  {formatPick(m.pick.pick_no, props.teams)}
                 </span>
                 <span className={`truncate ${mine ? "font-bold text-emerald-300" : ""}`}>
                   {meta.first_name} {meta.last_name}

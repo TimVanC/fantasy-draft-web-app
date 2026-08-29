@@ -1,5 +1,6 @@
 import type { Advice } from "../lib/advisor";
 import { boardRank } from "../lib/rankings";
+import { formatPick } from "../lib/snake";
 import { playerKey, type MatchIndex } from "../lib/normalize";
 import type { ScoringFormat } from "../types";
 
@@ -13,6 +14,7 @@ const POS_STYLE: Record<string, string> = {
 export default function PickAdvisor(props: {
   advice: Advice;
   myPick: number | null;
+  teams: number;
   mySlot: number | null;
   onClock: boolean;
   format: ScoringFormat;
@@ -38,7 +40,7 @@ export default function PickAdvisor(props: {
     <section className="rounded-xl border border-emerald-900/70 bg-emerald-950/20 p-2.5">
       <div className="mb-1.5 flex items-baseline gap-2">
         <h2 className="text-sm font-black uppercase tracking-wide text-emerald-300">
-          {props.onClock ? "Take now" : `Plan for your pick #${myPick}`}
+          {props.onClock ? "Take now" : `Plan for your pick ${formatPick(myPick, props.teams)}`}
         </h2>
         <span className="text-[11px] text-zinc-500">
           value = his board · survival odds = market ADP

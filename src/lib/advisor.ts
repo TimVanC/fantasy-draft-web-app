@@ -12,6 +12,7 @@ import type { RankedPlayer, ScoringFormat } from "../types";
 import { boardRank } from "./rankings";
 import { playerKey } from "./normalize";
 import { sheetAdpOverall } from "./cheatsheet";
+import { formatPick } from "./snake";
 import type { AdpMap } from "./adp";
 
 /**
@@ -69,6 +70,8 @@ export interface AdviceInput {
   available: RankedPlayer[];
   adpMap: AdpMap;
   format: ScoringFormat;
+  /** League size, for round.pick formatting in reasons. */
+  teams: number;
   /** The next overall pick to be made in the draft right now. */
   currentPickNo: number;
   /** My upcoming pick number (null = no picks left). */
@@ -94,7 +97,8 @@ export interface Advice {
 }
 
 export function advise(input: AdviceInput): Advice {
-  const { adpMap, currentPickNo, myPick, myNextPick, onClock } = input;
+  const { adpMap, teams, currentPickNo, myPick, myNextPick, onClock } = input;
+  const fp = (n: number) => formatPick(n, teams);
   if (myPick === null) return { suggestions: [], canWait: [] };
 
   const pool = input.available.slice(0, POOL_SIZE);
@@ -122,8 +126,8 @@ export function advise(input: AdviceInput): Advice {
     if (pSurviveNext !== null) {
       score += 6 * (1 - pSurviveNext) * pReach;
       if (pReach >= 0.4) {
-        if (pSurviveNext < 0.35) reasons.push(`only ${Math.round(pSurviveNext * 100)}% to last to #${myNextPick}`);
-        else if (pSurviveNext > 0.7) reasons.push(`${Math.round(pSurviveNext * 100)}% to still be there at #${myNextPick}`);
+        if (pSurviveNext < 0.35) reasons.push(`only ${Math.round(pSurviveNext * 100)}% to last to ${fp(myNextPick!)}`);
+        else if (pSurviveNext > 0.7) reasons.push(`${Math.round(pSurviveNext * 100)}% to still be there at ${fp(myNextPick!)}`);
       }
     }
 
@@ -183,7 +187,7 @@ export function advise(input: AdviceInput): Advice {
     // If he probably won't even reach my pick, he can't be the advice.
     if (!onClock) {
       score -= 8 * (1 - pReach);
-      if (pReach < 0.4) reasons.push(`may be gone before #${myPick} (${Math.round(pReach * 100)}%)`);
+      if (pReach < 0.4) reasons.push(`may be gone before ${fp(myPick)} (${Math.round(pReach * 100)}%)`);
     }
 
     return {

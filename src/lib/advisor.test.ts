@@ -99,6 +99,7 @@ describe("advise", () => {
       available,
       adpMap: new Map(),
       format: "ppr",
+      teams: 10,
       currentPickNo: 20,
       myPick: 20,
       myNextPick: 21,
