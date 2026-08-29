@@ -122,23 +122,22 @@ export function advise(input: AdviceInput): Advice {
     const reasons: string[] = [];
     let score = -availIndex; // base: the guide's own ordering
 
-    // Urgency: a player who will NOT make it back gains priority now — but
-    // urgency only matters to the extent he even reaches my pick, so it is
-    // weighted by pReach (a player who's gone before my turn has no urgency).
-    if (pSurviveNext !== null) {
-      score += 6 * (1 - pSurviveNext) * pReach;
-    }
-    // Survival messaging depends on where I am. On the clock the question is
-    // "if I pass, is he back at my NEXT turn"; while planning ahead the
-    // question is "does he even reach my upcoming pick".
+    // Survival odds REORDER only on the clock (the take-now-vs-wait
+    // decision). While planning ahead they only ANNOTATE: the list stays in
+    // best-available order — seeing "Gibbs, likely gone (27%)" at the top is
+    // honest; hiding or demoting him is not.
     if (onClock) {
       if (pSurviveNext !== null) {
+        // Urgency: a player who will NOT make it back gains priority now.
+        score += 6 * (1 - pSurviveNext);
         if (pSurviveNext < 0.35) reasons.push(`only ${Math.round(pSurviveNext * 100)}% to last to ${fp(myNextPick!)}`);
         else if (pSurviveNext > 0.7) reasons.push(`${Math.round(pSurviveNext * 100)}% to still be there at ${fp(myNextPick!)}`);
       }
-    } else if (pReach >= 0.4 && pReach < 0.85) {
+    } else if (pReach < 0.4) {
+      reasons.push(`likely gone before ${fp(myPick)} (${Math.round(pReach * 100)}%)`);
+    } else if (pReach < 0.85) {
       reasons.push(`${Math.round(pReach * 100)}% to reach ${fp(myPick)}`);
-    } else if (pReach >= 0.85 && pSurviveNext !== null && pSurviveNext > 0.7) {
+    } else if (pSurviveNext !== null && pSurviveNext > 0.7) {
       reasons.push(`${Math.round(pSurviveNext * 100)}% to last even to ${fp(myNextPick!)}`);
     }
 
@@ -195,12 +194,6 @@ export function advise(input: AdviceInput): Advice {
       reasons.push("plan round");
     }
 
-    // If he probably won't even reach my pick, he can't be the advice.
-    if (!onClock) {
-      score -= 8 * (1 - pReach);
-      if (pReach < 0.4) reasons.push(`may be gone before ${fp(myPick)} (${Math.round(pReach * 100)}%)`);
-    }
-
     return {
       player,
       score,
@@ -213,21 +206,12 @@ export function advise(input: AdviceInput): Advice {
   });
 
   const ranked = [...scored].sort((a, b) => b.score - a.score);
-  // Never suggest his avoids, and prefer not to spend a slot planning for a
-  // player who realistically won't reach my pick — but never go blank: if the
-  // reachability filter empties the list, fall back to best score anyway so
-  // there is always a recommendation on the clock.
+  // Never suggest his avoids; everyone else is fair to show — an unreachable
+  // stud appears in his true spot with a "likely gone" caveat instead of
+  // being demoted or hidden.
   const suggestions = ranked
-    .filter((s) => s.player.tag !== "avoid" && s.pReach >= 0.25)
+    .filter((s) => s.player.tag !== "avoid")
     .slice(0, SUGGESTIONS);
-  if (suggestions.length < SUGGESTIONS) {
-    const chosen = new Set(suggestions.map((s) => playerKey(s.player)));
-    for (const s of ranked) {
-      if (suggestions.length >= SUGGESTIONS) break;
-      if (s.player.tag === "avoid" || chosen.has(playerKey(s.player))) continue;
-      suggestions.push(s);
-    }
-  }
 
   // "Can wait": guide's top players the market will very likely return to me.
   // His avoids don't belong here either — "can wait" implies "worth taking".

@@ -165,7 +165,10 @@ describe("advise", () => {
     expect(canWait.map((s) => s.player.name)).toContain("Safe Sam");
   });
 
-  it("penalizes players unlikely to reach my pick when not on the clock", () => {
+  it("keeps best-available order while planning — reach annotates, never reorders", () => {
+    // Alpha (board #1) is almost surely gone before my pick; while planning
+    // he must STILL lead the list, wearing an honest "likely gone" caveat —
+    // never demoted below worse players or hidden.
     const adpMap = buildAdpMap(index, [
       { name: "Alpha RB", position: "RB", adp: 5 },
       { name: "Bravo WR", position: "WR", adp: 60 },
@@ -174,36 +177,25 @@ describe("advise", () => {
     const { suggestions } = advise(
       baseInput({ adpMap, onClock: false, currentPickNo: 25, myPick: 30, myNextPick: 50 }),
     );
-    expect(suggestions[0].player.name).not.toBe("Alpha RB");
-  });
-
-  it("does not spend suggestions on players who won't reach my pick", () => {
-    // Alpha and Bravo go top-5 by market; my pick is #30 — both are dreams.
-    // Charlie reaches me. The advice must not lead with dreams.
-    const adpMap = buildAdpMap(index, [
-      { name: "Alpha RB", position: "RB", adp: 4 },
-      { name: "Bravo WR", position: "WR", adp: 5 },
-      { name: "Charlie RB", position: "RB", adp: 33 },
-    ]);
-    const { suggestions } = advise(
-      baseInput({ adpMap, onClock: false, currentPickNo: 25, myPick: 30, myNextPick: 50 }),
-    );
-    expect(suggestions[0].player.name).toBe("Charlie RB");
-  });
-
-  it("never goes blank: falls back past the reachability filter", () => {
-    // Everyone's market ADP is long gone before my pick — the filter would
-    // empty the list, but the advisor must still recommend the best of them.
-    const adpMap = buildAdpMap(index, [
-      { name: "Alpha RB", position: "RB", adp: 2 },
-      { name: "Bravo WR", position: "WR", adp: 3 },
-      { name: "Charlie RB", position: "RB", adp: 4 },
-    ]);
-    const { suggestions } = advise(
-      baseInput({ adpMap, onClock: false, currentPickNo: 21, myPick: 40, myNextPick: 60 }),
-    );
-    expect(suggestions.length).toBe(3);
+    expect(suggestions[0].player.name).toBe("Alpha RB");
+    expect(suggestions[0].reasons.join(" ")).toContain("likely gone before 3.10");
     expect(suggestions.map((s) => s.player.name)).not.toContain("Delta TE"); // still no avoids
+  });
+
+  it("uses survival to reorder only on the clock", () => {
+    const adpMap = buildAdpMap(index, [
+      { name: "Alpha RB", position: "RB", adp: 80 },
+      { name: "Bravo WR", position: "WR", adp: 5 },
+      { name: "Charlie RB", position: "RB", adp: 85 },
+    ]);
+    // Planning ahead: pure board order despite Bravo's urgency.
+    const planning = advise(
+      baseInput({ adpMap, onClock: false, currentPickNo: 18, myPick: 20, myNextPick: 40 }),
+    );
+    expect(planning.suggestions[0].player.name).toBe("Alpha RB");
+    // On the clock: Bravo's won't-make-it-back urgency takes over.
+    const clock = advise(baseInput({ adpMap, onClock: true, myPick: 20, myNextPick: 40 }));
+    expect(clock.suggestions[0].player.name).toBe("Bravo WR");
   });
 
   it("does not let backup QBs sweep the suggestions once QB is filled", () => {
