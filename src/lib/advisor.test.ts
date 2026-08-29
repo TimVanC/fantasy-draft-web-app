@@ -79,6 +79,21 @@ describe("advise", () => {
   const available = [a, b, c, d];
   const index = buildMatchIndex(available);
 
+  /** A fresh 1QB/2RB/2WR/1TE/1flex roster with nothing drafted yet. */
+  function freshNeeds(counts: Record<string, number> = {}) {
+    const dedicated: Record<string, number> = { QB: 1, RB: 2, WR: 2, TE: 1 };
+    return new Map(
+      Object.entries(dedicated).map(([pos, total]) => {
+        const count = counts[pos] ?? 0;
+        const dedicatedOpen = Math.max(0, total - count);
+        // One W/R/T flex, consumed once RB+WR+TE overflow starts.
+        const flexUsed = Math.max(0, (counts.RB ?? 0) - 2) + Math.max(0, (counts.WR ?? 0) - 2) + Math.max(0, (counts.TE ?? 0) - 1);
+        const flexOpen = pos === "QB" ? 0 : Math.max(0, 1 - flexUsed);
+        return [pos, { dedicatedOpen, flexOpen, dedicatedTotal: total, count }];
+      }),
+    );
+  }
+
   function baseInput(overrides: Partial<AdviceInput> = {}): AdviceInput {
     return {
       available,
@@ -88,8 +103,7 @@ describe("advise", () => {
       myPick: 20,
       myNextPick: 21,
       onClock: true,
-      openStarterPositions: new Set(["QB", "RB", "WR", "TE"]),
-      myPosCounts: new Map(),
+      posNeeds: freshNeeds(),
       planPosition: null,
       ...overrides,
     };
@@ -188,6 +202,36 @@ describe("advise", () => {
     );
     expect(suggestions.length).toBe(3);
     expect(suggestions.map((s) => s.player.name)).not.toContain("Delta TE"); // still no avoids
+  });
+
+  it("does not let backup QBs sweep the suggestions once QB is filled", () => {
+    // Joel's remaining board is QB-heavy at the top, but I already have my
+    // starter: the advice must surface the skill players instead.
+    const qbHeavy = [
+      player("Q One", "QB", 1), player("Q Two", "QB", 2), player("Q Three", "QB", 3),
+      player("Wide Out", "WR", 4), player("Runner Back", "RB", 5),
+    ];
+    const { suggestions } = advise(
+      baseInput({ available: qbHeavy, posNeeds: freshNeeds({ QB: 1 }) }),
+    );
+    expect(suggestions[0].player.pos).not.toBe("QB");
+    expect(suggestions.filter((s) => s.player.pos === "QB").length).toBeLessThanOrEqual(1);
+    const qb = suggestions.find((s) => s.player.pos === "QB");
+    if (qb) expect(qb.reasons.join(" ")).toContain("backup QB");
+  });
+
+  it("keeps RB/WR depth cheap but not free", () => {
+    const pool = [player("Wide One", "WR", 1), player("Runner One", "RB", 2)];
+    // 3 WRs deep: the clearly better WR still leads — depth is only a nudge.
+    const three = advise(
+      baseInput({ available: pool, posNeeds: freshNeeds({ WR: 3, RB: 2, QB: 1, TE: 1 }) }),
+    );
+    expect(three.suggestions[0].player.name).toBe("Wide One");
+    // 4 WRs deep: the growing penalty finally tips it to the RB.
+    const four = advise(
+      baseInput({ available: pool, posNeeds: freshNeeds({ WR: 4, RB: 2, QB: 1, TE: 1 }) }),
+    );
+    expect(four.suggestions[0].player.name).toBe("Runner One");
   });
 
   it("returns nothing when I have no picks left", () => {

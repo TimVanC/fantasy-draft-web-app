@@ -86,17 +86,22 @@ export default function App() {
     const onClock = mySlot !== null && othersPicks === 0;
     const followingPick =
       mySlot && !draftDone ? myFollowingPick(mySlot, nextPickNo, teams, rounds, reversal) : null;
-    const openStarterPositions = new Set<string>();
-    for (const s of slots) {
-      if (s.label === "BN" || s.pick !== null) continue;
-      for (const pos of ["QB", "RB", "WR", "TE"]) {
-        if (s.eligible(pos)) openStarterPositions.add(pos);
-      }
-    }
     const myPosCounts = new Map<string, number>();
     for (const p of myPicks) {
       const pos = p.metadata.position;
       myPosCounts.set(pos, (myPosCounts.get(pos) ?? 0) + 1);
+    }
+    // Per-position demand from the league's actual roster structure.
+    const posNeeds = new Map<string, import("./lib/advisor").PosNeed>();
+    for (const pos of ["QB", "RB", "WR", "TE"]) {
+      posNeeds.set(pos, {
+        dedicatedOpen: slots.filter((s) => s.label === pos && s.pick === null).length,
+        dedicatedTotal: slots.filter((s) => s.label === pos).length,
+        flexOpen: slots.filter(
+          (s) => s.label !== "BN" && s.label !== pos && s.pick === null && s.eligible(pos),
+        ).length,
+        count: myPosCounts.get(pos) ?? 0,
+      });
     }
     const myRound = myNextPickNo ? slotForPick(myNextPickNo, teams, reversal).round : null;
     const planLabel = myRound
@@ -136,8 +141,7 @@ export default function App() {
       finalTwoRounds: currentRound >= rounds - 1,
       onClock,
       followingPick,
-      openStarterPositions,
-      myPosCounts,
+      posNeeds,
       planPosition,
       scarcePositions,
       rosterAlerts,
@@ -184,9 +188,8 @@ export default function App() {
                 myPick: derived.myNextPickNo,
                 myNextPick: derived.followingPick,
                 onClock: derived.onClock,
-                openStarterPositions: derived.openStarterPositions,
+                posNeeds: derived.posNeeds,
                 scarcePositions: derived.scarcePositions,
-                myPosCounts: derived.myPosCounts,
                 planPosition: derived.planPosition,
               })}
               myPick={derived.myNextPickNo}

@@ -42,6 +42,17 @@ export function conditionalSurvival(adp: number, fromPick: number, toPick: numbe
   return Math.min(0.99, Math.max(0.01, p));
 }
 
+export interface PosNeed {
+  /** Open dedicated starting slots for this position. */
+  dedicatedOpen: number;
+  /** Open flex-type slots this position is eligible for. */
+  flexOpen: number;
+  /** Total dedicated starting slots in the league's roster. */
+  dedicatedTotal: number;
+  /** How many of my picks are already this position. */
+  count: number;
+}
+
 export interface Suggestion {
   player: RankedPlayer;
   score: number;
@@ -65,12 +76,10 @@ export interface AdviceInput {
   /** My pick after that (null = last pick). */
   myNextPick: number | null;
   onClock: boolean;
-  /** Positions that can still fill an open starting slot (incl. via flex). */
-  openStarterPositions: Set<string>;
+  /** Per-position roster demand, derived from the league's actual slots. */
+  posNeeds: Map<string, PosNeed>;
   /** Needed positions whose ranked pool is projected to run dry soon. */
   scarcePositions?: Set<string>;
-  /** Count of my picks per position, for saturation penalties. */
-  myPosCounts: Map<string, number>;
   /** Position his round plan names for my upcoming round, if any. */
   planPosition: string | null;
 }
@@ -138,18 +147,31 @@ export function advise(input: AdviceInput): Advice {
       reasons.push(`sheet trap ${player.valueGap ?? ""}`.trim());
     }
 
-    // Roster need — boosted hard when the position I still need is drying up.
-    if (input.openStarterPositions.has(player.pos)) {
-      score += 1.5;
-      if (input.scarcePositions?.has(player.pos)) {
-        score += 2.5;
-        reasons.push(`${player.pos} pool drying up`);
+    // Roster need, from the league's actual slots: filling a starter beats
+    // filling a flex beats depth — and depth is priced by position. Extra
+    // RB/WR depth is cheap and useful; a backup QB/TE in a one-starter
+    // league is a luxury and must not sweep the suggestions.
+    const need = input.posNeeds.get(player.pos);
+    if (need) {
+      if (need.dedicatedOpen > 0) {
+        score += 1.5;
+        if (input.scarcePositions?.has(player.pos)) {
+          score += 2.5;
+          reasons.push(`${player.pos} pool drying up`);
+        } else {
+          reasons.push(`fills ${player.pos}`);
+        }
+      } else if (need.flexOpen > 0) {
+        score += 0.75;
+        reasons.push("flex option");
+      } else if (player.pos === "QB" || player.pos === "TE") {
+        score -= need.count >= 2 ? 8 : 4;
+        reasons.push(`backup ${player.pos} only (have ${need.count})`);
       } else {
-        reasons.push(`fills ${player.pos}`);
+        const over = Math.max(0, need.count - need.dedicatedTotal);
+        score -= Math.min(3, 0.75 * (over + 1));
+        if (over >= 2) reasons.push(`already deep at ${player.pos} (${need.count})`);
       }
-    } else if ((input.myPosCounts.get(player.pos) ?? 0) >= 2) {
-      score -= 3;
-      reasons.push(`already ${input.myPosCounts.get(player.pos)} ${player.pos}s`);
     }
 
     // His round plan, as a nudge not a rule (BPA still most important).
