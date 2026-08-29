@@ -21,7 +21,7 @@ import type { AdpMap } from "./adp";
  * draft (early picks are scripted, late picks are chaos).
  */
 export function survivalProb(adp: number, pickNo: number): number {
-  const sigma = Math.max(3, 0.15 * adp);
+  const sigma = Math.max(1.5, 0.15 * adp);
   const p = 1 / (1 + Math.exp(-(adp - pickNo) / sigma));
   return Math.min(0.99, Math.max(0.01, p));
 }
@@ -35,7 +35,9 @@ export function survivalProb(adp: number, pickNo: number): number {
  */
 export function conditionalSurvival(adp: number, fromPick: number, toPick: number): number {
   if (toPick <= fromPick) return 0.99;
-  const sigma = Math.max(3, 0.15 * Math.max(adp, fromPick));
+  // Round 1 is scripted — the spread floor stays tight so a consensus 1.01
+  // doesn't look 50/50 to reach pick 4.
+  const sigma = Math.max(1.5, 0.15 * Math.max(adp, fromPick));
   const logistic = (x: number) => 1 / (1 + Math.exp(-x / sigma));
   const pFrom = logistic(adp - fromPick);
   const pTo = logistic(adp - toPick);
@@ -87,8 +89,8 @@ export interface AdviceInput {
   planPosition: string | null;
 }
 
-const POOL_SIZE = 15;
-const SUGGESTIONS = 3;
+const POOL_SIZE = 18;
+const SUGGESTIONS = 6;
 
 export interface Advice {
   suggestions: Suggestion[];
@@ -125,10 +127,19 @@ export function advise(input: AdviceInput): Advice {
     // weighted by pReach (a player who's gone before my turn has no urgency).
     if (pSurviveNext !== null) {
       score += 6 * (1 - pSurviveNext) * pReach;
-      if (pReach >= 0.4) {
+    }
+    // Survival messaging depends on where I am. On the clock the question is
+    // "if I pass, is he back at my NEXT turn"; while planning ahead the
+    // question is "does he even reach my upcoming pick".
+    if (onClock) {
+      if (pSurviveNext !== null) {
         if (pSurviveNext < 0.35) reasons.push(`only ${Math.round(pSurviveNext * 100)}% to last to ${fp(myNextPick!)}`);
         else if (pSurviveNext > 0.7) reasons.push(`${Math.round(pSurviveNext * 100)}% to still be there at ${fp(myNextPick!)}`);
       }
+    } else if (pReach >= 0.4 && pReach < 0.85) {
+      reasons.push(`${Math.round(pReach * 100)}% to reach ${fp(myPick)}`);
+    } else if (pReach >= 0.85 && pSurviveNext !== null && pSurviveNext > 0.7) {
+      reasons.push(`${Math.round(pSurviveNext * 100)}% to last even to ${fp(myNextPick!)}`);
     }
 
     // Conviction tags are the guide's strongest signal.

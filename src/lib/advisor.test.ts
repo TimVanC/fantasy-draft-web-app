@@ -44,6 +44,11 @@ describe("conditionalSurvival", () => {
   it("is certain for picks that already happened", () => {
     expect(conditionalSurvival(50, 30, 30)).toBe(0.99);
   });
+
+  it("is sharp at the scripted top of round 1", () => {
+    // A consensus 1.01 rarely reaches pick 4 — nowhere near a coin flip.
+    expect(conditionalSurvival(1.5, 1, 4)).toBeLessThan(0.35);
+  });
 });
 
 describe("nearestFfcTeams", () => {
@@ -141,27 +146,23 @@ describe("advise", () => {
   });
 
   it("lists safe top players under canWait", () => {
-    const wide = [
-      ...available,
-      player("Echo WR", "WR", 5),
-      player("Foxtrot RB", "RB", 6),
-      player("Golf WR", "WR", 7),
-    ];
+    // Eight urgent players ahead of Safe Sam on the board; his market ADP is
+    // way out, so he should land in canWait, not burn a suggestion slot.
+    const urgent = Array.from({ length: 8 }, (_, i) =>
+      player(`Urgent ${"ABCDEFGH"[i]}`, i % 2 ? "WR" : "RB", i + 1),
+    );
+    const wide = [...urgent, player("Safe Sam", "RB", 9)];
     const wideIndex = buildMatchIndex(wide);
     const adpMap = buildAdpMap(wideIndex, [
-      { name: "Alpha RB", position: "RB", adp: 90 },
-      { name: "Bravo WR", position: "WR", adp: 5 },
-      { name: "Charlie RB", position: "RB", adp: 6 },
-      { name: "Echo WR", position: "WR", adp: 7 },
-      { name: "Foxtrot RB", position: "RB", adp: 8 },
-      { name: "Golf WR", position: "WR", adp: 9 },
+      ...urgent.map((p, i) => ({ name: p.name, position: p.pos, adp: 5 + i })),
+      { name: "Safe Sam", position: "RB", adp: 90 },
     ]);
     const { suggestions, canWait } = advise(
       baseInput({ available: wide, adpMap, myPick: 20, myNextPick: 40 }),
     );
-    // Alpha survives easily -> a wait candidate, not one of the 3 picks now.
-    expect(suggestions.map((s) => s.player.name)).not.toContain("Alpha RB");
-    expect(canWait.map((s) => s.player.name)).toContain("Alpha RB");
+    expect(suggestions).toHaveLength(6);
+    expect(suggestions.map((s) => s.player.name)).not.toContain("Safe Sam");
+    expect(canWait.map((s) => s.player.name)).toContain("Safe Sam");
   });
 
   it("penalizes players unlikely to reach my pick when not on the clock", () => {
@@ -211,12 +212,14 @@ describe("advise", () => {
     const qbHeavy = [
       player("Q One", "QB", 1), player("Q Two", "QB", 2), player("Q Three", "QB", 3),
       player("Wide Out", "WR", 4), player("Runner Back", "RB", 5),
+      player("Wide Two", "WR", 6), player("Runner Two", "RB", 7),
     ];
     const { suggestions } = advise(
       baseInput({ available: qbHeavy, posNeeds: freshNeeds({ QB: 1 }) }),
     );
-    expect(suggestions[0].player.pos).not.toBe("QB");
-    expect(suggestions.filter((s) => s.player.pos === "QB").length).toBeLessThanOrEqual(1);
+    // The top-3 QBs on the board no longer sweep the top of the advice —
+    // every remaining skill starter outranks them.
+    expect(suggestions.slice(0, 3).filter((s) => s.player.pos === "QB")).toHaveLength(0);
     const qb = suggestions.find((s) => s.player.pos === "QB");
     if (qb) expect(qb.reasons.join(" ")).toContain("backup QB");
   });
