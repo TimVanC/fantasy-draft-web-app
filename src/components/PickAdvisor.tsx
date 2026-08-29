@@ -1,5 +1,6 @@
 import type { Advice } from "../lib/advisor";
 import { boardRank } from "../lib/rankings";
+import { playerKey, type MatchIndex } from "../lib/normalize";
 import type { ScoringFormat } from "../types";
 
 const POS_STYLE: Record<string, string> = {
@@ -16,6 +17,10 @@ export default function PickAdvisor(props: {
   onClock: boolean;
   format: ScoringFormat;
   adpLoaded: boolean;
+  /** Dismissed players still on the board (restorable). */
+  dismissed: string[];
+  matchIndex: MatchIndex;
+  toggleDismiss: (key: string) => void;
 }) {
   const { advice, myPick } = props;
   if (props.mySlot === null) {
@@ -47,13 +52,20 @@ export default function PickAdvisor(props: {
           return (
             <div
               key={s.player.name}
-              className={`rounded-lg border p-2 ${
+              className={`relative rounded-lg border p-2 ${
                 i === 0
                   ? "border-emerald-600 bg-emerald-900/30"
                   : "border-zinc-800 bg-zinc-900/60"
               }`}
             >
-              <div className="flex items-center gap-1.5">
+              <button
+                onClick={() => props.toggleDismiss(playerKey(s.player))}
+                title="Not him — show the next player in line (advisor only; he stays on the board)"
+                className="absolute right-1 top-1 rounded px-1 text-xs text-zinc-600 hover:bg-zinc-800 hover:text-zinc-300"
+              >
+                ✕
+              </button>
+              <div className="flex items-center gap-1.5 pr-4">
                 <span className="text-xs font-black text-zinc-500">{i + 1}.</span>
                 <span className="truncate text-sm font-bold">{s.player.name}</span>
                 <span
@@ -105,6 +117,22 @@ export default function PickAdvisor(props: {
                 `${s.player.name} (${Math.round((s.pSurviveNext ?? 0) * 100)}%)`,
             )
             .join(" · ")}
+        </div>
+      )}
+
+      {props.dismissed.length > 0 && (
+        <div className="mt-1.5 text-[11px] text-zinc-500">
+          <span className="font-bold">Dismissed:</span>{" "}
+          {props.dismissed.map((key) => (
+            <button
+              key={key}
+              onClick={() => props.toggleDismiss(key)}
+              title="Restore to suggestions"
+              className="mr-1 rounded bg-zinc-800/80 px-1.5 py-0.5 text-zinc-400 hover:bg-zinc-700 hover:text-zinc-200"
+            >
+              {props.matchIndex.byKey.get(key)?.name ?? key} ↩
+            </button>
+          ))}
         </div>
       )}
     </section>

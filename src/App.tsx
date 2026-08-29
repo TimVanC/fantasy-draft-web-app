@@ -27,6 +27,7 @@ export default function App() {
   const {
     state,
     adpMap,
+    toggleDismiss,
     matched,
     connectLive,
     startReplay,
@@ -37,7 +38,7 @@ export default function App() {
     replayControls,
   } = useDraft();
 
-  const { draft, picks, mySlot, format, overrides, source } = state;
+  const { draft, picks, mySlot, format, overrides, dismissed, source } = state;
 
   const derived = useMemo(() => {
     if (!draft) return null;
@@ -181,7 +182,9 @@ export default function App() {
             <PickAdvisor
               mySlot={mySlot}
               advice={advise({
-                available: derived.available,
+                // "Not him" dismissals hide players from the advisor only —
+                // they stay on the board and in scarcity math.
+                available: derived.available.filter((p) => !dismissed.includes(playerKey(p))),
                 adpMap,
                 format,
                 currentPickNo: derived.nextPickNo,
@@ -196,6 +199,11 @@ export default function App() {
               onClock={derived.onClock}
               format={format}
               adpLoaded={adpMap.size > 0}
+              dismissed={dismissed.filter((k) =>
+                derived.available.some((p) => playerKey(p) === k),
+              )}
+              matchIndex={MATCH_INDEX}
+              toggleDismiss={toggleDismiss}
             />
           )}
           <BestAvailable

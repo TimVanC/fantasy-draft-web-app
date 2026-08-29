@@ -28,6 +28,8 @@ export interface DraftState {
   mySlot: number | null;
   format: ScoringFormat;
   overrides: Overrides;
+  /** Advisor-only dismissals ("not him") — the player stays on the board. */
+  dismissed: string[];
   replay: { index: number; playing: boolean; speedMs: number; total: number };
 }
 
@@ -39,6 +41,7 @@ interface Persisted {
   mySlot: number | null;
   format: ScoringFormat;
   overrides: Overrides;
+  dismissed?: string[];
 }
 
 function loadPersisted(source: Source): Persisted | null {
@@ -59,6 +62,7 @@ export function useDraft() {
   const [mySlot, setMySlot] = useState<number | null>(null);
   const [format, setFormat] = useState<ScoringFormat>("ppr");
   const [overrides, setOverrides] = useState<Overrides>({});
+  const [dismissed, setDismissed] = useState<string[]>([]);
   const [replayIndex, setReplayIndex] = useState(0);
   const [replayPlaying, setReplayPlaying] = useState(false);
   const [replaySpeedMs, setReplaySpeedMs] = useState(1500);
@@ -90,12 +94,12 @@ export function useDraft() {
     try {
       localStorage.setItem(
         storageKey(source),
-        JSON.stringify({ mySlot, format, overrides } satisfies Persisted),
+        JSON.stringify({ mySlot, format, overrides, dismissed } satisfies Persisted),
       );
     } catch {
       // storage unavailable: overrides simply won't survive a reload
     }
-  }, [source, mySlot, format, overrides]);
+  }, [source, mySlot, format, overrides, dismissed]);
 
   // ---- connect -----------------------------------------------------------
   const connectLive = useCallback(async (input: string) => {
@@ -124,6 +128,7 @@ export function useDraft() {
       setMySlot(saved?.mySlot ?? null);
       setFormat(saved?.format ?? "ppr");
       setOverrides(saved?.overrides ?? {});
+      setDismissed(saved?.dismissed ?? []);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Failed to connect to Sleeper.");
     } finally {
@@ -141,6 +146,7 @@ export function useDraft() {
     setMySlot(saved?.mySlot ?? null);
     setFormat(saved?.format ?? "ppr");
     setOverrides(saved?.overrides ?? {});
+    setDismissed(saved?.dismissed ?? []);
     setError(null);
   }, []);
 
@@ -233,6 +239,7 @@ export function useDraft() {
       mySlot,
       format,
       overrides,
+      dismissed,
       replay: {
         index: replayIndex,
         playing: replayPlaying,
@@ -241,6 +248,10 @@ export function useDraft() {
       },
     } satisfies DraftState,
     adpMap,
+    toggleDismiss: (key: string) =>
+      setDismissed((prev) =>
+        prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key],
+      ),
     matched,
     connectLive,
     startReplay,
