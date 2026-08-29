@@ -12,6 +12,7 @@ import BestAvailable from "./components/BestAvailable";
 import PickAdvisor from "./components/PickAdvisor";
 import PositionalBoard from "./components/PositionalBoard";
 import RosterPanel from "./components/RosterPanel";
+import SplitsPanel from "./components/SplitsPanel";
 import StrategyPanel from "./components/StrategyPanel";
 import SideFeed from "./components/SideFeed";
 
@@ -148,8 +149,9 @@ export default function App() {
       />
       <main className="grid min-h-0 flex-1 grid-cols-1 gap-3 p-3 lg:grid-cols-[1fr_360px]">
         <div className="flex min-h-0 flex-col gap-3">
-          {mySlot !== null && !derived.draftDone && (
+          {!derived.draftDone && (
             <PickAdvisor
+              mySlot={mySlot}
               advice={advise({
                 available: derived.available,
                 adpMap,
@@ -184,7 +186,8 @@ export default function App() {
         </div>
         <div className="flex min-h-0 flex-col gap-3 overflow-y-auto">
           <RosterPanel slots={derived.slots} mySlot={mySlot} teams={derived.teams} />
-          <PositionalBoard players={RANKINGS} draftedKeys={derived.draftedKeys} />
+          <PositionalBoard players={RANKINGS} draftedKeys={derived.draftedKeys} format={format} />
+          <SplitsPanel players={RANKINGS} draftedKeys={derived.draftedKeys} format={format} />
           <StrategyPanel
             currentRound={derived.currentRound}
             rounds={derived.rounds}

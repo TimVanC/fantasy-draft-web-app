@@ -12,11 +12,21 @@ const POS_STYLE: Record<string, string> = {
 export default function PickAdvisor(props: {
   advice: Advice;
   myPick: number | null;
+  mySlot: number | null;
   onClock: boolean;
   format: ScoringFormat;
   adpLoaded: boolean;
 }) {
   const { advice, myPick } = props;
+  if (props.mySlot === null) {
+    return (
+      <section className="rounded-xl border border-emerald-900/70 bg-emerald-950/20 p-2.5 text-sm text-zinc-400">
+        <span className="font-black uppercase tracking-wide text-emerald-300">Pick advisor </span>
+        — set <span className="font-semibold text-zinc-200">My slot</span> in the header to get
+        suggestions for your picks.
+      </section>
+    );
+  }
   if (myPick === null || advice.suggestions.length === 0) return null;
 
   return (

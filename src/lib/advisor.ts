@@ -169,11 +169,21 @@ export function advise(input: AdviceInput): Advice {
   });
 
   const ranked = [...scored].sort((a, b) => b.score - a.score);
-  // Never suggest his avoids, and never spend a slot planning for a player
-  // who realistically won't reach my pick.
+  // Never suggest his avoids, and prefer not to spend a slot planning for a
+  // player who realistically won't reach my pick — but never go blank: if the
+  // reachability filter empties the list, fall back to best score anyway so
+  // there is always a recommendation on the clock.
   const suggestions = ranked
     .filter((s) => s.player.tag !== "avoid" && s.pReach >= 0.25)
     .slice(0, SUGGESTIONS);
+  if (suggestions.length < SUGGESTIONS) {
+    const chosen = new Set(suggestions.map((s) => playerKey(s.player)));
+    for (const s of ranked) {
+      if (suggestions.length >= SUGGESTIONS) break;
+      if (s.player.tag === "avoid" || chosen.has(playerKey(s.player))) continue;
+      suggestions.push(s);
+    }
+  }
 
   // "Can wait": guide's top players the market will very likely return to me.
   // His avoids don't belong here either — "can wait" implies "worth taking".

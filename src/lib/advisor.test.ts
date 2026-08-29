@@ -175,6 +175,21 @@ describe("advise", () => {
     expect(suggestions[0].player.name).toBe("Charlie RB");
   });
 
+  it("never goes blank: falls back past the reachability filter", () => {
+    // Everyone's market ADP is long gone before my pick — the filter would
+    // empty the list, but the advisor must still recommend the best of them.
+    const adpMap = buildAdpMap(index, [
+      { name: "Alpha RB", position: "RB", adp: 2 },
+      { name: "Bravo WR", position: "WR", adp: 3 },
+      { name: "Charlie RB", position: "RB", adp: 4 },
+    ]);
+    const { suggestions } = advise(
+      baseInput({ adpMap, onClock: false, currentPickNo: 21, myPick: 40, myNextPick: 60 }),
+    );
+    expect(suggestions.length).toBe(3);
+    expect(suggestions.map((s) => s.player.name)).not.toContain("Delta TE"); // still no avoids
+  });
+
   it("returns nothing when I have no picks left", () => {
     const { suggestions, canWait } = advise(baseInput({ myPick: null }));
     expect(suggestions).toHaveLength(0);
