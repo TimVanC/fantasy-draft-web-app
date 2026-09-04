@@ -18,6 +18,13 @@ export default defineConfig({
           return `/api/v1/adp/${format}?teams=${teams}&year=${year}`;
         },
       },
+      // Dev stand-in for api/players.ts: the untrimmed ~15MB map (the client
+      // reads only the fields the trimmed production response carries).
+      "/api/players": {
+        target: "https://api.sleeper.app",
+        changeOrigin: true,
+        rewrite: () => "/v1/players/nfl",
+      },
     },
   },
   test: {

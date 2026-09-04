@@ -6,6 +6,8 @@ import type { MatchIndex } from "../lib/normalize";
 import type { AdpMap } from "../lib/adp";
 import { conditionalSurvival } from "../lib/advisor";
 import { sheetSummary } from "../lib/cheatsheet";
+import { adjustSurvival, type DemandFn } from "../lib/opponents";
+import { availabilityLabel, type PlayerInfoMap } from "../lib/players";
 import { playerKey } from "../lib/normalize";
 import { boardRank } from "../lib/rankings";
 import { formatPick } from "../lib/snake";
@@ -38,23 +40,46 @@ export default function BestAvailable(props: {
   myNextPickNo: number | null;
   currentPickNo: number;
   teams: number;
+  playerInfo: PlayerInfoMap;
+  starred: Set<string>;
+  toggleStar: (key: string) => void;
+  demand?: DemandFn;
+  handcuffOf: (key: string, pos: string) => string | null;
 }) {
   const [filter, setFilter] = useState<(typeof FILTERS)[number]>("ALL");
   const [search, setSearch] = useState("");
   const [expanded, setExpanded] = useState<string | null>(null);
   const [targetsOnly, setTargetsOnly] = useState(false);
+  const [previewMyPick, setPreviewMyPick] = useState(false);
+
+  const survivalFor = (key: string, pos: string): number | null => {
+    const adp = props.adpMap.get(key);
+    if (!adp || props.myNextPickNo === null) return null;
+    const raw = conditionalSurvival(adp.adp, props.currentPickNo, props.myNextPickNo);
+    return props.demand
+      ? adjustSurvival(raw, props.demand(pos, props.currentPickNo, props.myNextPickNo))
+      : raw;
+  };
 
   const list = useMemo(() => {
     let l = props.available;
     if (filter === "FLEX") l = l.filter((p) => ["RB", "WR", "TE"].includes(p.pos));
     else if (filter !== "ALL") l = l.filter((p) => p.pos === filter);
     if (targetsOnly) l = l.filter((p) => p.tag === "target");
+    if (previewMyPick && props.myNextPickNo !== null) {
+      // Projected board at my pick: drop players unlikely (<50%) to be there.
+      l = l.filter((p) => {
+        const s = survivalFor(playerKey(p), p.pos);
+        return s === null || s >= 0.5;
+      });
+    }
     if (search.trim()) {
       const q = search.trim().toLowerCase();
       l = l.filter((p) => p.name.toLowerCase().includes(q));
     }
     return l;
-  }, [props.available, filter, search, targetsOnly]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [props.available, filter, search, targetsOnly, previewMyPick, props.adpMap, props.myNextPickNo, props.currentPickNo, props.demand]);
 
   const removedManually = Object.entries(props.overrides).filter(([, v]) => v === "drafted");
 
@@ -85,6 +110,19 @@ export default function BestAvailable(props: {
         >
           ● targets
         </button>
+        {props.myNextPickNo !== null && (
+          <button
+            onClick={() => setPreviewMyPick((v) => !v)}
+            title="Preview the likely board at your next pick: hides players under 50% to still be there"
+            className={`rounded-md border px-2 py-1 text-xs font-semibold ${
+              previewMyPick
+                ? "border-sky-600 bg-sky-600/20 text-sky-300"
+                : "border-zinc-700 text-zinc-400 hover:text-zinc-200"
+            }`}
+          >
+            @ my pick {formatPick(props.myNextPickNo, props.teams)}
+          </button>
+        )}
         <input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
@@ -123,11 +161,11 @@ export default function BestAvailable(props: {
               <th className="w-10 px-2 py-1.5 text-right">#</th>
               <th className="px-2 py-1.5">Player</th>
               <th className="w-12 px-1 py-1.5">Pos</th>
-              <th className="w-16 px-1 py-1.5 text-right" title="2025 adjusted fantasy PPG from the guide">
+              <th className="hidden w-16 px-1 py-1.5 text-right md:table-cell" title="2025 adjusted fantasy PPG from the guide">
                 adjPPG
               </th>
               <th
-                className="w-16 px-1 py-1.5 text-right"
+                className="hidden w-16 px-1 py-1.5 text-right md:table-cell"
                 title="Live market ADP (Fantasy Football Calculator mocks) — comparison only, never affects ordering"
               >
                 Mkt ADP
@@ -154,10 +192,7 @@ export default function BestAvailable(props: {
                 p.adp !== null ||
                 p.sheet !== undefined;
               const adp = props.adpMap.get(key) ?? null;
-              const survival =
-                adp && props.myNextPickNo !== null
-                  ? conditionalSurvival(adp.adp, props.currentPickNo, props.myNextPickNo)
-                  : null;
+              const survival = survivalFor(key, p.pos);
               return (
                 <FragmentRow
                   key={key}
@@ -165,6 +200,10 @@ export default function BestAvailable(props: {
                   rank={rank}
                   sc={sc}
                   teams={props.teams}
+                  availLabel={availabilityLabel(props.playerInfo.get(key))}
+                  starred={props.starred.has(key)}
+                  onStar={() => props.toggleStar(key)}
+                  handcuff={props.handcuffOf(key, p.pos)}
                   adpFormatted={adp?.formatted ?? null}
                   adpDelta={adp && rank !== null ? Math.round(adp.adp - rank) : null}
                   survival={survival}
@@ -214,6 +253,10 @@ function FragmentRow(props: {
   rank: number | null;
   sc: Scarcity;
   teams: number;
+  availLabel: string | null;
+  starred: boolean;
+  onStar: () => void;
+  handcuff: string | null;
   adpFormatted: string | null;
   adpDelta: number | null;
   survival: number | null;
@@ -241,8 +284,38 @@ function FragmentRow(props: {
           )}
         </td>
         <td className="px-2 py-1.5">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              props.onStar();
+            }}
+            title={props.starred ? "On your watchlist (click to remove)" : "Add to your watchlist — advisor bump + badge"}
+            className={`mr-1 text-xs ${props.starred ? "text-amber-300" : "text-zinc-700 hover:text-zinc-400"}`}
+          >
+            {props.starred ? "★" : "☆"}
+          </button>
           <span className="font-semibold">{p.name}</span>
           {p.team && <span className="ml-1.5 text-xs text-zinc-500">{p.team}</span>}
+          {props.availLabel && (
+            <span
+              className={`ml-1.5 rounded px-1.5 py-0.5 text-[10px] font-bold ${
+                props.availLabel === "Q" || props.availLabel === "D"
+                  ? "bg-amber-600/25 text-amber-300"
+                  : "bg-red-600/30 text-red-300"
+              }`}
+              title="Live status per Sleeper — the guide can't know about this"
+            >
+              {props.availLabel}
+            </span>
+          )}
+          {props.handcuff && (
+            <span
+              className="ml-1.5 rounded border border-sky-800 bg-sky-900/40 px-1.5 py-0.5 text-[10px] font-bold text-sky-300"
+              title="Backs up one of your RBs on Sleeper's depth chart"
+            >
+              HC · {props.handcuff.split(" ").slice(-1)[0]}
+            </span>
+          )}
           {p.tag && (
             <span
               className={`ml-2 rounded border px-1.5 py-0.5 text-[10px] font-bold uppercase ${TAG_STYLE[p.tag]}`}
@@ -288,10 +361,10 @@ function FragmentRow(props: {
             {p.posRank ?? ""}
           </span>
         </td>
-        <td className="px-1 py-1.5 text-right font-mono text-zinc-300">
+        <td className="hidden px-1 py-1.5 text-right font-mono text-zinc-300 md:table-cell">
           {p.adjPpg2025 ?? <span className="text-zinc-700">—</span>}
         </td>
-        <td className="px-1 py-1.5 text-right font-mono text-xs">
+        <td className="hidden px-1 py-1.5 text-right font-mono text-xs md:table-cell">
           {props.adpFormatted ? (
             <span
               title={

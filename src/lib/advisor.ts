@@ -3,16 +3,21 @@
  *
  * Division of labor (his rule #1 — "use rankings to find value" against ADP):
  *  - VALUE comes only from the guide: board rank, tags, roster need, his
- *    round plan. Market opinion never reorders value.
- *  - AVAILABILITY comes from market ADP: the market, not the guide, decides
- *    who gets drafted by everyone else, so survival odds to my next pick are
- *    modeled on ADP (falling back to board rank when a player has no ADP).
+ *    round plan (plus the cheat sheet's value/trap and my own watchlist).
+ *    Market opinion never reorders value.
+ *  - AVAILABILITY comes from market ADP, adjusted for what the specific
+ *    teams picking before me still need: the market, not the guide, decides
+ *    who gets drafted by everyone else.
+ *  - Live Sleeper status (IR/PUP/suspended/free agent) can veto — a frozen
+ *    PDF can't know who got hurt last week.
  */
 import type { RankedPlayer, ScoringFormat } from "../types";
 import { boardRank } from "./rankings";
 import { playerKey } from "./normalize";
 import { sheetAdpOverall } from "./cheatsheet";
 import { formatPick } from "./snake";
+import { adjustSurvival, type DemandFn } from "./opponents";
+import { availability, availabilityLabel, handcuffFor, stacksWith, type PlayerInfoMap } from "./players";
 import type { AdpMap } from "./adp";
 
 /**
@@ -66,6 +71,11 @@ export interface Suggestion {
   adp: number | null;
   adpFormatted: string | null;
   reasons: string[];
+  /** Live Sleeper availability badge ("Q", "IR", "FA"…), if any. */
+  availLabel: string | null;
+  handcuff: string | null;
+  stack: string | null;
+  starred: boolean;
 }
 
 export interface AdviceInput {
@@ -87,6 +97,15 @@ export interface AdviceInput {
   scarcePositions?: Set<string>;
   /** Position his round plan names for my upcoming round, if any. */
   planPosition: string | null;
+  /** His plan calls for a handcuff this round. */
+  planHandcuff?: boolean;
+  /** Opponent-need demand for survival adjustment. */
+  demand?: DemandFn;
+  /** Live Sleeper player map for injury/handcuff/stack. */
+  playerInfo?: PlayerInfoMap;
+  starred?: Set<string>;
+  myRbs?: { key: string; name: string }[];
+  myQbs?: { key: string; name: string }[];
 }
 
 const POOL_SIZE = 18;
@@ -102,11 +121,13 @@ export function advise(input: AdviceInput): Advice {
   const { adpMap, teams, currentPickNo, myPick, myNextPick, onClock } = input;
   const fp = (n: number) => formatPick(n, teams);
   if (myPick === null) return { suggestions: [], canWait: [] };
+  const info = input.playerInfo ?? new Map();
 
   const pool = input.available.slice(0, POOL_SIZE);
   const scored: Suggestion[] = pool.map((player, availIndex) => {
+    const key = playerKey(player);
     const rank = boardRank(player, input.format);
-    const entry = adpMap.get(playerKey(player)) ?? null;
+    const entry = adpMap.get(key) ?? null;
     // Survival proxy chain: FFC market ADP, else the cheat sheet's own ADP,
     // else — missing from a populated feed means the market is sleeping on
     // him, so he survives (that gap IS the value signal). Only when every
@@ -115,9 +136,12 @@ export function advise(input: AdviceInput): Advice {
       entry?.adp ??
       (player.sheet ? sheetAdpOverall(player.sheet) : null) ??
       (adpMap.size > 0 ? Math.max(rank ?? 999, 140) : (rank ?? 999));
-    const pReach = onClock ? 1 : conditionalSurvival(effAdp, currentPickNo, myPick);
-    const pSurviveNext =
-      myNextPick === null ? null : conditionalSurvival(effAdp, currentPickNo, myNextPick);
+    const survive = (to: number) => {
+      const raw = conditionalSurvival(effAdp, currentPickNo, to);
+      return input.demand ? adjustSurvival(raw, input.demand(player.pos, currentPickNo, to)) : raw;
+    };
+    const pReach = onClock ? 1 : survive(myPick);
+    const pSurviveNext = myNextPick === null ? null : survive(myNextPick);
 
     const reasons: string[] = [];
     let score = -availIndex; // base: the guide's own ordering
@@ -161,6 +185,25 @@ export function advise(input: AdviceInput): Advice {
       reasons.push(`sheet trap ${player.valueGap ?? ""}`.trim());
     }
 
+    // My watchlist.
+    const starred = input.starred?.has(key) ?? false;
+    if (starred) {
+      score += 2;
+      reasons.push("your guy ★");
+    }
+
+    // Live Sleeper status: a frozen PDF can't know who got hurt last week.
+    const pinfo = info.get(key);
+    const avail = availability(pinfo);
+    const availLabel = availabilityLabel(pinfo);
+    if (avail === "questionable") {
+      score -= 0.5;
+      reasons.push(`${availLabel} per Sleeper`);
+    } else if (avail === "out" || avail === "fa") {
+      score -= 20;
+      reasons.push(avail === "fa" ? "no NFL team (Sleeper)" : `${availLabel} per Sleeper`);
+    }
+
     // Roster need, from the league's actual slots: filling a starter beats
     // filling a flex beats depth — and depth is priced by position. Extra
     // RB/WR depth is cheap and useful; a backup QB/TE in a one-starter
@@ -188,6 +231,18 @@ export function advise(input: AdviceInput): Advice {
       }
     }
 
+    // Handcuffs to my RBs and stacks with my QB (live depth chart / teams).
+    const handcuff = handcuffFor(key, player.pos, info, input.myRbs ?? []);
+    if (handcuff) {
+      score += input.planHandcuff ? 3.5 : 1.5;
+      reasons.push(`handcuffs ${handcuff}`);
+    }
+    const stack = stacksWith(key, player.pos, info, input.myQbs ?? []);
+    if (stack) {
+      score += 0.5;
+      reasons.push(`stacks w/ ${stack}`);
+    }
+
     // His round plan, as a nudge not a rule (BPA still most important).
     if (input.planPosition && player.pos === input.planPosition) {
       score += 1;
@@ -202,15 +257,23 @@ export function advise(input: AdviceInput): Advice {
       adp: entry?.adp ?? null,
       adpFormatted: entry?.formatted ?? null,
       reasons,
+      availLabel,
+      handcuff,
+      stack,
+      starred,
     };
   });
 
   const ranked = [...scored].sort((a, b) => b.score - a.score);
-  // Never suggest his avoids; everyone else is fair to show — an unreachable
-  // stud appears in his true spot with a "likely gone" caveat instead of
-  // being demoted or hidden.
+  const unavailable = (s: Suggestion) => {
+    const a = availability(info.get(playerKey(s.player)));
+    return a === "out" || a === "fa";
+  };
+  // Never suggest his avoids or players Sleeper says can't play; everyone
+  // else is fair to show — an unreachable stud appears in his true spot with
+  // a "likely gone" caveat instead of being demoted or hidden.
   const suggestions = ranked
-    .filter((s) => s.player.tag !== "avoid")
+    .filter((s) => s.player.tag !== "avoid" && !unavailable(s))
     .slice(0, SUGGESTIONS);
 
   // "Can wait": guide's top players the market will very likely return to me.
@@ -221,6 +284,7 @@ export function advise(input: AdviceInput): Advice {
       (s) =>
         !suggested.has(playerKey(s.player)) &&
         s.player.tag !== "avoid" &&
+        !unavailable(s) &&
         s.pSurviveNext !== null &&
         s.pSurviveNext >= 0.7 &&
         s.pReach >= 0.5,

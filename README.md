@@ -71,6 +71,31 @@ npm run build      # typecheck + production build
 - K/D/ST are never recommended: the guide ranks none, and the app reminds you
   to grab them in the final two rounds (streamed weekly).
 
+## Draft-night safety nets
+
+- **Injury / status guard.** `/api/players` (Sleeper's live map, trimmed and
+  cached daily) feeds red `IR`/`PUP`/`SUS`/`OUT`/`FA` and amber `Q`/`D`
+  chips on the board and advisor cards — the PDF can't know who got hurt
+  last week. Out/FA players are never suggested.
+- **Pick clock** in the header (`last_picked + pick_timer`, ±2s poll
+  latency) and **on-deck / on-the-clock alerts** — tab-title flash, a beep,
+  and a browser notification once you allow it via the 🔔 button.
+- **Opponent-need-adjusted survival.** Odds a player reaches your pick are
+  scaled by what the specific teams picking before you still need (a team
+  with two RBs is unlikely to take a third), using their actual rosters.
+- **Positional run detector** ("WR run: 4 of the last 6 picks").
+- **Handcuffs & stacks** from Sleeper's depth chart / teams: `HC · Gibbs`
+  badges for backups to your RBs (extra advisor weight in his handcuff
+  round) and "stacks w/ Allen" reasons for pass-catchers on your QB's team.
+- **Watchlist** (☆ on any row): a ★ badge and an advisor bump for your guys.
+- **@ my pick** preview: hides players under 50% to still be there, so you
+  can pre-decide before the clock starts. **Skip** on an advisor card
+  promotes the next player in line.
+- **Both sources in / Sources disagree** sidebar, **recent drafts** on the
+  setup screen, auto-selected board from the draft's scoring type, and a
+  **report card** when the draft completes (targets, values, avoids, traps,
+  average board delta, rounds on his script).
+
 ## Testing without a live draft
 
 **Fixture replay (primary dev loop).** The setup screen's *Replay* button feeds

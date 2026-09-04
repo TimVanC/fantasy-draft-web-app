@@ -67,6 +67,9 @@ export interface SleeperDraft {
   };
   draft_order: Record<string, number> | null;
   slot_to_roster_id: Record<string, number> | null;
+  /** Epoch ms of the last pick made — with pick_timer, drives the clock. */
+  last_picked?: number | null;
+  start_time?: number | null;
   metadata?: { scoring_type?: string; name?: string };
 }
 

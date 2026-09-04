@@ -62,14 +62,27 @@ export default function PickAdvisor(props: {
             >
               <button
                 onClick={() => props.toggleDismiss(playerKey(s.player))}
-                title="Not him — show the next player in line (advisor only; he stays on the board)"
-                className="absolute right-1 top-1 rounded px-1 text-xs text-zinc-600 hover:bg-zinc-800 hover:text-zinc-300"
+                title="Skip — not him; show the next player in line (advisor only; he stays on the board)"
+                className="absolute right-1 top-1 rounded px-1 py-0.5 text-[10px] font-semibold text-zinc-600 hover:bg-zinc-800 hover:text-zinc-300"
               >
-                ✕
+                skip
               </button>
-              <div className="flex items-center gap-1.5 pr-4">
+              <div className="flex items-center gap-1.5 pr-8">
                 <span className="text-xs font-black text-zinc-500">{i + 1}.</span>
+                {s.starred && <span className="text-xs text-amber-300" title="On your watchlist">★</span>}
                 <span className="truncate text-sm font-bold">{s.player.name}</span>
+                {s.availLabel && (
+                  <span
+                    className={`rounded px-1 py-0.5 text-[9px] font-bold ${
+                      s.availLabel === "Q" || s.availLabel === "D"
+                        ? "bg-amber-600/25 text-amber-300"
+                        : "bg-red-600/30 text-red-300"
+                    }`}
+                    title="Live status per Sleeper"
+                  >
+                    {s.availLabel}
+                  </span>
+                )}
                 <span
                   className={`rounded px-1 py-0.5 text-[10px] font-bold ${POS_STYLE[s.player.pos] ?? "bg-zinc-800"}`}
                 >

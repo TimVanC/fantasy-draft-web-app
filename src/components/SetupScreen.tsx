@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { loadRecentDrafts } from "../hooks/useDraft";
 
 export default function SetupScreen(props: {
   connectLive: (input: string) => void;
@@ -7,6 +8,7 @@ export default function SetupScreen(props: {
   error: string | null;
 }) {
   const [input, setInput] = useState("");
+  const recent = loadRecentDrafts();
 
   return (
     <div className="flex min-h-screen items-center justify-center p-6">
@@ -45,6 +47,27 @@ export default function SetupScreen(props: {
             {props.connecting ? "Connecting…" : "Connect to draft"}
           </button>
         </form>
+
+        {recent.length > 0 && (
+          <div>
+            <div className="mb-1.5 text-[11px] font-semibold uppercase tracking-wide text-zinc-500">
+              Recent drafts
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {recent.map((r) => (
+                <button
+                  key={r.draftId}
+                  onClick={() => props.connectLive(r.draftId)}
+                  disabled={props.connecting}
+                  className="rounded-md border border-zinc-700 bg-zinc-900 px-2.5 py-1.5 text-xs text-zinc-300 hover:border-emerald-600 hover:text-zinc-100 disabled:opacity-40"
+                  title={r.draftId}
+                >
+                  {r.name} <span className="text-zinc-500">· {r.teams}-team</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {props.error && (
           <div className="rounded-lg border border-red-800 bg-red-950/60 px-3 py-2 text-sm text-red-300">

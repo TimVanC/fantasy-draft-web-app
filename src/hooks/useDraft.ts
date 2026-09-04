@@ -4,6 +4,7 @@ import { fetchDraft, fetchLeagueDrafts, fetchPicks, parseDraftId } from "../lib/
 import { matchPicks } from "../lib/normalize";
 import { MATCH_INDEX } from "../lib/rankings";
 import { fetchAdpMap, type AdpMap } from "../lib/adp";
+import { fetchPlayerInfoMap, type PlayerInfoMap } from "../lib/players";
 import fixtureDraft from "../../fixtures/draft.json";
 import fixturePicks from "../../fixtures/picks.json";
 
@@ -11,7 +12,6 @@ import fixturePicks from "../../fixtures/picks.json";
 // 2s ≈ 30 req/min/client — comfortably under Sleeper's 1000/min IP limit.
 const POLL_ACTIVE_MS = 2000;
 const POLL_IDLE_MS = 5000; // pre_draft / paused
-const DRAFT_REFRESH_EVERY = 5; // refresh draft object every Nth poll for status
 
 export type Source = { kind: "live"; draftId: string } | { kind: "replay" };
 
@@ -30,6 +30,8 @@ export interface DraftState {
   overrides: Overrides;
   /** Advisor-only dismissals ("not him") — the player stays on the board. */
   dismissed: string[];
+  /** Watchlist ("my guys"): advisor bump + badge. */
+  starred: string[];
   replay: { index: number; playing: boolean; speedMs: number; total: number };
 }
 
@@ -42,6 +44,45 @@ interface Persisted {
   format: ScoringFormat;
   overrides: Overrides;
   dismissed?: string[];
+  starred?: string[];
+}
+
+/** Recently connected drafts, for one-click reconnects on the setup screen. */
+export interface RecentDraft {
+  draftId: string;
+  name: string;
+  teams: number;
+  at: number;
+}
+
+const RECENT_KEY = "dwr:recent";
+
+export function loadRecentDrafts(): RecentDraft[] {
+  try {
+    const raw = localStorage.getItem(RECENT_KEY);
+    return raw ? (JSON.parse(raw) as RecentDraft[]) : [];
+  } catch {
+    return [];
+  }
+}
+
+function rememberDraft(entry: RecentDraft) {
+  try {
+    const list = loadRecentDrafts().filter((r) => r.draftId !== entry.draftId);
+    list.unshift(entry);
+    localStorage.setItem(RECENT_KEY, JSON.stringify(list.slice(0, 6)));
+  } catch {
+    // storage unavailable: no recents, no harm
+  }
+}
+
+/** Default board for a Sleeper scoring_type when nothing is saved. */
+export function formatFromScoring(scoringType: string | undefined): ScoringFormat {
+  const t = (scoringType ?? "").toLowerCase();
+  if (t.includes("half")) return "half";
+  if (t.includes("ppr")) return "ppr";
+  if (t.includes("std") || t.includes("standard")) return "half"; // closest board
+  return "ppr";
 }
 
 function loadPersisted(source: Source): Persisted | null {
@@ -63,6 +104,8 @@ export function useDraft() {
   const [format, setFormat] = useState<ScoringFormat>("ppr");
   const [overrides, setOverrides] = useState<Overrides>({});
   const [dismissed, setDismissed] = useState<string[]>([]);
+  const [starred, setStarred] = useState<string[]>([]);
+  const [playerInfo, setPlayerInfo] = useState<PlayerInfoMap>(new Map());
   const [replayIndex, setReplayIndex] = useState(0);
   const [replayPlaying, setReplayPlaying] = useState(false);
   const [replaySpeedMs, setReplaySpeedMs] = useState(1500);
@@ -88,18 +131,35 @@ export function useDraft() {
     };
   }, [teamsCount, format]);
 
+  // ---- live player map (injury/status/depth chart), once per connection --
+  useEffect(() => {
+    if (!source) return;
+    let cancelled = false;
+    fetchPlayerInfoMap(MATCH_INDEX)
+      .then((map) => {
+        if (!cancelled) setPlayerInfo(map);
+      })
+      .catch((e) => {
+        if (!cancelled) setPlayerInfo(new Map());
+        console.warn("[draft-war-room] player map unavailable:", e);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [source]);
+
   // ---- persistence -------------------------------------------------------
   useEffect(() => {
     if (!source) return;
     try {
       localStorage.setItem(
         storageKey(source),
-        JSON.stringify({ mySlot, format, overrides, dismissed } satisfies Persisted),
+        JSON.stringify({ mySlot, format, overrides, dismissed, starred } satisfies Persisted),
       );
     } catch {
       // storage unavailable: overrides simply won't survive a reload
     }
-  }, [source, mySlot, format, overrides, dismissed]);
+  }, [source, mySlot, format, overrides, dismissed, starred]);
 
   // ---- connect -----------------------------------------------------------
   const connectLive = useCallback(async (input: string) => {
@@ -126,9 +186,16 @@ export function useDraft() {
       setLivePicks(await fetchPicks(d.draft_id));
       setSource(src);
       setMySlot(saved?.mySlot ?? null);
-      setFormat(saved?.format ?? "ppr");
+      setFormat(saved?.format ?? formatFromScoring(d.metadata?.scoring_type));
       setOverrides(saved?.overrides ?? {});
       setDismissed(saved?.dismissed ?? []);
+      setStarred(saved?.starred ?? []);
+      rememberDraft({
+        draftId: d.draft_id,
+        name: d.metadata?.name || `Draft ${d.draft_id.slice(-6)}`,
+        teams: d.settings.teams,
+        at: Date.now(),
+      });
     } catch (e) {
       setError(e instanceof Error ? e.message : "Failed to connect to Sleeper.");
     } finally {
@@ -147,6 +214,7 @@ export function useDraft() {
     setFormat(saved?.format ?? "ppr");
     setOverrides(saved?.overrides ?? {});
     setDismissed(saved?.dismissed ?? []);
+    setStarred(saved?.starred ?? []);
     setError(null);
   }, []);
 
@@ -159,9 +227,10 @@ export function useDraft() {
   }, []);
 
   // ---- live polling ------------------------------------------------------
+  const draftStatus = draft?.status ?? null;
   useEffect(() => {
-    if (source?.kind !== "live" || !draft) return;
-    if (draft.status === "complete") return; // spec: stop polling when complete
+    if (source?.kind !== "live" || draftStatus === null) return;
+    if (draftStatus === "complete") return; // spec: stop polling when complete
     const id = source.draftId;
     const poll = async () => {
       if (pollBusy.current) return;
@@ -169,9 +238,18 @@ export function useDraft() {
       try {
         setLivePicks(await fetchPicks(id));
         pollCount.current += 1;
-        if (pollCount.current % DRAFT_REFRESH_EVERY === 0) {
-          setDraft(await fetchDraft(id));
-        }
+        // The draft object carries last_picked (pick clock) and status; fetch
+        // it every tick but only swap state when something changed so the
+        // effect (keyed on status) doesn't churn.
+        const fresh = await fetchDraft(id);
+        setDraft((prev) =>
+          prev &&
+          prev.status === fresh.status &&
+          prev.last_picked === fresh.last_picked &&
+          prev.settings.teams === fresh.settings.teams
+            ? prev
+            : fresh,
+        );
         setError(null);
       } catch (e) {
         setError(e instanceof Error ? `Sync issue: ${e.message}` : "Sync issue");
@@ -179,7 +257,7 @@ export function useDraft() {
         pollBusy.current = false;
       }
     };
-    const intervalMs = draft.status === "drafting" ? POLL_ACTIVE_MS : POLL_IDLE_MS;
+    const intervalMs = draftStatus === "drafting" ? POLL_ACTIVE_MS : POLL_IDLE_MS;
     const timer = setInterval(poll, intervalMs);
     void poll(); // sync immediately on (re)start instead of waiting a tick
     // Coming back to the tab mid-draft: refresh instantly.
@@ -191,7 +269,7 @@ export function useDraft() {
       window.removeEventListener("focus", onFocus);
       document.removeEventListener("visibilitychange", onFocus);
     };
-  }, [source, draft]);
+  }, [source, draftStatus]);
 
   // ---- replay ticker -----------------------------------------------------
   const allReplayPicks = fixturePicks as unknown as SleeperPick[];
@@ -240,6 +318,7 @@ export function useDraft() {
       format,
       overrides,
       dismissed,
+      starred,
       replay: {
         index: replayIndex,
         playing: replayPlaying,
@@ -248,6 +327,11 @@ export function useDraft() {
       },
     } satisfies DraftState,
     adpMap,
+    playerInfo,
+    toggleStar: (key: string) =>
+      setStarred((prev) =>
+        prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key],
+      ),
     toggleDismiss: (key: string) =>
       setDismissed((prev) =>
         prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key],

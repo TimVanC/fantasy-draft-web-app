@@ -10,6 +10,7 @@
 import type { RankedPlayer, RosterSlot, SleeperPick } from "../types";
 import { conditionalSurvival } from "./advisor";
 import { sheetAdpOverall } from "./cheatsheet";
+import { adjustSurvival, type DemandFn } from "./opponents";
 import { playerKey } from "./normalize";
 import type { AdpMap } from "./adp";
 
@@ -36,6 +37,7 @@ export function positionOutlooks(input: {
   slots: RosterSlot[];
   currentPickNo: number;
   myPick: number | null;
+  demand?: DemandFn;
 }): PosOutlook[] {
   return POSITIONS.map((pos) => {
     const openStarters = input.slots.filter(
@@ -49,7 +51,11 @@ export function positionOutlooks(input: {
           input.adpMap.get(playerKey(p))?.adp ??
           (p.sheet ? sheetAdpOverall(p.sheet) : null);
         if (adp !== null) {
-          expectedTaken += 1 - conditionalSurvival(adp, input.currentPickNo, input.myPick);
+          const raw = conditionalSurvival(adp, input.currentPickNo, input.myPick);
+          const p = input.demand
+            ? adjustSurvival(raw, input.demand(pos, input.currentPickNo, input.myPick))
+            : raw;
+          expectedTaken += 1 - p;
         }
       }
     }

@@ -5,9 +5,9 @@
  * The raw endpoint is ~15MB, which is over Vercel's 10MB CDN-cacheable
  * response limit — an uncacheable proxy would hit Sleeper on every request.
  * So the function trims the map to fantasy-relevant positions and the fields
- * the app uses; the result (~1MB) caches at the CDN for a day
- * (s-maxage=86400), meaning Sleeper is fetched at most about once a day per
- * region.
+ * the app uses (identity, live status/injury, depth chart); the result
+ * (~300KB) caches at the CDN for a day (s-maxage=86400), meaning Sleeper is
+ * fetched at most about once a day per region.
  */
 
 const KEEP_POSITIONS = new Set(["QB", "RB", "WR", "TE", "K", "DEF"]);
@@ -19,6 +19,9 @@ interface SleeperPlayer {
   position?: string;
   team?: string | null;
   active?: boolean;
+  status?: string | null;
+  injury_status?: string | null;
+  depth_chart_order?: number | null;
 }
 
 export default async function handler(_req: unknown, res: {
@@ -34,7 +37,15 @@ export default async function handler(_req: unknown, res: {
     const full = (await upstream.json()) as Record<string, SleeperPlayer>;
     const trimmed: Record<
       string,
-      { first_name: string; last_name: string; position: string; team: string | null }
+      {
+        first_name: string;
+        last_name: string;
+        position: string;
+        team: string | null;
+        status: string | null;
+        injury_status: string | null;
+        depth_chart_order: number | null;
+      }
     > = {};
     for (const [id, p] of Object.entries(full)) {
       if (!p || !p.position || !KEEP_POSITIONS.has(p.position)) continue;
@@ -44,6 +55,9 @@ export default async function handler(_req: unknown, res: {
         last_name: p.last_name ?? "",
         position: p.position,
         team: p.team ?? null,
+        status: p.status ?? null,
+        injury_status: p.injury_status ?? null,
+        depth_chart_order: p.depth_chart_order ?? null,
       };
     }
     res.setHeader("Cache-Control", "public, s-maxage=86400, stale-while-revalidate=43200");

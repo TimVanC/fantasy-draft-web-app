@@ -1,16 +1,22 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { useDraft } from "./hooks/useDraft";
+import { useClockAlerts } from "./hooks/useClockAlerts";
 import { MATCH_INDEX, sortedBoard, boardRank, RANKINGS, STRATEGY, DEEP_POOL } from "./lib/rankings";
 import { playerKey } from "./lib/normalize";
 import { picksUntilMyTurn, nextPickForSlot, myFollowingPick, slotForPick } from "./lib/snake";
 import { scarcityLabels } from "./lib/scarcity";
 import { fillSlots } from "./lib/roster";
-import { advise } from "./lib/advisor";
+import { advise, type PosNeed } from "./lib/advisor";
+import { buildDemandFn } from "./lib/opponents";
+import { handcuffFor } from "./lib/players";
+import { detectRun } from "./lib/runs";
+import { buildReport } from "./lib/report";
 import {
   planDriftAlerts,
   positionOutlooks,
   scarceNeededPositions,
   supplyAlerts,
+  type RosterAlert,
 } from "./lib/rosterAlerts";
 import RosterAlerts from "./components/RosterAlerts";
 import SetupScreen from "./components/SetupScreen";
@@ -22,11 +28,14 @@ import RosterPanel from "./components/RosterPanel";
 import SplitsPanel from "./components/SplitsPanel";
 import StrategyPanel from "./components/StrategyPanel";
 import SideFeed from "./components/SideFeed";
+import ReportCard from "./components/ReportCard";
 
 export default function App() {
   const {
     state,
     adpMap,
+    playerInfo,
+    toggleStar,
     toggleDismiss,
     matched,
     connectLive,
@@ -38,7 +47,9 @@ export default function App() {
     replayControls,
   } = useDraft();
 
-  const { draft, picks, mySlot, format, overrides, dismissed, source } = state;
+  const { draft, picks, mySlot, format, overrides, dismissed, starred, source } = state;
+  const [alertsEnabled, setAlertsEnabled] = useState(true);
+  const starredSet = useMemo(() => new Set(starred), [starred]);
 
   const derived = useMemo(() => {
     if (!draft) return null;
@@ -62,7 +73,13 @@ export default function App() {
 
     // Drafted = synced picks that matched, adjusted by manual overrides.
     const draftedKeys = new Set<string>();
-    for (const m of matched) if (m.playerKey) draftedKeys.add(m.playerKey);
+    const keyByPickNo = new Map<number, string>();
+    for (const m of matched) {
+      if (m.playerKey) {
+        draftedKeys.add(m.playerKey);
+        keyByPickNo.set(m.pick.pick_no, m.playerKey);
+      }
+    }
     for (const [key, action] of Object.entries(overrides)) {
       if (action === "drafted") draftedKeys.add(key);
       else draftedKeys.delete(key);
@@ -82,6 +99,19 @@ export default function App() {
     const unmatchedPicks = matched.filter((m) => m.unmatched);
     const myRoundsPicked = new Set(myPicks.map((p) => p.round));
     const myPosByRound = new Map(myPicks.map((p) => [p.round, p.metadata.position]));
+    const myPlayers = (pos: string) =>
+      myPicks
+        .filter((p) => p.metadata.position === pos)
+        .map((p) => ({
+          key: keyByPickNo.get(p.pick_no) ?? "",
+          name: `${p.metadata.first_name} ${p.metadata.last_name}`,
+        }))
+        .filter((x) => x.key);
+    const myRbs = myPlayers("RB");
+    const myQbs = myPlayers("QB");
+
+    // Opponent-need demand: who actually picks between now and my turn.
+    const demand = buildDemandFn(draft.settings, picks, mySlot);
 
     // ---- Pick Advisor inputs ----
     const onClock = mySlot !== null && othersPicks === 0;
@@ -93,7 +123,7 @@ export default function App() {
       myPosCounts.set(pos, (myPosCounts.get(pos) ?? 0) + 1);
     }
     // Per-position demand from the league's actual roster structure.
-    const posNeeds = new Map<string, import("./lib/advisor").PosNeed>();
+    const posNeeds = new Map<string, PosNeed>();
     for (const pos of ["QB", "RB", "WR", "TE"]) {
       posNeeds.set(pos, {
         dedicatedOpen: slots.filter((s) => s.label === pos && s.pick === null).length,
@@ -109,18 +139,46 @@ export default function App() {
       ? STRATEGY.roundPlan.find((r) => r.round === myRound)?.plan ?? null
       : null;
     const planPosition = planLabel?.match(/\b(QB|RB|WR|TE)\b/)?.[1] ?? null;
+    const planHandcuff = /handcuff/i.test(planLabel ?? "");
 
-    // ---- roster awareness: supply projections + plan drift ----
+    // ---- roster awareness: supply projections, plan drift, runs ----
     const outlooks = mySlot
-      ? positionOutlooks({ available, adpMap, slots, currentPickNo: nextPickNo, myPick: myNextPickNo })
+      ? positionOutlooks({
+          available,
+          adpMap,
+          slots,
+          currentPickNo: nextPickNo,
+          myPick: myNextPickNo,
+          demand,
+        })
       : [];
     const scarcePositions = scarceNeededPositions(outlooks);
-    const rosterAlerts = mySlot && !draftDone
+    const rosterAlerts: RosterAlert[] = mySlot && !draftDone
       ? [
           ...supplyAlerts(outlooks),
           ...planDriftAlerts(myPicks, STRATEGY.roundPlan, Math.max(0, currentRound - 1)),
         ]
       : [];
+    const run = draftDone ? null : detectRun(picks);
+    if (run) {
+      rosterAlerts.push({
+        level: "warn",
+        text: `${run.pos} run: ${run.count} of the last ${run.window} picks — survival odds at ${run.pos} are moving faster than ADP says.`,
+      });
+    }
+
+    const report =
+      draftDone && mySlot
+        ? buildReport(
+            myPicks,
+            (p) => {
+              const key = keyByPickNo.get(p.pick_no);
+              return key ? (MATCH_INDEX.byKey.get(key) ?? null) : null;
+            },
+            format,
+            STRATEGY.roundPlan,
+          )
+        : null;
 
     return {
       teams,
@@ -144,10 +202,22 @@ export default function App() {
       followingPick,
       posNeeds,
       planPosition,
+      planHandcuff,
       scarcePositions,
       rosterAlerts,
+      demand,
+      myRbs,
+      myQbs,
+      report,
     };
   }, [draft, picks, matched, mySlot, format, overrides, source, adpMap]);
+
+  const { permission, requestPermission } = useClockAlerts({
+    enabled: alertsEnabled && mySlot !== null && source?.kind === "live",
+    othersPicks: derived?.othersPicks ?? null,
+    nextPickNo: derived?.nextPickNo ?? 0,
+    draftDone: derived?.draftDone ?? true,
+  });
 
   if (!draft || !derived || !source) {
     return (
@@ -159,6 +229,8 @@ export default function App() {
       />
     );
   }
+
+  const handcuffOf = (key: string, pos: string) => handcuffFor(key, pos, playerInfo, derived.myRbs);
 
   return (
     <div className="flex h-screen flex-col">
@@ -173,11 +245,18 @@ export default function App() {
         error={state.error}
         replay={state.replay}
         replayControls={replayControls}
+        alerts={{
+          enabled: alertsEnabled,
+          toggle: () => setAlertsEnabled((v) => !v),
+          permission,
+          requestPermission,
+        }}
         disconnect={disconnect}
       />
       <main className="grid min-h-0 flex-1 grid-cols-1 gap-3 p-3 lg:grid-cols-[1fr_360px]">
         <div className="flex min-h-0 flex-col gap-3">
           {!derived.draftDone && <RosterAlerts alerts={derived.rosterAlerts} />}
+          {derived.report && <ReportCard report={derived.report} teams={derived.teams} />}
           {!derived.draftDone && (
             <PickAdvisor
               mySlot={mySlot}
@@ -195,6 +274,12 @@ export default function App() {
                 posNeeds: derived.posNeeds,
                 scarcePositions: derived.scarcePositions,
                 planPosition: derived.planPosition,
+                planHandcuff: derived.planHandcuff,
+                demand: derived.demand,
+                playerInfo,
+                starred: starredSet,
+                myRbs: derived.myRbs,
+                myQbs: derived.myQbs,
               })}
               myPick={derived.myNextPickNo}
               teams={derived.teams}
@@ -221,6 +306,11 @@ export default function App() {
             myNextPickNo={derived.myNextPickNo}
             currentPickNo={derived.nextPickNo}
             teams={derived.teams}
+            playerInfo={playerInfo}
+            starred={starredSet}
+            toggleStar={toggleStar}
+            demand={derived.demand}
+            handcuffOf={handcuffOf}
           />
         </div>
         <div className="flex min-h-0 flex-col gap-3 overflow-y-auto">
