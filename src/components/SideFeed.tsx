@@ -6,7 +6,14 @@ export default function SideFeed(props: {
   matched: MatchedPick[];
   mySlot: number | null;
   teams: number;
+  /** Badge for picks that matched nothing (default: the NFL "NO MATCH" error). */
+  unmatchedBadge?: { text: string; title: string; tone: "warn" | "muted" };
 }) {
+  const badge = props.unmatchedBadge ?? {
+    text: "NO MATCH",
+    title: "This pick did not match any guide player — check the board",
+    tone: "warn" as const,
+  };
   const recent = [...props.matched].slice(-8).reverse();
 
   return (
@@ -35,10 +42,12 @@ export default function SideFeed(props: {
                 </span>
                 {m.unmatched && (
                   <span
-                    className="ml-auto shrink-0 rounded bg-amber-950 px-1.5 py-0.5 text-[10px] font-bold text-amber-300"
-                    title="This pick did not match any guide player — check the board"
+                    className={`ml-auto shrink-0 rounded px-1.5 py-0.5 text-[10px] font-bold ${
+                      badge.tone === "warn" ? "bg-amber-950 text-amber-300" : "bg-zinc-800 text-zinc-500"
+                    }`}
+                    title={badge.title}
                   >
-                    NO MATCH
+                    {badge.text}
                   </span>
                 )}
               </li>

@@ -1,4 +1,4 @@
-import type { RosterSlot } from "../types";
+import type { RosterSlot, SleeperPick } from "../types";
 import { unfilledStarters } from "../lib/roster";
 
 const SLOT_COLOR: Record<string, string> = {
@@ -13,12 +13,23 @@ const SLOT_COLOR: Record<string, string> = {
   DEF: "text-zinc-300",
   K: "text-zinc-300",
   BN: "text-zinc-500",
+  // NBA
+  PG: "text-sky-300",
+  SG: "text-cyan-300",
+  G: "text-violet-300",
+  SF: "text-emerald-300",
+  PF: "text-lime-300",
+  F: "text-violet-300",
+  C: "text-orange-300",
+  UTIL: "text-violet-300",
 };
 
 export default function RosterPanel(props: {
   slots: RosterSlot[];
   mySlot: number | null;
   teams: number;
+  /** Optional: show each player's slot eligibility (NBA multi-position). */
+  eligibleOf?: (pick: SleeperPick) => string[];
 }) {
   if (props.mySlot === null) {
     return (
@@ -57,6 +68,9 @@ export default function RosterPanel(props: {
                 {slot.pick.metadata.first_name} {slot.pick.metadata.last_name}
                 <span className="ml-1.5 text-xs text-zinc-500">
                   {slot.pick.metadata.team ?? ""} · Rd {slot.pick.round}
+                  {props.eligibleOf && (
+                    <span className="ml-1 text-zinc-600">{props.eligibleOf(slot.pick).join("/")}</span>
+                  )}
                 </span>
               </span>
             ) : (

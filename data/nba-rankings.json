@@ -1,0 +1,9043 @@
+{
+ "generatedAt": "2026-10-19T02:38:11+00:00",
+ "leagueId": "1411432606720954368",
+ "leagueName": "Bussy Bois",
+ "statsSeason": "2025-26",
+ "adpSeason": "2026",
+ "minGp": 25,
+ "scoring": {
+  "ast": 1.5,
+  "blk": 2.0,
+  "bonus_ast_15p": 3.0,
+  "bonus_pt_40p": 3.0,
+  "bonus_pt_50p": 2.0,
+  "bonus_reb_20p": 3.0,
+  "dd": 2.0,
+  "dreb": 1.25,
+  "ftmi": -0.33,
+  "oreb": 1.5,
+  "pts": 1.0,
+  "stl": 2.0,
+  "td": 4.0,
+  "to": -0.5,
+  "tpm": 0.25
+ },
+ "rosterPositions": [
+  "PG",
+  "SG",
+  "G",
+  "SF",
+  "PF",
+  "F",
+  "C",
+  "UTIL",
+  "UTIL",
+  "UTIL",
+  "BN",
+  "BN",
+  "BN",
+  "BN"
+ ],
+ "players": [
+  {
+   "id": "1658",
+   "name": "Nikola Jokić",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "DEN",
+   "gp": 65,
+   "fppg": 67.1,
+   "total": 4363.9,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 2.954,
+    "pts": 27.677,
+    "dreb": 9.908,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.846,
+    "ftmi": 1.246,
+    "stl": 1.415,
+    "to": 3.738,
+    "ast": 10.723,
+    "blk": 0.815,
+    "tpm": 1.723,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015,
+    "td": 0.523
+   },
+   "adp": 2.5,
+   "injury": null,
+   "yearsExp": 11,
+   "rank": 1,
+   "posRank": {
+    "C": 1
+   },
+   "flag": "fair",
+   "adpDelta": 1.5
+  },
+  {
+   "id": "1970",
+   "name": "Luka Dončić",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "LAL",
+   "gp": 64,
+   "fppg": 60.1,
+   "total": 3845.4,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 0.641,
+    "pts": 33.484,
+    "dreb": 7.094,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.531,
+    "ftmi": 2.219,
+    "stl": 1.641,
+    "to": 3.984,
+    "ast": 8.281,
+    "blk": 0.531,
+    "tpm": 3.969,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016,
+    "td": 0.125
+   },
+   "adp": 3.2,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 2,
+   "posRank": {
+    "PG": 1
+   },
+   "flag": "fair",
+   "adpDelta": 1.2
+  },
+  {
+   "id": "2577",
+   "name": "Victor Wembanyama",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "SAS",
+   "gp": 64,
+   "fppg": 53.2,
+   "total": 3403.5,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 2.031,
+    "pts": 25.0,
+    "dreb": 9.469,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.656,
+    "ftmi": 1.219,
+    "stl": 1.031,
+    "to": 2.422,
+    "ast": 3.109,
+    "blk": 3.078,
+    "tpm": 1.906,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016,
+    "td": 0.016
+   },
+   "adp": 1.3,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 3,
+   "posRank": {
+    "C": 2
+   },
+   "flag": "fair",
+   "adpDelta": -1.7
+  },
+  {
+   "id": "2284",
+   "name": "Jalen Johnson",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "ATL",
+   "gp": 72,
+   "fppg": 51.4,
+   "total": 3702.9,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.403,
+    "pts": 22.514,
+    "dreb": 8.875,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.681,
+    "ftmi": 1.125,
+    "stl": 1.236,
+    "to": 3.389,
+    "ast": 7.861,
+    "blk": 0.431,
+    "tpm": 1.667,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014,
+    "td": 0.181
+   },
+   "adp": 14.4,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 4,
+   "posRank": {
+    "SF": 1,
+    "PF": 1
+   },
+   "flag": "underrated",
+   "adpDelta": 10.4
+  },
+  {
+   "id": "1380",
+   "name": "Giannis Antetokounmpo",
+   "pos": "PF",
+   "eligible": [
+    "PF"
+   ],
+   "team": "MIA",
+   "gp": 36,
+   "fppg": 50.6,
+   "total": 1821.6,
+   "stats": {
+    "bonus_pt_50p": 0.028,
+    "oreb": 2.722,
+    "pts": 27.583,
+    "dreb": 7.056,
+    "bonus_ast_15p": 0.028,
+    "dd": 0.528,
+    "ftmi": 3.472,
+    "stl": 0.944,
+    "to": 3.194,
+    "ast": 5.444,
+    "blk": 0.667,
+    "tpm": 0.417,
+    "bonus_pt_40p": 0.028,
+    "bonus_reb_20p": 0.028
+   },
+   "adp": 7.3,
+   "injury": null,
+   "yearsExp": 13,
+   "rank": 5,
+   "posRank": {
+    "PF": 2
+   },
+   "flag": "fair",
+   "adpDelta": 2.3
+  },
+  {
+   "id": "2267",
+   "name": "Cade Cunningham",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "DET",
+   "gp": 64,
+   "fppg": 50.3,
+   "total": 3220.6,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 0.875,
+    "pts": 23.922,
+    "dreb": 4.672,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.594,
+    "ftmi": 1.125,
+    "stl": 1.438,
+    "to": 3.688,
+    "ast": 9.906,
+    "blk": 0.844,
+    "tpm": 1.953,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016,
+    "td": 0.047
+   },
+   "adp": 5.2,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 6,
+   "posRank": {
+    "PG": 2
+   },
+   "flag": "fair",
+   "adpDelta": -0.8
+  },
+  {
+   "id": "1957",
+   "name": "Shai Gilgeous-Alexander",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "OKC",
+   "gp": 68,
+   "fppg": 50.2,
+   "total": 3413.6,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 0.559,
+    "pts": 31.132,
+    "dreb": 3.735,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.118,
+    "ftmi": 1.088,
+    "stl": 1.397,
+    "to": 2.221,
+    "ast": 6.588,
+    "blk": 0.765,
+    "tpm": 1.691,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 4.1,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 7,
+   "posRank": {
+    "PG": 3
+   },
+   "flag": "fair",
+   "adpDelta": -2.9
+  },
+  {
+   "id": "2126",
+   "name": "Tyrese Maxey",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "PHI",
+   "gp": 70,
+   "fppg": 48.4,
+   "total": 3389.5,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.343,
+    "pts": 28.286,
+    "dreb": 3.8,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.1,
+    "ftmi": 0.643,
+    "stl": 1.857,
+    "to": 2.443,
+    "ast": 6.586,
+    "blk": 0.786,
+    "tpm": 3.143,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 8.5,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 8,
+   "posRank": {
+    "PG": 4
+   },
+   "flag": "fair",
+   "adpDelta": 0.5
+  },
+  {
+   "id": "1711",
+   "name": "Jaylen Brown",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "PHI",
+   "gp": 71,
+   "fppg": 47.0,
+   "total": 3337.3,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.141,
+    "pts": 28.704,
+    "dreb": 5.789,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.197,
+    "ftmi": 1.549,
+    "stl": 1.014,
+    "to": 3.648,
+    "ast": 5.127,
+    "blk": 0.38,
+    "tpm": 1.972,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014,
+    "td": 0.042
+   },
+   "adp": 31.7,
+   "injury": null,
+   "yearsExp": 10,
+   "rank": 9,
+   "posRank": {
+    "SG": 1,
+    "SF": 2,
+    "PF": 3
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 22.7
+  },
+  {
+   "id": "1511",
+   "name": "Joel Embiid",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "PHI",
+   "gp": 38,
+   "fppg": 45.9,
+   "total": 1742.5,
+   "stats": {
+    "bonus_pt_50p": 0.026,
+    "oreb": 1.974,
+    "pts": 26.868,
+    "dreb": 5.737,
+    "bonus_ast_15p": 0.026,
+    "dd": 0.263,
+    "ftmi": 1.289,
+    "stl": 0.553,
+    "to": 2.868,
+    "ast": 3.947,
+    "blk": 1.211,
+    "tpm": 1.395,
+    "bonus_pt_40p": 0.026,
+    "bonus_reb_20p": 0.026,
+    "td": 0.026
+   },
+   "adp": 56.2,
+   "injury": null,
+   "yearsExp": 10,
+   "rank": 10,
+   "posRank": {
+    "C": 3
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 46.2
+  },
+  {
+   "id": "1308",
+   "name": "Kawhi Leonard",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "TOR",
+   "gp": 65,
+   "fppg": 45.8,
+   "total": 2978.3,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 1.092,
+    "pts": 27.892,
+    "dreb": 5.262,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.077,
+    "ftmi": 0.692,
+    "stl": 1.877,
+    "to": 2.046,
+    "ast": 3.6,
+    "blk": 0.415,
+    "tpm": 2.646,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 43.3,
+   "injury": null,
+   "yearsExp": 15,
+   "rank": 11,
+   "posRank": {
+    "SG": 2,
+    "SF": 3
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 32.3
+  },
+  {
+   "id": "2308",
+   "name": "Alperen Şengün",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "HOU",
+   "gp": 72,
+   "fppg": 45.3,
+   "total": 3264.7,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 2.986,
+    "pts": 20.361,
+    "dreb": 5.903,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.472,
+    "ftmi": 1.611,
+    "stl": 1.181,
+    "to": 3.153,
+    "ast": 6.181,
+    "blk": 1.069,
+    "tpm": 0.556,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014,
+    "td": 0.056
+   },
+   "adp": 10.1,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 12,
+   "posRank": {
+    "PF": 4,
+    "C": 4
+   },
+   "flag": "fair",
+   "adpDelta": -1.9
+  },
+  {
+   "id": "1845",
+   "name": "Donovan Mitchell",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "CLE",
+   "gp": 70,
+   "fppg": 45.2,
+   "total": 3163.2,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.714,
+    "pts": 27.886,
+    "dreb": 3.8,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.071,
+    "ftmi": 0.829,
+    "stl": 1.486,
+    "to": 2.829,
+    "ast": 5.686,
+    "blk": 0.286,
+    "tpm": 3.2,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 12.0,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": 13,
+   "posRank": {
+    "PG": 5,
+    "SG": 3
+   },
+   "flag": "fair",
+   "adpDelta": -1.0
+  },
+  {
+   "id": "2313",
+   "name": "Josh Giddey",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "CHI",
+   "gp": 54,
+   "fppg": 45.0,
+   "total": 2430.2,
+   "stats": {
+    "bonus_pt_50p": 0.019,
+    "oreb": 1.241,
+    "pts": 17.019,
+    "dreb": 7.056,
+    "bonus_ast_15p": 0.019,
+    "dd": 0.519,
+    "ftmi": 1.0,
+    "stl": 1.019,
+    "to": 3.63,
+    "ast": 9.148,
+    "blk": 0.5,
+    "tpm": 1.907,
+    "bonus_pt_40p": 0.019,
+    "bonus_reb_20p": 0.019,
+    "td": 0.241
+   },
+   "adp": 38.0,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 14,
+   "posRank": {
+    "PG": 6
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 24.0
+  },
+  {
+   "id": "2181",
+   "name": "Deni Avdija",
+   "pos": "PF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "POR",
+   "gp": 66,
+   "fppg": 44.8,
+   "total": 2956.6,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 1.121,
+    "pts": 24.212,
+    "dreb": 5.758,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.288,
+    "ftmi": 1.833,
+    "stl": 0.773,
+    "to": 3.833,
+    "ast": 6.697,
+    "blk": 0.621,
+    "tpm": 1.894,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015,
+    "td": 0.045
+   },
+   "adp": 37.3,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 15,
+   "posRank": {
+    "SG": 4,
+    "SF": 4,
+    "PF": 5
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 22.3
+  },
+  {
+   "id": "1747",
+   "name": "Jamal Murray",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "DEN",
+   "gp": 75,
+   "fppg": 44.3,
+   "total": 3326.0,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.427,
+    "pts": 25.4,
+    "dreb": 3.973,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.24,
+    "ftmi": 0.587,
+    "stl": 0.88,
+    "to": 2.28,
+    "ast": 7.133,
+    "blk": 0.387,
+    "tpm": 3.267,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 30.7,
+   "injury": null,
+   "yearsExp": 10,
+   "rank": 16,
+   "posRank": {
+    "PG": 7
+   },
+   "flag": "underrated",
+   "adpDelta": 14.7
+  },
+  {
+   "id": "1240",
+   "name": "James Harden",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "CLE",
+   "gp": 70,
+   "fppg": 44.3,
+   "total": 3101.6,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.571,
+    "pts": 23.6,
+    "dreb": 4.229,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.286,
+    "ftmi": 0.871,
+    "stl": 1.129,
+    "to": 3.5,
+    "ast": 7.957,
+    "blk": 0.4,
+    "tpm": 3.071,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014,
+    "td": 0.029
+   },
+   "adp": 36.4,
+   "injury": null,
+   "yearsExp": 17,
+   "rank": 17,
+   "posRank": {
+    "PG": 8
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 19.4
+  },
+  {
+   "id": "2133",
+   "name": "Anthony Edwards",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "MIN",
+   "gp": 61,
+   "fppg": 44.2,
+   "total": 2696.2,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 0.59,
+    "pts": 28.803,
+    "dreb": 4.361,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.033,
+    "ftmi": 1.459,
+    "stl": 1.361,
+    "to": 2.852,
+    "ast": 3.705,
+    "blk": 0.803,
+    "tpm": 3.361,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 6.0,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 18,
+   "posRank": {
+    "PG": 9,
+    "SG": 5
+   },
+   "flag": "overrated",
+   "adpDelta": -12.0
+  },
+  {
+   "id": "1613",
+   "name": "Karl-Anthony Towns",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "NYK",
+   "gp": 75,
+   "fppg": 43.5,
+   "total": 3264.5,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 3.107,
+    "pts": 20.053,
+    "dreb": 8.747,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.747,
+    "ftmi": 0.787,
+    "stl": 0.867,
+    "to": 2.493,
+    "ast": 3.013,
+    "blk": 0.533,
+    "tpm": 1.507,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013,
+    "td": 0.013
+   },
+   "adp": 9.5,
+   "injury": null,
+   "yearsExp": 11,
+   "rank": 19,
+   "posRank": {
+    "PF": 6,
+    "C": 5
+   },
+   "flag": "fair",
+   "adpDelta": -9.5
+  },
+  {
+   "id": "1433",
+   "name": "Kevin Durant",
+   "pos": "SF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "HOU",
+   "gp": 78,
+   "fppg": 42.6,
+   "total": 3322.0,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.526,
+    "pts": 25.974,
+    "dreb": 4.936,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.09,
+    "ftmi": 0.756,
+    "stl": 0.795,
+    "to": 3.154,
+    "ast": 4.769,
+    "blk": 0.91,
+    "tpm": 2.385,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 26.5,
+   "injury": null,
+   "yearsExp": 19,
+   "rank": 20,
+   "posRank": {
+    "SF": 5,
+    "PF": 7
+   },
+   "flag": "fair",
+   "adpDelta": 6.5
+  },
+  {
+   "id": "2458",
+   "name": "Paolo Banchero",
+   "pos": "PF",
+   "eligible": [
+    "PF"
+   ],
+   "team": "ORL",
+   "gp": 72,
+   "fppg": 42.5,
+   "total": 3058.1,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.181,
+    "pts": 22.208,
+    "dreb": 7.208,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.361,
+    "ftmi": 1.847,
+    "stl": 0.708,
+    "to": 3.083,
+    "ast": 5.181,
+    "blk": 0.556,
+    "tpm": 1.167,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014,
+    "td": 0.042
+   },
+   "adp": 28.7,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 21,
+   "posRank": {
+    "PF": 8
+   },
+   "flag": "fair",
+   "adpDelta": 7.7
+  },
+  {
+   "id": "1362",
+   "name": "LeBron James",
+   "pos": "PF",
+   "eligible": [
+    "PG",
+    "SF",
+    "PF"
+   ],
+   "team": "PHI",
+   "gp": 60,
+   "fppg": 42.4,
+   "total": 2543.3,
+   "stats": {
+    "bonus_pt_50p": 0.017,
+    "oreb": 0.717,
+    "pts": 20.933,
+    "dreb": 5.35,
+    "bonus_ast_15p": 0.017,
+    "dd": 0.283,
+    "ftmi": 1.383,
+    "stl": 1.2,
+    "to": 2.983,
+    "ast": 7.2,
+    "blk": 0.583,
+    "tpm": 1.283,
+    "bonus_pt_40p": 0.017,
+    "bonus_reb_20p": 0.017,
+    "td": 0.05
+   },
+   "adp": 54.3,
+   "injury": null,
+   "yearsExp": 23,
+   "rank": 22,
+   "posRank": {
+    "PG": 10,
+    "SF": 6,
+    "PF": 9
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 32.3
+  },
+  {
+   "id": "2289",
+   "name": "Scottie Barnes",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "TOR",
+   "gp": 80,
+   "fppg": 42.3,
+   "total": 3383.5,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 1.863,
+    "pts": 18.1,
+    "dreb": 5.638,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.375,
+    "ftmi": 0.688,
+    "stl": 1.425,
+    "to": 2.625,
+    "ast": 5.925,
+    "blk": 1.45,
+    "tpm": 0.85,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013,
+    "td": 0.037
+   },
+   "adp": 13.3,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 23,
+   "posRank": {
+    "SF": 7,
+    "PF": 10
+   },
+   "flag": "fair",
+   "adpDelta": -9.7
+  },
+  {
+   "id": "1752",
+   "name": "Lauri Markkanen",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "UTA",
+   "gp": 42,
+   "fppg": 42.2,
+   "total": 1773.8,
+   "stats": {
+    "bonus_pt_50p": 0.024,
+    "oreb": 2.0,
+    "pts": 26.738,
+    "dreb": 4.881,
+    "bonus_ast_15p": 0.024,
+    "dd": 0.119,
+    "ftmi": 0.667,
+    "stl": 1.0,
+    "to": 1.5,
+    "ast": 2.119,
+    "blk": 0.5,
+    "tpm": 2.738,
+    "bonus_pt_40p": 0.024,
+    "bonus_reb_20p": 0.024
+   },
+   "adp": 51.6,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": 24,
+   "posRank": {
+    "SF": 8,
+    "PF": 11
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 27.6
+  },
+  {
+   "id": "1846",
+   "name": "Bam Adebayo",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "MIA",
+   "gp": 73,
+   "fppg": 41.9,
+   "total": 3060.1,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 2.041,
+    "pts": 20.11,
+    "dreb": 7.986,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.479,
+    "ftmi": 1.288,
+    "stl": 1.178,
+    "to": 1.644,
+    "ast": 3.178,
+    "blk": 0.671,
+    "tpm": 1.74,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 35.7,
+   "injury": "DTD",
+   "yearsExp": 9,
+   "rank": 25,
+   "posRank": {
+    "PF": 12,
+    "C": 6
+   },
+   "flag": "fair",
+   "adpDelta": 10.7
+  },
+  {
+   "id": "1967",
+   "name": "Jalen Brunson",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "NYK",
+   "gp": 74,
+   "fppg": 41.9,
+   "total": 3102.5,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.419,
+    "pts": 26.041,
+    "dreb": 2.919,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.162,
+    "ftmi": 0.905,
+    "stl": 0.77,
+    "to": 2.365,
+    "ast": 6.797,
+    "blk": 0.108,
+    "tpm": 2.635,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 22.8,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 26,
+   "posRank": {
+    "PG": 11
+   },
+   "flag": "fair",
+   "adpDelta": -3.2
+  },
+  {
+   "id": "1648",
+   "name": "Devin Booker",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "PHX",
+   "gp": 64,
+   "fppg": 41.2,
+   "total": 2638.4,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 0.75,
+    "pts": 26.062,
+    "dreb": 3.125,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.094,
+    "ftmi": 1.031,
+    "stl": 0.797,
+    "to": 3.141,
+    "ast": 6.031,
+    "blk": 0.281,
+    "tpm": 1.906,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 18.7,
+   "injury": null,
+   "yearsExp": 11,
+   "rank": 27,
+   "posRank": {
+    "PG": 12,
+    "SG": 6
+   },
+   "flag": "fair",
+   "adpDelta": -8.3
+  },
+  {
+   "id": "1085",
+   "name": "Stephen Curry",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "GSW",
+   "gp": 43,
+   "fppg": 41.2,
+   "total": 1773.5,
+   "stats": {
+    "bonus_pt_50p": 0.023,
+    "oreb": 0.395,
+    "pts": 26.558,
+    "dreb": 3.186,
+    "bonus_ast_15p": 0.023,
+    "dd": 0.07,
+    "ftmi": 0.395,
+    "stl": 1.14,
+    "to": 2.814,
+    "ast": 4.721,
+    "blk": 0.395,
+    "tpm": 4.419,
+    "bonus_pt_40p": 0.023,
+    "bonus_reb_20p": 0.023
+   },
+   "adp": 24.8,
+   "injury": "DTD",
+   "yearsExp": 17,
+   "rank": 28,
+   "posRank": {
+    "PG": 13
+   },
+   "flag": "fair",
+   "adpDelta": -3.2
+  },
+  {
+   "id": "1988",
+   "name": "Michael Porter",
+   "pos": "SF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "BKN",
+   "gp": 52,
+   "fppg": 40.7,
+   "total": 2115.4,
+   "stats": {
+    "bonus_pt_50p": 0.019,
+    "oreb": 1.327,
+    "pts": 24.212,
+    "dreb": 5.731,
+    "bonus_ast_15p": 0.019,
+    "dd": 0.231,
+    "ftmi": 0.615,
+    "stl": 1.058,
+    "to": 2.346,
+    "ast": 3.038,
+    "blk": 0.25,
+    "tpm": 3.385,
+    "bonus_pt_40p": 0.019,
+    "bonus_reb_20p": 0.019
+   },
+   "adp": 63.2,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 29,
+   "posRank": {
+    "SF": 9,
+    "PF": 13
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 34.2
+  },
+  {
+   "id": "1716",
+   "name": "Pascal Siakam",
+   "pos": "PF",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "IND",
+   "gp": 62,
+   "fppg": 40.5,
+   "total": 2512.8,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 1.435,
+    "pts": 23.952,
+    "dreb": 5.194,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.161,
+    "ftmi": 1.871,
+    "stl": 1.113,
+    "to": 2.226,
+    "ast": 3.806,
+    "blk": 0.403,
+    "tpm": 1.694,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 46.6,
+   "injury": null,
+   "yearsExp": 10,
+   "rank": 30,
+   "posRank": {
+    "PF": 14,
+    "C": 7
+   },
+   "flag": "underrated",
+   "adpDelta": 16.6
+  },
+  {
+   "id": "2009",
+   "name": "Kevin Porter",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "MIL",
+   "gp": 38,
+   "fppg": 40.3,
+   "total": 1530.1,
+   "stats": {
+    "bonus_pt_50p": 0.026,
+    "oreb": 0.895,
+    "pts": 17.395,
+    "dreb": 4.316,
+    "bonus_ast_15p": 0.026,
+    "dd": 0.263,
+    "ftmi": 0.5,
+    "stl": 2.184,
+    "to": 2.895,
+    "ast": 7.368,
+    "blk": 0.5,
+    "tpm": 1.211,
+    "bonus_pt_40p": 0.026,
+    "bonus_reb_20p": 0.026,
+    "td": 0.053
+   },
+   "adp": 119.5,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 31,
+   "posRank": {
+    "PG": 14,
+    "SG": 7
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 88.5
+  },
+  {
+   "id": "2574",
+   "name": "Amen Thompson",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG",
+    "SF"
+   ],
+   "team": "HOU",
+   "gp": 79,
+   "fppg": 40.1,
+   "total": 3167.3,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 2.975,
+    "pts": 18.266,
+    "dreb": 4.797,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.253,
+    "ftmi": 1.089,
+    "stl": 1.506,
+    "to": 2.405,
+    "ast": 5.316,
+    "blk": 0.608,
+    "tpm": 0.316,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 20.0,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 32,
+   "posRank": {
+    "PG": 15,
+    "SG": 8,
+    "SF": 10
+   },
+   "flag": "overrated",
+   "adpDelta": -12.0
+  },
+  {
+   "id": "2259",
+   "name": "Evan Mobley",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "CLE",
+   "gp": 65,
+   "fppg": 40.1,
+   "total": 2604.9,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 2.4,
+    "pts": 18.154,
+    "dreb": 6.615,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.415,
+    "ftmi": 1.8,
+    "stl": 0.738,
+    "to": 1.877,
+    "ast": 3.6,
+    "blk": 1.738,
+    "tpm": 0.954,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 19.0,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 33,
+   "posRank": {
+    "PF": 15,
+    "C": 8
+   },
+   "flag": "overrated",
+   "adpDelta": -14.0
+  },
+  {
+   "id": "4760",
+   "name": "Cooper Flagg",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG",
+    "SF"
+   ],
+   "team": "DAL",
+   "gp": 70,
+   "fppg": 40.0,
+   "total": 2801.9,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.229,
+    "pts": 21.043,
+    "dreb": 5.429,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.186,
+    "ftmi": 0.843,
+    "stl": 1.2,
+    "to": 2.3,
+    "ast": 4.514,
+    "blk": 0.914,
+    "tpm": 1.029,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 16.2,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 34,
+   "posRank": {
+    "PG": 16,
+    "SG": 9,
+    "SF": 11
+   },
+   "flag": "severely-overrated",
+   "adpDelta": -17.8
+  },
+  {
+   "id": "2179",
+   "name": "LaMelo Ball",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "MIN",
+   "gp": 72,
+   "fppg": 39.9,
+   "total": 2870.2,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.903,
+    "pts": 20.069,
+    "dreb": 3.917,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.139,
+    "ftmi": 0.25,
+    "stl": 1.208,
+    "to": 2.806,
+    "ast": 7.139,
+    "blk": 0.236,
+    "tpm": 3.778,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014,
+    "td": 0.014
+   },
+   "adp": 32.7,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 35,
+   "posRank": {
+    "PG": 17
+   },
+   "flag": "fair",
+   "adpDelta": -2.3
+  },
+  {
+   "id": "2438",
+   "name": "Jalen Duren",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "DET",
+   "gp": 70,
+   "fppg": 39.8,
+   "total": 2783.3,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 3.786,
+    "pts": 19.5,
+    "dreb": 6.743,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.586,
+    "ftmi": 1.557,
+    "stl": 0.814,
+    "to": 1.857,
+    "ast": 1.971,
+    "blk": 0.843,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 48.2,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 36,
+   "posRank": {
+    "C": 9
+   },
+   "flag": "fair",
+   "adpDelta": 12.2
+  },
+  {
+   "id": "2316",
+   "name": "Austin Reaves",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "LAL",
+   "gp": 51,
+   "fppg": 39.8,
+   "total": 2028.7,
+   "stats": {
+    "bonus_pt_50p": 0.02,
+    "oreb": 0.647,
+    "pts": 23.275,
+    "dreb": 4.059,
+    "bonus_ast_15p": 0.02,
+    "dd": 0.118,
+    "ftmi": 0.941,
+    "stl": 1.098,
+    "to": 2.961,
+    "ast": 5.49,
+    "blk": 0.392,
+    "tpm": 2.314,
+    "bonus_pt_40p": 0.02,
+    "bonus_reb_20p": 0.02
+   },
+   "adp": 33.3,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 37,
+   "posRank": {
+    "PG": 18,
+    "SG": 10
+   },
+   "flag": "fair",
+   "adpDelta": -3.7
+  },
+  {
+   "id": "1535",
+   "name": "Julius Randle",
+   "pos": "PF",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "BKN",
+   "gp": 79,
+   "fppg": 39.4,
+   "total": 3109.8,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 1.671,
+    "pts": 21.101,
+    "dreb": 5.063,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.19,
+    "ftmi": 1.241,
+    "stl": 1.089,
+    "to": 2.747,
+    "ast": 5.038,
+    "blk": 0.228,
+    "tpm": 1.38,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013,
+    "td": 0.038
+   },
+   "adp": 61.8,
+   "injury": null,
+   "yearsExp": 12,
+   "rank": 38,
+   "posRank": {
+    "PF": 16,
+    "C": 10
+   },
+   "flag": "underrated",
+   "adpDelta": 23.8
+  },
+  {
+   "id": "2580",
+   "name": "Keyonte George",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "UTA",
+   "gp": 54,
+   "fppg": 39.4,
+   "total": 2127.7,
+   "stats": {
+    "bonus_pt_50p": 0.019,
+    "oreb": 0.426,
+    "pts": 23.611,
+    "dreb": 3.259,
+    "bonus_ast_15p": 0.019,
+    "dd": 0.074,
+    "ftmi": 0.759,
+    "stl": 1.074,
+    "to": 3.074,
+    "ast": 6.148,
+    "blk": 0.259,
+    "tpm": 2.481,
+    "bonus_pt_40p": 0.019,
+    "bonus_reb_20p": 0.019
+   },
+   "adp": 79.6,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 39,
+   "posRank": {
+    "PG": 19,
+    "SG": 11
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 40.6
+  },
+  {
+   "id": "2285",
+   "name": "Trey Murphy",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "NOP",
+   "gp": 66,
+   "fppg": 38.4,
+   "total": 2531.3,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 0.955,
+    "pts": 21.515,
+    "dreb": 4.758,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.061,
+    "ftmi": 0.424,
+    "stl": 1.5,
+    "to": 1.818,
+    "ast": 3.788,
+    "blk": 0.364,
+    "tpm": 3.242,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 39.2,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 40,
+   "posRank": {
+    "SG": 12,
+    "SF": 12
+   },
+   "flag": "fair",
+   "adpDelta": -0.8
+  },
+  {
+   "id": "1000",
+   "name": "Jimmy Butler",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "GSW",
+   "gp": 38,
+   "fppg": 37.7,
+   "total": 1431.3,
+   "stats": {
+    "bonus_pt_50p": 0.026,
+    "oreb": 2.316,
+    "pts": 20.0,
+    "dreb": 3.237,
+    "bonus_ast_15p": 0.026,
+    "dd": 0.079,
+    "ftmi": 1.026,
+    "stl": 1.447,
+    "to": 1.579,
+    "ast": 4.868,
+    "blk": 0.211,
+    "tpm": 0.842,
+    "bonus_pt_40p": 0.026,
+    "bonus_reb_20p": 0.026
+   },
+   "adp": 67.7,
+   "injury": "Out",
+   "yearsExp": 15,
+   "rank": 41,
+   "posRank": {
+    "SG": 13,
+    "SF": 13,
+    "PF": 17
+   },
+   "flag": "underrated",
+   "adpDelta": 26.7
+  },
+  {
+   "id": "2722",
+   "name": "Stephon Castle",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "SAS",
+   "gp": 68,
+   "fppg": 36.8,
+   "total": 2502.3,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 1.441,
+    "pts": 16.662,
+    "dreb": 3.882,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.265,
+    "ftmi": 1.5,
+    "stl": 1.147,
+    "to": 3.191,
+    "ast": 7.382,
+    "blk": 0.279,
+    "tpm": 1.191,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015,
+    "td": 0.074
+   },
+   "adp": 64.1,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 42,
+   "posRank": {
+    "PG": 20,
+    "SG": 14
+   },
+   "flag": "underrated",
+   "adpDelta": 22.1
+  },
+  {
+   "id": "2455",
+   "name": "Chet Holmgren",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "OKC",
+   "gp": 69,
+   "fppg": 36.4,
+   "total": 2512.4,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.884,
+    "pts": 17.116,
+    "dreb": 7.029,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.362,
+    "ftmi": 0.855,
+    "stl": 0.623,
+    "to": 1.551,
+    "ast": 1.667,
+    "blk": 1.899,
+    "tpm": 1.275,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 29.4,
+   "injury": "DTD",
+   "yearsExp": 3,
+   "rank": 43,
+   "posRank": {
+    "PF": 18,
+    "C": 11
+   },
+   "flag": "fair",
+   "adpDelta": -13.6
+  },
+  {
+   "id": "1698",
+   "name": "Brandon Ingram",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "LAC",
+   "gp": 77,
+   "fppg": 36.3,
+   "total": 2794.3,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.818,
+    "pts": 21.494,
+    "dreb": 4.766,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.026,
+    "ftmi": 0.831,
+    "stl": 0.753,
+    "to": 2.429,
+    "ast": 3.688,
+    "blk": 0.714,
+    "tpm": 1.753,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 68.6,
+   "injury": "Out",
+   "yearsExp": 10,
+   "rank": 44,
+   "posRank": {
+    "SG": 15,
+    "SF": 14,
+    "PF": 19
+   },
+   "flag": "underrated",
+   "adpDelta": 24.6
+  },
+  {
+   "id": "2728",
+   "name": "Donovan Clingan",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "POR",
+   "gp": 77,
+   "fppg": 35.9,
+   "total": 2763.7,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 4.506,
+    "pts": 12.13,
+    "dreb": 7.078,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.481,
+    "ftmi": 0.844,
+    "stl": 0.571,
+    "to": 1.234,
+    "ast": 2.104,
+    "blk": 1.688,
+    "tpm": 1.091,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 92.7,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 45,
+   "posRank": {
+    "C": 12
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 47.7
+  },
+  {
+   "id": "2733",
+   "name": "Alex Sarr",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "WAS",
+   "gp": 48,
+   "fppg": 35.6,
+   "total": 1707.6,
+   "stats": {
+    "bonus_pt_50p": 0.021,
+    "oreb": 2.188,
+    "pts": 16.312,
+    "dreb": 5.208,
+    "bonus_ast_15p": 0.021,
+    "dd": 0.25,
+    "ftmi": 0.938,
+    "stl": 0.812,
+    "to": 1.708,
+    "ast": 2.708,
+    "blk": 1.979,
+    "tpm": 1.042,
+    "bonus_pt_40p": 0.021,
+    "bonus_reb_20p": 0.021
+   },
+   "adp": 62.6,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 46,
+   "posRank": {
+    "PF": 20,
+    "C": 13
+   },
+   "flag": "fair",
+   "adpDelta": 16.6
+  },
+  {
+   "id": "1872",
+   "name": "De'Aaron Fox",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "SAS",
+   "gp": 72,
+   "fppg": 35.1,
+   "total": 2525.9,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.583,
+    "pts": 18.556,
+    "dreb": 3.167,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.111,
+    "ftmi": 0.819,
+    "stl": 1.236,
+    "to": 2.278,
+    "ast": 6.181,
+    "blk": 0.264,
+    "tpm": 1.819,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 52.0,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": 47,
+   "posRank": {
+    "PG": 21
+   },
+   "flag": "fair",
+   "adpDelta": 5.0
+  },
+  {
+   "id": "2054",
+   "name": "Zion Williamson",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "NOP",
+   "gp": 62,
+   "fppg": 35.1,
+   "total": 2177.6,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 2.016,
+    "pts": 21.0,
+    "dreb": 3.677,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.097,
+    "ftmi": 2.129,
+    "stl": 0.968,
+    "to": 2.032,
+    "ast": 3.21,
+    "blk": 0.548,
+    "tpm": 0.016,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 50.5,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 48,
+   "posRank": {
+    "SF": 15,
+    "PF": 21
+   },
+   "flag": "fair",
+   "adpDelta": 2.5
+  },
+  {
+   "id": "1583",
+   "name": "Jusuf Nurkić",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "UTA",
+   "gp": 41,
+   "fppg": 35.1,
+   "total": 1440.4,
+   "stats": {
+    "bonus_pt_50p": 0.024,
+    "oreb": 2.585,
+    "pts": 10.902,
+    "dreb": 7.78,
+    "bonus_ast_15p": 0.024,
+    "dd": 0.39,
+    "ftmi": 1.244,
+    "stl": 1.268,
+    "to": 2.463,
+    "ast": 4.78,
+    "blk": 0.537,
+    "tpm": 0.61,
+    "bonus_pt_40p": 0.024,
+    "bonus_reb_20p": 0.024,
+    "td": 0.073
+   },
+   "adp": 172.2,
+   "injury": "Out",
+   "yearsExp": 12,
+   "rank": 49,
+   "posRank": {
+    "C": 14
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 123.2
+  },
+  {
+   "id": "1830",
+   "name": "Derrick White",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "BOS",
+   "gp": 77,
+   "fppg": 35.0,
+   "total": 2697.1,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 1.117,
+    "pts": 16.455,
+    "dreb": 3.286,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.013,
+    "ftmi": 0.26,
+    "stl": 1.143,
+    "to": 1.74,
+    "ast": 5.377,
+    "blk": 1.273,
+    "tpm": 2.714,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 49.3,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": 50,
+   "posRank": {
+    "PG": 22,
+    "SG": 16
+   },
+   "flag": "fair",
+   "adpDelta": -0.7
+  },
+  {
+   "id": "1434",
+   "name": "Russell Westbrook",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": null,
+   "gp": 64,
+   "fppg": 34.9,
+   "total": 2231.4,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 1.25,
+    "pts": 15.172,
+    "dreb": 4.188,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.25,
+    "ftmi": 0.875,
+    "stl": 1.297,
+    "to": 3.266,
+    "ast": 6.656,
+    "blk": 0.188,
+    "tpm": 2.0,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016,
+    "td": 0.094
+   },
+   "adp": 171.3,
+   "injury": null,
+   "yearsExp": 17,
+   "rank": 51,
+   "posRank": {
+    "PG": 23,
+    "SG": 17
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 120.3
+  },
+  {
+   "id": "2463",
+   "name": "Ryan Rollins",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "MIL",
+   "gp": 74,
+   "fppg": 34.8,
+   "total": 2578.4,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.73,
+    "pts": 17.311,
+    "dreb": 3.838,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.081,
+    "ftmi": 0.432,
+    "stl": 1.486,
+    "to": 2.716,
+    "ast": 5.595,
+    "blk": 0.419,
+    "tpm": 2.486,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 133.6,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 52,
+   "posRank": {
+    "PG": 24
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 81.6
+  },
+  {
+   "id": "2086",
+   "name": "Tyler Herro",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "MIL",
+   "gp": 33,
+   "fppg": 34.8,
+   "total": 1148.9,
+   "stats": {
+    "bonus_pt_50p": 0.03,
+    "oreb": 0.424,
+    "pts": 20.515,
+    "dreb": 4.364,
+    "bonus_ast_15p": 0.03,
+    "ftmi": 0.273,
+    "stl": 0.697,
+    "to": 1.939,
+    "ast": 4.121,
+    "blk": 0.364,
+    "tpm": 2.545,
+    "bonus_pt_40p": 0.03,
+    "bonus_reb_20p": 0.03
+   },
+   "adp": 57.4,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 53,
+   "posRank": {
+    "PG": 25,
+    "SG": 18
+   },
+   "flag": "fair",
+   "adpDelta": 4.4
+  },
+  {
+   "id": "2568",
+   "name": "Brandon Miller",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "CHA",
+   "gp": 65,
+   "fppg": 34.6,
+   "total": 2250.9,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 1.077,
+    "pts": 20.169,
+    "dreb": 3.831,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.046,
+    "ftmi": 0.369,
+    "stl": 1.015,
+    "to": 2.508,
+    "ast": 3.338,
+    "blk": 0.677,
+    "tpm": 3.138,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 45.3,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 54,
+   "posRank": {
+    "SG": 19,
+    "SF": 16,
+    "PF": 22
+   },
+   "flag": "fair",
+   "adpDelta": -8.7
+  },
+  {
+   "id": "2304",
+   "name": "Franz Wagner",
+   "pos": "SF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "ORL",
+   "gp": 34,
+   "fppg": 34.4,
+   "total": 1168.9,
+   "stats": {
+    "bonus_pt_50p": 0.029,
+    "oreb": 1.265,
+    "pts": 20.559,
+    "dreb": 3.941,
+    "bonus_ast_15p": 0.029,
+    "ftmi": 1.029,
+    "stl": 0.941,
+    "to": 1.706,
+    "ast": 3.324,
+    "blk": 0.324,
+    "tpm": 1.412,
+    "bonus_pt_40p": 0.029,
+    "bonus_reb_20p": 0.029
+   },
+   "adp": 34.0,
+   "injury": "DTD",
+   "yearsExp": 5,
+   "rank": 55,
+   "posRank": {
+    "SF": 17,
+    "PF": 23
+   },
+   "flag": "overrated",
+   "adpDelta": -21.0
+  },
+  {
+   "id": "2143",
+   "name": "Desmond Bane",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "ORL",
+   "gp": 82,
+   "fppg": 34.3,
+   "total": 2809.0,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 1.195,
+    "pts": 20.085,
+    "dreb": 2.927,
+    "bonus_ast_15p": 0.012,
+    "dd": 0.012,
+    "ftmi": 0.39,
+    "stl": 1.049,
+    "to": 2.0,
+    "ast": 4.122,
+    "blk": 0.451,
+    "tpm": 2.037,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012
+   },
+   "adp": 44.7,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 56,
+   "posRank": {
+    "PG": 26,
+    "SG": 20
+   },
+   "flag": "fair",
+   "adpDelta": -11.3
+  },
+  {
+   "id": "2055",
+   "name": "Nickeil Alexander-Walker",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "ATL",
+   "gp": 78,
+   "fppg": 34.3,
+   "total": 2676.1,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.667,
+    "pts": 20.821,
+    "dreb": 2.769,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.026,
+    "ftmi": 0.385,
+    "stl": 1.308,
+    "to": 2.077,
+    "ast": 3.667,
+    "blk": 0.538,
+    "tpm": 3.218,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 95.3,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 57,
+   "posRank": {
+    "PG": 27,
+    "SG": 21
+   },
+   "flag": "underrated",
+   "adpDelta": 38.3
+  },
+  {
+   "id": "2449",
+   "name": "Dyson Daniels",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "ATL",
+   "gp": 76,
+   "fppg": 34.2,
+   "total": 2601.8,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 2.421,
+    "pts": 11.855,
+    "dreb": 4.421,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.197,
+    "ftmi": 0.618,
+    "stl": 1.961,
+    "to": 1.776,
+    "ast": 5.908,
+    "blk": 0.408,
+    "tpm": 0.289,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013,
+    "td": 0.026
+   },
+   "adp": 60.7,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 58,
+   "posRank": {
+    "SG": 22,
+    "SF": 18
+   },
+   "flag": "fair",
+   "adpDelta": 2.7
+  },
+  {
+   "id": "2136",
+   "name": "Onyeka Okongwu",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "ATL",
+   "gp": 74,
+   "fppg": 34.2,
+   "total": 2528.9,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.892,
+    "pts": 15.176,
+    "dreb": 5.703,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.216,
+    "ftmi": 0.662,
+    "stl": 1.108,
+    "to": 1.716,
+    "ast": 3.122,
+    "blk": 1.068,
+    "tpm": 1.946,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 72.3,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 59,
+   "posRank": {
+    "C": 15
+   },
+   "flag": "fair",
+   "adpDelta": 13.3
+  },
+  {
+   "id": "1486",
+   "name": "Nikola Vučević",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "ORL",
+   "gp": 64,
+   "fppg": 34.1,
+   "total": 2181.4,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 1.953,
+    "pts": 15.078,
+    "dreb": 6.438,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.359,
+    "ftmi": 0.25,
+    "stl": 0.609,
+    "to": 1.328,
+    "ast": 3.328,
+    "blk": 0.641,
+    "tpm": 1.562,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 85.7,
+   "injury": null,
+   "yearsExp": 15,
+   "rank": 60,
+   "posRank": {
+    "C": 16
+   },
+   "flag": "fair",
+   "adpDelta": 25.7
+  },
+  {
+   "id": "1924",
+   "name": "Jaren Jackson",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "UTA",
+   "gp": 48,
+   "fppg": 34.1,
+   "total": 1637.9,
+   "stats": {
+    "bonus_pt_50p": 0.021,
+    "oreb": 0.875,
+    "pts": 19.396,
+    "dreb": 4.792,
+    "bonus_ast_15p": 0.021,
+    "dd": 0.062,
+    "ftmi": 0.833,
+    "stl": 1.104,
+    "to": 2.229,
+    "ast": 1.958,
+    "blk": 1.438,
+    "tpm": 1.75,
+    "bonus_pt_40p": 0.021,
+    "bonus_reb_20p": 0.021
+   },
+   "adp": 40.4,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 61,
+   "posRank": {
+    "PF": 24,
+    "C": 17
+   },
+   "flag": "overrated",
+   "adpDelta": -20.6
+  },
+  {
+   "id": "1697",
+   "name": "Ivica Zubac",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "IND",
+   "gp": 48,
+   "fppg": 34.0,
+   "total": 1629.8,
+   "stats": {
+    "bonus_pt_50p": 0.021,
+    "oreb": 3.375,
+    "pts": 14.104,
+    "dreb": 7.229,
+    "bonus_ast_15p": 0.021,
+    "dd": 0.5,
+    "ftmi": 0.854,
+    "stl": 0.375,
+    "to": 1.792,
+    "ast": 2.188,
+    "blk": 0.833,
+    "bonus_pt_40p": 0.021,
+    "bonus_reb_20p": 0.021
+   },
+   "adp": 41.8,
+   "injury": null,
+   "yearsExp": 10,
+   "rank": 62,
+   "posRank": {
+    "C": 18
+   },
+   "flag": "fair",
+   "adpDelta": -20.2
+  },
+  {
+   "id": "2461",
+   "name": "Andrew Nembhard",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "IND",
+   "gp": 57,
+   "fppg": 33.8,
+   "total": 1927.7,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 0.439,
+    "pts": 16.947,
+    "dreb": 2.368,
+    "bonus_ast_15p": 0.018,
+    "dd": 0.228,
+    "ftmi": 0.719,
+    "stl": 0.895,
+    "to": 2.404,
+    "ast": 7.667,
+    "blk": 0.14,
+    "tpm": 1.877,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 96.1,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 63,
+   "posRank": {
+    "PG": 28,
+    "SG": 23
+   },
+   "flag": "underrated",
+   "adpDelta": 33.1
+  },
+  {
+   "id": "2007",
+   "name": "Darius Garland",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "LAC",
+   "gp": 45,
+   "fppg": 33.8,
+   "total": 1521.7,
+   "stats": {
+    "bonus_pt_50p": 0.022,
+    "oreb": 0.4,
+    "pts": 18.778,
+    "dreb": 1.978,
+    "bonus_ast_15p": 0.022,
+    "dd": 0.156,
+    "ftmi": 0.378,
+    "stl": 0.956,
+    "to": 2.889,
+    "ast": 6.689,
+    "blk": 0.178,
+    "tpm": 2.711,
+    "bonus_pt_40p": 0.022,
+    "bonus_reb_20p": 0.022
+   },
+   "adp": 55.0,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 64,
+   "posRank": {
+    "PG": 29
+   },
+   "flag": "fair",
+   "adpDelta": -9.0
+  },
+  {
+   "id": "1074",
+   "name": "Paul George",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "BOS",
+   "gp": 37,
+   "fppg": 33.7,
+   "total": 1247.9,
+   "stats": {
+    "bonus_pt_50p": 0.027,
+    "oreb": 0.541,
+    "pts": 17.324,
+    "dreb": 4.757,
+    "bonus_ast_15p": 0.027,
+    "dd": 0.054,
+    "ftmi": 0.541,
+    "stl": 1.676,
+    "to": 1.73,
+    "ast": 3.595,
+    "blk": 0.432,
+    "tpm": 2.703,
+    "bonus_pt_40p": 0.027,
+    "bonus_reb_20p": 0.027
+   },
+   "adp": 86.3,
+   "injury": null,
+   "yearsExp": 16,
+   "rank": 65,
+   "posRank": {
+    "SG": 24,
+    "SF": 19,
+    "PF": 25
+   },
+   "flag": "fair",
+   "adpDelta": 21.3
+  },
+  {
+   "id": "2453",
+   "name": "Jalen Williams",
+   "pos": "PF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "OKC",
+   "gp": 33,
+   "fppg": 33.6,
+   "total": 1107.5,
+   "stats": {
+    "bonus_pt_50p": 0.03,
+    "oreb": 0.818,
+    "pts": 17.061,
+    "dreb": 3.788,
+    "bonus_ast_15p": 0.03,
+    "dd": 0.03,
+    "ftmi": 0.636,
+    "stl": 1.182,
+    "to": 1.909,
+    "ast": 5.485,
+    "blk": 0.273,
+    "tpm": 0.697,
+    "bonus_pt_40p": 0.03,
+    "bonus_reb_20p": 0.03
+   },
+   "adp": 23.8,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 66,
+   "posRank": {
+    "SG": 25,
+    "SF": 20,
+    "PF": 26
+   },
+   "flag": "severely-overrated",
+   "adpDelta": -42.2
+  },
+  {
+   "id": "1265",
+   "name": "Jrue Holiday",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "POR",
+   "gp": 53,
+   "fppg": 33.5,
+   "total": 1776.7,
+   "stats": {
+    "bonus_pt_50p": 0.019,
+    "oreb": 1.34,
+    "pts": 16.321,
+    "dreb": 3.283,
+    "bonus_ast_15p": 0.019,
+    "dd": 0.17,
+    "ftmi": 0.321,
+    "stl": 1.019,
+    "to": 2.755,
+    "ast": 6.075,
+    "blk": 0.113,
+    "tpm": 2.585,
+    "bonus_pt_40p": 0.019,
+    "bonus_reb_20p": 0.019
+   },
+   "adp": 136.8,
+   "injury": "DTD",
+   "yearsExp": 17,
+   "rank": 67,
+   "posRank": {
+    "PG": 30,
+    "SG": 26
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 69.8
+  },
+  {
+   "id": "4737",
+   "name": "VJ Edgecombe",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "PHI",
+   "gp": 75,
+   "fppg": 33.4,
+   "total": 2505.4,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 1.627,
+    "pts": 15.987,
+    "dreb": 4.013,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.093,
+    "ftmi": 0.44,
+    "stl": 1.427,
+    "to": 1.827,
+    "ast": 4.2,
+    "blk": 0.52,
+    "tpm": 1.987,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 78.3,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 68,
+   "posRank": {
+    "PG": 31,
+    "SG": 27
+   },
+   "flag": "fair",
+   "adpDelta": 10.3
+  },
+  {
+   "id": "2157",
+   "name": "Immanuel Quickley",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "TOR",
+   "gp": 70,
+   "fppg": 33.4,
+   "total": 2336.5,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.543,
+    "pts": 16.429,
+    "dreb": 3.486,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.114,
+    "ftmi": 0.529,
+    "stl": 1.314,
+    "to": 1.457,
+    "ast": 5.929,
+    "blk": 0.071,
+    "tpm": 2.543,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 82.6,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 69,
+   "posRank": {
+    "PG": 32,
+    "SG": 28
+   },
+   "flag": "fair",
+   "adpDelta": 13.6
+  },
+  {
+   "id": "1350",
+   "name": "Rudy Gobert",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "MIN",
+   "gp": 76,
+   "fppg": 33.2,
+   "total": 2526.3,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 3.934,
+    "pts": 10.908,
+    "dreb": 7.539,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.434,
+    "ftmi": 1.882,
+    "stl": 0.763,
+    "to": 1.395,
+    "ast": 1.684,
+    "blk": 1.632,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 84.0,
+   "injury": null,
+   "yearsExp": 13,
+   "rank": 70,
+   "posRank": {
+    "C": 19
+   },
+   "flag": "fair",
+   "adpDelta": 14.0
+  },
+  {
+   "id": "1787",
+   "name": "Jarrett Allen",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "CLE",
+   "gp": 56,
+   "fppg": 32.7,
+   "total": 1833.7,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 2.571,
+    "pts": 15.357,
+    "dreb": 5.929,
+    "bonus_ast_15p": 0.018,
+    "dd": 0.357,
+    "ftmi": 1.357,
+    "stl": 0.982,
+    "to": 1.339,
+    "ast": 1.786,
+    "blk": 0.839,
+    "tpm": 0.018,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 66.8,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": 71,
+   "posRank": {
+    "C": 20
+   },
+   "flag": "fair",
+   "adpDelta": -4.2
+  },
+  {
+   "id": "2001",
+   "name": "RJ Barrett",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "TOR",
+   "gp": 57,
+   "fppg": 32.5,
+   "total": 1851.9,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 0.965,
+    "pts": 19.263,
+    "dreb": 4.298,
+    "bonus_ast_15p": 0.018,
+    "ftmi": 1.386,
+    "stl": 0.737,
+    "to": 1.737,
+    "ast": 3.316,
+    "blk": 0.333,
+    "tpm": 1.684,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 100.3,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 72,
+   "posRank": {
+    "SG": 29,
+    "SF": 21,
+    "PF": 27
+   },
+   "flag": "fair",
+   "adpDelta": 28.3
+  },
+  {
+   "id": "2476",
+   "name": "Shaedon Sharpe",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "POR",
+   "gp": 50,
+   "fppg": 32.5,
+   "total": 1625.4,
+   "stats": {
+    "bonus_pt_50p": 0.02,
+    "oreb": 1.02,
+    "pts": 20.84,
+    "dreb": 3.32,
+    "bonus_ast_15p": 0.02,
+    "ftmi": 0.84,
+    "stl": 1.4,
+    "to": 2.94,
+    "ast": 2.64,
+    "blk": 0.12,
+    "tpm": 2.06,
+    "bonus_pt_40p": 0.02,
+    "bonus_reb_20p": 0.02
+   },
+   "adp": 99.7,
+   "injury": "Out",
+   "yearsExp": 4,
+   "rank": 73,
+   "posRank": {
+    "PG": 33,
+    "SG": 30
+   },
+   "flag": "fair",
+   "adpDelta": 26.7
+  },
+  {
+   "id": "4740",
+   "name": "Kon Knueppel",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "CHA",
+   "gp": 81,
+   "fppg": 32.4,
+   "total": 2627.6,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 1.198,
+    "pts": 18.494,
+    "dreb": 4.136,
+    "bonus_ast_15p": 0.012,
+    "dd": 0.086,
+    "ftmi": 0.383,
+    "stl": 0.704,
+    "to": 1.988,
+    "ast": 3.383,
+    "blk": 0.235,
+    "tpm": 3.37,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012
+   },
+   "adp": 70.6,
+   "injury": "DTD",
+   "yearsExp": 1,
+   "rank": 74,
+   "posRank": {
+    "SG": 31,
+    "SF": 22
+   },
+   "flag": "fair",
+   "adpDelta": -3.4
+  },
+  {
+   "id": "1637",
+   "name": "Norman Powell",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "CHI",
+   "gp": 58,
+   "fppg": 32.2,
+   "total": 1868.8,
+   "stats": {
+    "bonus_pt_50p": 0.017,
+    "oreb": 0.379,
+    "pts": 21.741,
+    "dreb": 3.121,
+    "bonus_ast_15p": 0.017,
+    "dd": 0.017,
+    "ftmi": 0.948,
+    "stl": 1.103,
+    "to": 1.914,
+    "ast": 2.466,
+    "blk": 0.241,
+    "tpm": 2.69,
+    "bonus_pt_40p": 0.017,
+    "bonus_reb_20p": 0.017
+   },
+   "adp": 93.2,
+   "injury": null,
+   "yearsExp": 11,
+   "rank": 75,
+   "posRank": {
+    "SG": 32,
+    "SF": 23
+   },
+   "flag": "fair",
+   "adpDelta": 18.2
+  },
+  {
+   "id": "2142",
+   "name": "Payton Pritchard",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "BOS",
+   "gp": 79,
+   "fppg": 31.8,
+   "total": 2515.1,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.873,
+    "pts": 17.025,
+    "dreb": 3.076,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.063,
+    "ftmi": 0.19,
+    "stl": 0.734,
+    "to": 1.38,
+    "ast": 5.165,
+    "blk": 0.127,
+    "tpm": 2.684,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 83.0,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 76,
+   "posRank": {
+    "PG": 34,
+    "SG": 33
+   },
+   "flag": "fair",
+   "adpDelta": 7.0
+  },
+  {
+   "id": "2305",
+   "name": "Jalen Suggs",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "ORL",
+   "gp": 57,
+   "fppg": 31.6,
+   "total": 1800.3,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 0.632,
+    "pts": 13.789,
+    "dreb": 3.228,
+    "bonus_ast_15p": 0.018,
+    "dd": 0.07,
+    "ftmi": 0.298,
+    "stl": 1.842,
+    "to": 2.667,
+    "ast": 5.474,
+    "blk": 0.702,
+    "tpm": 2.14,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018,
+    "td": 0.018
+   },
+   "adp": 98.7,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 77,
+   "posRank": {
+    "PG": 35
+   },
+   "flag": "fair",
+   "adpDelta": 21.7
+  },
+  {
+   "id": "1803",
+   "name": "Josh Hart",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "NYK",
+   "gp": 66,
+   "fppg": 31.5,
+   "total": 2076.6,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 1.409,
+    "pts": 12.0,
+    "dreb": 5.955,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.197,
+    "ftmi": 0.53,
+    "stl": 1.136,
+    "to": 1.939,
+    "ast": 4.803,
+    "blk": 0.258,
+    "tpm": 1.515,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015,
+    "td": 0.03
+   },
+   "adp": 65.3,
+   "injury": "DTD",
+   "yearsExp": 9,
+   "rank": 78,
+   "posRank": {
+    "SG": 34,
+    "SF": 24
+   },
+   "flag": "fair",
+   "adpDelta": -12.7
+  },
+  {
+   "id": "1913",
+   "name": "Miles Bridges",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "PHX",
+   "gp": 77,
+   "fppg": 31.4,
+   "total": 2419.9,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.974,
+    "pts": 17.065,
+    "dreb": 4.87,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.104,
+    "ftmi": 0.584,
+    "stl": 0.597,
+    "to": 1.39,
+    "ast": 3.195,
+    "blk": 0.442,
+    "tpm": 1.922,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 71.8,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 79,
+   "posRank": {
+    "SF": 25,
+    "PF": 28
+   },
+   "flag": "fair",
+   "adpDelta": -7.2
+  },
+  {
+   "id": "2714",
+   "name": "Kyshawn George",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "WAS",
+   "gp": 48,
+   "fppg": 31.3,
+   "total": 1500.7,
+   "stats": {
+    "bonus_pt_50p": 0.021,
+    "oreb": 0.896,
+    "pts": 14.792,
+    "dreb": 4.208,
+    "bonus_ast_15p": 0.021,
+    "dd": 0.062,
+    "ftmi": 0.542,
+    "stl": 1.0,
+    "to": 2.604,
+    "ast": 4.458,
+    "blk": 0.896,
+    "tpm": 2.062,
+    "bonus_pt_40p": 0.021,
+    "bonus_reb_20p": 0.021
+   },
+   "adp": 106.8,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 80,
+   "posRank": {
+    "SG": 35,
+    "SF": 26
+   },
+   "flag": "fair",
+   "adpDelta": 26.8
+  },
+  {
+   "id": "1450",
+   "name": "CJ McCollum",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "ATL",
+   "gp": 76,
+   "fppg": 31.1,
+   "total": 2365.4,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.816,
+    "pts": 18.737,
+    "dreb": 2.5,
+    "bonus_ast_15p": 0.013,
+    "ftmi": 0.711,
+    "stl": 0.842,
+    "to": 1.776,
+    "ast": 3.855,
+    "blk": 0.461,
+    "tpm": 2.513,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 105.7,
+   "injury": null,
+   "yearsExp": 13,
+   "rank": 81,
+   "posRank": {
+    "PG": 36,
+    "SG": 36
+   },
+   "flag": "fair",
+   "adpDelta": 24.7
+  },
+  {
+   "id": "2131",
+   "name": "Saddiq Bey",
+   "pos": "SF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "NOP",
+   "gp": 72,
+   "fppg": 31.1,
+   "total": 2237.5,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.681,
+    "pts": 17.653,
+    "dreb": 3.875,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.097,
+    "ftmi": 0.653,
+    "stl": 0.944,
+    "to": 0.944,
+    "ast": 2.528,
+    "blk": 0.097,
+    "tpm": 2.097,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 177.4,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 82,
+   "posRank": {
+    "SF": 27,
+    "PF": 29
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 95.4
+  },
+  {
+   "id": "1831",
+   "name": "OG Anunoby",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "NYK",
+   "gp": 67,
+   "fppg": 31.1,
+   "total": 2085.8,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 1.269,
+    "pts": 16.687,
+    "dreb": 3.97,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.075,
+    "ftmi": 0.567,
+    "stl": 1.552,
+    "to": 1.836,
+    "ast": 2.164,
+    "blk": 0.716,
+    "tpm": 2.343,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 59.1,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": 83,
+   "posRank": {
+    "SF": 28,
+    "PF": 30
+   },
+   "flag": "fair",
+   "adpDelta": -23.9
+  },
+  {
+   "id": "2445",
+   "name": "Jabari Smith",
+   "pos": "PF",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "HOU",
+   "gp": 77,
+   "fppg": 31.0,
+   "total": 2387.0,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 1.403,
+    "pts": 15.779,
+    "dreb": 5.468,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.182,
+    "ftmi": 0.61,
+    "stl": 0.727,
+    "to": 1.364,
+    "ast": 1.857,
+    "blk": 0.922,
+    "tpm": 2.299,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 117.6,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 84,
+   "posRank": {
+    "PF": 31,
+    "C": 21
+   },
+   "flag": "fair",
+   "adpDelta": 33.6
+  },
+  {
+   "id": "2835",
+   "name": "Matas Buzelis",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "CHI",
+   "gp": 77,
+   "fppg": 30.9,
+   "total": 2376.1,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 1.0,
+    "pts": 16.26,
+    "dreb": 4.818,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.052,
+    "ftmi": 0.662,
+    "stl": 0.714,
+    "to": 2.065,
+    "ast": 2.052,
+    "blk": 1.506,
+    "tpm": 2.247,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 94.0,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 85,
+   "posRank": {
+    "SF": 29,
+    "PF": 32
+   },
+   "flag": "fair",
+   "adpDelta": 9.0
+  },
+  {
+   "id": "1590",
+   "name": "Kristaps Porziņģis",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "GSW",
+   "gp": 32,
+   "fppg": 30.7,
+   "total": 982.9,
+   "stats": {
+    "bonus_pt_50p": 0.031,
+    "oreb": 1.25,
+    "pts": 16.656,
+    "dreb": 3.969,
+    "bonus_ast_15p": 0.031,
+    "dd": 0.031,
+    "ftmi": 0.781,
+    "stl": 0.562,
+    "to": 1.281,
+    "ast": 2.531,
+    "blk": 1.188,
+    "tpm": 1.688,
+    "bonus_pt_40p": 0.031,
+    "bonus_reb_20p": 0.031
+   },
+   "adp": 88.6,
+   "injury": "Out",
+   "yearsExp": 11,
+   "rank": 86,
+   "posRank": {
+    "C": 22
+   },
+   "flag": "fair",
+   "adpDelta": 2.6
+  },
+  {
+   "id": "1321",
+   "name": "DeMar DeRozan",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "DEN",
+   "gp": 77,
+   "fppg": 30.5,
+   "total": 2350.4,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.455,
+    "pts": 18.429,
+    "dreb": 2.481,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.026,
+    "ftmi": 0.74,
+    "stl": 1.039,
+    "to": 1.247,
+    "ast": 4.104,
+    "blk": 0.299,
+    "tpm": 0.61,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 107.4,
+   "injury": null,
+   "yearsExp": 17,
+   "rank": 87,
+   "posRank": {
+    "SG": 37,
+    "SF": 30,
+    "PF": 33
+   },
+   "flag": "fair",
+   "adpDelta": 20.4
+  },
+  {
+   "id": "1934",
+   "name": "Isaiah Hartenstein",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "OKC",
+   "gp": 47,
+   "fppg": 30.3,
+   "total": 1422.2,
+   "stats": {
+    "bonus_pt_50p": 0.021,
+    "oreb": 3.17,
+    "pts": 9.191,
+    "dreb": 6.255,
+    "bonus_ast_15p": 0.021,
+    "dd": 0.234,
+    "ftmi": 0.872,
+    "stl": 1.021,
+    "to": 1.745,
+    "ast": 3.532,
+    "blk": 0.766,
+    "bonus_pt_40p": 0.021,
+    "bonus_reb_20p": 0.021,
+    "td": 0.021
+   },
+   "adp": 87.2,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 88,
+   "posRank": {
+    "C": 23
+   },
+   "flag": "fair",
+   "adpDelta": -0.8
+  },
+  {
+   "id": "2583",
+   "name": "Jaime Jaquez",
+   "pos": "PF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "MIL",
+   "gp": 75,
+   "fppg": 30.2,
+   "total": 2261.4,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 1.28,
+    "pts": 15.36,
+    "dreb": 3.72,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.08,
+    "ftmi": 0.667,
+    "stl": 0.68,
+    "to": 2.027,
+    "ast": 4.693,
+    "blk": 0.28,
+    "tpm": 0.773,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 128.0,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 89,
+   "posRank": {
+    "SG": 38,
+    "SF": 31,
+    "PF": 34
+   },
+   "flag": "fair",
+   "adpDelta": 39.0
+  },
+  {
+   "id": "2281",
+   "name": "Santi Aldama",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "DAL",
+   "gp": 43,
+   "fppg": 30.2,
+   "total": 1300.7,
+   "stats": {
+    "bonus_pt_50p": 0.023,
+    "oreb": 1.558,
+    "pts": 14.0,
+    "dreb": 5.116,
+    "bonus_ast_15p": 0.023,
+    "dd": 0.116,
+    "ftmi": 0.884,
+    "stl": 0.86,
+    "to": 1.279,
+    "ast": 2.93,
+    "blk": 0.721,
+    "tpm": 1.628,
+    "bonus_pt_40p": 0.023,
+    "bonus_reb_20p": 0.023
+   },
+   "adp": 120.1,
+   "injury": "DTD",
+   "yearsExp": 5,
+   "rank": 90,
+   "posRank": {
+    "SF": 32,
+    "PF": 35
+   },
+   "flag": "fair",
+   "adpDelta": 30.1
+  },
+  {
+   "id": "1525",
+   "name": "Andrew Wiggins",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "MIA",
+   "gp": 68,
+   "fppg": 29.9,
+   "total": 2034.6,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 1.691,
+    "pts": 15.368,
+    "dreb": 3.147,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.029,
+    "ftmi": 0.515,
+    "stl": 1.118,
+    "to": 1.515,
+    "ast": 2.676,
+    "blk": 1.015,
+    "tpm": 2.029,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 108.1,
+   "injury": null,
+   "yearsExp": 12,
+   "rank": 91,
+   "posRank": {
+    "SG": 39,
+    "SF": 33,
+    "PF": 36
+   },
+   "flag": "fair",
+   "adpDelta": 17.1
+  },
+  {
+   "id": "2029",
+   "name": "P.J. Washington",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF",
+    "C"
+   ],
+   "team": "DAL",
+   "gp": 56,
+   "fppg": 29.7,
+   "total": 1663.7,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 1.5,
+    "pts": 14.161,
+    "dreb": 5.536,
+    "bonus_ast_15p": 0.018,
+    "dd": 0.143,
+    "ftmi": 1.018,
+    "stl": 0.982,
+    "to": 1.679,
+    "ast": 1.75,
+    "blk": 1.071,
+    "tpm": 1.357,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 125.1,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 92,
+   "posRank": {
+    "SF": 34,
+    "PF": 37,
+    "C": 24
+   },
+   "flag": "fair",
+   "adpDelta": 33.1
+  },
+  {
+   "id": "4751",
+   "name": "Derik Queen",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "NOP",
+   "gp": 81,
+   "fppg": 29.6,
+   "total": 2399.2,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 1.679,
+    "pts": 11.704,
+    "dreb": 5.383,
+    "bonus_ast_15p": 0.012,
+    "dd": 0.173,
+    "ftmi": 0.691,
+    "stl": 1.037,
+    "to": 2.346,
+    "ast": 3.679,
+    "blk": 0.914,
+    "tpm": 0.284,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012,
+    "td": 0.025
+   },
+   "adp": 112.2,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 93,
+   "posRank": {
+    "PF": 38,
+    "C": 25
+   },
+   "flag": "fair",
+   "adpDelta": 19.2
+  },
+  {
+   "id": "1792",
+   "name": "Dillon Brooks",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "PHX",
+   "gp": 56,
+   "fppg": 29.6,
+   "total": 1659.3,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 0.768,
+    "pts": 20.196,
+    "dreb": 2.857,
+    "bonus_ast_15p": 0.018,
+    "ftmi": 0.571,
+    "stl": 1.018,
+    "to": 1.75,
+    "ast": 1.768,
+    "blk": 0.161,
+    "tpm": 2.268,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 144.7,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": 94,
+   "posRank": {
+    "SG": 40,
+    "SF": 35,
+    "PF": 39
+   },
+   "flag": "underrated",
+   "adpDelta": 50.7
+  },
+  {
+   "id": "2435",
+   "name": "Bennedict Mathurin",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "NOP",
+   "gp": 54,
+   "fppg": 29.6,
+   "total": 1597.1,
+   "stats": {
+    "bonus_pt_50p": 0.019,
+    "oreb": 1.019,
+    "pts": 17.574,
+    "dreb": 4.407,
+    "bonus_ast_15p": 0.019,
+    "dd": 0.056,
+    "ftmi": 0.815,
+    "stl": 0.796,
+    "to": 2.185,
+    "ast": 2.389,
+    "blk": 0.241,
+    "tpm": 1.389,
+    "bonus_pt_40p": 0.019,
+    "bonus_reb_20p": 0.019
+   },
+   "adp": 137.8,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 95,
+   "posRank": {
+    "SG": 41,
+    "SF": 36
+   },
+   "flag": "fair",
+   "adpDelta": 42.8
+  },
+  {
+   "id": "1585",
+   "name": "Aaron Gordon",
+   "pos": "PF",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "DEN",
+   "gp": 36,
+   "fppg": 29.6,
+   "total": 1064.8,
+   "stats": {
+    "bonus_pt_50p": 0.028,
+    "oreb": 1.417,
+    "pts": 16.167,
+    "dreb": 4.389,
+    "bonus_ast_15p": 0.028,
+    "dd": 0.111,
+    "ftmi": 1.056,
+    "stl": 0.583,
+    "to": 1.056,
+    "ast": 2.667,
+    "blk": 0.278,
+    "tpm": 1.694,
+    "bonus_pt_40p": 0.028,
+    "bonus_reb_20p": 0.028
+   },
+   "adp": 122.7,
+   "injury": null,
+   "yearsExp": 12,
+   "rank": 96,
+   "posRank": {
+    "PF": 40,
+    "C": 26
+   },
+   "flag": "fair",
+   "adpDelta": 26.7
+  },
+  {
+   "id": "2032",
+   "name": "Nic Claxton",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "CHI",
+   "gp": 69,
+   "fppg": 29.5,
+   "total": 2037.3,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 2.435,
+    "pts": 11.739,
+    "dreb": 4.493,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.159,
+    "ftmi": 1.275,
+    "stl": 0.652,
+    "to": 1.391,
+    "ast": 3.667,
+    "blk": 1.116,
+    "tpm": 0.043,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014,
+    "td": 0.029
+   },
+   "adp": 103.4,
+   "injury": "DTD",
+   "yearsExp": 7,
+   "rank": 97,
+   "posRank": {
+    "PF": 41,
+    "C": 27
+   },
+   "flag": "fair",
+   "adpDelta": 6.4
+  },
+  {
+   "id": "1959",
+   "name": "Grayson Allen",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "CHA",
+   "gp": 51,
+   "fppg": 29.5,
+   "total": 1502.1,
+   "stats": {
+    "bonus_pt_50p": 0.02,
+    "oreb": 0.725,
+    "pts": 16.49,
+    "dreb": 2.314,
+    "bonus_ast_15p": 0.02,
+    "ftmi": 0.471,
+    "stl": 1.353,
+    "to": 1.627,
+    "ast": 3.824,
+    "blk": 0.255,
+    "tpm": 3.118,
+    "bonus_pt_40p": 0.02,
+    "bonus_reb_20p": 0.02
+   },
+   "adp": 167.6,
+   "injury": "DTD",
+   "yearsExp": 8,
+   "rank": 98,
+   "posRank": {
+    "SG": 42,
+    "SF": 37
+   },
+   "flag": "underrated",
+   "adpDelta": 69.6
+  },
+  {
+   "id": "1975",
+   "name": "Mikal Bridges",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "NYK",
+   "gp": 82,
+   "fppg": 29.1,
+   "total": 2389.3,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 0.963,
+    "pts": 14.402,
+    "dreb": 2.841,
+    "bonus_ast_15p": 0.012,
+    "dd": 0.012,
+    "ftmi": 0.207,
+    "stl": 1.305,
+    "to": 1.012,
+    "ast": 3.707,
+    "blk": 0.756,
+    "tpm": 1.902,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012
+   },
+   "adp": 74.1,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 99,
+   "posRank": {
+    "SG": 43,
+    "SF": 38,
+    "PF": 42
+   },
+   "flag": "fair",
+   "adpDelta": -24.9
+  },
+  {
+   "id": "2590",
+   "name": "Anthony Black",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG",
+    "SF"
+   ],
+   "team": "ORL",
+   "gp": 64,
+   "fppg": 29.0,
+   "total": 1855.5,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 0.734,
+    "pts": 14.984,
+    "dreb": 3.078,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.031,
+    "ftmi": 0.969,
+    "stl": 1.422,
+    "to": 2.062,
+    "ast": 3.688,
+    "blk": 0.703,
+    "tpm": 1.562,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 163.4,
+   "injury": "DTD",
+   "yearsExp": 3,
+   "rank": 100,
+   "posRank": {
+    "PG": 37,
+    "SG": 44,
+    "SF": 39
+   },
+   "flag": "underrated",
+   "adpDelta": 63.4
+  },
+  {
+   "id": "2036",
+   "name": "Naz Reid",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "CHA",
+   "gp": 77,
+   "fppg": 28.8,
+   "total": 2217.4,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 1.169,
+    "pts": 13.584,
+    "dreb": 5.026,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.078,
+    "ftmi": 0.429,
+    "stl": 0.987,
+    "to": 1.636,
+    "ast": 2.208,
+    "blk": 1.013,
+    "tpm": 2.104,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 75.5,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 101,
+   "posRank": {
+    "PF": 43,
+    "C": 28
+   },
+   "flag": "fair",
+   "adpDelta": -25.5
+  },
+  {
+   "id": "2309",
+   "name": "Jalen Green",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "PHX",
+   "gp": 32,
+   "fppg": 28.8,
+   "total": 922.9,
+   "stats": {
+    "bonus_pt_50p": 0.031,
+    "oreb": 0.5,
+    "pts": 17.75,
+    "dreb": 3.125,
+    "bonus_ast_15p": 0.031,
+    "ftmi": 0.688,
+    "stl": 1.062,
+    "to": 2.25,
+    "ast": 2.844,
+    "blk": 0.25,
+    "tpm": 2.219,
+    "bonus_pt_40p": 0.031,
+    "bonus_reb_20p": 0.031
+   },
+   "adp": 90.8,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 102,
+   "posRank": {
+    "SG": 45,
+    "SF": 40
+   },
+   "flag": "fair",
+   "adpDelta": -11.2
+  },
+  {
+   "id": "2145",
+   "name": "Tre Jones",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG",
+    "SF"
+   ],
+   "team": "CHI",
+   "gp": 65,
+   "fppg": 28.5,
+   "total": 1850.7,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 0.585,
+    "pts": 14.062,
+    "dreb": 2.554,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.077,
+    "ftmi": 0.554,
+    "stl": 1.169,
+    "to": 1.415,
+    "ast": 5.385,
+    "blk": 0.169,
+    "tpm": 0.631,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 251.3,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 103,
+   "posRank": {
+    "PG": 38,
+    "SG": 46,
+    "SF": 41
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 148.3
+  },
+  {
+   "id": "1512",
+   "name": "Jerami Grant",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "MEM",
+   "gp": 57,
+   "fppg": 28.5,
+   "total": 1626.3,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 0.965,
+    "pts": 18.596,
+    "dreb": 2.509,
+    "bonus_ast_15p": 0.018,
+    "ftmi": 1.053,
+    "stl": 0.737,
+    "to": 2.088,
+    "ast": 2.14,
+    "blk": 0.632,
+    "tpm": 2.386,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 165.0,
+   "injury": "DTD",
+   "yearsExp": 12,
+   "rank": 104,
+   "posRank": {
+    "SF": 42,
+    "PF": 44
+   },
+   "flag": "underrated",
+   "adpDelta": 61.0
+  },
+  {
+   "id": "2726",
+   "name": "Kel'el Ware",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "MIL",
+   "gp": 77,
+   "fppg": 28.4,
+   "total": 2185.5,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 2.818,
+    "pts": 11.052,
+    "dreb": 6.195,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.312,
+    "ftmi": 0.325,
+    "stl": 0.766,
+    "to": 0.805,
+    "ast": 0.727,
+    "blk": 1.091,
+    "tpm": 1.195,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 76.2,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 105,
+   "posRank": {
+    "PF": 45,
+    "C": 29
+   },
+   "flag": "fair",
+   "adpDelta": -28.8
+  },
+  {
+   "id": "2564",
+   "name": "Brandin Podziemski",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "GSW",
+   "gp": 82,
+   "fppg": 28.2,
+   "total": 2314.1,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 0.878,
+    "pts": 13.817,
+    "dreb": 4.232,
+    "bonus_ast_15p": 0.012,
+    "dd": 0.061,
+    "ftmi": 0.598,
+    "stl": 1.073,
+    "to": 1.598,
+    "ast": 3.707,
+    "blk": 0.183,
+    "tpm": 1.866,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012
+   },
+   "adp": 127.2,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 106,
+   "posRank": {
+    "PG": 39,
+    "SG": 47
+   },
+   "flag": "fair",
+   "adpDelta": 21.2
+  },
+  {
+   "id": "2135",
+   "name": "Jaden McDaniels",
+   "pos": "SF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "MIN",
+   "gp": 73,
+   "fppg": 28.2,
+   "total": 2058.9,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.041,
+    "pts": 14.849,
+    "dreb": 3.205,
+    "bonus_ast_15p": 0.014,
+    "ftmi": 0.397,
+    "stl": 1.11,
+    "to": 1.795,
+    "ast": 2.726,
+    "blk": 1.0,
+    "tpm": 1.411,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 77.5,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 107,
+   "posRank": {
+    "SF": 43,
+    "PF": 46
+   },
+   "flag": "fair",
+   "adpDelta": -29.5
+  },
+  {
+   "id": "1998",
+   "name": "Coby White",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "CHA",
+   "gp": 50,
+   "fppg": 28.2,
+   "total": 1408.0,
+   "stats": {
+    "bonus_pt_50p": 0.02,
+    "oreb": 0.34,
+    "pts": 17.36,
+    "dreb": 3.06,
+    "bonus_ast_15p": 0.02,
+    "dd": 0.02,
+    "ftmi": 0.88,
+    "stl": 0.5,
+    "to": 2.56,
+    "ast": 4.0,
+    "blk": 0.1,
+    "tpm": 2.3,
+    "bonus_pt_40p": 0.02,
+    "bonus_reb_20p": 0.02
+   },
+   "adp": 81.0,
+   "injury": "DTD",
+   "yearsExp": 7,
+   "rank": 108,
+   "posRank": {
+    "PG": 40,
+    "SG": 48
+   },
+   "flag": "fair",
+   "adpDelta": -27.0
+  },
+  {
+   "id": "2422",
+   "name": "Collin Gillespie",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "PHX",
+   "gp": 80,
+   "fppg": 28.0,
+   "total": 2238.9,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 1.113,
+    "pts": 12.65,
+    "dreb": 2.975,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.037,
+    "ftmi": 0.138,
+    "stl": 1.238,
+    "to": 1.562,
+    "ast": 4.638,
+    "blk": 0.2,
+    "tpm": 2.9,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 233.7,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 109,
+   "posRank": {
+    "PG": 41,
+    "SG": 49
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 124.7
+  },
+  {
+   "id": "2302",
+   "name": "Neemias Queta",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "BOS",
+   "gp": 76,
+   "fppg": 28.0,
+   "total": 2128.0,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 3.026,
+    "pts": 10.211,
+    "dreb": 5.342,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.224,
+    "ftmi": 0.684,
+    "stl": 0.789,
+    "to": 0.987,
+    "ast": 1.658,
+    "blk": 1.316,
+    "tpm": 0.013,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 143.4,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 110,
+   "posRank": {
+    "C": 30
+   },
+   "flag": "fair",
+   "adpDelta": 33.4
+  },
+  {
+   "id": "2233",
+   "name": "Naji Marshall",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "DAL",
+   "gp": 74,
+   "fppg": 27.9,
+   "total": 2064.3,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.878,
+    "pts": 15.243,
+    "dreb": 3.824,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.027,
+    "ftmi": 0.973,
+    "stl": 1.108,
+    "to": 1.608,
+    "ast": 3.257,
+    "blk": 0.081,
+    "tpm": 0.838,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 247.7,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 111,
+   "posRank": {
+    "SG": 50,
+    "SF": 44,
+    "PF": 47
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 136.7
+  },
+  {
+   "id": "1526",
+   "name": "Zach LaVine",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "SAC",
+   "gp": 39,
+   "fppg": 27.9,
+   "total": 1087.7,
+   "stats": {
+    "bonus_pt_50p": 0.026,
+    "oreb": 0.205,
+    "pts": 19.179,
+    "dreb": 2.564,
+    "bonus_ast_15p": 0.026,
+    "ftmi": 0.436,
+    "stl": 0.718,
+    "to": 1.897,
+    "ast": 2.282,
+    "blk": 0.256,
+    "tpm": 2.538,
+    "bonus_pt_40p": 0.026,
+    "bonus_reb_20p": 0.026
+   },
+   "adp": 89.8,
+   "injury": null,
+   "yearsExp": 12,
+   "rank": 112,
+   "posRank": {
+    "SG": 51,
+    "SF": 45
+   },
+   "flag": "fair",
+   "adpDelta": -22.2
+  },
+  {
+   "id": "2724",
+   "name": "Isaiah Collier",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "UTA",
+   "gp": 59,
+   "fppg": 27.7,
+   "total": 1631.8,
+   "stats": {
+    "bonus_pt_50p": 0.017,
+    "oreb": 0.356,
+    "pts": 11.661,
+    "dreb": 2.186,
+    "bonus_ast_15p": 0.017,
+    "dd": 0.169,
+    "ftmi": 0.983,
+    "stl": 1.119,
+    "to": 2.508,
+    "ast": 7.169,
+    "blk": 0.339,
+    "tpm": 0.458,
+    "bonus_pt_40p": 0.017,
+    "bonus_reb_20p": 0.017
+   },
+   "adp": 236.6,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 113,
+   "posRank": {
+    "PG": 42
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 123.6
+  },
+  {
+   "id": "2454",
+   "name": "Peyton Watson",
+   "pos": "SF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "CLE",
+   "gp": 54,
+   "fppg": 27.6,
+   "total": 1492.0,
+   "stats": {
+    "bonus_pt_50p": 0.019,
+    "oreb": 0.907,
+    "pts": 14.611,
+    "dreb": 3.981,
+    "bonus_ast_15p": 0.019,
+    "dd": 0.037,
+    "ftmi": 0.944,
+    "stl": 0.926,
+    "to": 1.722,
+    "ast": 2.056,
+    "blk": 1.13,
+    "tpm": 1.5,
+    "bonus_pt_40p": 0.019,
+    "bonus_reb_20p": 0.019
+   },
+   "adp": 146.6,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 114,
+   "posRank": {
+    "SF": 46,
+    "PF": 48
+   },
+   "flag": "fair",
+   "adpDelta": 32.6
+  },
+  {
+   "id": "1974",
+   "name": "Deandre Ayton",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "WAS",
+   "gp": 72,
+   "fppg": 27.4,
+   "total": 1969.5,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 2.569,
+    "pts": 12.458,
+    "dreb": 5.417,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.306,
+    "ftmi": 0.694,
+    "stl": 0.569,
+    "to": 1.153,
+    "ast": 0.819,
+    "blk": 0.972,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 104.3,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 115,
+   "posRank": {
+    "C": 31
+   },
+   "flag": "fair",
+   "adpDelta": -10.7
+  },
+  {
+   "id": "2440",
+   "name": "Mark Williams",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "PHX",
+   "gp": 60,
+   "fppg": 27.4,
+   "total": 1643.4,
+   "stats": {
+    "bonus_pt_50p": 0.017,
+    "oreb": 3.083,
+    "pts": 11.667,
+    "dreb": 4.867,
+    "bonus_ast_15p": 0.017,
+    "dd": 0.233,
+    "ftmi": 0.667,
+    "stl": 0.917,
+    "to": 1.083,
+    "ast": 0.967,
+    "blk": 0.917,
+    "tpm": 0.017,
+    "bonus_pt_40p": 0.017,
+    "bonus_reb_20p": 0.017
+   },
+   "adp": 124.7,
+   "injury": "Out",
+   "yearsExp": 4,
+   "rank": 116,
+   "posRank": {
+    "C": 32
+   },
+   "flag": "fair",
+   "adpDelta": 8.7
+  },
+  {
+   "id": "4748",
+   "name": "Cedric Coward",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "MEM",
+   "gp": 62,
+   "fppg": 27.4,
+   "total": 1696.3,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 1.339,
+    "pts": 13.597,
+    "dreb": 4.532,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.113,
+    "ftmi": 0.419,
+    "stl": 0.645,
+    "to": 1.694,
+    "ast": 2.758,
+    "blk": 0.435,
+    "tpm": 1.5,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 134.8,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 117,
+   "posRank": {
+    "SG": 52,
+    "SF": 47
+   },
+   "flag": "fair",
+   "adpDelta": 17.8
+  },
+  {
+   "id": "2766",
+   "name": "Kyle Filipowski",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "UTA",
+   "gp": 77,
+   "fppg": 27.3,
+   "total": 2101.5,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 1.87,
+    "pts": 11.416,
+    "dreb": 5.299,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.169,
+    "ftmi": 0.688,
+    "stl": 0.948,
+    "to": 1.623,
+    "ast": 2.571,
+    "blk": 0.506,
+    "tpm": 0.961,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 194.3,
+   "injury": "DTD",
+   "yearsExp": 2,
+   "rank": 118,
+   "posRank": {
+    "PF": 49,
+    "C": 33
+   },
+   "flag": "underrated",
+   "adpDelta": 76.3
+  },
+  {
+   "id": "2566",
+   "name": "Ausar Thompson",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "DET",
+   "gp": 73,
+   "fppg": 27.3,
+   "total": 1989.6,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 2.055,
+    "pts": 9.877,
+    "dreb": 3.671,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.041,
+    "ftmi": 1.123,
+    "stl": 2.0,
+    "to": 1.507,
+    "ast": 3.123,
+    "blk": 0.945,
+    "tpm": 0.082,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 73.7,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 119,
+   "posRank": {
+    "SG": 53,
+    "SF": 48
+   },
+   "flag": "overrated",
+   "adpDelta": -45.3
+  },
+  {
+   "id": "1883",
+   "name": "Wendell Carter",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "ORL",
+   "gp": 78,
+   "fppg": 27.2,
+   "total": 2118.7,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 2.077,
+    "pts": 11.821,
+    "dreb": 5.321,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.154,
+    "ftmi": 0.667,
+    "stl": 0.769,
+    "to": 1.282,
+    "ast": 1.974,
+    "blk": 0.628,
+    "tpm": 0.923,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 182.5,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 120,
+   "posRank": {
+    "C": 34
+   },
+   "flag": "underrated",
+   "adpDelta": 62.5
+  },
+  {
+   "id": "2613",
+   "name": "Toumani Camara",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "POR",
+   "gp": 82,
+   "fppg": 26.9,
+   "total": 2204.4,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 1.573,
+    "pts": 13.415,
+    "dreb": 3.561,
+    "bonus_ast_15p": 0.012,
+    "dd": 0.037,
+    "ftmi": 0.488,
+    "stl": 1.146,
+    "to": 1.756,
+    "ast": 2.451,
+    "blk": 0.427,
+    "tpm": 2.671,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012
+   },
+   "adp": 115.3,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 121,
+   "posRank": {
+    "SG": 54,
+    "SF": 49,
+    "PF": 50
+   },
+   "flag": "fair",
+   "adpDelta": -5.7
+  },
+  {
+   "id": "2255",
+   "name": "Ayo Dosunmu",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "MIN",
+   "gp": 69,
+   "fppg": 26.8,
+   "total": 1851.0,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.681,
+    "pts": 14.812,
+    "dreb": 2.754,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.029,
+    "ftmi": 0.261,
+    "stl": 0.841,
+    "to": 1.391,
+    "ast": 3.609,
+    "blk": 0.261,
+    "tpm": 1.783,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014,
+    "td": 0.014
+   },
+   "adp": 131.8,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 122,
+   "posRank": {
+    "PG": 43,
+    "SG": 55
+   },
+   "flag": "fair",
+   "adpDelta": 9.8
+  },
+  {
+   "id": "1964",
+   "name": "Donte DiVincenzo",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "MIN",
+   "gp": 82,
+   "fppg": 26.7,
+   "total": 2188.1,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 0.817,
+    "pts": 12.195,
+    "dreb": 3.28,
+    "bonus_ast_15p": 0.012,
+    "dd": 0.012,
+    "ftmi": 0.329,
+    "stl": 1.268,
+    "to": 1.439,
+    "ast": 3.817,
+    "blk": 0.415,
+    "tpm": 2.976,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012
+   },
+   "adp": 129.5,
+   "injury": "Out",
+   "yearsExp": 8,
+   "rank": 123,
+   "posRank": {
+    "SG": 56,
+    "SF": 50
+   },
+   "flag": "fair",
+   "adpDelta": 6.5
+  },
+  {
+   "id": "2719",
+   "name": "Reed Sheppard",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "HOU",
+   "gp": 82,
+   "fppg": 26.7,
+   "total": 2186.5,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 0.341,
+    "pts": 13.537,
+    "dreb": 2.561,
+    "bonus_ast_15p": 0.012,
+    "dd": 0.024,
+    "ftmi": 0.207,
+    "stl": 1.488,
+    "to": 1.5,
+    "ast": 3.378,
+    "blk": 0.659,
+    "tpm": 2.768,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012
+   },
+   "adp": 109.7,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 124,
+   "posRank": {
+    "PG": 44,
+    "SG": 57
+   },
+   "flag": "fair",
+   "adpDelta": -14.3
+  },
+  {
+   "id": "1604",
+   "name": "Kelly Oubre",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "IND",
+   "gp": 50,
+   "fppg": 26.7,
+   "total": 1333.3,
+   "stats": {
+    "bonus_pt_50p": 0.02,
+    "oreb": 1.0,
+    "pts": 14.1,
+    "dreb": 4.04,
+    "bonus_ast_15p": 0.02,
+    "dd": 0.1,
+    "ftmi": 0.68,
+    "stl": 1.36,
+    "to": 1.38,
+    "ast": 1.6,
+    "blk": 0.48,
+    "tpm": 1.72,
+    "bonus_pt_40p": 0.02,
+    "bonus_reb_20p": 0.02
+   },
+   "adp": 157.5,
+   "injury": null,
+   "yearsExp": 11,
+   "rank": 125,
+   "posRank": {
+    "SF": 51,
+    "PF": 51
+   },
+   "flag": "fair",
+   "adpDelta": 32.5
+  },
+  {
+   "id": "4750",
+   "name": "Jeremiah Fears",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "NOP",
+   "gp": 82,
+   "fppg": 26.4,
+   "total": 2167.5,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 0.732,
+    "pts": 14.256,
+    "dreb": 2.927,
+    "bonus_ast_15p": 0.012,
+    "dd": 0.037,
+    "ftmi": 0.634,
+    "stl": 1.183,
+    "to": 2.171,
+    "ast": 3.402,
+    "blk": 0.366,
+    "tpm": 1.232,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012
+   },
+   "adp": 162.4,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 126,
+   "posRank": {
+    "PG": 45,
+    "SG": 58
+   },
+   "flag": "fair",
+   "adpDelta": 36.4
+  },
+  {
+   "id": "4793",
+   "name": "Maxime Raynaud",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "SAC",
+   "gp": 74,
+   "fppg": 26.4,
+   "total": 1951.0,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.919,
+    "pts": 12.459,
+    "dreb": 5.595,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.243,
+    "ftmi": 0.486,
+    "stl": 0.514,
+    "to": 1.27,
+    "ast": 1.351,
+    "blk": 0.527,
+    "tpm": 0.324,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 169.8,
+   "injury": "Out",
+   "yearsExp": 1,
+   "rank": 127,
+   "posRank": {
+    "C": 35
+   },
+   "flag": "fair",
+   "adpDelta": 42.8
+  },
+  {
+   "id": "1589",
+   "name": "Bobby Portis",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "MIA",
+   "gp": 67,
+   "fppg": 26.3,
+   "total": 1762.9,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 1.328,
+    "pts": 13.657,
+    "dreb": 5.06,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.164,
+    "ftmi": 0.299,
+    "stl": 0.612,
+    "to": 0.985,
+    "ast": 1.567,
+    "blk": 0.179,
+    "tpm": 2.015,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 160.8,
+   "injury": null,
+   "yearsExp": 11,
+   "rank": 128,
+   "posRank": {
+    "PF": 52,
+    "C": 36
+   },
+   "flag": "fair",
+   "adpDelta": 32.8
+  },
+  {
+   "id": "1487",
+   "name": "Tobias Harris",
+   "pos": "PF",
+   "eligible": [
+    "PF"
+   ],
+   "team": "SAS",
+   "gp": 63,
+   "fppg": 26.3,
+   "total": 1656.3,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 0.873,
+    "pts": 13.27,
+    "dreb": 4.254,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.048,
+    "ftmi": 0.333,
+    "stl": 0.921,
+    "to": 1.0,
+    "ast": 2.492,
+    "blk": 0.413,
+    "tpm": 1.302,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 135.5,
+   "injury": "DTD",
+   "yearsExp": 15,
+   "rank": 129,
+   "posRank": {
+    "PF": 53
+   },
+   "flag": "fair",
+   "adpDelta": 6.5
+  },
+  {
+   "id": "2772",
+   "name": "Ajay Mitchell",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "OKC",
+   "gp": 57,
+   "fppg": 26.1,
+   "total": 1489.8,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 0.702,
+    "pts": 13.579,
+    "dreb": 2.632,
+    "bonus_ast_15p": 0.018,
+    "dd": 0.018,
+    "ftmi": 0.368,
+    "stl": 1.246,
+    "to": 1.421,
+    "ast": 3.614,
+    "blk": 0.316,
+    "tpm": 1.07,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 154.0,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 130,
+   "posRank": {
+    "PG": 46,
+    "SG": 59
+   },
+   "flag": "fair",
+   "adpDelta": 24.0
+  },
+  {
+   "id": "2474",
+   "name": "Moussa Diabaté",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "CHA",
+   "gp": 73,
+   "fppg": 26.0,
+   "total": 1899.8,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 3.74,
+    "pts": 7.877,
+    "dreb": 4.959,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.274,
+    "ftmi": 0.822,
+    "stl": 0.767,
+    "to": 1.0,
+    "ast": 1.932,
+    "blk": 0.986,
+    "tpm": 0.014,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 186.2,
+   "injury": "DTD",
+   "yearsExp": 4,
+   "rank": 131,
+   "posRank": {
+    "C": 37
+   },
+   "flag": "fair",
+   "adpDelta": 55.2
+  },
+  {
+   "id": "1082",
+   "name": "Draymond Green",
+   "pos": "PF",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "GSW",
+   "gp": 68,
+   "fppg": 25.9,
+   "total": 1764.1,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 0.809,
+    "pts": 8.382,
+    "dreb": 4.706,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.029,
+    "ftmi": 0.368,
+    "stl": 0.897,
+    "to": 2.662,
+    "ast": 5.529,
+    "blk": 0.618,
+    "tpm": 1.485,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 145.5,
+   "injury": null,
+   "yearsExp": 14,
+   "rank": 132,
+   "posRank": {
+    "PF": 54,
+    "C": 38
+   },
+   "flag": "fair",
+   "adpDelta": 13.5
+  },
+  {
+   "id": "2712",
+   "name": "Jaylon Tyson",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "CLE",
+   "gp": 66,
+   "fppg": 25.9,
+   "total": 1707.8,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 1.788,
+    "pts": 13.212,
+    "dreb": 3.333,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.106,
+    "ftmi": 0.424,
+    "stl": 0.818,
+    "to": 1.5,
+    "ast": 2.227,
+    "blk": 0.424,
+    "tpm": 2.015,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 243.3,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 133,
+   "posRank": {
+    "SG": 60,
+    "SF": 52,
+    "PF": 55
+   },
+   "flag": "underrated",
+   "adpDelta": 110.3
+  },
+  {
+   "id": "1718",
+   "name": "Jakob Poeltl",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "TOR",
+   "gp": 46,
+   "fppg": 25.9,
+   "total": 1192.5,
+   "stats": {
+    "bonus_pt_50p": 0.022,
+    "oreb": 2.478,
+    "pts": 10.717,
+    "dreb": 4.543,
+    "bonus_ast_15p": 0.022,
+    "dd": 0.152,
+    "ftmi": 0.848,
+    "stl": 0.87,
+    "to": 1.239,
+    "ast": 2.022,
+    "blk": 0.696,
+    "bonus_pt_40p": 0.022,
+    "bonus_reb_20p": 0.022
+   },
+   "adp": 118.2,
+   "injury": null,
+   "yearsExp": 10,
+   "rank": 134,
+   "posRank": {
+    "C": 39
+   },
+   "flag": "fair",
+   "adpDelta": -15.8
+  },
+  {
+   "id": "1595",
+   "name": "Myles Turner",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "MIL",
+   "gp": 71,
+   "fppg": 25.6,
+   "total": 1820.7,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.056,
+    "pts": 11.915,
+    "dreb": 4.268,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.056,
+    "ftmi": 0.648,
+    "stl": 0.704,
+    "to": 1.169,
+    "ast": 1.451,
+    "blk": 1.62,
+    "tpm": 2.07,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 80.5,
+   "injury": null,
+   "yearsExp": 11,
+   "rank": 135,
+   "posRank": {
+    "C": 40
+   },
+   "flag": "overrated",
+   "adpDelta": -54.5
+  },
+  {
+   "id": "2146",
+   "name": "Devin Vassell",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "SAS",
+   "gp": 67,
+   "fppg": 25.5,
+   "total": 1709.2,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 0.582,
+    "pts": 13.91,
+    "dreb": 3.433,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.015,
+    "ftmi": 0.358,
+    "stl": 0.851,
+    "to": 0.896,
+    "ast": 2.493,
+    "blk": 0.373,
+    "tpm": 2.478,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 97.1,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 136,
+   "posRank": {
+    "SG": 61,
+    "SF": 53
+   },
+   "flag": "fair",
+   "adpDelta": -38.9
+  },
+  {
+   "id": "2565",
+   "name": "Bilal Coulibaly",
+   "pos": "SF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "WAS",
+   "gp": 56,
+   "fppg": 25.4,
+   "total": 1420.1,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 0.857,
+    "pts": 11.732,
+    "dreb": 3.482,
+    "bonus_ast_15p": 0.018,
+    "ftmi": 0.804,
+    "stl": 1.339,
+    "to": 1.446,
+    "ast": 2.589,
+    "blk": 0.964,
+    "tpm": 1.161,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 183.0,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 137,
+   "posRank": {
+    "SF": 54,
+    "PF": 56
+   },
+   "flag": "fair",
+   "adpDelta": 46.0
+  },
+  {
+   "id": "1892",
+   "name": "Collin Sexton",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "LAL",
+   "gp": 68,
+   "fppg": 25.3,
+   "total": 1719.0,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 0.603,
+    "pts": 15.441,
+    "dreb": 1.676,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.015,
+    "ftmi": 0.544,
+    "stl": 1.118,
+    "to": 2.074,
+    "ast": 3.279,
+    "blk": 0.147,
+    "tpm": 1.647,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 168.5,
+   "injury": "DTD",
+   "yearsExp": 8,
+   "rank": 138,
+   "posRank": {
+    "PG": 47,
+    "SG": 62
+   },
+   "flag": "fair",
+   "adpDelta": 30.5
+  },
+  {
+   "id": "2620",
+   "name": "Scoot Henderson",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "POR",
+   "gp": 30,
+   "fppg": 25.2,
+   "total": 754.9,
+   "stats": {
+    "bonus_pt_50p": 0.033,
+    "oreb": 0.6,
+    "pts": 14.233,
+    "dreb": 2.067,
+    "bonus_ast_15p": 0.033,
+    "ftmi": 0.533,
+    "stl": 0.9,
+    "to": 2.433,
+    "ast": 3.733,
+    "blk": 0.3,
+    "tpm": 1.9,
+    "bonus_pt_40p": 0.033,
+    "bonus_reb_20p": 0.033
+   },
+   "adp": 150.7,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 139,
+   "posRank": {
+    "PG": 48
+   },
+   "flag": "fair",
+   "adpDelta": 11.7
+  },
+  {
+   "id": "2258",
+   "name": "Quentin Grimes",
+   "pos": "PG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "LAL",
+   "gp": 75,
+   "fppg": 25.0,
+   "total": 1876.1,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.613,
+    "pts": 13.413,
+    "dreb": 3.027,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.027,
+    "ftmi": 0.507,
+    "stl": 0.853,
+    "to": 1.773,
+    "ast": 3.253,
+    "blk": 0.373,
+    "tpm": 1.693,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 155.2,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 140,
+   "posRank": {
+    "SG": 63,
+    "SF": 55
+   },
+   "flag": "fair",
+   "adpDelta": 15.2
+  },
+  {
+   "id": "4758",
+   "name": "Ace Bailey",
+   "pos": "SF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "UTA",
+   "gp": 72,
+   "fppg": 25.0,
+   "total": 1797.5,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.444,
+    "pts": 13.792,
+    "dreb": 2.75,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.014,
+    "ftmi": 0.306,
+    "stl": 0.833,
+    "to": 1.486,
+    "ast": 1.819,
+    "blk": 0.681,
+    "tpm": 1.903,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 130.6,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 141,
+   "posRank": {
+    "SF": 56,
+    "PF": 57
+   },
+   "flag": "fair",
+   "adpDelta": -10.4
+  },
+  {
+   "id": "1809",
+   "name": "John Collins",
+   "pos": "PF",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "DET",
+   "gp": 69,
+   "fppg": 25.0,
+   "total": 1727.7,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.594,
+    "pts": 13.551,
+    "dreb": 3.725,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.043,
+    "ftmi": 0.522,
+    "stl": 0.87,
+    "to": 1.377,
+    "ast": 1.014,
+    "blk": 0.739,
+    "tpm": 1.29,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 114.0,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": 142,
+   "posRank": {
+    "PF": 58,
+    "C": 41
+   },
+   "flag": "fair",
+   "adpDelta": -28.0
+  },
+  {
+   "id": "2752",
+   "name": "Cam Spencer",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG",
+    "SF"
+   ],
+   "team": "MEM",
+   "gp": 72,
+   "fppg": 24.6,
+   "total": 1773.2,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.556,
+    "pts": 11.083,
+    "dreb": 1.986,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.083,
+    "ftmi": 0.111,
+    "stl": 0.722,
+    "to": 1.292,
+    "ast": 5.556,
+    "blk": 0.153,
+    "tpm": 2.028,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 273.4,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 143,
+   "posRank": {
+    "PG": 49,
+    "SG": 64,
+    "SF": 57
+   },
+   "flag": "underrated",
+   "adpDelta": 130.4
+  },
+  {
+   "id": "2301",
+   "name": "Davion Mitchell",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "MIA",
+   "gp": 70,
+   "fppg": 24.5,
+   "total": 1713.5,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.457,
+    "pts": 9.343,
+    "dreb": 2.2,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.071,
+    "ftmi": 0.329,
+    "stl": 0.971,
+    "to": 1.543,
+    "ast": 6.471,
+    "blk": 0.157,
+    "tpm": 1.286,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 231.6,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 144,
+   "posRank": {
+    "PG": 50
+   },
+   "flag": "underrated",
+   "adpDelta": 87.6
+  },
+  {
+   "id": "1799",
+   "name": "Kyle Kuzma",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "MIL",
+   "gp": 69,
+   "fppg": 24.5,
+   "total": 1688.7,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.826,
+    "pts": 12.986,
+    "dreb": 3.71,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.058,
+    "ftmi": 0.739,
+    "stl": 0.667,
+    "to": 1.725,
+    "ast": 2.667,
+    "blk": 0.406,
+    "tpm": 1.203,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 156.2,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": 145,
+   "posRank": {
+    "SF": 58,
+    "PF": 59
+   },
+   "flag": "fair",
+   "adpDelta": 11.2
+  },
+  {
+   "id": "2447",
+   "name": "Tari Eason",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "HOU",
+   "gp": 60,
+   "fppg": 24.4,
+   "total": 1464.1,
+   "stats": {
+    "bonus_pt_50p": 0.017,
+    "oreb": 2.067,
+    "pts": 10.45,
+    "dreb": 4.2,
+    "bonus_ast_15p": 0.017,
+    "dd": 0.1,
+    "ftmi": 0.25,
+    "stl": 1.2,
+    "to": 1.35,
+    "ast": 1.5,
+    "blk": 0.467,
+    "tpm": 1.55,
+    "bonus_pt_40p": 0.017,
+    "bonus_reb_20p": 0.017
+   },
+   "adp": 111.2,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 146,
+   "posRank": {
+    "SG": 65,
+    "SF": 59
+   },
+   "flag": "fair",
+   "adpDelta": -34.8
+  },
+  {
+   "id": "2144",
+   "name": "Aaron Nesmith",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "IND",
+   "gp": 45,
+   "fppg": 24.3,
+   "total": 1093.2,
+   "stats": {
+    "bonus_pt_50p": 0.022,
+    "oreb": 1.067,
+    "pts": 13.8,
+    "dreb": 3.089,
+    "bonus_ast_15p": 0.022,
+    "ftmi": 0.422,
+    "stl": 0.578,
+    "to": 1.4,
+    "ast": 1.911,
+    "blk": 0.511,
+    "tpm": 2.333,
+    "bonus_pt_40p": 0.022,
+    "bonus_reb_20p": 0.022
+   },
+   "adp": 149.5,
+   "injury": "DTD",
+   "yearsExp": 6,
+   "rank": 147,
+   "posRank": {
+    "SG": 66,
+    "SF": 60
+   },
+   "flag": "fair",
+   "adpDelta": 2.5
+  },
+  {
+   "id": "2152",
+   "name": "Precious Achiuwa",
+   "pos": "PF",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "SAC",
+   "gp": 73,
+   "fppg": 24.2,
+   "total": 1765.8,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 2.425,
+    "pts": 10.082,
+    "dreb": 4.315,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.164,
+    "ftmi": 0.849,
+    "stl": 0.89,
+    "to": 0.89,
+    "ast": 1.384,
+    "blk": 0.685,
+    "tpm": 0.37,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 309.7,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 148,
+   "posRank": {
+    "PF": 60,
+    "C": 42
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 161.7
+  },
+  {
+   "id": "2306",
+   "name": "Jonathan Kuminga",
+   "pos": "PF",
+   "eligible": [
+    "PF"
+   ],
+   "team": "MIN",
+   "gp": 36,
+   "fppg": 24.2,
+   "total": 870.4,
+   "stats": {
+    "bonus_pt_50p": 0.028,
+    "oreb": 1.361,
+    "pts": 12.167,
+    "dreb": 4.25,
+    "bonus_ast_15p": 0.028,
+    "dd": 0.028,
+    "ftmi": 0.944,
+    "stl": 0.611,
+    "to": 1.861,
+    "ast": 2.306,
+    "blk": 0.306,
+    "tpm": 0.972,
+    "bonus_pt_40p": 0.028,
+    "bonus_reb_20p": 0.028
+   },
+   "adp": 198.5,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 149,
+   "posRank": {
+    "PF": 61
+   },
+   "flag": "fair",
+   "adpDelta": 49.5
+  },
+  {
+   "id": "2397",
+   "name": "Brandon Williams",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "GSW",
+   "gp": 66,
+   "fppg": 24.1,
+   "total": 1591.8,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 0.455,
+    "pts": 13.015,
+    "dreb": 2.439,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.015,
+    "ftmi": 0.955,
+    "stl": 0.939,
+    "to": 1.894,
+    "ast": 3.879,
+    "blk": 0.303,
+    "tpm": 0.545,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 343.3,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 150,
+   "posRank": {
+    "PG": 51
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 193.3
+  },
+  {
+   "id": "2457",
+   "name": "Christian Braun",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "DEN",
+   "gp": 44,
+   "fppg": 24.1,
+   "total": 1062.1,
+   "stats": {
+    "bonus_pt_50p": 0.023,
+    "oreb": 1.386,
+    "pts": 11.955,
+    "dreb": 3.409,
+    "bonus_ast_15p": 0.023,
+    "ftmi": 0.5,
+    "stl": 0.682,
+    "to": 0.977,
+    "ast": 2.727,
+    "blk": 0.273,
+    "tpm": 0.977,
+    "bonus_pt_40p": 0.023,
+    "bonus_reb_20p": 0.023
+   },
+   "adp": 116.0,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 151,
+   "posRank": {
+    "SG": 67,
+    "SF": 61
+   },
+   "flag": "fair",
+   "adpDelta": -35.0
+  },
+  {
+   "id": "1997",
+   "name": "Daniel Gafford",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "DAL",
+   "gp": 55,
+   "fppg": 24.0,
+   "total": 1322.7,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 2.509,
+    "pts": 9.527,
+    "dreb": 4.364,
+    "bonus_ast_15p": 0.018,
+    "dd": 0.182,
+    "ftmi": 0.927,
+    "stl": 0.764,
+    "to": 1.145,
+    "ast": 1.055,
+    "blk": 1.255,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 158.2,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 152,
+   "posRank": {
+    "C": 43
+   },
+   "flag": "fair",
+   "adpDelta": 6.2
+  },
+  {
+   "id": "2563",
+   "name": "Jarace Walker",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "IND",
+   "gp": 76,
+   "fppg": 23.9,
+   "total": 1816.4,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.645,
+    "pts": 11.632,
+    "dreb": 4.5,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.039,
+    "ftmi": 0.605,
+    "stl": 0.829,
+    "to": 1.829,
+    "ast": 2.526,
+    "blk": 0.342,
+    "tpm": 1.75,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 329.4,
+   "injury": "DTD",
+   "yearsExp": 3,
+   "rank": 153,
+   "posRank": {
+    "SF": 62,
+    "PF": 62
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 176.4
+  },
+  {
+   "id": "4754",
+   "name": "Dylan Harper",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "SAS",
+   "gp": 69,
+   "fppg": 23.8,
+   "total": 1641.0,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.783,
+    "pts": 11.783,
+    "dreb": 2.609,
+    "bonus_ast_15p": 0.014,
+    "ftmi": 0.42,
+    "stl": 0.783,
+    "to": 1.435,
+    "ast": 3.855,
+    "blk": 0.348,
+    "tpm": 0.884,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 69.5,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 154,
+   "posRank": {
+    "PG": 52,
+    "SG": 68
+   },
+   "flag": "severely-overrated",
+   "adpDelta": -84.5
+  },
+  {
+   "id": "1972",
+   "name": "De'Anthony Melton",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "GSW",
+   "gp": 49,
+   "fppg": 23.8,
+   "total": 1167.1,
+   "stats": {
+    "bonus_pt_50p": 0.02,
+    "oreb": 0.796,
+    "pts": 12.286,
+    "dreb": 2.429,
+    "bonus_ast_15p": 0.02,
+    "ftmi": 0.429,
+    "stl": 1.571,
+    "to": 1.857,
+    "ast": 2.551,
+    "blk": 0.408,
+    "tpm": 1.469,
+    "bonus_pt_40p": 0.02,
+    "bonus_reb_20p": 0.02
+   },
+   "adp": 181.7,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 155,
+   "posRank": {
+    "PG": 53,
+    "SG": 69
+   },
+   "flag": "fair",
+   "adpDelta": 26.7
+  },
+  {
+   "id": "2494",
+   "name": "Julian Champagnie",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "SAS",
+   "gp": 82,
+   "fppg": 23.7,
+   "total": 1943.3,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 0.902,
+    "pts": 11.11,
+    "dreb": 4.866,
+    "bonus_ast_15p": 0.012,
+    "dd": 0.085,
+    "ftmi": 0.256,
+    "stl": 0.756,
+    "to": 0.841,
+    "ast": 1.549,
+    "blk": 0.463,
+    "tpm": 2.378,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012
+   },
+   "adp": 205.7,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 156,
+   "posRank": {
+    "SG": 70,
+    "SF": 63,
+    "PF": 63
+   },
+   "flag": "fair",
+   "adpDelta": 49.7
+  },
+  {
+   "id": "2065",
+   "name": "Keldon Johnson",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "SAS",
+   "gp": 82,
+   "fppg": 23.7,
+   "total": 1943.2,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 1.671,
+    "pts": 13.183,
+    "dreb": 3.695,
+    "bonus_ast_15p": 0.012,
+    "dd": 0.061,
+    "ftmi": 0.488,
+    "stl": 0.561,
+    "to": 0.854,
+    "ast": 1.354,
+    "blk": 0.134,
+    "tpm": 1.207,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012
+   },
+   "adp": 201.1,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 157,
+   "posRank": {
+    "SF": 64,
+    "PF": 64
+   },
+   "flag": "fair",
+   "adpDelta": 44.1
+  },
+  {
+   "id": "2156",
+   "name": "Jalen Smith",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "CHI",
+   "gp": 53,
+   "fppg": 23.7,
+   "total": 1253.9,
+   "stats": {
+    "bonus_pt_50p": 0.019,
+    "oreb": 1.849,
+    "pts": 10.208,
+    "dreb": 4.849,
+    "bonus_ast_15p": 0.019,
+    "dd": 0.17,
+    "ftmi": 0.453,
+    "stl": 0.453,
+    "to": 1.0,
+    "ast": 1.226,
+    "blk": 0.792,
+    "tpm": 1.547,
+    "bonus_pt_40p": 0.019,
+    "bonus_reb_20p": 0.019
+   },
+   "adp": 211.8,
+   "injury": null,
+   "yearsExp": 6,
+   "rank": 158,
+   "posRank": {
+    "PF": 65,
+    "C": 44
+   },
+   "flag": "fair",
+   "adpDelta": 53.8
+  },
+  {
+   "id": "2275",
+   "name": "Day'Ron Sharpe",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "BKN",
+   "gp": 62,
+   "fppg": 23.5,
+   "total": 1456.6,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 2.758,
+    "pts": 8.71,
+    "dreb": 3.903,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.081,
+    "ftmi": 0.79,
+    "stl": 1.081,
+    "to": 1.71,
+    "ast": 2.339,
+    "blk": 0.419,
+    "tpm": 0.145,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 224.4,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 159,
+   "posRank": {
+    "C": 45
+   },
+   "flag": "fair",
+   "adpDelta": 65.4
+  },
+  {
+   "id": "2091",
+   "name": "Cameron Johnson",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "DEN",
+   "gp": 54,
+   "fppg": 23.3,
+   "total": 1259.7,
+   "stats": {
+    "bonus_pt_50p": 0.019,
+    "oreb": 0.796,
+    "pts": 12.222,
+    "dreb": 3.019,
+    "bonus_ast_15p": 0.019,
+    "dd": 0.019,
+    "ftmi": 0.333,
+    "stl": 0.741,
+    "to": 0.87,
+    "ast": 2.444,
+    "blk": 0.389,
+    "tpm": 2.037,
+    "bonus_pt_40p": 0.019,
+    "bonus_reb_20p": 0.019
+   },
+   "adp": 123.3,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 160,
+   "posRank": {
+    "SG": 71,
+    "SF": 65,
+    "PF": 66
+   },
+   "flag": "fair",
+   "adpDelta": -36.7
+  },
+  {
+   "id": "2050",
+   "name": "De'Andre Hunter",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "SAC",
+   "gp": 45,
+   "fppg": 23.3,
+   "total": 1046.6,
+   "stats": {
+    "bonus_pt_50p": 0.022,
+    "oreb": 0.667,
+    "pts": 13.667,
+    "dreb": 3.444,
+    "bonus_ast_15p": 0.022,
+    "ftmi": 0.422,
+    "stl": 0.667,
+    "to": 1.667,
+    "ast": 2.0,
+    "blk": 0.133,
+    "tpm": 1.667,
+    "bonus_pt_40p": 0.022,
+    "bonus_reb_20p": 0.022
+   },
+   "adp": 174.4,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 161,
+   "posRank": {
+    "SF": 66,
+    "PF": 67
+   },
+   "flag": "fair",
+   "adpDelta": 13.4
+  },
+  {
+   "id": "2581",
+   "name": "Brice Sensabaugh",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "UTA",
+   "gp": 75,
+   "fppg": 23.2,
+   "total": 1743.0,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.747,
+    "pts": 14.88,
+    "dreb": 2.333,
+    "bonus_ast_15p": 0.013,
+    "ftmi": 0.467,
+    "stl": 0.72,
+    "to": 1.653,
+    "ast": 1.907,
+    "blk": 0.16,
+    "tpm": 2.16,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 348.4,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 162,
+   "posRank": {
+    "SG": 72,
+    "SF": 67,
+    "PF": 68
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 186.4
+  },
+  {
+   "id": "1841",
+   "name": "Royce O'Neale",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "CHA",
+   "gp": 78,
+   "fppg": 23.1,
+   "total": 1801.8,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.756,
+    "pts": 9.808,
+    "dreb": 4.013,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.026,
+    "ftmi": 0.141,
+    "stl": 1.077,
+    "to": 1.321,
+    "ast": 2.667,
+    "blk": 0.41,
+    "tpm": 2.718,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 298.8,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": 163,
+   "posRank": {
+    "SF": 68,
+    "PF": 69
+   },
+   "flag": "underrated",
+   "adpDelta": 135.8
+  },
+  {
+   "id": "2296",
+   "name": "Sandro Mamukelashvili",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "LAL",
+   "gp": 80,
+   "fppg": 23.1,
+   "total": 1849.4,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 1.35,
+    "pts": 11.162,
+    "dreb": 3.587,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.037,
+    "ftmi": 0.5,
+    "stl": 0.8,
+    "to": 0.838,
+    "ast": 1.887,
+    "blk": 0.512,
+    "tpm": 1.438,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 200.7,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 164,
+   "posRank": {
+    "PF": 70,
+    "C": 46
+   },
+   "flag": "fair",
+   "adpDelta": 36.7
+  },
+  {
+   "id": "2715",
+   "name": "Bub Carrington",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "WAS",
+   "gp": 82,
+   "fppg": 23.0,
+   "total": 1888.2,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 0.402,
+    "pts": 10.707,
+    "dreb": 2.963,
+    "bonus_ast_15p": 0.012,
+    "ftmi": 0.366,
+    "stl": 0.634,
+    "to": 2.329,
+    "ast": 4.646,
+    "blk": 0.207,
+    "tpm": 2.061,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012
+   },
+   "adp": 256.6,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 165,
+   "posRank": {
+    "PG": 54,
+    "SG": 73
+   },
+   "flag": "underrated",
+   "adpDelta": 91.6
+  },
+  {
+   "id": "2317",
+   "name": "Jock Landale",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "ATL",
+   "gp": 68,
+   "fppg": 23.0,
+   "total": 1564.5,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 2.691,
+    "pts": 10.559,
+    "dreb": 3.0,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.132,
+    "ftmi": 0.676,
+    "stl": 0.515,
+    "to": 0.882,
+    "ast": 1.691,
+    "blk": 0.529,
+    "tpm": 1.088,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 585.1,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 166,
+   "posRank": {
+    "C": 47
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 419.1
+  },
+  {
+   "id": "1254",
+   "name": "Dennis Schröder",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "CHA",
+   "gp": 70,
+   "fppg": 23.0,
+   "total": 1607.5,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.471,
+    "pts": 10.8,
+    "dreb": 2.243,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.043,
+    "ftmi": 0.486,
+    "stl": 0.786,
+    "to": 1.771,
+    "ast": 4.871,
+    "blk": 0.157,
+    "tpm": 1.071,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 189.3,
+   "injury": null,
+   "yearsExp": 13,
+   "rank": 167,
+   "posRank": {
+    "PG": 55,
+    "SG": 74
+   },
+   "flag": "fair",
+   "adpDelta": 22.3
+  },
+  {
+   "id": "1887",
+   "name": "Mitchell Robinson",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "BOS",
+   "gp": 60,
+   "fppg": 22.9,
+   "total": 1371.9,
+   "stats": {
+    "bonus_pt_50p": 0.017,
+    "oreb": 4.2,
+    "pts": 5.667,
+    "dreb": 4.55,
+    "bonus_ast_15p": 0.017,
+    "dd": 0.1,
+    "ftmi": 1.017,
+    "stl": 0.933,
+    "to": 0.683,
+    "ast": 0.867,
+    "blk": 1.167,
+    "bonus_pt_40p": 0.017,
+    "bonus_reb_20p": 0.017
+   },
+   "adp": 192.6,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 168,
+   "posRank": {
+    "C": 48
+   },
+   "flag": "fair",
+   "adpDelta": 24.6
+  },
+  {
+   "id": "1986",
+   "name": "Marvin Bagley",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "DEN",
+   "gp": 60,
+   "fppg": 22.9,
+   "total": 1374.1,
+   "stats": {
+    "bonus_pt_50p": 0.017,
+    "oreb": 2.5,
+    "pts": 10.45,
+    "dreb": 3.6,
+    "bonus_ast_15p": 0.017,
+    "dd": 0.1,
+    "ftmi": 0.817,
+    "stl": 0.467,
+    "to": 1.017,
+    "ast": 1.417,
+    "blk": 0.717,
+    "tpm": 0.4,
+    "bonus_pt_40p": 0.017,
+    "bonus_reb_20p": 0.017
+   },
+   "adp": 506.6,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 169,
+   "posRank": {
+    "C": 49
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 337.6
+  },
+  {
+   "id": "2571",
+   "name": "Noah Clowney",
+   "pos": "PF",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "BKN",
+   "gp": 66,
+   "fppg": 22.7,
+   "total": 1494.9,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 0.788,
+    "pts": 12.258,
+    "dreb": 3.348,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.015,
+    "ftmi": 0.667,
+    "stl": 0.758,
+    "to": 1.545,
+    "ast": 1.636,
+    "blk": 0.682,
+    "tpm": 1.955,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 292.6,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 170,
+   "posRank": {
+    "PF": 71,
+    "C": 50
+   },
+   "flag": "underrated",
+   "adpDelta": 122.6
+  },
+  {
+   "id": "1131",
+   "name": "Andre Drummond",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "NYK",
+   "gp": 63,
+   "fppg": 22.6,
+   "total": 1424.5,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 3.175,
+    "pts": 6.397,
+    "dreb": 5.27,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.27,
+    "ftmi": 0.492,
+    "stl": 0.603,
+    "to": 0.968,
+    "ast": 1.27,
+    "blk": 0.778,
+    "tpm": 0.508,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 422.6,
+   "injury": null,
+   "yearsExp": 14,
+   "rank": 171,
+   "posRank": {
+    "C": 51
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 251.6
+  },
+  {
+   "id": "1983",
+   "name": "Anfernee Simons",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "PHI",
+   "gp": 55,
+   "fppg": 22.6,
+   "total": 1243.3,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 0.564,
+    "pts": 14.273,
+    "dreb": 1.891,
+    "bonus_ast_15p": 0.018,
+    "ftmi": 0.145,
+    "stl": 0.491,
+    "to": 1.236,
+    "ast": 2.436,
+    "blk": 0.145,
+    "tpm": 2.655,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 126.3,
+   "injury": "DTD",
+   "yearsExp": 8,
+   "rank": 172,
+   "posRank": {
+    "PG": 56,
+    "SG": 75
+   },
+   "flag": "fair",
+   "adpDelta": -45.7
+  },
+  {
+   "id": "2603",
+   "name": "GG Jackson",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "MEM",
+   "gp": 55,
+   "fppg": 22.5,
+   "total": 1237.1,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 0.891,
+    "pts": 12.473,
+    "dreb": 3.382,
+    "bonus_ast_15p": 0.018,
+    "dd": 0.018,
+    "ftmi": 0.709,
+    "stl": 0.564,
+    "to": 1.545,
+    "ast": 1.473,
+    "blk": 0.8,
+    "tpm": 1.164,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 328.5,
+   "injury": "DTD",
+   "yearsExp": 3,
+   "rank": 173,
+   "posRank": {
+    "SF": 69,
+    "PF": 72
+   },
+   "flag": "underrated",
+   "adpDelta": 155.5
+  },
+  {
+   "id": "2768",
+   "name": "Pelle Larsson",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "MIA",
+   "gp": 70,
+   "fppg": 22.4,
+   "total": 1568.6,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.986,
+    "pts": 11.429,
+    "dreb": 2.5,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.014,
+    "ftmi": 0.671,
+    "stl": 0.7,
+    "to": 1.443,
+    "ast": 3.371,
+    "blk": 0.229,
+    "tpm": 0.886,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 257.8,
+   "injury": "DTD",
+   "yearsExp": 2,
+   "rank": 174,
+   "posRank": {
+    "SG": 76,
+    "SF": 70
+   },
+   "flag": "fair",
+   "adpDelta": 83.8
+  },
+  {
+   "id": "2012",
+   "name": "Jordan Poole",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "NOP",
+   "gp": 39,
+   "fppg": 22.3,
+   "total": 870.4,
+   "stats": {
+    "bonus_pt_50p": 0.026,
+    "oreb": 0.231,
+    "pts": 13.436,
+    "dreb": 1.744,
+    "bonus_ast_15p": 0.026,
+    "ftmi": 0.41,
+    "stl": 0.564,
+    "to": 1.769,
+    "ast": 3.051,
+    "blk": 0.385,
+    "tpm": 2.462,
+    "bonus_pt_40p": 0.026,
+    "bonus_reb_20p": 0.026
+   },
+   "adp": 142.8,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 175,
+   "posRank": {
+    "PG": 57,
+    "SG": 77
+   },
+   "flag": "fair",
+   "adpDelta": -32.2
+  },
+  {
+   "id": "1432",
+   "name": "Steven Adams",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "HOU",
+   "gp": 32,
+   "fppg": 22.3,
+   "total": 712.5,
+   "stats": {
+    "bonus_pt_50p": 0.031,
+    "oreb": 4.531,
+    "pts": 5.844,
+    "dreb": 4.094,
+    "bonus_ast_15p": 0.031,
+    "dd": 0.094,
+    "ftmi": 1.062,
+    "stl": 0.688,
+    "to": 1.094,
+    "ast": 1.5,
+    "blk": 0.625,
+    "bonus_pt_40p": 0.031,
+    "bonus_reb_20p": 0.031
+   },
+   "adp": 428.7,
+   "injury": null,
+   "yearsExp": 13,
+   "rank": 176,
+   "posRank": {
+    "C": 52
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 252.7
+  },
+  {
+   "id": "2262",
+   "name": "Moses Moody",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "GSW",
+   "gp": 60,
+   "fppg": 22.2,
+   "total": 1333.7,
+   "stats": {
+    "bonus_pt_50p": 0.017,
+    "oreb": 0.85,
+    "pts": 12.133,
+    "dreb": 2.483,
+    "bonus_ast_15p": 0.017,
+    "ftmi": 0.433,
+    "stl": 0.967,
+    "to": 0.95,
+    "ast": 1.633,
+    "blk": 0.567,
+    "tpm": 2.517,
+    "bonus_pt_40p": 0.017,
+    "bonus_reb_20p": 0.017
+   },
+   "adp": 354.3,
+   "injury": "Out",
+   "yearsExp": 5,
+   "rank": 177,
+   "posRank": {
+    "SG": 78,
+    "SF": 71,
+    "PF": 73
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 177.3
+  },
+  {
+   "id": "1257",
+   "name": "Al Horford",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "GSW",
+   "gp": 45,
+   "fppg": 22.2,
+   "total": 999.9,
+   "stats": {
+    "bonus_pt_50p": 0.022,
+    "oreb": 0.978,
+    "pts": 8.267,
+    "dreb": 3.889,
+    "bonus_ast_15p": 0.022,
+    "ftmi": 0.089,
+    "stl": 0.667,
+    "to": 0.933,
+    "ast": 2.578,
+    "blk": 1.133,
+    "tpm": 1.644,
+    "bonus_pt_40p": 0.022,
+    "bonus_reb_20p": 0.022
+   },
+   "adp": 310.6,
+   "injury": null,
+   "yearsExp": 19,
+   "rank": 178,
+   "posRank": {
+    "PF": 74,
+    "C": 53
+   },
+   "flag": "underrated",
+   "adpDelta": 132.6
+  },
+  {
+   "id": "2341",
+   "name": "Jordan Goodwin",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "PHX",
+   "gp": 70,
+   "fppg": 22.0,
+   "total": 1539.4,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 1.971,
+    "pts": 8.7,
+    "dreb": 2.9,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.029,
+    "ftmi": 0.243,
+    "stl": 1.514,
+    "to": 0.971,
+    "ast": 2.157,
+    "blk": 0.2,
+    "tpm": 1.6,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 275.7,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 179,
+   "posRank": {
+    "SG": 79,
+    "SF": 72
+   },
+   "flag": "underrated",
+   "adpDelta": 96.7
+  },
+  {
+   "id": "1602",
+   "name": "T.J. McConnell",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "IND",
+   "gp": 56,
+   "fppg": 22.0,
+   "total": 1231.8,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 0.393,
+    "pts": 9.375,
+    "dreb": 1.821,
+    "bonus_ast_15p": 0.018,
+    "dd": 0.018,
+    "ftmi": 0.071,
+    "stl": 1.0,
+    "to": 1.143,
+    "ast": 5.125,
+    "blk": 0.179,
+    "tpm": 0.286,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 307.0,
+   "injury": "DTD",
+   "yearsExp": 11,
+   "rank": 180,
+   "posRank": {
+    "PG": 58
+   },
+   "flag": "underrated",
+   "adpDelta": 127.0
+  },
+  {
+   "id": "4807",
+   "name": "Dylan Cardwell",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "SAC",
+   "gp": 44,
+   "fppg": 22.0,
+   "total": 966.7,
+   "stats": {
+    "bonus_pt_50p": 0.023,
+    "oreb": 3.341,
+    "pts": 5.409,
+    "dreb": 4.205,
+    "bonus_ast_15p": 0.023,
+    "dd": 0.068,
+    "ftmi": 0.568,
+    "stl": 0.682,
+    "to": 0.886,
+    "ast": 1.409,
+    "blk": 1.523,
+    "tpm": 0.045,
+    "bonus_pt_40p": 0.023,
+    "bonus_reb_20p": 0.023
+   },
+   "adp": 259.7,
+   "injury": "Out",
+   "yearsExp": 1,
+   "rank": 181,
+   "posRank": {
+    "PF": 75,
+    "C": 54
+   },
+   "flag": "fair",
+   "adpDelta": 78.7
+  },
+  {
+   "id": "2159",
+   "name": "Isaiah Stewart",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "MEM",
+   "gp": 58,
+   "fppg": 21.8,
+   "total": 1265.2,
+   "stats": {
+    "bonus_pt_50p": 0.017,
+    "oreb": 1.655,
+    "pts": 10.017,
+    "dreb": 3.345,
+    "bonus_ast_15p": 0.017,
+    "dd": 0.034,
+    "ftmi": 0.552,
+    "stl": 0.276,
+    "to": 1.155,
+    "ast": 1.138,
+    "blk": 1.603,
+    "tpm": 0.69,
+    "bonus_pt_40p": 0.017,
+    "bonus_reb_20p": 0.017
+   },
+   "adp": 206.2,
+   "injury": "Out",
+   "yearsExp": 6,
+   "rank": 182,
+   "posRank": {
+    "PF": 76,
+    "C": 55
+   },
+   "flag": "fair",
+   "adpDelta": 24.2
+  },
+  {
+   "id": "2139",
+   "name": "Sam Merrill",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "CLE",
+   "gp": 52,
+   "fppg": 21.8,
+   "total": 1131.8,
+   "stats": {
+    "bonus_pt_50p": 0.019,
+    "oreb": 0.538,
+    "pts": 12.75,
+    "dreb": 2.019,
+    "bonus_ast_15p": 0.019,
+    "dd": 0.019,
+    "ftmi": 0.192,
+    "stl": 0.635,
+    "to": 0.808,
+    "ast": 2.404,
+    "blk": 0.135,
+    "tpm": 3.038,
+    "bonus_pt_40p": 0.019,
+    "bonus_reb_20p": 0.019
+   },
+   "adp": 230.6,
+   "injury": "DTD",
+   "yearsExp": 6,
+   "rank": 183,
+   "posRank": {
+    "SG": 80,
+    "SF": 73
+   },
+   "flag": "fair",
+   "adpDelta": 47.6
+  },
+  {
+   "id": "2256",
+   "name": "Miles McBride",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "NYK",
+   "gp": 41,
+   "fppg": 21.7,
+   "total": 888.1,
+   "stats": {
+    "bonus_pt_50p": 0.024,
+    "oreb": 0.585,
+    "pts": 11.976,
+    "dreb": 1.854,
+    "bonus_ast_15p": 0.024,
+    "ftmi": 0.244,
+    "stl": 0.854,
+    "to": 0.805,
+    "ast": 2.585,
+    "blk": 0.22,
+    "tpm": 2.732,
+    "bonus_pt_40p": 0.024,
+    "bonus_reb_20p": 0.024
+   },
+   "adp": 225.6,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 184,
+   "posRank": {
+    "PG": 59,
+    "SG": 81
+   },
+   "flag": "fair",
+   "adpDelta": 41.6
+  },
+  {
+   "id": "2335",
+   "name": "Jay Huff",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "IND",
+   "gp": 82,
+   "fppg": 21.6,
+   "total": 1774.7,
+   "stats": {
+    "bonus_pt_50p": 0.012,
+    "oreb": 0.89,
+    "pts": 9.549,
+    "dreb": 3.061,
+    "bonus_ast_15p": 0.012,
+    "dd": 0.012,
+    "ftmi": 0.207,
+    "stl": 0.5,
+    "to": 0.927,
+    "ast": 1.476,
+    "blk": 1.866,
+    "tpm": 1.451,
+    "bonus_pt_40p": 0.012,
+    "bonus_reb_20p": 0.012
+   },
+   "adp": 263.1,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 185,
+   "posRank": {
+    "C": 56
+   },
+   "flag": "fair",
+   "adpDelta": 78.1
+  },
+  {
+   "id": "1950",
+   "name": "Robert Williams",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "POR",
+   "gp": 59,
+   "fppg": 21.6,
+   "total": 1276.3,
+   "stats": {
+    "bonus_pt_50p": 0.017,
+    "oreb": 2.39,
+    "pts": 6.729,
+    "dreb": 4.644,
+    "bonus_ast_15p": 0.017,
+    "dd": 0.085,
+    "ftmi": 0.39,
+    "stl": 0.593,
+    "to": 0.831,
+    "ast": 1.017,
+    "blk": 1.475,
+    "tpm": 0.153,
+    "bonus_pt_40p": 0.017,
+    "bonus_reb_20p": 0.017
+   },
+   "adp": 151.6,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 186,
+   "posRank": {
+    "C": 57
+   },
+   "flag": "fair",
+   "adpDelta": -34.4
+  },
+  {
+   "id": "4744",
+   "name": "Egor Dëmin",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "BKN",
+   "gp": 52,
+   "fppg": 21.6,
+   "total": 1122.3,
+   "stats": {
+    "bonus_pt_50p": 0.019,
+    "oreb": 0.404,
+    "pts": 10.308,
+    "dreb": 2.769,
+    "bonus_ast_15p": 0.019,
+    "dd": 0.019,
+    "ftmi": 0.212,
+    "stl": 0.808,
+    "to": 1.654,
+    "ast": 3.327,
+    "blk": 0.327,
+    "tpm": 2.385,
+    "bonus_pt_40p": 0.019,
+    "bonus_reb_20p": 0.019
+   },
+   "adp": 179.7,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 187,
+   "posRank": {
+    "PG": 60,
+    "SG": 82
+   },
+   "flag": "fair",
+   "adpDelta": -7.3
+  },
+  {
+   "id": "4755",
+   "name": "Collin Murray-Boyles",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "TOR",
+   "gp": 57,
+   "fppg": 21.5,
+   "total": 1224.3,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 2.333,
+    "pts": 8.491,
+    "dreb": 2.667,
+    "bonus_ast_15p": 0.018,
+    "dd": 0.07,
+    "ftmi": 0.649,
+    "stl": 0.912,
+    "to": 1.035,
+    "ast": 1.86,
+    "blk": 0.93,
+    "tpm": 0.298,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 139.3,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 188,
+   "posRank": {
+    "PF": 77,
+    "C": 58
+   },
+   "flag": "fair",
+   "adpDelta": -48.7
+  },
+  {
+   "id": "2286",
+   "name": "Herbert Jones",
+   "pos": "PF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "NOP",
+   "gp": 56,
+   "fppg": 21.4,
+   "total": 1198.3,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 0.839,
+    "pts": 8.857,
+    "dreb": 2.554,
+    "bonus_ast_15p": 0.018,
+    "ftmi": 0.214,
+    "stl": 1.571,
+    "to": 1.304,
+    "ast": 2.768,
+    "blk": 0.482,
+    "tpm": 1.429,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 178.0,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 189,
+   "posRank": {
+    "SG": 83,
+    "SF": 74
+   },
+   "flag": "fair",
+   "adpDelta": -11.0
+  },
+  {
+   "id": "2468",
+   "name": "Max Christie",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "DAL",
+   "gp": 77,
+   "fppg": 21.3,
+   "total": 1637.9,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.195,
+    "pts": 12.273,
+    "dreb": 3.039,
+    "bonus_ast_15p": 0.013,
+    "ftmi": 0.182,
+    "stl": 0.61,
+    "to": 1.247,
+    "ast": 1.961,
+    "blk": 0.351,
+    "tpm": 2.338,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 297.5,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 190,
+   "posRank": {
+    "SG": 84,
+    "SF": 75
+   },
+   "flag": "underrated",
+   "adpDelta": 107.5
+  },
+  {
+   "id": "1779",
+   "name": "Malik Monk",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "SAC",
+   "gp": 62,
+   "fppg": 21.2,
+   "total": 1313.7,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 0.242,
+    "pts": 12.452,
+    "dreb": 1.645,
+    "bonus_ast_15p": 0.016,
+    "ftmi": 0.21,
+    "stl": 0.597,
+    "to": 1.468,
+    "ast": 2.984,
+    "blk": 0.387,
+    "tpm": 2.0,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 132.6,
+   "injury": "DTD",
+   "yearsExp": 9,
+   "rank": 191,
+   "posRank": {
+    "PG": 61,
+    "SG": 85
+   },
+   "flag": "fair",
+   "adpDelta": -58.4
+  },
+  {
+   "id": "4780",
+   "name": "Javon Small",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "MEM",
+   "gp": 41,
+   "fppg": 21.2,
+   "total": 870.7,
+   "stats": {
+    "bonus_pt_50p": 0.024,
+    "oreb": 0.878,
+    "pts": 9.659,
+    "dreb": 2.244,
+    "bonus_ast_15p": 0.024,
+    "ftmi": 0.341,
+    "stl": 0.829,
+    "to": 1.366,
+    "ast": 3.683,
+    "blk": 0.22,
+    "tpm": 1.463,
+    "bonus_pt_40p": 0.024,
+    "bonus_reb_20p": 0.024
+   },
+   "adp": 442.7,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 192,
+   "posRank": {
+    "PG": 62,
+    "SG": 86
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 250.7
+  },
+  {
+   "id": "2586",
+   "name": "Cason Wallace",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG",
+    "SF"
+   ],
+   "team": "OKC",
+   "gp": 77,
+   "fppg": 21.1,
+   "total": 1626.7,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.818,
+    "pts": 8.571,
+    "dreb": 2.273,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.013,
+    "ftmi": 0.169,
+    "stl": 1.948,
+    "to": 0.948,
+    "ast": 2.597,
+    "blk": 0.364,
+    "tpm": 1.312,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 164.3,
+   "injury": "DTD",
+   "yearsExp": 3,
+   "rank": 193,
+   "posRank": {
+    "PG": 63,
+    "SG": 87,
+    "SF": 76
+   },
+   "flag": "fair",
+   "adpDelta": -28.7
+  },
+  {
+   "id": "1941",
+   "name": "Kevin Huerter",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "DET",
+   "gp": 69,
+   "fppg": 21.1,
+   "total": 1456.8,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.493,
+    "pts": 10.043,
+    "dreb": 2.986,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.014,
+    "ftmi": 0.232,
+    "stl": 0.913,
+    "to": 1.043,
+    "ast": 2.58,
+    "blk": 0.478,
+    "tpm": 1.449,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 427.6,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 194,
+   "posRank": {
+    "SG": 88,
+    "SF": 77
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 233.6
+  },
+  {
+   "id": "2753",
+   "name": "Jaylen Wells",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "MEM",
+   "gp": 69,
+   "fppg": 21.1,
+   "total": 1455.4,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.884,
+    "pts": 12.536,
+    "dreb": 2.304,
+    "bonus_ast_15p": 0.014,
+    "ftmi": 0.536,
+    "stl": 0.884,
+    "to": 1.072,
+    "ast": 1.609,
+    "blk": 0.13,
+    "tpm": 1.87,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 239.2,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 195,
+   "posRank": {
+    "SG": 89,
+    "SF": 78
+   },
+   "flag": "fair",
+   "adpDelta": 44.2
+  },
+  {
+   "id": "2324",
+   "name": "Justin Champagnie",
+   "pos": "PF",
+   "eligible": [
+    "PF"
+   ],
+   "team": "WAS",
+   "gp": 69,
+   "fppg": 20.9,
+   "total": 1445.3,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 2.101,
+    "pts": 8.652,
+    "dreb": 3.464,
+    "bonus_ast_15p": 0.014,
+    "dd": 0.058,
+    "ftmi": 0.319,
+    "stl": 0.855,
+    "to": 0.652,
+    "ast": 1.217,
+    "blk": 0.623,
+    "tpm": 0.768,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 199.5,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": 196,
+   "posRank": {
+    "PF": 78
+   },
+   "flag": "fair",
+   "adpDelta": 3.5
+  },
+  {
+   "id": "1961",
+   "name": "Duncan Robinson",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "DET",
+   "gp": 77,
+   "fppg": 20.8,
+   "total": 1603.2,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.377,
+    "pts": 12.195,
+    "dreb": 2.286,
+    "bonus_ast_15p": 0.013,
+    "ftmi": 0.351,
+    "stl": 0.571,
+    "to": 0.701,
+    "ast": 2.065,
+    "blk": 0.286,
+    "tpm": 2.857,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 433.2,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": 197,
+   "posRank": {
+    "SG": 90,
+    "SF": 79
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 236.2
+  },
+  {
+   "id": "2466",
+   "name": "Vince Williams",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": null,
+   "gp": 40,
+   "fppg": 20.8,
+   "total": 830.6,
+   "stats": {
+    "bonus_pt_50p": 0.025,
+    "oreb": 0.975,
+    "pts": 7.5,
+    "dreb": 2.9,
+    "bonus_ast_15p": 0.025,
+    "dd": 0.025,
+    "ftmi": 0.275,
+    "stl": 0.725,
+    "to": 1.75,
+    "ast": 4.15,
+    "blk": 0.4,
+    "tpm": 1.375,
+    "bonus_pt_40p": 0.025,
+    "bonus_reb_20p": 0.025
+   },
+   "adp": 463.0,
+   "injury": "Out",
+   "yearsExp": 3,
+   "rank": 198,
+   "posRank": {
+    "PG": 64,
+    "SG": 91
+   },
+   "flag": "severely-underrated",
+   "adpDelta": 265.0
+  },
+  {
+   "id": "1546",
+   "name": "Marcus Smart",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG",
+    "SF"
+   ],
+   "team": "HOU",
+   "gp": 62,
+   "fppg": 20.7,
+   "total": 1282.1,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 0.581,
+    "pts": 9.339,
+    "dreb": 2.194,
+    "bonus_ast_15p": 0.016,
+    "ftmi": 0.371,
+    "stl": 1.403,
+    "to": 1.484,
+    "ast": 2.984,
+    "blk": 0.371,
+    "tpm": 1.565,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 245.4,
+   "injury": null,
+   "yearsExp": 12,
+   "rank": 199,
+   "posRank": {
+    "PG": 65,
+    "SG": 92,
+    "SF": 80
+   },
+   "flag": "fair",
+   "adpDelta": 46.4
+  },
+  {
+   "id": "4743",
+   "name": "Danny Wolf",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF",
+    "C"
+   ],
+   "team": "BKN",
+   "gp": 57,
+   "fppg": 20.6,
+   "total": 1175.4,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 1.0,
+    "pts": 8.912,
+    "dreb": 3.93,
+    "bonus_ast_15p": 0.018,
+    "dd": 0.035,
+    "ftmi": 0.439,
+    "stl": 0.526,
+    "to": 1.281,
+    "ast": 2.228,
+    "blk": 0.561,
+    "tpm": 1.193,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 274.0,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 200,
+   "posRank": {
+    "SF": 81,
+    "PF": 79,
+    "C": 59
+   },
+   "flag": "fair",
+   "adpDelta": 74.0
+  },
+  {
+   "id": "4738",
+   "name": "Tre Johnson",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "WAS",
+   "gp": 60,
+   "fppg": 20.5,
+   "total": 1227.6,
+   "stats": {
+    "bonus_pt_50p": 0.017,
+    "oreb": 0.483,
+    "pts": 12.217,
+    "dreb": 2.35,
+    "bonus_ast_15p": 0.017,
+    "ftmi": 0.183,
+    "stl": 0.55,
+    "to": 1.55,
+    "ast": 2.033,
+    "blk": 0.3,
+    "tpm": 1.917,
+    "bonus_pt_40p": 0.017,
+    "bonus_reb_20p": 0.017
+   },
+   "adp": 197.1,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 203,
+   "posRank": {
+    "PG": 66,
+    "SG": 94
+   },
+   "flag": "fair",
+   "adpDelta": -5.9
+  },
+  {
+   "id": "1621",
+   "name": "D'Angelo Russell",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": null,
+   "gp": 26,
+   "fppg": 19.9,
+   "total": 517.3,
+   "stats": {
+    "bonus_pt_50p": 0.038,
+    "oreb": 0.308,
+    "pts": 10.154,
+    "dreb": 2.038,
+    "bonus_ast_15p": 0.038,
+    "dd": 0.038,
+    "ftmi": 0.654,
+    "stl": 0.462,
+    "to": 1.885,
+    "ast": 4.0,
+    "blk": 0.077,
+    "tpm": 1.269,
+    "bonus_pt_40p": 0.038,
+    "bonus_reb_20p": 0.038
+   },
+   "adp": 148.7,
+   "injury": null,
+   "yearsExp": 10,
+   "rank": 212,
+   "posRank": {
+    "PG": 69,
+    "SG": 97
+   },
+   "flag": "fair",
+   "adpDelta": -63.3
+  },
+  {
+   "id": "2278",
+   "name": "Cam Thomas",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": null,
+   "gp": 42,
+   "fppg": 19.6,
+   "total": 823.0,
+   "stats": {
+    "bonus_pt_50p": 0.024,
+    "oreb": 0.262,
+    "pts": 13.5,
+    "dreb": 1.429,
+    "bonus_ast_15p": 0.024,
+    "ftmi": 0.762,
+    "stl": 0.214,
+    "to": 1.762,
+    "ast": 2.571,
+    "blk": 0.095,
+    "tpm": 1.238,
+    "bonus_pt_40p": 0.024,
+    "bonus_reb_20p": 0.024
+   },
+   "adp": 121.7,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": 215,
+   "posRank": {
+    "PG": 70,
+    "SG": 98
+   },
+   "flag": "overrated",
+   "adpDelta": -93.3
+  },
+  {
+   "id": "2020",
+   "name": "Rui Hachimura",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "LAC",
+   "gp": 68,
+   "fppg": 19.0,
+   "total": 1292.4,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 0.603,
+    "pts": 11.471,
+    "dreb": 2.721,
+    "bonus_ast_15p": 0.015,
+    "dd": 0.015,
+    "ftmi": 0.324,
+    "stl": 0.574,
+    "to": 0.618,
+    "ast": 0.838,
+    "blk": 0.309,
+    "tpm": 1.706,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 173.1,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 224,
+   "posRank": {
+    "SF": 90,
+    "PF": 86
+   },
+   "flag": "fair",
+   "adpDelta": -50.9
+  },
+  {
+   "id": "1081",
+   "name": "Klay Thompson",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF",
+    "PF"
+   ],
+   "team": "MIA",
+   "gp": 69,
+   "fppg": 18.5,
+   "total": 1273.3,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.261,
+    "pts": 11.739,
+    "dreb": 1.812,
+    "bonus_ast_15p": 0.014,
+    "ftmi": 0.159,
+    "stl": 0.478,
+    "to": 0.913,
+    "ast": 1.391,
+    "blk": 0.319,
+    "tpm": 2.928,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 152.7,
+   "injury": null,
+   "yearsExp": 15,
+   "rank": 233,
+   "posRank": {
+    "SG": 105,
+    "SF": 95,
+    "PF": 90
+   },
+   "flag": "overrated",
+   "adpDelta": -80.3
+  },
+  {
+   "id": "2095",
+   "name": "Luguentz Dort",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "ATL",
+   "gp": 69,
+   "fppg": 17.6,
+   "total": 1212.8,
+   "stats": {
+    "bonus_pt_50p": 0.014,
+    "oreb": 0.812,
+    "pts": 8.348,
+    "dreb": 2.739,
+    "bonus_ast_15p": 0.014,
+    "ftmi": 0.203,
+    "stl": 0.899,
+    "to": 0.783,
+    "ast": 1.232,
+    "blk": 0.391,
+    "tpm": 1.855,
+    "bonus_pt_40p": 0.014,
+    "bonus_reb_20p": 0.014
+   },
+   "adp": 191.4,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 255,
+   "posRank": {
+    "SG": 119,
+    "SF": 108
+   },
+   "flag": "fair",
+   "adpDelta": -63.6
+  },
+  {
+   "id": "2010",
+   "name": "Goga Bitadze",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "ORL",
+   "gp": 64,
+   "fppg": 17.5,
+   "total": 1118.2,
+   "stats": {
+    "bonus_pt_50p": 0.016,
+    "oreb": 2.141,
+    "pts": 5.859,
+    "dreb": 2.859,
+    "bonus_ast_15p": 0.016,
+    "dd": 0.047,
+    "ftmi": 0.438,
+    "stl": 0.578,
+    "to": 0.672,
+    "ast": 1.312,
+    "blk": 0.953,
+    "tpm": 0.031,
+    "bonus_pt_40p": 0.016,
+    "bonus_reb_20p": 0.016
+   },
+   "adp": 188.3,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": 256,
+   "posRank": {
+    "C": 75
+   },
+   "flag": "fair",
+   "adpDelta": -67.7
+  },
+  {
+   "id": "2439",
+   "name": "Jaden Ivey",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": null,
+   "gp": 37,
+   "fppg": 16.5,
+   "total": 611.8,
+   "stats": {
+    "bonus_pt_50p": 0.027,
+    "oreb": 0.649,
+    "pts": 8.541,
+    "dreb": 1.811,
+    "bonus_ast_15p": 0.027,
+    "ftmi": 0.243,
+    "stl": 0.622,
+    "to": 1.108,
+    "ast": 1.838,
+    "blk": 0.378,
+    "tpm": 1.351,
+    "bonus_pt_40p": 0.027,
+    "bonus_reb_20p": 0.027
+   },
+   "adp": 190.0,
+   "injury": "DTD",
+   "yearsExp": 3,
+   "rank": 275,
+   "posRank": {
+    "PG": 88,
+    "SG": 132
+   },
+   "flag": "fair",
+   "adpDelta": -85.0
+  },
+  {
+   "id": "1801",
+   "name": "Alex Caruso",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "OKC",
+   "gp": 56,
+   "fppg": 15.9,
+   "total": 888.8,
+   "stats": {
+    "bonus_pt_50p": 0.018,
+    "oreb": 0.5,
+    "pts": 6.214,
+    "dreb": 2.268,
+    "bonus_ast_15p": 0.018,
+    "ftmi": 0.179,
+    "stl": 1.286,
+    "to": 0.857,
+    "ast": 1.964,
+    "blk": 0.304,
+    "tpm": 0.946,
+    "bonus_pt_40p": 0.018,
+    "bonus_reb_20p": 0.018
+   },
+   "adp": 193.7,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": 286,
+   "posRank": {
+    "SF": 123,
+    "PF": 107
+   },
+   "flag": "fair",
+   "adpDelta": -92.3
+  },
+  {
+   "id": "2713",
+   "name": "Jared McCain",
+   "pos": "SG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "OKC",
+   "gp": 67,
+   "fppg": 14.3,
+   "total": 955.1,
+   "stats": {
+    "bonus_pt_50p": 0.015,
+    "oreb": 0.343,
+    "pts": 8.328,
+    "dreb": 1.701,
+    "bonus_ast_15p": 0.015,
+    "ftmi": 0.119,
+    "stl": 0.522,
+    "to": 0.836,
+    "ast": 1.343,
+    "blk": 0.075,
+    "tpm": 1.478,
+    "bonus_pt_40p": 0.015,
+    "bonus_reb_20p": 0.015
+   },
+   "adp": 166.1,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": 310,
+   "posRank": {
+    "PG": 98,
+    "SG": 151
+   },
+   "flag": "overrated",
+   "adpDelta": -143.9
+  },
+  {
+   "id": "2578",
+   "name": "Gradey Dick",
+   "pos": "SF",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "LAC",
+   "gp": 76,
+   "fppg": 10.9,
+   "total": 831.5,
+   "stats": {
+    "bonus_pt_50p": 0.013,
+    "oreb": 0.553,
+    "pts": 5.987,
+    "dreb": 1.382,
+    "bonus_ast_15p": 0.013,
+    "dd": 0.013,
+    "ftmi": 0.145,
+    "stl": 0.592,
+    "to": 0.566,
+    "ast": 0.671,
+    "blk": 0.092,
+    "tpm": 0.737,
+    "bonus_pt_40p": 0.013,
+    "bonus_reb_20p": 0.013
+   },
+   "adp": 196.1,
+   "injury": null,
+   "yearsExp": 3,
+   "rank": 352,
+   "posRank": {
+    "SG": 168,
+    "SF": 155
+   },
+   "flag": "overrated",
+   "adpDelta": -155.9
+  },
+  {
+   "id": "4761",
+   "name": "Khaman Maluach",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "PHX",
+   "gp": 46,
+   "fppg": 8.7,
+   "total": 398.4,
+   "stats": {
+    "bonus_pt_50p": 0.022,
+    "oreb": 1.065,
+    "pts": 3.022,
+    "dreb": 1.826,
+    "dd": 0.022,
+    "ftmi": 0.196,
+    "stl": 0.109,
+    "to": 0.543,
+    "ast": 0.13,
+    "blk": 0.717,
+    "tpm": 0.109,
+    "bonus_pt_40p": 0.022,
+    "bonus_reb_20p": 0.022
+   },
+   "adp": 185.0,
+   "injury": null,
+   "yearsExp": 1,
+   "rank": 395,
+   "posRank": {
+    "C": 117
+   },
+   "flag": "severely-overrated",
+   "adpDelta": -210.0
+  },
+  {
+   "id": "1822",
+   "name": "Jayson Tatum",
+   "pos": "SF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "BOS",
+   "gp": 16,
+   "fppg": 46.9,
+   "total": 750.0,
+   "stats": {
+    "bonus_pt_50p": 0.062,
+    "oreb": 0.5,
+    "pts": 21.75,
+    "dreb": 9.5,
+    "bonus_ast_15p": 0.062,
+    "dd": 0.625,
+    "ftmi": 0.875,
+    "stl": 1.375,
+    "to": 2.438,
+    "ast": 5.312,
+    "blk": 0.188,
+    "tpm": 2.938,
+    "bonus_pt_40p": 0.062,
+    "bonus_reb_20p": 0.062,
+    "td": 0.062
+   },
+   "adp": 11.1,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "1272",
+   "name": "Anthony Davis",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "WAS",
+   "gp": 20,
+   "fppg": 45.2,
+   "total": 904.5,
+   "stats": {
+    "bonus_pt_50p": 0.05,
+    "oreb": 3.1,
+    "pts": 20.35,
+    "dreb": 7.95,
+    "bonus_ast_15p": 0.05,
+    "dd": 0.65,
+    "ftmi": 1.1,
+    "stl": 1.1,
+    "to": 2.05,
+    "ast": 2.8,
+    "blk": 1.65,
+    "tpm": 0.5,
+    "bonus_pt_40p": 0.05,
+    "bonus_reb_20p": 0.05
+   },
+   "adp": 15.3,
+   "injury": null,
+   "yearsExp": 14,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "2161",
+   "name": "Tyrese Haliburton",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "IND",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 17.7,
+   "injury": null,
+   "yearsExp": 5,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "1945",
+   "name": "Trae Young",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "WAS",
+   "gp": 15,
+   "fppg": 34.4,
+   "total": 516.2,
+   "stats": {
+    "bonus_pt_50p": 0.067,
+    "oreb": 0.267,
+    "pts": 17.933,
+    "dreb": 1.733,
+    "bonus_ast_15p": 0.067,
+    "dd": 0.2,
+    "ftmi": 1.133,
+    "stl": 0.867,
+    "to": 2.6,
+    "ast": 8.0,
+    "blk": 0.133,
+    "tpm": 1.8,
+    "bonus_pt_40p": 0.067,
+    "bonus_reb_20p": 0.067
+   },
+   "adp": 21.7,
+   "injury": null,
+   "yearsExp": 8,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "4873",
+   "name": "Cameron Boozer",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "MEM",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 25.1,
+   "injury": null,
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "1739",
+   "name": "Domantas Sabonis",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "SAC",
+   "gp": 19,
+   "fppg": 39.6,
+   "total": 751.9,
+   "stats": {
+    "bonus_pt_50p": 0.053,
+    "oreb": 3.368,
+    "pts": 15.842,
+    "dreb": 8.0,
+    "bonus_ast_15p": 0.053,
+    "dd": 0.632,
+    "ftmi": 1.105,
+    "stl": 0.947,
+    "to": 2.684,
+    "ast": 4.105,
+    "blk": 0.211,
+    "tpm": 0.263,
+    "bonus_pt_40p": 0.053,
+    "bonus_reb_20p": 0.053
+   },
+   "adp": 27.5,
+   "injury": null,
+   "yearsExp": 10,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "4882",
+   "name": "Darryn Peterson",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "UTA",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 42.1,
+   "injury": null,
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "2040",
+   "name": "Ja Morant",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "POR",
+   "gp": 20,
+   "fppg": 37.9,
+   "total": 758.3,
+   "stats": {
+    "bonus_pt_50p": 0.05,
+    "oreb": 0.4,
+    "pts": 19.45,
+    "dreb": 2.85,
+    "bonus_ast_15p": 0.05,
+    "dd": 0.4,
+    "ftmi": 0.6,
+    "stl": 1.0,
+    "to": 3.55,
+    "ast": 8.05,
+    "blk": 0.3,
+    "tpm": 1.0,
+    "bonus_pt_40p": 0.05,
+    "bonus_reb_20p": 0.05
+   },
+   "adp": 47.6,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "4866",
+   "name": "AJ Dybantsa",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "WAS",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 53.6,
+   "injury": "DTD",
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "2441",
+   "name": "Walker Kessler",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "LAL",
+   "gp": 5,
+   "fppg": 41.3,
+   "total": 206.3,
+   "stats": {
+    "bonus_pt_50p": 0.2,
+    "oreb": 4.6,
+    "pts": 14.4,
+    "dreb": 6.2,
+    "bonus_ast_15p": 0.2,
+    "dd": 0.4,
+    "ftmi": 1.2,
+    "stl": 1.4,
+    "to": 3.2,
+    "ast": 3.0,
+    "blk": 1.8,
+    "tpm": 1.2,
+    "bonus_pt_40p": 0.2,
+    "bonus_reb_20p": 0.2
+   },
+   "adp": 58.5,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "4862",
+   "name": "Caleb Wilson",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "CHI",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 91.5,
+   "injury": null,
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "2718",
+   "name": "Zach Edey",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "MEM",
+   "gp": 11,
+   "fppg": 35.5,
+   "total": 390.2,
+   "stats": {
+    "bonus_pt_50p": 0.091,
+    "oreb": 3.909,
+    "pts": 13.636,
+    "dreb": 7.182,
+    "dd": 0.455,
+    "ftmi": 0.636,
+    "stl": 0.636,
+    "to": 2.364,
+    "ast": 1.091,
+    "blk": 1.909,
+    "tpm": 0.091,
+    "bonus_pt_40p": 0.091,
+    "bonus_reb_20p": 0.091
+   },
+   "adp": 101.0,
+   "injury": null,
+   "yearsExp": 2,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "2456",
+   "name": "Keegan Murray",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "SAC",
+   "gp": 23,
+   "fppg": 29.4,
+   "total": 676.7,
+   "stats": {
+    "bonus_pt_50p": 0.043,
+    "oreb": 1.435,
+    "pts": 13.957,
+    "dreb": 4.304,
+    "bonus_ast_15p": 0.043,
+    "dd": 0.087,
+    "ftmi": 0.478,
+    "stl": 1.043,
+    "to": 1.174,
+    "ast": 1.652,
+    "blk": 1.565,
+    "tpm": 1.348,
+    "bonus_pt_40p": 0.043,
+    "bonus_reb_20p": 0.043
+   },
+   "adp": 102.2,
+   "injury": null,
+   "yearsExp": 4,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "1054",
+   "name": "Kyrie Irving",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "DAL",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 110.7,
+   "injury": null,
+   "yearsExp": 14,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "1713",
+   "name": "Dejounte Murray",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "NOP",
+   "gp": 14,
+   "fppg": 36.2,
+   "total": 506.4,
+   "stats": {
+    "bonus_pt_50p": 0.071,
+    "oreb": 0.286,
+    "pts": 16.714,
+    "dreb": 5.071,
+    "bonus_ast_15p": 0.071,
+    "dd": 0.071,
+    "ftmi": 0.429,
+    "stl": 1.643,
+    "to": 3.357,
+    "ast": 6.357,
+    "blk": 0.214,
+    "tpm": 1.357,
+    "bonus_pt_40p": 0.071,
+    "bonus_reb_20p": 0.071
+   },
+   "adp": 113.3,
+   "injury": "DTD",
+   "yearsExp": 10,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "2584",
+   "name": "Dereck Lively",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "DAL",
+   "gp": 7,
+   "fppg": 18.1,
+   "total": 126.6,
+   "stats": {
+    "ast": 1.857,
+    "blk": 1.571,
+    "bonus_reb_20p": 0.143,
+    "dreb": 3.286,
+    "ftmi": 0.286,
+    "oreb": 2.0,
+    "pts": 4.286,
+    "stl": 0.571,
+    "to": 1.429
+   },
+   "adp": 138.7,
+   "injury": "DTD",
+   "yearsExp": 3,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "4871",
+   "name": "Mikel Brown",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "BKN",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 140.5,
+   "injury": null,
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "4864",
+   "name": "Yaxel Lendeborg",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "GSW",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 141.1,
+   "injury": null,
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "1444",
+   "name": "Damian Lillard",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "POR",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 147.1,
+   "injury": null,
+   "yearsExp": 13,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "1717",
+   "name": "Fred VanVleet",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": "HOU",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 153.4,
+   "injury": null,
+   "yearsExp": 9,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "4876",
+   "name": "Kingston Flemings",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "ATL",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 159.4,
+   "injury": null,
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "1339",
+   "name": "Chris Paul",
+   "pos": "PG",
+   "eligible": [
+    "PG"
+   ],
+   "team": null,
+   "gp": 16,
+   "fppg": 11.8,
+   "total": 188.1,
+   "stats": {
+    "oreb": 0.375,
+    "pts": 2.938,
+    "dreb": 1.375,
+    "bonus_ast_15p": 0.062,
+    "ftmi": 0.062,
+    "stl": 0.688,
+    "to": 1.0,
+    "ast": 3.312,
+    "tpm": 0.625,
+    "bonus_pt_40p": 0.062,
+    "bonus_reb_20p": 0.062
+   },
+   "adp": 161.2,
+   "injury": null,
+   "yearsExp": 20,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "4885",
+   "name": "Morez Johnson",
+   "pos": "C",
+   "eligible": [
+    "PF",
+    "C"
+   ],
+   "team": "DAL",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 161.4,
+   "injury": null,
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "4891",
+   "name": "Darius Acuff",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "SAC",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 170.1,
+   "injury": null,
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "1128",
+   "name": "Bradley Beal",
+   "pos": "SG",
+   "eligible": [
+    "SG",
+    "SF"
+   ],
+   "team": "LAC",
+   "gp": 6,
+   "fppg": 12.7,
+   "total": 76.3,
+   "stats": {
+    "ast": 1.667,
+    "bonus_pt_40p": 0.167,
+    "dreb": 0.5,
+    "ftmi": 0.333,
+    "oreb": 0.333,
+    "pts": 8.167,
+    "stl": 0.5,
+    "to": 1.5,
+    "tpm": 1.167
+   },
+   "adp": 175.3,
+   "injury": "Out",
+   "yearsExp": 14,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "2090",
+   "name": "Ty Jerome",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "MEM",
+   "gp": 15,
+   "fppg": 34.9,
+   "total": 523.5,
+   "stats": {
+    "bonus_pt_50p": 0.067,
+    "oreb": 0.733,
+    "pts": 19.667,
+    "dreb": 2.067,
+    "bonus_ast_15p": 0.067,
+    "ftmi": 0.467,
+    "stl": 1.067,
+    "to": 1.8,
+    "ast": 5.667,
+    "blk": 0.267,
+    "tpm": 2.8,
+    "bonus_pt_40p": 0.067,
+    "bonus_reb_20p": 0.067
+   },
+   "adp": 176.5,
+   "injury": null,
+   "yearsExp": 7,
+   "rank": null,
+   "posRank": {},
+   "flag": "small-sample",
+   "adpDelta": null
+  },
+  {
+   "id": "4881",
+   "name": "Keaton Wagler",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "LAC",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 180.3,
+   "injury": null,
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "4888",
+   "name": "Aday Mara",
+   "pos": "C",
+   "eligible": [
+    "C"
+   ],
+   "team": "OKC",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 184.7,
+   "injury": null,
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "4883",
+   "name": "Brayden Burries",
+   "pos": "PG",
+   "eligible": [
+    "PG",
+    "SG"
+   ],
+   "team": "MIL",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 187.8,
+   "injury": null,
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  },
+  {
+   "id": "4884",
+   "name": "Nate Ament",
+   "pos": "PF",
+   "eligible": [
+    "SF",
+    "PF"
+   ],
+   "team": "MIL",
+   "gp": 0,
+   "fppg": null,
+   "total": null,
+   "stats": {},
+   "adp": 195.6,
+   "injury": "DTD",
+   "yearsExp": 0,
+   "rank": null,
+   "posRank": {},
+   "flag": "no-data",
+   "adpDelta": null
+  }
+ ]
+}

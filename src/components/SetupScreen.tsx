@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { loadRecentDrafts } from "../hooks/useDraft";
+import { loadRecentDrafts, type Sport } from "../hooks/useDraft";
 
 export default function SetupScreen(props: {
   connectLive: (input: string) => void;
-  startReplay: () => void;
+  startReplay: (sport: Sport) => void;
   connecting: boolean;
   error: string | null;
 }) {
@@ -18,7 +18,8 @@ export default function SetupScreen(props: {
             Draft <span className="text-emerald-400">War Room</span>
           </h1>
           <p className="mt-1 text-sm text-zinc-400">
-            Live Sleeper sync, recommendations from Joel Smyth's 2026 draft guide.
+            Live Sleeper sync. NFL picks from Joel Smyth's 2026 draft guide; NBA picks from
+            last season's production rescored to your league's settings.
           </p>
         </div>
 
@@ -30,7 +31,7 @@ export default function SetupScreen(props: {
           }}
         >
           <label className="block text-xs font-semibold uppercase tracking-wide text-zinc-400">
-            Sleeper draft URL, draft ID, or league ID
+            Sleeper draft URL, draft ID, or league ID (NFL or NBA, detected from the draft)
           </label>
           <input
             value={input}
@@ -81,16 +82,24 @@ export default function SetupScreen(props: {
           <div className="h-px flex-1 bg-zinc-800" />
         </div>
 
-        <button
-          onClick={props.startReplay}
-          className="w-full rounded-lg border border-zinc-700 bg-zinc-900 py-2.5 text-sm font-semibold text-zinc-300 hover:border-zinc-500"
-        >
-          ▶ Replay a completed 2025 draft (test mode)
-        </button>
+        <div className="grid grid-cols-2 gap-2">
+          <button
+            onClick={() => props.startReplay("nfl")}
+            className="rounded-lg border border-zinc-700 bg-zinc-900 py-2.5 text-sm font-semibold text-zinc-300 hover:border-zinc-500"
+          >
+            ▶ Replay NFL 2025 draft
+          </button>
+          <button
+            onClick={() => props.startReplay("nba")}
+            className="rounded-lg border border-orange-900 bg-zinc-900 py-2.5 text-sm font-semibold text-orange-200 hover:border-orange-600"
+          >
+            ▶ Replay NBA 2025 draft
+          </button>
+        </div>
         <p className="text-xs leading-relaxed text-zinc-600">
-          Replay feeds a saved 180-pick fixture through the app one pick at a time so every
-          feature can be exercised without a live draft. Pick your slot, hit play, and watch
-          the board update.
+          Replay feeds a saved completed draft (180 NFL picks, 168 NBA picks) through the app
+          one pick at a time so every feature can be exercised without a live draft. Pick your
+          slot, hit play, and watch the board update.
         </p>
       </div>
     </div>

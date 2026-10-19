@@ -96,6 +96,40 @@ npm run build      # typecheck + production build
   **report card** when the draft completes (targets, values, avoids, traps,
   average board delta, rounds on his script).
 
+## NBA mode
+
+Paste an NBA draft or league URL and the app switches to the NBA board (the
+Sleeper draft object carries `sport`). There is no analyst guide for
+basketball, so the board is **last season's production rescored under your
+league's own `scoring_settings`**, which reproduces the per-game numbers
+Sleeper shows in your league's player list (Jokić 67.1 in the 2026 Bussy Bois
+league). Nothing is projected, blended, or interpolated.
+
+- **Build** `data/nba-rankings.json` with
+  `python scripts/build_nba_rankings.py <league_id>`. It reads the league's
+  scoring, every player's season line, and Sleeper's ADP from the public
+  endpoints, and keeps the top 200 by per-game points (min 25 GP) plus anyone
+  with an ADP inside 200. Each record carries per-game raw categories so the
+  UI could rescore if the settings change.
+- **Picks match by Sleeper `player_id`** (both sides are Sleeper), with a
+  diacritic-insensitive name fallback. A late pick outside the top 200 is
+  shown as `OFF BOARD`, not an error.
+- **Roster slots** come from `slots_pg / slots_g / slots_f / slots_util / …`.
+  Most NBA players are eligible at two or three positions, so picks are placed
+  with a maximum matching rather than first-open-slot, and each row's position
+  chip shows his rank at the best slot you still have open (`SF2`, dimmed when
+  he can only sit on your bench right now). The **NEED** filter keeps only
+  players who fill an open starter.
+- **VALUE / REACH chips** compare Sleeper ADP with last-year finish (gap of 10+
+  picks and 50%+ of his rank; `++` at 15 and 2×). Small-sample and no-data
+  players are labelled instead of ranked. Live ADP and injury status refresh
+  from Sleeper on connect; the JSON snapshot is the fallback.
+- **Outlook** shows ADP-based odds he reaches your next pick, and switches to
+  "Back to you?" odds against your *following* pick while you are on the clock.
+- Same manual ✕ override, watchlist, pick clock, alerts, and replay controls
+  as the NFL board. `Replay NBA 2025 draft` runs last year's real 12-team,
+  168-pick league draft (`fixtures/nba-picks.json`).
+
 ## Testing without a live draft
 
 **Fixture replay (primary dev loop).** The setup screen's *Replay* button feeds
@@ -132,6 +166,10 @@ real multi-user drafts and behave like league drafts.
 checklist panel. Fields the guide doesn't print are `null` — nothing is
 invented or interpolated.
 
+`data/nba-rankings.json` is built from Sleeper's public stats, projections
+(for ADP) and league endpoints by `scripts/build_nba_rankings.py`; see **NBA
+mode** above.
+
 ## Deploy (Vercel)
 
 Standard Vite deploy; `api/players.ts` is a serverless function that proxies
@@ -145,3 +183,5 @@ rate-limit-safe at one request per 4 s).
 - No consensus ADP in recommendations. No auto-drafting, no writes to Sleeper
   (read-only public API, no auth). No login, no accounts, no stored user data —
   slot/format/overrides live in `localStorage` only.
+- NBA ADP is shown and used for survival odds only, exactly like market ADP on
+  the NFL side; the NBA board order is last-year production and nothing else.

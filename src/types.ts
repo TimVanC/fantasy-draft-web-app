@@ -45,6 +45,10 @@ export interface RankedPlayer {
 /** Sleeper GET /draft/{id} — only the fields we consume. */
 export interface SleeperDraft {
   draft_id: string;
+  /** "nfl" | "nba" — which board and roster model the app uses. */
+  sport?: string;
+  season?: string;
+  league_id?: string | null;
   status: "pre_draft" | "drafting" | "paused" | "complete" | string;
   type: "snake" | "linear" | "auction" | string;
   settings: {

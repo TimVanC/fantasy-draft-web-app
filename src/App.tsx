@@ -29,8 +29,28 @@ import SplitsPanel from "./components/SplitsPanel";
 import StrategyPanel from "./components/StrategyPanel";
 import SideFeed from "./components/SideFeed";
 import ReportCard from "./components/ReportCard";
+import NbaApp from "./nba/NbaApp";
 
+/** Top level: connect screen, then the NFL or NBA page by the draft's sport. */
 export default function App() {
+  const hook = useDraft();
+  const { draft, source } = hook.state;
+  if (!draft || !source) {
+    return (
+      <SetupScreen
+        connectLive={hook.connectLive}
+        startReplay={hook.startReplay}
+        connecting={hook.state.connecting}
+        error={hook.state.error}
+      />
+    );
+  }
+  return hook.sport === "nba" ? <NbaApp hook={hook} /> : <NflApp hook={hook} />;
+}
+
+export type DraftHook = ReturnType<typeof useDraft>;
+
+function NflApp({ hook }: { hook: DraftHook }) {
   const {
     state,
     adpMap,
@@ -38,14 +58,12 @@ export default function App() {
     toggleStar,
     toggleDismiss,
     matched,
-    connectLive,
-    startReplay,
-    disconnect,
     setMySlot,
     setFormat,
     toggleOverride,
     replayControls,
-  } = useDraft();
+    disconnect,
+  } = hook;
 
   const { draft, picks, mySlot, format, overrides, dismissed, starred, source } = state;
   const [alertsEnabled, setAlertsEnabled] = useState(true);
@@ -219,16 +237,7 @@ export default function App() {
     draftDone: derived?.draftDone ?? true,
   });
 
-  if (!draft || !derived || !source) {
-    return (
-      <SetupScreen
-        connectLive={connectLive}
-        startReplay={startReplay}
-        connecting={state.connecting}
-        error={state.error}
-      />
-    );
-  }
+  if (!draft || !derived || !source) return null;
 
   const handcuffOf = (key: string, pos: string) => handcuffFor(key, pos, playerInfo, derived.myRbs);
 

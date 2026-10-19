@@ -7,13 +7,27 @@ import { fetchAdpMap, type AdpMap } from "../lib/adp";
 import { fetchPlayerInfoMap, type PlayerInfoMap } from "../lib/players";
 import fixtureDraft from "../../fixtures/draft.json";
 import fixturePicks from "../../fixtures/picks.json";
+import nbaFixtureDraft from "../../fixtures/nba-draft.json";
+import nbaFixturePicks from "../../fixtures/nba-picks.json";
+
+export type Sport = "nfl" | "nba";
+
+/** Which sport a Sleeper draft belongs to (the draft object carries `sport`). */
+export function sportOf(draft: SleeperDraft | null): Sport {
+  return draft?.sport === "nba" ? "nba" : "nfl";
+}
+
+const FIXTURES: Record<Sport, { draft: unknown; picks: unknown }> = {
+  nfl: { draft: fixtureDraft, picks: fixturePicks },
+  nba: { draft: nbaFixtureDraft, picks: nbaFixturePicks },
+};
 
 // Adaptive polling: fast while picks are flying, relaxed while waiting.
 // 2s ≈ 30 req/min/client — comfortably under Sleeper's 1000/min IP limit.
 const POLL_ACTIVE_MS = 2000;
 const POLL_IDLE_MS = 5000; // pre_draft / paused
 
-export type Source = { kind: "live"; draftId: string } | { kind: "replay" };
+export type Source = { kind: "live"; draftId: string } | { kind: "replay"; sport: Sport };
 
 /** Manual board overrides; they must survive polls, so they live outside the
  *  poll-derived state and win over sync in both directions. */
@@ -36,7 +50,7 @@ export interface DraftState {
 }
 
 function storageKey(source: Source): string {
-  return `dwr:${source.kind === "live" ? source.draftId : "replay"}`;
+  return `dwr:${source.kind === "live" ? source.draftId : `replay-${source.sport}`}`;
 }
 
 interface Persisted {
@@ -114,9 +128,10 @@ export function useDraft() {
   const pollCount = useRef(0);
 
   // ---- market ADP (display + survival odds only; never affects ordering) --
+  const sport = sportOf(draft);
   const teamsCount = draft?.settings.teams ?? null;
   useEffect(() => {
-    if (teamsCount === null) return;
+    if (teamsCount === null || sport !== "nfl") return;
     let cancelled = false;
     fetchAdpMap(MATCH_INDEX, format, teamsCount)
       .then((map) => {
@@ -129,11 +144,11 @@ export function useDraft() {
     return () => {
       cancelled = true;
     };
-  }, [teamsCount, format]);
+  }, [teamsCount, format, sport]);
 
   // ---- live player map (injury/status/depth chart), once per connection --
   useEffect(() => {
-    if (!source) return;
+    if (!source || sport !== "nfl") return;
     let cancelled = false;
     fetchPlayerInfoMap(MATCH_INDEX)
       .then((map) => {
@@ -146,7 +161,7 @@ export function useDraft() {
     return () => {
       cancelled = true;
     };
-  }, [source]);
+  }, [source, sport]);
 
   // ---- persistence -------------------------------------------------------
   useEffect(() => {
@@ -203,10 +218,10 @@ export function useDraft() {
     }
   }, []);
 
-  const startReplay = useCallback(() => {
-    const src: Source = { kind: "replay" };
+  const startReplay = useCallback((sport: Sport = "nfl") => {
+    const src: Source = { kind: "replay", sport };
     const saved = loadPersisted(src);
-    setDraft(fixtureDraft as unknown as SleeperDraft);
+    setDraft(FIXTURES[sport].draft as SleeperDraft);
     setSource(src);
     setReplayIndex(0);
     setReplayPlaying(false);
@@ -272,7 +287,10 @@ export function useDraft() {
   }, [source, draftStatus]);
 
   // ---- replay ticker -----------------------------------------------------
-  const allReplayPicks = fixturePicks as unknown as SleeperPick[];
+  const allReplayPicks = useMemo(
+    () => (source?.kind === "replay" ? (FIXTURES[source.sport].picks as SleeperPick[]) : []),
+    [source],
+  );
   useEffect(() => {
     if (source?.kind !== "replay" || !replayPlaying) return;
     const timer = setInterval(() => {
@@ -292,7 +310,8 @@ export function useDraft() {
     [source, replayIndex, livePicks, allReplayPicks],
   );
 
-  const matched = useMemo(() => matchPicks(MATCH_INDEX, picks), [picks]);
+  // NFL name matching against the guide; the NBA app matches by player_id itself.
+  const matched = useMemo(() => (sport === "nfl" ? matchPicks(MATCH_INDEX, picks) : []), [picks, sport]);
 
   const toggleOverride = useCallback((key: string, matchedDrafted: boolean) => {
     setOverrides((prev) => {
@@ -326,6 +345,7 @@ export function useDraft() {
         total: allReplayPicks.length,
       },
     } satisfies DraftState,
+    sport,
     adpMap,
     playerInfo,
     toggleStar: (key: string) =>

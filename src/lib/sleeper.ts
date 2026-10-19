@@ -4,12 +4,13 @@ const BASE = "https://api.sleeper.app/v1";
 
 /**
  * Accept a Sleeper draft URL or a raw ID and return the numeric draft ID.
- * Handles https://sleeper.com/draft/nfl/{id}, sleeper.app links, and bare IDs.
+ * Handles https://sleeper.com/draft/nfl/{id} and /draft/nba/{id}, league
+ * URLs like sleeper.com/leagues/{id}/..., sleeper.app links, and bare IDs.
  */
 export function parseDraftId(input: string): string | null {
   const trimmed = input.trim();
   if (/^\d{10,}$/.test(trimmed)) return trimmed;
-  const m = trimmed.match(/draft\/(?:nfl\/)?(\d{10,})/) ?? trimmed.match(/(\d{10,})/);
+  const m = trimmed.match(/draft\/(?:nfl\/|nba\/)?(\d{10,})/) ?? trimmed.match(/(\d{10,})/);
   return m ? m[1] : null;
 }
 

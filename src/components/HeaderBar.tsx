@@ -31,8 +31,11 @@ export default function HeaderBar(props: {
   derived: Derived;
   mySlot: number | null;
   setMySlot: (slot: number | null) => void;
-  format: ScoringFormat;
-  setFormat: (f: ScoringFormat) => void;
+  /** NFL only: PPR / half-PPR board toggle. Omit for sports with one board. */
+  format?: ScoringFormat;
+  setFormat?: (f: ScoringFormat) => void;
+  /** Short label after the title, e.g. "NBA". */
+  sportLabel?: string;
   error: string | null;
   replay: { index: number; playing: boolean; speedMs: number; total: number };
   replayControls: {
@@ -72,6 +75,11 @@ export default function HeaderBar(props: {
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
         <div className="text-sm font-black tracking-tight">
           DRAFT <span className="text-emerald-400">WAR ROOM</span>
+          {props.sportLabel && (
+            <span className="ml-1.5 rounded bg-orange-600/25 px-1.5 py-0.5 text-[10px] font-black text-orange-300">
+              {props.sportLabel}
+            </span>
+          )}
         </div>
 
         <div className="flex items-center gap-2 text-sm">
@@ -165,19 +173,21 @@ export default function HeaderBar(props: {
             ))}
           </select>
 
-          <div className="flex overflow-hidden rounded-md border border-zinc-700 text-xs font-bold">
-            {(["ppr", "half"] as const).map((f) => (
-              <button
-                key={f}
-                onClick={() => props.setFormat(f)}
-                className={`px-2.5 py-1.5 ${
-                  props.format === f ? "bg-emerald-600 text-white" : "bg-zinc-900 text-zinc-400"
-                }`}
-              >
-                {f === "ppr" ? "PPR" : "½ PPR"}
-              </button>
-            ))}
-          </div>
+          {props.format && props.setFormat && (
+            <div className="flex overflow-hidden rounded-md border border-zinc-700 text-xs font-bold">
+              {(["ppr", "half"] as const).map((f) => (
+                <button
+                  key={f}
+                  onClick={() => props.setFormat!(f)}
+                  className={`px-2.5 py-1.5 ${
+                    props.format === f ? "bg-emerald-600 text-white" : "bg-zinc-900 text-zinc-400"
+                  }`}
+                >
+                  {f === "ppr" ? "PPR" : "½ PPR"}
+                </button>
+              ))}
+            </div>
+          )}
 
           <button
             onClick={props.disconnect}
